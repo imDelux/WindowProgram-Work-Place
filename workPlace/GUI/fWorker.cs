@@ -56,8 +56,39 @@ namespace GUI
         }
 
 
+
         #endregion
 
-        
+        #region Button events
+        private void ChangeMainContent(UserControl usMainContent)
+        {
+            if (usMainContent == null) { return; }
+            // Clear old us to add new us content
+            pnlContainer.Controls.Clear();
+            pnlContainer.Controls.Add(usMainContent);
+            usMainContent.Dock = DockStyle.Fill;
+        }
+
+        private void btnSchedule_Click(object sender, EventArgs e)
+        {
+            usSchedule scheduleContent = new usSchedule();
+            ChangeMainContent(scheduleContent);
+        }
+
+        private void btnNotification_Click(object sender, EventArgs e)
+        {
+            usNotification notificationContent = new usNotification();
+            ChangeMainContent(notificationContent);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            usProfile profileContent = new usProfile();
+            ChangeMainContent(profileContent);
+        }
+
+        #endregion
+
+
     }
 }

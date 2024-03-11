@@ -36,15 +36,17 @@
             this.btnProfile = new Krypton.Toolkit.KryptonButton();
             this.btnNotification = new Krypton.Toolkit.KryptonButton();
             this.btnSchedule = new Krypton.Toolkit.KryptonButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlLogoContainer = new System.Windows.Forms.Panel();
             this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.usSchedule1 = new GUI.usSchedule();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlLogoContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonCustomPaletteBase1
@@ -63,7 +65,7 @@
             this.pnlDashboard.Controls.Add(this.btnProfile);
             this.pnlDashboard.Controls.Add(this.btnNotification);
             this.pnlDashboard.Controls.Add(this.btnSchedule);
-            this.pnlDashboard.Controls.Add(this.panel1);
+            this.pnlDashboard.Controls.Add(this.pnlLogoContainer);
             this.pnlDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlDashboard.Location = new System.Drawing.Point(0, 0);
             this.pnlDashboard.Name = "pnlDashboard";
@@ -155,6 +157,7 @@
             this.btnProfile.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.TabIndex = 9;
             this.btnProfile.Values.Text = "Profile";
+            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
             // btnNotification
             // 
@@ -214,6 +217,7 @@
             this.btnNotification.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.TabIndex = 8;
             this.btnNotification.Values.Text = "Notification";
+            this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
             // 
             // btnSchedule
             // 
@@ -273,16 +277,17 @@
             this.btnSchedule.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.TabIndex = 7;
             this.btnSchedule.Values.Text = "Schedule";
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
-            // panel1
+            // pnlLogoContainer
             // 
-            this.panel1.Controls.Add(this.picLogo);
-            this.panel1.Controls.Add(this.lblExtraText);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 216);
-            this.panel1.TabIndex = 6;
+            this.pnlLogoContainer.Controls.Add(this.picLogo);
+            this.pnlLogoContainer.Controls.Add(this.lblExtraText);
+            this.pnlLogoContainer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogoContainer.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogoContainer.Name = "pnlLogoContainer";
+            this.pnlLogoContainer.Size = new System.Drawing.Size(264, 216);
+            this.pnlLogoContainer.TabIndex = 6;
             // 
             // picLogo
             // 
@@ -308,11 +313,20 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.usSchedule1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContainer.Location = new System.Drawing.Point(265, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(995, 766);
             this.pnlContainer.TabIndex = 1;
+            // 
+            // usSchedule1
+            // 
+            this.usSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usSchedule1.Location = new System.Drawing.Point(0, 0);
+            this.usSchedule1.Name = "usSchedule1";
+            this.usSchedule1.Size = new System.Drawing.Size(995, 766);
+            this.usSchedule1.TabIndex = 0;
             // 
             // fWorker
             // 
@@ -348,9 +362,10 @@
             this.pnlDashboard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlLogoContainer.ResumeLayout(false);
+            this.pnlLogoContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -361,12 +376,13 @@
         private System.Windows.Forms.Panel pnlDashboard;
         private Krypton.Toolkit.KryptonPictureBox picLogo;
         private System.Windows.Forms.Label lblExtraText;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlLogoContainer;
         private Krypton.Toolkit.KryptonButton btnProfile;
         private Krypton.Toolkit.KryptonButton btnNotification;
         private Krypton.Toolkit.KryptonButton btnSchedule;
-        private System.Windows.Forms.Panel pnlContainer;
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
+        private System.Windows.Forms.Panel pnlContainer;
+        private usSchedule usSchedule1;
     }
 }

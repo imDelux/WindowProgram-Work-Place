@@ -70,6 +70,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usNotification.Designer.cs">
+      <DependentUpon>usNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usProfile.Designer.cs">
+      <DependentUpon>usProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usSchedule.Designer.cs">
+      <DependentUpon>usSchedule.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fWorker.resx">
       <DependentUpon>fWorker.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +101,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usNotification.resx">
+      <DependentUpon>usNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usProfile.resx">
+      <DependentUpon>usProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usSchedule.resx">
+      <DependentUpon>usSchedule.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
