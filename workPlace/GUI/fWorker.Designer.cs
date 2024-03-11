@@ -40,13 +40,11 @@
             this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.usSchedule1 = new GUI.usSchedule();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.pnlLogoContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonCustomPaletteBase1
@@ -124,8 +122,8 @@
             this.btnProfile.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnProfile.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Size = new System.Drawing.Size(264, 56);
-            this.btnProfile.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnProfile.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnProfile.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnProfile.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.btnProfile.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnProfile.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnProfile.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -184,8 +182,8 @@
             this.btnNotification.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnNotification.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.Size = new System.Drawing.Size(264, 56);
-            this.btnNotification.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnNotification.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnNotification.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnNotification.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.btnNotification.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnNotification.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnNotification.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -244,8 +242,8 @@
             this.btnSchedule.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnSchedule.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.Size = new System.Drawing.Size(264, 56);
-            this.btnSchedule.StateNormal.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnSchedule.StateNormal.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnSchedule.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnSchedule.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.btnSchedule.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnSchedule.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
             this.btnSchedule.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
@@ -313,26 +311,18 @@
             // 
             // pnlContainer
             // 
-            this.pnlContainer.Controls.Add(this.usSchedule1);
+            this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContainer.Location = new System.Drawing.Point(265, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(995, 766);
             this.pnlContainer.TabIndex = 1;
             // 
-            // usSchedule1
-            // 
-            this.usSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usSchedule1.Location = new System.Drawing.Point(0, 0);
-            this.usSchedule1.Name = "usSchedule1";
-            this.usSchedule1.Size = new System.Drawing.Size(995, 766);
-            this.usSchedule1.TabIndex = 0;
-            // 
             // fWorker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(225)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1260, 766);
             this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.pnlDashboard);
@@ -365,7 +355,6 @@
             this.pnlLogoContainer.ResumeLayout(false);
             this.pnlLogoContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -383,6 +372,5 @@
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
-        private usSchedule usSchedule1;
     }
 }
