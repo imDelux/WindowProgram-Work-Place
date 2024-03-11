@@ -18,27 +18,46 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void btnSchedule_Click(object sender, EventArgs e)
+
+        #region Form Event
+        private void fWorker_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //KryptonButton clickedBtn = sender as KryptonButton;
-            //if (clickedBtn != null)
-            //{
-            //    //clickedBtn.BackColor = Color.FromArgb(174, 165, 199);
-                
-            //    clickedBtn.StateCommon.Back.Color1 = Color.FromArgb(174, 165, 199);
-            //    clickedBtn.StateCommon.Back.Color2 = Color.FromArgb(174, 165, 199);
-            //    //clickedBtn.StateNormal.Content.ShortText.Color1 = Color.White;
-            //}
+            if (MessageBox.Show("Do you want to quit ?", "Closing", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
 
-        private void btnSchedule_Leave(object sender, EventArgs e)
+        #endregion
+
+
+        #region Exit and LogOut Event
+        private void picExit_MouseLeave(object sender, EventArgs e)
         {
-            //KryptonButton clickedBtn = sender as KryptonButton;
-            //if (clickedBtn != null)
-            //{
-            //    clickedBtn.StateNormal.Back.Color1 = Color.Transparent;
-            //    clickedBtn.StateNormal.Back.Color2 = Color.Transparent;
-            //}
+            KryptonPictureBox clickedPic = sender as KryptonPictureBox;
+            if (clickedPic != null)
+            {
+                clickedPic.Size = new Size(clickedPic.Size.Width - 2, clickedPic.Size.Height - 2);
+            }
         }
+
+        private void picExit_MouseEnter(object sender, EventArgs e)
+        {
+            KryptonPictureBox clickedPic = sender as KryptonPictureBox;
+            if (clickedPic != null)
+            {
+                clickedPic.Size = new Size(clickedPic.Size.Width + 2, clickedPic.Size.Height + 2);
+            }
+        }
+
+        private void picExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+        #endregion
+
+        
     }
 }
