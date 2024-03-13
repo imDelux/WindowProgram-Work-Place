@@ -100,6 +100,12 @@
     <Compile Include="usProfile.Designer.cs">
       <DependentUpon>usProfile.cs</DependentUpon>
     </Compile>
+    <Compile Include="usReview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usReview.Designer.cs">
+      <DependentUpon>usReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="usSchedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usProfile.resx">
       <DependentUpon>usProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usReview.resx">
+      <DependentUpon>usReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usSchedule.resx">
       <DependentUpon>usSchedule.cs</DependentUpon>
@@ -184,6 +193,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tripleH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-man.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

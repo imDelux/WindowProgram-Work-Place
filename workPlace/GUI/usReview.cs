@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usProfile : UserControl
+    public partial class usReview : UserControl
     {
-        public usProfile()
+        public usReview()
         {
             InitializeComponent();
-        }
-
-        private void usProfile_Load(object sender, EventArgs e)
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                this.fpnlReviewContainer.Controls.Add(new usReview());
-            }
         }
     }
 }
