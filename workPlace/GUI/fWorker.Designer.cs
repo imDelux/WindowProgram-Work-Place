@@ -40,11 +40,13 @@
             this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.usSchedule1 = new GUI.usSchedule();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.pnlLogoContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonCustomPaletteBase1
@@ -99,6 +101,7 @@
             // 
             // btnProfile
             // 
+            this.btnProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
             this.btnProfile.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfile.Location = new System.Drawing.Point(0, 328);
@@ -219,6 +222,7 @@
             // 
             // btnSchedule
             // 
+            this.btnSchedule.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
             this.btnSchedule.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
             this.btnSchedule.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSchedule.Location = new System.Drawing.Point(0, 216);
@@ -312,11 +316,22 @@
             // pnlContainer
             // 
             this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
+            this.pnlContainer.Controls.Add(this.usSchedule1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContainer.Location = new System.Drawing.Point(265, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(995, 766);
             this.pnlContainer.TabIndex = 1;
+            // 
+            // usSchedule1
+            // 
+            this.usSchedule1.BackColor = System.Drawing.Color.Transparent;
+            this.usSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usSchedule1.Location = new System.Drawing.Point(0, 0);
+            this.usSchedule1.Name = "usSchedule1";
+            this.usSchedule1.Size = new System.Drawing.Size(995, 766);
+            this.usSchedule1.TabIndex = 0;
             // 
             // fWorker
             // 
@@ -355,6 +370,7 @@
             this.pnlLogoContainer.ResumeLayout(false);
             this.pnlLogoContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -372,5 +388,6 @@
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
+        private usSchedule usSchedule1;
     }
 }
