@@ -355,13 +355,14 @@
             this.StateActive.Border.Rounding = 20F;
             this.StateActive.Border.Width = 1;
             this.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(225)))));
-            this.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.StateCommon.Border.ColorAngle = 0F;
             this.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.True;
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.Width = 1;
+            this.StateCommon.Border.Width = 2;
             this.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.Text = "fWorker";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fWorker_FormClosing);

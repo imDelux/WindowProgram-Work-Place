@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton4 = new Krypton.Toolkit.KryptonButton();
+            this.btnNewJobNotificationContainer = new Krypton.Toolkit.KryptonButton();
+            this.btnNewEvaluateNotificationContainer = new Krypton.Toolkit.KryptonButton();
+            this.btnIncomingJobContainer = new Krypton.Toolkit.KryptonButton();
+            this.btnJobNumbContainer = new Krypton.Toolkit.KryptonButton();
             this.lblJobReceivedAnnounce = new System.Windows.Forms.Label();
             this.lblNumbJobsReceived = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,113 +45,113 @@
             this.fpnlIncomingNotification = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // kryptonButton1
+            // btnNewJobNotificationContainer
             // 
-            this.kryptonButton1.Enabled = false;
-            this.kryptonButton1.Location = new System.Drawing.Point(35, 34);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(572, 304);
-            this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnNewJobNotificationContainer.Enabled = false;
+            this.btnNewJobNotificationContainer.Location = new System.Drawing.Point(35, 34);
+            this.btnNewJobNotificationContainer.Name = "btnNewJobNotificationContainer";
+            this.btnNewJobNotificationContainer.Size = new System.Drawing.Size(572, 304);
+            this.btnNewJobNotificationContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnNewJobNotificationContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnNewJobNotificationContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
+            this.btnNewJobNotificationContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
+            this.btnNewJobNotificationContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateDisabled.Border.Rounding = 30F;
-            this.kryptonButton1.StateDisabled.Border.Width = 2;
-            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnNewJobNotificationContainer.StateDisabled.Border.Rounding = 30F;
+            this.btnNewJobNotificationContainer.StateDisabled.Border.Width = 2;
+            this.btnNewJobNotificationContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnNewJobNotificationContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnNewJobNotificationContainer.StateNormal.Border.Color1 = System.Drawing.Color.Black;
+            this.btnNewJobNotificationContainer.StateNormal.Border.Color2 = System.Drawing.Color.Black;
+            this.btnNewJobNotificationContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateNormal.Border.Rounding = 30F;
-            this.kryptonButton1.StateNormal.Border.Width = 2;
-            this.kryptonButton1.TabIndex = 2;
-            this.kryptonButton1.Values.Text = "";
+            this.btnNewJobNotificationContainer.StateNormal.Border.Rounding = 30F;
+            this.btnNewJobNotificationContainer.StateNormal.Border.Width = 2;
+            this.btnNewJobNotificationContainer.TabIndex = 2;
+            this.btnNewJobNotificationContainer.Values.Text = "";
             // 
-            // kryptonButton2
+            // btnNewEvaluateNotificationContainer
             // 
-            this.kryptonButton2.Enabled = false;
-            this.kryptonButton2.Location = new System.Drawing.Point(35, 374);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(572, 356);
-            this.kryptonButton2.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton2.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton2.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnNewEvaluateNotificationContainer.Enabled = false;
+            this.btnNewEvaluateNotificationContainer.Location = new System.Drawing.Point(35, 374);
+            this.btnNewEvaluateNotificationContainer.Name = "btnNewEvaluateNotificationContainer";
+            this.btnNewEvaluateNotificationContainer.Size = new System.Drawing.Size(572, 356);
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateDisabled.Border.Rounding = 30F;
-            this.kryptonButton2.StateDisabled.Border.Width = 2;
-            this.kryptonButton2.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton2.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Border.Rounding = 30F;
+            this.btnNewEvaluateNotificationContainer.StateDisabled.Border.Width = 2;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Border.Color1 = System.Drawing.Color.Black;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Border.Color2 = System.Drawing.Color.Black;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateNormal.Border.Rounding = 30F;
-            this.kryptonButton2.StateNormal.Border.Width = 2;
-            this.kryptonButton2.TabIndex = 3;
-            this.kryptonButton2.Values.Text = "";
+            this.btnNewEvaluateNotificationContainer.StateNormal.Border.Rounding = 30F;
+            this.btnNewEvaluateNotificationContainer.StateNormal.Border.Width = 2;
+            this.btnNewEvaluateNotificationContainer.TabIndex = 3;
+            this.btnNewEvaluateNotificationContainer.Values.Text = "";
             // 
-            // kryptonButton3
+            // btnIncomingJobContainer
             // 
-            this.kryptonButton3.Enabled = false;
-            this.kryptonButton3.Location = new System.Drawing.Point(646, 34);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(324, 304);
-            this.kryptonButton3.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.kryptonButton3.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.kryptonButton3.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnIncomingJobContainer.Enabled = false;
+            this.btnIncomingJobContainer.Location = new System.Drawing.Point(646, 34);
+            this.btnIncomingJobContainer.Name = "btnIncomingJobContainer";
+            this.btnIncomingJobContainer.Size = new System.Drawing.Size(324, 304);
+            this.btnIncomingJobContainer.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.btnIncomingJobContainer.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.btnIncomingJobContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Black;
+            this.btnIncomingJobContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Black;
+            this.btnIncomingJobContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateDisabled.Border.Rounding = 30F;
-            this.kryptonButton3.StateDisabled.Border.Width = 2;
-            this.kryptonButton3.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.kryptonButton3.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.kryptonButton3.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonButton3.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnIncomingJobContainer.StateDisabled.Border.Rounding = 30F;
+            this.btnIncomingJobContainer.StateDisabled.Border.Width = 2;
+            this.btnIncomingJobContainer.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.btnIncomingJobContainer.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+            this.btnIncomingJobContainer.StateNormal.Border.Color1 = System.Drawing.Color.Black;
+            this.btnIncomingJobContainer.StateNormal.Border.Color2 = System.Drawing.Color.Black;
+            this.btnIncomingJobContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateNormal.Border.Rounding = 30F;
-            this.kryptonButton3.StateNormal.Border.Width = 2;
-            this.kryptonButton3.TabIndex = 4;
-            this.kryptonButton3.Values.Text = "";
+            this.btnIncomingJobContainer.StateNormal.Border.Rounding = 30F;
+            this.btnIncomingJobContainer.StateNormal.Border.Width = 2;
+            this.btnIncomingJobContainer.TabIndex = 4;
+            this.btnIncomingJobContainer.Values.Text = "";
             // 
-            // kryptonButton4
+            // btnJobNumbContainer
             // 
-            this.kryptonButton4.Enabled = false;
-            this.kryptonButton4.Location = new System.Drawing.Point(646, 374);
-            this.kryptonButton4.Name = "kryptonButton4";
-            this.kryptonButton4.Size = new System.Drawing.Size(324, 350);
-            this.kryptonButton4.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
-            this.kryptonButton4.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
-            this.kryptonButton4.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.kryptonButton4.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.kryptonButton4.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobNumbContainer.Enabled = false;
+            this.btnJobNumbContainer.Location = new System.Drawing.Point(646, 374);
+            this.btnJobNumbContainer.Name = "btnJobNumbContainer";
+            this.btnJobNumbContainer.Size = new System.Drawing.Size(324, 350);
+            this.btnJobNumbContainer.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
+            this.btnJobNumbContainer.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
+            this.btnJobNumbContainer.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJobNumbContainer.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJobNumbContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton4.StateDisabled.Border.Rounding = 100F;
-            this.kryptonButton4.StateDisabled.Border.Width = 2;
-            this.kryptonButton4.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
-            this.kryptonButton4.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
-            this.kryptonButton4.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.kryptonButton4.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.kryptonButton4.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobNumbContainer.StateDisabled.Border.Rounding = 100F;
+            this.btnJobNumbContainer.StateDisabled.Border.Width = 2;
+            this.btnJobNumbContainer.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
+            this.btnJobNumbContainer.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
+            this.btnJobNumbContainer.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJobNumbContainer.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnJobNumbContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton4.StateNormal.Border.Rounding = 100F;
-            this.kryptonButton4.StateNormal.Border.Width = 2;
-            this.kryptonButton4.TabIndex = 5;
-            this.kryptonButton4.Values.Text = "";
+            this.btnJobNumbContainer.StateNormal.Border.Rounding = 100F;
+            this.btnJobNumbContainer.StateNormal.Border.Width = 2;
+            this.btnJobNumbContainer.TabIndex = 5;
+            this.btnJobNumbContainer.Values.Text = "";
             // 
             // lblJobReceivedAnnounce
             // 
@@ -282,10 +282,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblNumbJobsReceived);
             this.Controls.Add(this.lblJobReceivedAnnounce);
-            this.Controls.Add(this.kryptonButton4);
-            this.Controls.Add(this.kryptonButton3);
-            this.Controls.Add(this.kryptonButton2);
-            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.btnJobNumbContainer);
+            this.Controls.Add(this.btnIncomingJobContainer);
+            this.Controls.Add(this.btnNewEvaluateNotificationContainer);
+            this.Controls.Add(this.btnNewJobNotificationContainer);
             this.Name = "usNotification";
             this.Size = new System.Drawing.Size(995, 766);
             this.Load += new System.EventHandler(this.usNotification_Load);
@@ -296,10 +296,10 @@
 
         #endregion
 
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
-        private Krypton.Toolkit.KryptonButton kryptonButton3;
-        private Krypton.Toolkit.KryptonButton kryptonButton4;
+        private Krypton.Toolkit.KryptonButton btnNewJobNotificationContainer;
+        private Krypton.Toolkit.KryptonButton btnNewEvaluateNotificationContainer;
+        private Krypton.Toolkit.KryptonButton btnIncomingJobContainer;
+        private Krypton.Toolkit.KryptonButton btnJobNumbContainer;
         private System.Windows.Forms.Label lblJobReceivedAnnounce;
         private System.Windows.Forms.Label lblNumbJobsReceived;
         private System.Windows.Forms.Panel panel1;

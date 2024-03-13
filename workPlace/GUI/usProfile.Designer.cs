@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.SuspendLayout();
             // 
-            // kryptonLabel1
+            // kryptonButton1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(436, 371);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(105, 24);
-            this.kryptonLabel1.TabIndex = 1;
-            this.kryptonLabel1.Values.Text = "ProfileTesting";
+            this.kryptonButton1.Location = new System.Drawing.Point(224, 119);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.Size = new System.Drawing.Size(90, 25);
+            this.kryptonButton1.TabIndex = 0;
+            this.kryptonButton1.Values.Text = "";
             // 
             // usProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.kryptonLabel1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.kryptonButton1);
             this.Name = "usProfile";
             this.Size = new System.Drawing.Size(995, 766);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Krypton.Toolkit.KryptonLabel kryptonLabel1;
+        private Krypton.Toolkit.KryptonButton kryptonButton1;
     }
 }
