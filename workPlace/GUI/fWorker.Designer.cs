@@ -114,7 +114,7 @@
             this.btnProfile.OverrideDefault.Border.Width = 0;
             this.btnProfile.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnProfile.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnProfile.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -123,7 +123,7 @@
             this.btnProfile.OverrideFocus.Border.Width = 0;
             this.btnProfile.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnProfile.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnProfile.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.Size = new System.Drawing.Size(264, 56);
             this.btnProfile.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnProfile.StateNormal.Back.Color2 = System.Drawing.Color.White;
@@ -133,7 +133,7 @@
             this.btnProfile.StateNormal.Border.Width = 1;
             this.btnProfile.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnProfile.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnProfile.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
@@ -144,7 +144,7 @@
             this.btnProfile.StatePressed.Border.Width = 0;
             this.btnProfile.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnProfile.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnProfile.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnProfile.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnProfile.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
@@ -155,7 +155,7 @@
             this.btnProfile.StateTracking.Border.Width = 1;
             this.btnProfile.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnProfile.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnProfile.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.TabIndex = 9;
             this.btnProfile.Values.Text = "Profile";
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
@@ -174,7 +174,7 @@
             this.btnNotification.OverrideDefault.Border.Width = 0;
             this.btnNotification.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNotification.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnNotification.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNotification.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNotification.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -183,7 +183,7 @@
             this.btnNotification.OverrideFocus.Border.Width = 0;
             this.btnNotification.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNotification.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnNotification.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.Size = new System.Drawing.Size(264, 56);
             this.btnNotification.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnNotification.StateNormal.Back.Color2 = System.Drawing.Color.White;
@@ -193,7 +193,7 @@
             this.btnNotification.StateNormal.Border.Width = 1;
             this.btnNotification.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnNotification.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnNotification.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNotification.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNotification.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
@@ -204,7 +204,7 @@
             this.btnNotification.StatePressed.Border.Width = 0;
             this.btnNotification.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNotification.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnNotification.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnNotification.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnNotification.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
@@ -215,7 +215,7 @@
             this.btnNotification.StateTracking.Border.Width = 1;
             this.btnNotification.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnNotification.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnNotification.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNotification.TabIndex = 8;
             this.btnNotification.Values.Text = "Notification";
             this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
@@ -235,7 +235,7 @@
             this.btnSchedule.OverrideDefault.Border.Width = 0;
             this.btnSchedule.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSchedule.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnSchedule.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnSchedule.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnSchedule.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -244,7 +244,7 @@
             this.btnSchedule.OverrideFocus.Border.Width = 0;
             this.btnSchedule.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSchedule.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnSchedule.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.Size = new System.Drawing.Size(264, 56);
             this.btnSchedule.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnSchedule.StateNormal.Back.Color2 = System.Drawing.Color.White;
@@ -254,7 +254,7 @@
             this.btnSchedule.StateNormal.Border.Width = 1;
             this.btnSchedule.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnSchedule.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnSchedule.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnSchedule.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnSchedule.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
@@ -265,7 +265,7 @@
             this.btnSchedule.StatePressed.Border.Width = 0;
             this.btnSchedule.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnSchedule.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnSchedule.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
             this.btnSchedule.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
             this.btnSchedule.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
@@ -276,7 +276,7 @@
             this.btnSchedule.StateTracking.Border.Width = 1;
             this.btnSchedule.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnSchedule.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnSchedule.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.TabIndex = 7;
             this.btnSchedule.Values.Text = "Schedule";
             this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
@@ -332,6 +332,7 @@
             this.usSchedule1.Name = "usSchedule1";
             this.usSchedule1.Size = new System.Drawing.Size(995, 766);
             this.usSchedule1.TabIndex = 0;
+            this.usSchedule1.Load += new System.EventHandler(this.usSchedule1_Load);
             // 
             // fWorker
             // 

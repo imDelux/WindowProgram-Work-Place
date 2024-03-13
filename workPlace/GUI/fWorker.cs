@@ -87,8 +87,12 @@ namespace GUI
             ChangeMainContent(profileContent);
         }
 
+
         #endregion
 
+        private void usSchedule1_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

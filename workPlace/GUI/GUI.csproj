@@ -76,6 +76,18 @@
     <Compile Include="usDay.Designer.cs">
       <DependentUpon>usDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="usIncomingNotificationMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usIncomingNotificationMessage.Designer.cs">
+      <DependentUpon>usIncomingNotificationMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usNewNotificationMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usNewNotificationMessage.Designer.cs">
+      <DependentUpon>usNewNotificationMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="usNotification.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </Compile>
     <EmbeddedResource Include="usDay.resx">
       <DependentUpon>usDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usIncomingNotificationMessage.resx">
+      <DependentUpon>usIncomingNotificationMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usNewNotificationMessage.resx">
+      <DependentUpon>usNewNotificationMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usNotification.resx">
       <DependentUpon>usNotification.cs</DependentUpon>
