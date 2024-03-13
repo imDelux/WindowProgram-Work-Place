@@ -51,10 +51,10 @@
             // 
             this.lblReviewerName.AutoSize = true;
             this.lblReviewerName.BackColor = System.Drawing.Color.White;
-            this.lblReviewerName.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReviewerName.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReviewerName.Location = new System.Drawing.Point(114, 29);
             this.lblReviewerName.Name = "lblReviewerName";
-            this.lblReviewerName.Size = new System.Drawing.Size(153, 22);
+            this.lblReviewerName.Size = new System.Drawing.Size(169, 22);
             this.lblReviewerName.TabIndex = 2;
             this.lblReviewerName.Text = "Reviewer Name";
             // 
@@ -62,10 +62,10 @@
             // 
             this.lblReviewRating.AutoSize = true;
             this.lblReviewRating.BackColor = System.Drawing.Color.White;
-            this.lblReviewRating.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReviewRating.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReviewRating.Location = new System.Drawing.Point(117, 56);
             this.lblReviewRating.Name = "lblReviewRating";
-            this.lblReviewRating.Size = new System.Drawing.Size(104, 18);
+            this.lblReviewRating.Size = new System.Drawing.Size(121, 18);
             this.lblReviewRating.TabIndex = 3;
             this.lblReviewRating.Text = "Rate: 1.0/10.0";
             // 
@@ -177,8 +177,8 @@
             // 
             // usReview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.btnReviewContentContainer);
             this.Controls.Add(this.lblReviewRating);

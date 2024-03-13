@@ -28,44 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlBottomLine = new System.Windows.Forms.Panel();
             this.lblMainMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // pnlBottomLine
-            // 
-            this.pnlBottomLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.pnlBottomLine.Location = new System.Drawing.Point(0, 39);
-            this.pnlBottomLine.Name = "pnlBottomLine";
-            this.pnlBottomLine.Size = new System.Drawing.Size(340, 10);
-            this.pnlBottomLine.TabIndex = 1;
             // 
             // lblMainMessage
             // 
             this.lblMainMessage.AutoSize = true;
-            this.lblMainMessage.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainMessage.Location = new System.Drawing.Point(10, 5);
+            this.lblMainMessage.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainMessage.Location = new System.Drawing.Point(10, 8);
             this.lblMainMessage.Name = "lblMainMessage";
-            this.lblMainMessage.Size = new System.Drawing.Size(233, 28);
+            this.lblMainMessage.Size = new System.Drawing.Size(231, 25);
             this.lblMainMessage.TabIndex = 2;
             this.lblMainMessage.Text = "Message goes here ...";
             // 
             // usIncomingNotificationMessage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblMainMessage);
-            this.Controls.Add(this.pnlBottomLine);
             this.Name = "usIncomingNotificationMessage";
-            this.Size = new System.Drawing.Size(316, 42);
+            this.Size = new System.Drawing.Size(324, 42);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlBottomLine;
         private System.Windows.Forms.Label lblMainMessage;
     }
 }
