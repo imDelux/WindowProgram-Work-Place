@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usReview
+    partial class ucReview
     {
         /// <summary> 
         /// Required designer variable.
@@ -174,6 +174,7 @@
             this.kryptonButton1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 7;
             this.kryptonButton1.Values.Text = "Detail";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // usReview
             // 

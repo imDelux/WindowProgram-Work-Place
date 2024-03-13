@@ -10,19 +10,23 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usProfile : UserControl
+    public partial class ucDay : UserControl
     {
-        public usProfile()
+        public ucDay()
         {
             InitializeComponent();
         }
 
-        private void usProfile_Load(object sender, EventArgs e)
+        // Clear all control to enter blank mode
+        public void Blank()
         {
-            for (int i = 0; i < 5; i++)
-            {
-                this.fpnlReviewContainer.Controls.Add(new usReview());
-            }
+            this.Controls.Clear();
+        }
+
+        // Change day number on label
+        public void Day(int day)
+        {
+            lblDay.Text = day.ToString();
         }
     }
 }

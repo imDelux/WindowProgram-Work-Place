@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usIncomingNotificationMessage
+    partial class ucNewNotificationMessage
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,17 +38,17 @@
             this.lblMainMessage.Location = new System.Drawing.Point(10, 8);
             this.lblMainMessage.Name = "lblMainMessage";
             this.lblMainMessage.Size = new System.Drawing.Size(231, 25);
-            this.lblMainMessage.TabIndex = 2;
+            this.lblMainMessage.TabIndex = 1;
             this.lblMainMessage.Text = "Message goes here ...";
             // 
-            // usIncomingNotificationMessage
+            // usNewNotificationMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblMainMessage);
-            this.Name = "usIncomingNotificationMessage";
-            this.Size = new System.Drawing.Size(324, 42);
+            this.Name = "usNewNotificationMessage";
+            this.Size = new System.Drawing.Size(572, 42);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usNotification
+    partial class ucNotification
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,9 +38,9 @@
             this.lblNewJobNotificationHeader = new System.Windows.Forms.Label();
             this.lblNewEvaluateNotificationHeader = new System.Windows.Forms.Label();
             this.lblIncomingNotificationHeader = new System.Windows.Forms.Label();
-            this.fpnlNewJobNotification = new System.Windows.Forms.FlowLayoutPanel();
-            this.fpnlNewEvaluateNotification = new System.Windows.Forms.FlowLayoutPanel();
-            this.fpnlIncomingNotification = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlNewJobNotificationContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlNewEvaluateNotificationContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlIncomingNotificationContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -223,32 +223,32 @@
             this.lblIncomingNotificationHeader.TabIndex = 13;
             this.lblIncomingNotificationHeader.Text = "Incoming ...";
             // 
-            // fpnlNewJobNotification
+            // fpnlNewJobNotificationContainer
             // 
-            this.fpnlNewJobNotification.AutoScroll = true;
-            this.fpnlNewJobNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
-            this.fpnlNewJobNotification.Location = new System.Drawing.Point(35, 91);
-            this.fpnlNewJobNotification.Name = "fpnlNewJobNotification";
-            this.fpnlNewJobNotification.Size = new System.Drawing.Size(572, 214);
-            this.fpnlNewJobNotification.TabIndex = 14;
+            this.fpnlNewJobNotificationContainer.AutoScroll = true;
+            this.fpnlNewJobNotificationContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
+            this.fpnlNewJobNotificationContainer.Location = new System.Drawing.Point(35, 91);
+            this.fpnlNewJobNotificationContainer.Name = "fpnlNewJobNotificationContainer";
+            this.fpnlNewJobNotificationContainer.Size = new System.Drawing.Size(572, 214);
+            this.fpnlNewJobNotificationContainer.TabIndex = 14;
             // 
-            // fpnlNewEvaluateNotification
+            // fpnlNewEvaluateNotificationContainer
             // 
-            this.fpnlNewEvaluateNotification.AutoScroll = true;
-            this.fpnlNewEvaluateNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
-            this.fpnlNewEvaluateNotification.Location = new System.Drawing.Point(35, 442);
-            this.fpnlNewEvaluateNotification.Name = "fpnlNewEvaluateNotification";
-            this.fpnlNewEvaluateNotification.Size = new System.Drawing.Size(572, 257);
-            this.fpnlNewEvaluateNotification.TabIndex = 15;
+            this.fpnlNewEvaluateNotificationContainer.AutoScroll = true;
+            this.fpnlNewEvaluateNotificationContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
+            this.fpnlNewEvaluateNotificationContainer.Location = new System.Drawing.Point(35, 442);
+            this.fpnlNewEvaluateNotificationContainer.Name = "fpnlNewEvaluateNotificationContainer";
+            this.fpnlNewEvaluateNotificationContainer.Size = new System.Drawing.Size(572, 257);
+            this.fpnlNewEvaluateNotificationContainer.TabIndex = 15;
             // 
-            // fpnlIncomingNotification
+            // fpnlIncomingNotificationContainer
             // 
-            this.fpnlIncomingNotification.AutoScroll = true;
-            this.fpnlIncomingNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
-            this.fpnlIncomingNotification.Location = new System.Drawing.Point(646, 97);
-            this.fpnlIncomingNotification.Name = "fpnlIncomingNotification";
-            this.fpnlIncomingNotification.Size = new System.Drawing.Size(324, 208);
-            this.fpnlIncomingNotification.TabIndex = 16;
+            this.fpnlIncomingNotificationContainer.AutoScroll = true;
+            this.fpnlIncomingNotificationContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
+            this.fpnlIncomingNotificationContainer.Location = new System.Drawing.Point(646, 97);
+            this.fpnlIncomingNotificationContainer.Name = "fpnlIncomingNotificationContainer";
+            this.fpnlIncomingNotificationContainer.Size = new System.Drawing.Size(324, 208);
+            this.fpnlIncomingNotificationContainer.TabIndex = 16;
             // 
             // panel3
             // 
@@ -273,9 +273,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.fpnlIncomingNotification);
-            this.Controls.Add(this.fpnlNewEvaluateNotification);
-            this.Controls.Add(this.fpnlNewJobNotification);
+            this.Controls.Add(this.fpnlIncomingNotificationContainer);
+            this.Controls.Add(this.fpnlNewEvaluateNotificationContainer);
+            this.Controls.Add(this.fpnlNewJobNotificationContainer);
             this.Controls.Add(this.lblIncomingNotificationHeader);
             this.Controls.Add(this.lblNewEvaluateNotificationHeader);
             this.Controls.Add(this.lblNewJobNotificationHeader);
@@ -306,9 +306,9 @@
         private System.Windows.Forms.Label lblNewJobNotificationHeader;
         private System.Windows.Forms.Label lblNewEvaluateNotificationHeader;
         private System.Windows.Forms.Label lblIncomingNotificationHeader;
-        private System.Windows.Forms.FlowLayoutPanel fpnlNewJobNotification;
-        private System.Windows.Forms.FlowLayoutPanel fpnlNewEvaluateNotification;
-        private System.Windows.Forms.FlowLayoutPanel fpnlIncomingNotification;
+        private System.Windows.Forms.FlowLayoutPanel fpnlNewJobNotificationContainer;
+        private System.Windows.Forms.FlowLayoutPanel fpnlNewEvaluateNotificationContainer;
+        private System.Windows.Forms.FlowLayoutPanel fpnlIncomingNotificationContainer;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
     }

@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usSchedule : UserControl
+    public partial class ucSchedule : UserControl
     {
         // Store current time that display on the calendar
         DateTime currentTimeInCalendar = DateTime.Now;
 
-        public usSchedule()
+        public ucSchedule()
         {
             InitializeComponent();
         }
@@ -47,7 +47,7 @@ namespace GUI
             // Ignore days in previous month
             for (int i = 1; i < dayOfWeek; i++)
             {
-                usDay day = new usDay();
+                ucDay day = new ucDay();
                 day.Blank();
                 fpnlDayContainer.Controls.Add(day);
             }
@@ -55,7 +55,7 @@ namespace GUI
             // Display days in input month
             for (int i = 1; i <= amountDayInMonth; i++) 
             {
-                usDay day = new usDay();
+                ucDay day = new ucDay();
                 day.Day(i);
                 fpnlDayContainer.Controls.Add(day);
             }

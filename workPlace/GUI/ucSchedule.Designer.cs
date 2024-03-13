@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usSchedule
+    partial class ucSchedule
     {
         /// <summary> 
         /// Required designer variable.

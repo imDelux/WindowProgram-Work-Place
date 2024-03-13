@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Krypton.Toolkit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,16 +11,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usIncomingNotificationMessage : UserControl
+    public partial class fWorkerSkills : KryptonForm
     {
-        public usIncomingNotificationMessage()
+        public fWorkerSkills()
         {
             InitializeComponent();
         }
 
-        public void ChangeContent(string content)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.lblMainMessage.Text = content;
+            this.Close();
         }
     }
 }

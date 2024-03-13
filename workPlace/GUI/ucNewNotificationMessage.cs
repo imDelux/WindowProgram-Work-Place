@@ -10,23 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usDay : UserControl
+    public partial class ucNewNotificationMessage : UserControl
     {
-        public usDay()
+        public ucNewNotificationMessage()
         {
             InitializeComponent();
         }
 
-        // Clear all control to enter blank mode
-        public void Blank()
+        public void ChangeContent(string content)
         {
-            this.Controls.Clear();
-        }
-
-        // Change day number on label
-        public void Day(int day)
-        {
-            lblDay.Text = day.ToString();
+            this.lblMainMessage.Text = content;
         }
     }
 }

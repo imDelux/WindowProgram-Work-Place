@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usReview : UserControl
+    public partial class ucIncomingNotificationMessage : UserControl
     {
-        public usReview()
+        public ucIncomingNotificationMessage()
         {
             InitializeComponent();
+        }
+
+        public void ChangeContent(string content)
+        {
+            this.lblMainMessage.Text = content;
         }
     }
 }

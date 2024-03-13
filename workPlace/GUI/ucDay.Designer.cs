@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usDay
+    partial class ucDay
     {
         /// <summary> 
         /// Required designer variable.

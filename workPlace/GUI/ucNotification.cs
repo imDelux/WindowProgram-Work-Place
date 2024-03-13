@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class usNotification : UserControl
+    public partial class ucNotification : UserControl
     {
-        public usNotification()
+        public ucNotification()
         {
             InitializeComponent();
         }
@@ -22,23 +22,23 @@ namespace GUI
             int i = 0;
             for (i = 0; i < 10;  i++)
             {
-                usNewNotificationMessage usNewNotificationMessage = new usNewNotificationMessage();
+                ucNewNotificationMessage usNewNotificationMessage = new ucNewNotificationMessage();
                 usNewNotificationMessage.ChangeContent("Person " + i + " want to hire you");
-                this.fpnlNewJobNotification.Controls.Add(usNewNotificationMessage);
+                this.fpnlNewJobNotificationContainer.Controls.Add(usNewNotificationMessage);
             }
 
             for (i = 0;i < 10; i++)
             {
-                usNewNotificationMessage usNewNotificationMessage = new usNewNotificationMessage();
+                ucNewNotificationMessage usNewNotificationMessage = new ucNewNotificationMessage();
                 usNewNotificationMessage.ChangeContent("New evaluate on Job " + i);
-                this.fpnlNewEvaluateNotification.Controls.Add(usNewNotificationMessage);
+                this.fpnlNewEvaluateNotificationContainer.Controls.Add(usNewNotificationMessage);
             }
 
             for (i = 0; i < 3; i++)
             {
-                usIncomingNotificationMessage usIncomingNotificationMessage = new usIncomingNotificationMessage();
+                ucIncomingNotificationMessage usIncomingNotificationMessage = new ucIncomingNotificationMessage();
                 usIncomingNotificationMessage.ChangeContent(i + ":30 3/13/2024: Fix plumber");
-                this.fpnlIncomingNotification.Controls.Add(usIncomingNotificationMessage);
+                this.fpnlIncomingNotificationContainer.Controls.Add(usIncomingNotificationMessage);
             }
         }
     }

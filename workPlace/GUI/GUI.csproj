@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,58 +64,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fJobDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fJobDetail.Designer.cs">
+      <DependentUpon>fJobDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="fWorker.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fWorker.Designer.cs">
       <DependentUpon>fWorker.cs</DependentUpon>
     </Compile>
+    <Compile Include="fWorkerSkills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWorkerSkills.Designer.cs">
+      <DependentUpon>fWorkerSkills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="usDay.cs">
+    <Compile Include="ucDay.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usDay.Designer.cs">
-      <DependentUpon>usDay.cs</DependentUpon>
+    <Compile Include="ucDay.Designer.cs">
+      <DependentUpon>ucDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="usIncomingNotificationMessage.cs">
+    <Compile Include="ucIncomingNotificationMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usIncomingNotificationMessage.Designer.cs">
-      <DependentUpon>usIncomingNotificationMessage.cs</DependentUpon>
+    <Compile Include="ucIncomingNotificationMessage.Designer.cs">
+      <DependentUpon>ucIncomingNotificationMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="usNewNotificationMessage.cs">
+    <Compile Include="ucNewNotificationMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usNewNotificationMessage.Designer.cs">
-      <DependentUpon>usNewNotificationMessage.cs</DependentUpon>
+    <Compile Include="ucNewNotificationMessage.Designer.cs">
+      <DependentUpon>ucNewNotificationMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="usNotification.cs">
+    <Compile Include="ucNotification.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usNotification.Designer.cs">
-      <DependentUpon>usNotification.cs</DependentUpon>
+    <Compile Include="ucNotification.Designer.cs">
+      <DependentUpon>ucNotification.cs</DependentUpon>
     </Compile>
-    <Compile Include="usProfile.cs">
+    <Compile Include="ucProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usProfile.Designer.cs">
-      <DependentUpon>usProfile.cs</DependentUpon>
+    <Compile Include="ucProfile.Designer.cs">
+      <DependentUpon>ucProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="usReview.cs">
+    <Compile Include="ucReview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usReview.Designer.cs">
-      <DependentUpon>usReview.cs</DependentUpon>
+    <Compile Include="ucReview.Designer.cs">
+      <DependentUpon>ucReview.cs</DependentUpon>
     </Compile>
-    <Compile Include="usSchedule.cs">
+    <Compile Include="ucSchedule.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usSchedule.Designer.cs">
-      <DependentUpon>usSchedule.cs</DependentUpon>
+    <Compile Include="ucSchedule.Designer.cs">
+      <DependentUpon>ucSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucSkill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSkill.Designer.cs">
+      <DependentUpon>ucSkill.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fJobDetail.resx">
+      <DependentUpon>fJobDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fWorker.resx">
       <DependentUpon>fWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWorkerSkills.resx">
+      <DependentUpon>fWorkerSkills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,26 +151,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="usDay.resx">
-      <DependentUpon>usDay.cs</DependentUpon>
+    <EmbeddedResource Include="ucDay.resx">
+      <DependentUpon>ucDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usIncomingNotificationMessage.resx">
-      <DependentUpon>usIncomingNotificationMessage.cs</DependentUpon>
+    <EmbeddedResource Include="ucIncomingNotificationMessage.resx">
+      <DependentUpon>ucIncomingNotificationMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usNewNotificationMessage.resx">
-      <DependentUpon>usNewNotificationMessage.cs</DependentUpon>
+    <EmbeddedResource Include="ucNewNotificationMessage.resx">
+      <DependentUpon>ucNewNotificationMessage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usNotification.resx">
-      <DependentUpon>usNotification.cs</DependentUpon>
+    <EmbeddedResource Include="ucNotification.resx">
+      <DependentUpon>ucNotification.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usProfile.resx">
-      <DependentUpon>usProfile.cs</DependentUpon>
+    <EmbeddedResource Include="ucProfile.resx">
+      <DependentUpon>ucProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usReview.resx">
-      <DependentUpon>usReview.cs</DependentUpon>
+    <EmbeddedResource Include="ucReview.resx">
+      <DependentUpon>ucReview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usSchedule.resx">
-      <DependentUpon>usSchedule.cs</DependentUpon>
+    <EmbeddedResource Include="ucSchedule.resx">
+      <DependentUpon>ucSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSkill.resx">
+      <DependentUpon>ucSkill.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

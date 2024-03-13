@@ -71,19 +71,19 @@ namespace GUI
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            usSchedule scheduleContent = new usSchedule();
+            ucSchedule scheduleContent = new ucSchedule();
             ChangeMainContent(scheduleContent);
         }
 
         private void btnNotification_Click(object sender, EventArgs e)
         {
-            usNotification notificationContent = new usNotification();
+            ucNotification notificationContent = new ucNotification();
             ChangeMainContent(notificationContent);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            usProfile profileContent = new usProfile();
+            ucProfile profileContent = new ucProfile();
             ChangeMainContent(profileContent);
         }
 

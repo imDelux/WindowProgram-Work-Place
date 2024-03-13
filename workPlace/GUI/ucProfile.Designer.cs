@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class usProfile
+    partial class ucProfile
     {
         /// <summary> 
         /// Required designer variable.
@@ -39,9 +39,9 @@
             this.lblOverrallRating = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblAdjustInformation = new System.Windows.Forms.Label();
+            this.lblChangePassword = new System.Windows.Forms.Label();
+            this.lblUserSkill = new System.Windows.Forms.Label();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SuspendLayout();
@@ -196,58 +196,59 @@
             this.picUserAvatar.TabIndex = 0;
             this.picUserAvatar.TabStop = false;
             // 
-            // label1
+            // lblAdjustInformation
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.label1.Location = new System.Drawing.Point(693, 679);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Adjust Profile’s Information";
+            this.lblAdjustInformation.AutoSize = true;
+            this.lblAdjustInformation.BackColor = System.Drawing.Color.White;
+            this.lblAdjustInformation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblAdjustInformation.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdjustInformation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.lblAdjustInformation.Location = new System.Drawing.Point(693, 679);
+            this.lblAdjustInformation.Name = "lblAdjustInformation";
+            this.lblAdjustInformation.Size = new System.Drawing.Size(241, 21);
+            this.lblAdjustInformation.TabIndex = 7;
+            this.lblAdjustInformation.Text = "Adjust Profile’s Information";
             // 
-            // label2
+            // lblChangePassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
-            this.label2.Location = new System.Drawing.Point(766, 648);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 21);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Change Password";
+            this.lblChangePassword.AutoSize = true;
+            this.lblChangePassword.BackColor = System.Drawing.Color.White;
+            this.lblChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblChangePassword.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChangePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.lblChangePassword.Location = new System.Drawing.Point(766, 648);
+            this.lblChangePassword.Name = "lblChangePassword";
+            this.lblChangePassword.Size = new System.Drawing.Size(168, 21);
+            this.lblChangePassword.TabIndex = 8;
+            this.lblChangePassword.Text = "Change Password";
             // 
-            // label3
+            // lblUserSkill
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(83)))), ((int)(((byte)(247)))));
-            this.label3.Location = new System.Drawing.Point(840, 617);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 22);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Your Skills";
+            this.lblUserSkill.AutoSize = true;
+            this.lblUserSkill.BackColor = System.Drawing.Color.White;
+            this.lblUserSkill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblUserSkill.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserSkill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(83)))), ((int)(((byte)(247)))));
+            this.lblUserSkill.Location = new System.Drawing.Point(840, 617);
+            this.lblUserSkill.Name = "lblUserSkill";
+            this.lblUserSkill.Size = new System.Drawing.Size(94, 22);
+            this.lblUserSkill.TabIndex = 9;
+            this.lblUserSkill.Text = "Your Skills";
+            this.lblUserSkill.Click += new System.EventHandler(this.lblUserSkill_Click);
             // 
-            // usProfile
+            // ucProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUserSkill);
+            this.Controls.Add(this.lblChangePassword);
+            this.Controls.Add(this.lblAdjustInformation);
             this.Controls.Add(this.pnlBasicInformationContainer);
             this.Controls.Add(this.fpnlReviewContainer);
             this.Controls.Add(this.btnBasicInformationContainer);
             this.Controls.Add(this.btnEvaluateContainer);
-            this.Name = "usProfile";
+            this.Name = "ucProfile";
             this.Size = new System.Drawing.Size(995, 766);
             this.Load += new System.EventHandler(this.usProfile_Load);
             this.pnlBasicInformationContainer.ResumeLayout(false);
@@ -271,8 +272,8 @@
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblAdjustInformation;
+        private System.Windows.Forms.Label lblChangePassword;
+        private System.Windows.Forms.Label lblUserSkill;
     }
 }
