@@ -32,7 +32,7 @@
             this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
             this.pnlTop = new Krypton.Toolkit.KryptonPanel();
             this.txtSearch = new Krypton.Toolkit.KryptonTextBox();
-            this.flpContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
@@ -102,12 +102,13 @@
             this.txtSearch.TabIndex = 0;
             this.txtSearch.ToolTipValues.Image = global::GUI.Properties.Resources._211818_search_icon;
             // 
-            // flpContainer
+            // fpnlContainer
             // 
-            this.flpContainer.Location = new System.Drawing.Point(50, 94);
-            this.flpContainer.Name = "flpContainer";
-            this.flpContainer.Size = new System.Drawing.Size(902, 655);
-            this.flpContainer.TabIndex = 5;
+            this.fpnlContainer.AutoScroll = true;
+            this.fpnlContainer.Location = new System.Drawing.Point(50, 94);
+            this.fpnlContainer.Name = "fpnlContainer";
+            this.fpnlContainer.Size = new System.Drawing.Size(902, 635);
+            this.fpnlContainer.TabIndex = 5;
             // 
             // kryptonPictureBox1
             // 
@@ -127,7 +128,7 @@
             this.Controls.Add(this.kryptonPictureBox1);
             this.Controls.Add(this.kryptonComboBox2);
             this.Controls.Add(this.pnlTop);
-            this.Controls.Add(this.flpContainer);
+            this.Controls.Add(this.fpnlContainer);
             this.Name = "ucHome";
             this.Size = new System.Drawing.Size(1002, 749);
             this.Load += new System.EventHandler(this.ucHome_Load);
@@ -146,7 +147,7 @@
         private Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
         private Krypton.Toolkit.KryptonPanel pnlTop;
-        private System.Windows.Forms.FlowLayoutPanel flpContainer;
+        private System.Windows.Forms.FlowLayoutPanel fpnlContainer;
         private Krypton.Toolkit.KryptonTextBox txtSearch;
     }
 }

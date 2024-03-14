@@ -27,7 +27,7 @@ namespace GUI
         public Image Avt
         {
             get { return _avt; }
-            set { _avt = value; picAvt.Image = value; }
+            set { _avt = value; picAvatar.Image = value; }
         }
 
         [Category("Edit Properties")]
@@ -38,9 +38,10 @@ namespace GUI
             set { _workername = value; }
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void lblWokerName_Click(object sender, EventArgs e)
         {
-
+            fWorkerInfo fWorkerInfo = new fWorkerInfo();
+            fWorkerInfo.ShowDialog();
         }
 
         [Category("Edit Properties")]

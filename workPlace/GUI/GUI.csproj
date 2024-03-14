@@ -200,5 +200,8 @@
   <ItemGroup>
     <None Include="Resources\4043260_avatar_male_man_portrait_icon %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
