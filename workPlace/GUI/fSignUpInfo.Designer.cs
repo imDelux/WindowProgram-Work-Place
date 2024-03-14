@@ -38,7 +38,7 @@
             this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
             this.lblLocation = new System.Windows.Forms.Label();
             this.cbMale = new Krypton.Toolkit.KryptonCheckBox();
-            //this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase();
             this.cbFemale = new Krypton.Toolkit.KryptonCheckBox();
             this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -397,7 +397,7 @@
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
         private System.Windows.Forms.Label lblLocation;
         private Krypton.Toolkit.KryptonCheckBox cbMale;
-        private Krypton.Toolkit.KryptonPaletteLabel kryptonPalette1;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette1;
         private Krypton.Toolkit.KryptonCheckBox cbFemale;
         private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox1;

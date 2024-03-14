@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase();
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
             this.pnLayout = new Krypton.Toolkit.KryptonPanel();
+            this.usLogin1 = new GUI.usLogin();
             this.btnSignIn = new Krypton.Toolkit.KryptonButton();
             this.btnLogin = new Krypton.Toolkit.KryptonButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.usLogin1 = new GUI.usLogin();
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).BeginInit();
             this.pnLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,7 +44,12 @@
             // 
             // kryptonPalette1
             // 
+            this.kryptonPalette1.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.kryptonPalette1.BaseFontSize = 9F;
+            this.kryptonPalette1.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 12;
+            this.kryptonPalette1.ThemeName = "";
+            this.kryptonPalette1.UseKryptonFileDialogs = true;
             // 
             // buttonSpecAny1
             // 
@@ -66,6 +71,15 @@
             this.pnLayout.Size = new System.Drawing.Size(505, 533);
             this.pnLayout.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnLayout.TabIndex = 13;
+            // 
+            // usLogin1
+            // 
+            this.usLogin1.BackColor = System.Drawing.Color.White;
+            this.usLogin1.Location = new System.Drawing.Point(3, 17);
+            this.usLogin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usLogin1.Name = "usLogin1";
+            this.usLogin1.Size = new System.Drawing.Size(476, 486);
+            this.usLogin1.TabIndex = 0;
             // 
             // btnSignIn
             // 
@@ -206,22 +220,13 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // usLogin1
-            // 
-            this.usLogin1.BackColor = System.Drawing.Color.White;
-            this.usLogin1.Location = new System.Drawing.Point(3, 17);
-            this.usLogin1.Name = "usLogin1";
-            this.usLogin1.Size = new System.Drawing.Size(476, 486);
-            this.usLogin1.TabIndex = 0;
-            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1,
-            this.buttonSpecAny2});
+            this.ButtonSpecs.Add(this.buttonSpecAny1);
+            this.ButtonSpecs.Add(this.buttonSpecAny2);
             this.ClientSize = new System.Drawing.Size(1047, 643);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnSignIn);
@@ -232,6 +237,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fLogin";
             this.Opacity = 0.99D;
+            this.Palette = this.kryptonPalette1;
+            this.PaletteMode = Krypton.Toolkit.PaletteMode.Custom;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -244,7 +251,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.StateCommon.Border.Rounding = 20;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.StateCommon.Header.ButtonEdgeInset = 10;
