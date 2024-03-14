@@ -60,7 +60,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnEvaluateContainer.StateDisabled.Border.Rounding = 40F;
-            this.btnEvaluateContainer.StateDisabled.Border.Width = 2;
+            this.btnEvaluateContainer.StateDisabled.Border.Width = 1;
             this.btnEvaluateContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnEvaluateContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.btnEvaluateContainer.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
@@ -69,7 +69,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnEvaluateContainer.StateNormal.Border.Rounding = 40F;
-            this.btnEvaluateContainer.StateNormal.Border.Width = 2;
+            this.btnEvaluateContainer.StateNormal.Border.Width = 1;
             this.btnEvaluateContainer.TabIndex = 0;
             this.btnEvaluateContainer.Values.Text = "";
             // 
@@ -87,7 +87,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnBasicInformationContainer.StateDisabled.Border.Rounding = 40F;
-            this.btnBasicInformationContainer.StateDisabled.Border.Width = 2;
+            this.btnBasicInformationContainer.StateDisabled.Border.Width = 1;
             this.btnBasicInformationContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnBasicInformationContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
             this.btnBasicInformationContainer.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
@@ -96,7 +96,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnBasicInformationContainer.StateNormal.Border.Rounding = 40F;
-            this.btnBasicInformationContainer.StateNormal.Border.Width = 2;
+            this.btnBasicInformationContainer.StateNormal.Border.Width = 1;
             this.btnBasicInformationContainer.TabIndex = 1;
             this.btnBasicInformationContainer.Values.Text = "";
             // 
