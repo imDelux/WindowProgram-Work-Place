@@ -55,11 +55,11 @@
             this.ucBasicInfo1.Name = "ucBasicInfo1";
             this.ucBasicInfo1.Size = new System.Drawing.Size(780, 597);
             this.ucBasicInfo1.TabIndex = 0;
+            this.ucBasicInfo1.Load += new System.EventHandler(this.ucBasicInfo1_Load);
             // 
             // fWorkerInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(780, 749);
             this.Controls.Add(this.pnlInfo);

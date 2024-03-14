@@ -197,9 +197,9 @@
             // pnlContainer
             // 
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlContainer.Location = new System.Drawing.Point(258, 0);
+            this.pnlContainer.Location = new System.Drawing.Point(270, 0);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1002, 749);
+            this.pnlContainer.Size = new System.Drawing.Size(990, 749);
             this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlContainer.TabIndex = 1;
@@ -240,8 +240,7 @@
             // 
             // fHirer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1260, 749);
             this.Controls.Add(this.pnlContainer);

@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
             this.lblWokerName = new Krypton.Toolkit.KryptonLabel();
             this.lblRate = new Krypton.Toolkit.KryptonLabel();
             this.txtComment = new Krypton.Toolkit.KryptonTextBox();
             this.btnDetails = new Krypton.Toolkit.KryptonButton();
+            this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picAvt
-            // 
-            this.picAvt.Image = global::GUI.Properties.Resources._4043260_avatar_male_man_portrait_icon__2_;
-            this.picAvt.Location = new System.Drawing.Point(32, 22);
-            this.picAvt.Name = "picAvt";
-            this.picAvt.Size = new System.Drawing.Size(60, 60);
-            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvt.TabIndex = 1;
-            this.picAvt.TabStop = false;
             // 
             // lblWokerName
             // 
@@ -106,10 +96,19 @@
             this.btnDetails.TabIndex = 5;
             this.btnDetails.Values.Text = "Detail";
             // 
+            // picAvt
+            // 
+            this.picAvt.Image = global::GUI.Properties.Resources._4043260_avatar_male_man_portrait_icon__2_;
+            this.picAvt.Location = new System.Drawing.Point(32, 22);
+            this.picAvt.Name = "picAvt";
+            this.picAvt.Size = new System.Drawing.Size(60, 60);
+            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvt.TabIndex = 1;
+            this.picAvt.TabStop = false;
+            // 
             // ucEvaluate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.txtComment);

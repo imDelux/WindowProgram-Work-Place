@@ -23,5 +23,9 @@ namespace GUI
 
         }
 
+        private void ucBasicInfo1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

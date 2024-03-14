@@ -47,9 +47,9 @@
             // flpContainer
             // 
             this.flpContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flpContainer.Location = new System.Drawing.Point(0, 78);
+            this.flpContainer.Location = new System.Drawing.Point(0, 106);
             this.flpContainer.Name = "flpContainer";
-            this.flpContainer.Size = new System.Drawing.Size(496, 582);
+            this.flpContainer.Size = new System.Drawing.Size(496, 554);
             this.flpContainer.TabIndex = 1;
             // 
             // pnlTop
@@ -62,8 +62,7 @@
             // 
             // ucEvaluationDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.flpContainer);
             this.Controls.Add(this.lblEvaluation);
             this.Controls.Add(this.pnlTop);
