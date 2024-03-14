@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbRememberPass = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.cbRememberPass = new Krypton.Toolkit.KryptonCheckBox();
             this.lblContext = new System.Windows.Forms.Label();
             this.lblThumbnail = new System.Windows.Forms.Label();
-            this.txtUsername = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtUsername = new Krypton.Toolkit.KryptonTextBox();
             this.btnForgotpass = new Krypton.Toolkit.KryptonButton();
-            this.txtPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
             this.btnNext = new Krypton.Toolkit.KryptonButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -94,9 +94,9 @@
             this.txtUsername.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtUsername.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtUsername.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtUsername.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtUsername.StateCommon.Border.Rounding = 20;
             this.txtUsername.StateCommon.Border.Width = 2;
             this.txtUsername.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -135,9 +135,9 @@
             this.txtPassword.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtPassword.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.txtPassword.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPassword.StateCommon.Border.Rounding = 20;
             this.txtPassword.StateCommon.Border.Width = 2;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -254,12 +254,12 @@
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbRememberPass;
+        private Krypton.Toolkit.KryptonCheckBox cbRememberPass;
         private System.Windows.Forms.Label lblContext;
         private System.Windows.Forms.Label lblThumbnail;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtUsername;
+        private Krypton.Toolkit.KryptonTextBox txtUsername;
         private Krypton.Toolkit.KryptonButton btnForgotpass;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPassword;
+        private Krypton.Toolkit.KryptonTextBox txtPassword;
         private Krypton.Toolkit.KryptonButton btnNext;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
