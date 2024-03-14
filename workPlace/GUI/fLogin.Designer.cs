@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPalette1 = new Krypton.Toolkit.KryptonPaletteButtonSpecs(this);
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase();
             this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
-            this.buttonSpecAny2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.buttonSpecAny2 = new Krypton.Toolkit.ButtonSpecAny();
             this.pnLayout = new Krypton.Toolkit.KryptonPanel();
             this.btnSignIn = new Krypton.Toolkit.KryptonButton();
             this.btnLogin = new Krypton.Toolkit.KryptonButton();
@@ -44,7 +44,7 @@
             // 
             // kryptonPalette1
             // 
-            this.kryptonPalette1..HeaderForm.StateCommon.ButtonEdgeInset = 12;
+            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 12;
             // 
             // buttonSpecAny1
             // 
@@ -266,7 +266,7 @@
 
         #endregion
 
-        private Krypton.Toolkit.KryptonPaletteTMSBase kryptonPalette1;
+        private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette1;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
         private System.Windows.Forms.PictureBox pictureBox1;
