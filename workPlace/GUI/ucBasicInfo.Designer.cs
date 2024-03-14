@@ -50,7 +50,7 @@
             // lblWokerName
             // 
             this.lblWokerName.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.lblWokerName.Location = new System.Drawing.Point(289, 92);
+            this.lblWokerName.Location = new System.Drawing.Point(289, 60);
             this.lblWokerName.Name = "lblWokerName";
             this.lblWokerName.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.lblWokerName.Size = new System.Drawing.Size(357, 59);
@@ -62,7 +62,7 @@
             // 
             // lblRate
             // 
-            this.lblRate.Location = new System.Drawing.Point(295, 159);
+            this.lblRate.Location = new System.Drawing.Point(295, 127);
             this.lblRate.Name = "lblRate";
             this.lblRate.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.lblRate.Size = new System.Drawing.Size(193, 31);
@@ -75,7 +75,7 @@
             // btnInfo
             // 
             this.btnInfo.Enabled = false;
-            this.btnInfo.Location = new System.Drawing.Point(50, 286);
+            this.btnInfo.Location = new System.Drawing.Point(50, 236);
             this.btnInfo.Name = "btnInfo";
             this.btnInfo.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.btnInfo.Size = new System.Drawing.Size(680, 263);
@@ -85,6 +85,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnInfo.StateCommon.Border.Rounding = 10F;
+            this.btnInfo.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnInfo.StateDisabled.Back.Color2 = System.Drawing.Color.White;
             this.btnInfo.TabIndex = 5;
             this.btnInfo.Values.Text = "";
             // 
@@ -95,7 +97,7 @@
             this.lblBasicInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblBasicInfo.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBasicInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblBasicInfo.Location = new System.Drawing.Point(100, 260);
+            this.lblBasicInfo.Location = new System.Drawing.Point(100, 210);
             this.lblBasicInfo.Name = "lblBasicInfo";
             this.lblBasicInfo.Size = new System.Drawing.Size(388, 46);
             this.lblBasicInfo.TabIndex = 7;
@@ -104,7 +106,7 @@
             // picAvt
             // 
             this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvt.Location = new System.Drawing.Point(71, 59);
+            this.picAvt.Location = new System.Drawing.Point(71, 27);
             this.picAvt.Name = "picAvt";
             this.picAvt.Size = new System.Drawing.Size(170, 170);
             this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +120,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label1.Location = new System.Drawing.Point(77, 320);
+            this.label1.Location = new System.Drawing.Point(77, 270);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 21);
             this.label1.TabIndex = 8;
@@ -131,7 +133,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label2.Location = new System.Drawing.Point(77, 364);
+            this.label2.Location = new System.Drawing.Point(77, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 21);
             this.label2.TabIndex = 9;
@@ -144,7 +146,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label3.Location = new System.Drawing.Point(77, 408);
+            this.label3.Location = new System.Drawing.Point(77, 358);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 21);
             this.label3.TabIndex = 10;
@@ -157,7 +159,7 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label4.Location = new System.Drawing.Point(77, 453);
+            this.label4.Location = new System.Drawing.Point(77, 403);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 21);
             this.label4.TabIndex = 11;
@@ -170,7 +172,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label5.Location = new System.Drawing.Point(77, 499);
+            this.label5.Location = new System.Drawing.Point(77, 449);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 21);
             this.label5.TabIndex = 12;
@@ -183,7 +185,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label6.Location = new System.Drawing.Point(241, 320);
+            this.label6.Location = new System.Drawing.Point(241, 270);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 21);
             this.label6.TabIndex = 13;
@@ -196,7 +198,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label7.Location = new System.Drawing.Point(241, 364);
+            this.label7.Location = new System.Drawing.Point(241, 314);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(102, 21);
             this.label7.TabIndex = 14;
@@ -209,7 +211,7 @@
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label8.Location = new System.Drawing.Point(241, 408);
+            this.label8.Location = new System.Drawing.Point(241, 358);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 21);
             this.label8.TabIndex = 15;
@@ -222,7 +224,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label9.Location = new System.Drawing.Point(241, 453);
+            this.label9.Location = new System.Drawing.Point(241, 403);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(199, 21);
             this.label9.TabIndex = 16;
@@ -235,7 +237,7 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label10.Location = new System.Drawing.Point(241, 499);
+            this.label10.Location = new System.Drawing.Point(241, 449);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(156, 21);
             this.label10.TabIndex = 17;
@@ -244,8 +246,26 @@
             // btnDetail
             // 
             this.btnDetail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDetail.Location = new System.Drawing.Point(657, 159);
+            this.btnDetail.Location = new System.Drawing.Point(657, 127);
             this.btnDetail.Name = "btnDetail";
+            this.btnDetail.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideDefault.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetail.OverrideDefault.Border.Rounding = 5F;
+            this.btnDetail.OverrideDefault.Border.Width = 1;
+            this.btnDetail.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetail.OverrideFocus.Border.Rounding = 5F;
+            this.btnDetail.OverrideFocus.Border.Width = 1;
             this.btnDetail.Size = new System.Drawing.Size(73, 25);
             this.btnDetail.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
             this.btnDetail.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
@@ -284,7 +304,7 @@
             this.Controls.Add(this.picAvt);
             this.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ucBasicInfo";
-            this.Size = new System.Drawing.Size(780, 570);
+            this.Size = new System.Drawing.Size(780, 516);
             ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -107,6 +107,18 @@
     <Compile Include="ucHome.Designer.cs">
       <DependentUpon>ucHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucReview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucReview.Designer.cs">
+      <DependentUpon>ucReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSkill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSkill.Designer.cs">
+      <DependentUpon>ucSkill.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucWorker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,6 +155,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucHome.resx">
       <DependentUpon>ucHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucReview.resx">
+      <DependentUpon>ucReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSkill.resx">
+      <DependentUpon>ucSkill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorker.resx">
       <DependentUpon>ucWorker.cs</DependentUpon>

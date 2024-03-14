@@ -20,12 +20,16 @@ namespace GUI
 
         private void fWorkerInfo_Load(object sender, EventArgs e)
         {
-
+            for (int i = 0; i < 5; i++)
+            {
+                ucSkill skill = new ucSkill();
+                fpnlSkills.Controls.Add(skill);
+            }
         }
 
-        private void ucBasicInfo1_Load(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
