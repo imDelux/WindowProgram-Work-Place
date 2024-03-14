@@ -31,11 +31,11 @@
             this.lblContext = new System.Windows.Forms.Label();
             this.lblThumbnail = new System.Windows.Forms.Label();
             this.btnNext = new Krypton.Toolkit.KryptonButton();
-            this.txtPhonenum = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtRewritepass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtPassword = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtUsername = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtPhonenum = new Krypton.Toolkit.KryptonTextBox();
+            this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
+            this.txtRewritepass = new Krypton.Toolkit.KryptonTextBox();
+            this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
+            this.txtUsername = new Krypton.Toolkit.KryptonTextBox();
             this.SuspendLayout();
             // 
             // lblContext
@@ -131,9 +131,9 @@
             this.txtPhonenum.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPhonenum.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtPhonenum.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtPhonenum.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtPhonenum.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPhonenum.StateCommon.Border.Rounding = 20;
             this.txtPhonenum.StateCommon.Border.Width = 2;
             this.txtPhonenum.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -151,9 +151,9 @@
             this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtEmail.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtEmail.StateCommon.Border.Rounding = 20;
             this.txtEmail.StateCommon.Border.Width = 2;
             this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -171,9 +171,9 @@
             this.txtRewritepass.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtRewritepass.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtRewritepass.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtRewritepass.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtRewritepass.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtRewritepass.StateCommon.Border.Rounding = 20;
             this.txtRewritepass.StateCommon.Border.Width = 2;
             this.txtRewritepass.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -191,9 +191,9 @@
             this.txtPassword.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPassword.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtPassword.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtPassword.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPassword.StateCommon.Border.Rounding = 20;
             this.txtPassword.StateCommon.Border.Width = 2;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -211,9 +211,9 @@
             this.txtUsername.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtUsername.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.txtUsername.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtUsername.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtUsername.StateCommon.Border.Rounding = 20;
             this.txtUsername.StateCommon.Border.Width = 2;
             this.txtUsername.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
@@ -248,10 +248,10 @@
         private System.Windows.Forms.Label lblContext;
         private System.Windows.Forms.Label lblThumbnail;
         private Krypton.Toolkit.KryptonButton btnNext;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPhonenum;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmail;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtRewritepass;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPassword;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtUsername;
+        private Krypton.Toolkit.KryptonTextBox txtPhonenum;
+        private Krypton.Toolkit.KryptonTextBox txtEmail;
+        private Krypton.Toolkit.KryptonTextBox txtRewritepass;
+        private Krypton.Toolkit.KryptonTextBox txtPassword;
+        private Krypton.Toolkit.KryptonTextBox txtUsername;
     }
 }

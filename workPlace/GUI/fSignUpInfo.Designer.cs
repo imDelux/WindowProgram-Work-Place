@@ -37,10 +37,10 @@
             this.lblPersonID = new System.Windows.Forms.Label();
             this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.cbMale = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.cbFemale = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.cbMale = new Krypton.Toolkit.KryptonCheckBox();
+            //this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
+            this.cbFemale = new Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnConfirm = new Krypton.Toolkit.KryptonButton();
             this.btnCancle = new Krypton.Toolkit.KryptonButton();
@@ -191,7 +191,7 @@
             // 
             // kryptonDateTimePicker1
             // 
-            this.kryptonDateTimePicker1.CalendarDayStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.ButtonSpec;
+            this.kryptonDateTimePicker1.CalendarDayStyle = Krypton.Toolkit.ButtonStyle.ButtonSpec;
             this.kryptonDateTimePicker1.Images.CheckedNormal = global::GUI.Properties.Resources.square_small__1_;
             this.kryptonDateTimePicker1.Images.Common = global::GUI.Properties.Resources.square_small__1_;
             this.kryptonDateTimePicker1.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
@@ -201,16 +201,16 @@
             this.kryptonDateTimePicker1.Size = new System.Drawing.Size(273, 32);
             this.kryptonDateTimePicker1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonDateTimePicker1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 10;
             this.kryptonDateTimePicker1.StateCommon.Border.Width = 1;
             this.kryptonDateTimePicker1.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.kryptonDateTimePicker1.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonDateTimePicker1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
             this.kryptonDateTimePicker1.TabIndex = 13;
-            this.kryptonDateTimePicker1.UpDownButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
+            this.kryptonDateTimePicker1.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
             // 
             // pictureBox1
             // 
@@ -376,9 +376,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Rounding = 20;
             this.Text = "fSignUpInfo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -396,10 +396,10 @@
         private System.Windows.Forms.Label lblPersonID;
         private Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
         private System.Windows.Forms.Label lblLocation;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbMale;
-        private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
-        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbFemale;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private Krypton.Toolkit.KryptonCheckBox cbMale;
+        private Krypton.Toolkit.KryptonPaletteLabel kryptonPalette1;
+        private Krypton.Toolkit.KryptonCheckBox cbFemale;
+        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Krypton.Toolkit.KryptonButton btnConfirm;
         private Krypton.Toolkit.KryptonButton btnCancle;

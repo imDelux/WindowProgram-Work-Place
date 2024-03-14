@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.kryptonPalette1 = new Krypton.Toolkit.KryptonPalette(this.components);
-            this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonPaletteButtonSpecs(this);
+            this.buttonSpecAny1 = new Krypton.Toolkit.ButtonSpecAny();
             this.buttonSpecAny2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.pnLayout = new Krypton.Toolkit.KryptonPanel();
             this.btnSignIn = new Krypton.Toolkit.KryptonButton();
@@ -44,14 +44,14 @@
             // 
             // kryptonPalette1
             // 
-            this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.ButtonEdgeInset = 12;
+            this.kryptonPalette1..HeaderForm.StateCommon.ButtonEdgeInset = 12;
             // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.ImageStates.ImageNormal = global::GUI.Properties.Resources.dry;
             this.buttonSpecAny1.ImageStates.ImagePressed = global::GUI.Properties.Resources.close;
             this.buttonSpecAny1.ImageStates.ImageTracking = global::GUI.Properties.Resources.close;
-            this.buttonSpecAny1.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.FormClose;
+            this.buttonSpecAny1.Type = Krypton.Toolkit.PaletteButtonSpecStyle.FormClose;
             this.buttonSpecAny1.UniqueName = "E4F246A2ADF640C17C8E530AA5187E41";
             // 
             // buttonSpecAny2
@@ -219,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.ButtonSpecs.AddRange(new Krypton.Toolkit.ButtonSpecAny[] {
             this.buttonSpecAny1,
             this.buttonSpecAny2});
             this.ClientSize = new System.Drawing.Size(1047, 643);
@@ -236,14 +236,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.StateCommon.Back.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.StateCommon.Border.Draw = ComponentFactory.Krypton.Toolkit.InheritBool.False;
-            this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
+            this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
             this.StateCommon.Border.Rounding = 20;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
@@ -252,10 +252,10 @@
             this.StateCommon.Header.Content.Padding = new System.Windows.Forms.Padding(20, -1, -1, -1);
             this.StateInactive.Back.Color1 = System.Drawing.Color.White;
             this.StateInactive.Back.Color2 = System.Drawing.Color.White;
-            this.StateInactive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateInactive.Border.GraphicsHint = ComponentFactory.Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.StateInactive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateInactive.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.None;
             this.Text = "fLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).EndInit();
             this.pnLayout.ResumeLayout(false);
@@ -266,9 +266,9 @@
 
         #endregion
 
-        private Krypton.Toolkit.kryptonpat kryptonPalette1;
-        private ComponentFactory.Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
-        private ComponentFactory.Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
+        private Krypton.Toolkit.KryptonPaletteTMSBase kryptonPalette1;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
+        private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Krypton.Toolkit.KryptonPanel pnLayout;
         private Krypton.Toolkit.KryptonButton btnSignIn;
