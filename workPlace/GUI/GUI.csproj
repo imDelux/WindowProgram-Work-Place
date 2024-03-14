@@ -56,16 +56,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fChooseRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChooseRole.Designer.cs">
+      <DependentUpon>fChooseRole.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSignUpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSignUpInfo.Designer.cs">
+      <DependentUpon>fSignUpInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usLogin.Designer.cs">
+      <DependentUpon>usLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usSignUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usSignUp.Designer.cs">
+      <DependentUpon>usSignUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fChooseRole.resx">
+      <DependentUpon>fChooseRole.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSignUpInfo.resx">
+      <DependentUpon>fSignUpInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,6 +107,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usLogin.resx">
+      <DependentUpon>usLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usSignUp.resx">
+      <DependentUpon>usSignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +150,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\square-small %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkbox %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picpeople %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\worker %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,25 +16,18 @@ namespace GUI
         public fLogin()
         {
             InitializeComponent();
-            lblLine1.Hide();
-            lblLine2.Hide();
-        }
-
-        private void kryptonGroup1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            lblLine2.Hide();
-            lblLine1.Show();
+            pnLayout.Controls.Clear();
+            pnLayout.Controls.Add(new usLogin());
         }
-        private void btnSignup_Click(object sender, EventArgs e)
-        {
 
-            lblLine1.Hide();
-            lblLine2.Show();
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            pnLayout.Controls.Clear();
+            pnLayout.Controls.Add(new usSignUp());
         }
     }
 }
