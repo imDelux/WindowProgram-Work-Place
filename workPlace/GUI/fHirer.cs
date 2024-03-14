@@ -73,8 +73,8 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ucProfile uc = new ucProfile();
-            AddUC(uc);
+            //ucProfile uc = new ucProfile();
+            //AddUC(uc);
         }
     }
 }

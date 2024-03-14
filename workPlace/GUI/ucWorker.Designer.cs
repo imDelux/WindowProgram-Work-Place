@@ -75,7 +75,7 @@
             this.lblAge.BackColor = System.Drawing.Color.White;
             this.lblAge.Location = new System.Drawing.Point(138, 70);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(42, 13);
+            this.lblAge.Size = new System.Drawing.Size(46, 15);
             this.lblAge.TabIndex = 4;
             this.lblAge.Text = "Age: xx";
             // 
@@ -109,7 +109,8 @@
             // 
             // ucWorker
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.lblSkill);
@@ -119,7 +120,7 @@
             this.Controls.Add(this.picAvt);
             this.Controls.Add(this.btnBack);
             this.Name = "ucWorker";
-            this.Size = new System.Drawing.Size(451, 228);
+            this.Size = new System.Drawing.Size(448, 222);
             ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

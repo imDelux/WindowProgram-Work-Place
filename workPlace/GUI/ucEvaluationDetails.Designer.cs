@@ -31,6 +31,7 @@
             this.lblEvaluation = new System.Windows.Forms.Label();
             this.flpContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEvaluation
@@ -38,9 +39,9 @@
             this.lblEvaluation.AutoSize = true;
             this.lblEvaluation.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEvaluation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblEvaluation.Location = new System.Drawing.Point(115, 24);
+            this.lblEvaluation.Location = new System.Drawing.Point(85, 18);
             this.lblEvaluation.Name = "lblEvaluation";
-            this.lblEvaluation.Size = new System.Drawing.Size(258, 36);
+            this.lblEvaluation.Size = new System.Drawing.Size(323, 46);
             this.lblEvaluation.TabIndex = 0;
             this.lblEvaluation.Text = "EVALUATION";
             // 
@@ -54,6 +55,7 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.Controls.Add(this.lblEvaluation);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
@@ -62,15 +64,16 @@
             // 
             // ucEvaluationDetails
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.flpContainer);
-            this.Controls.Add(this.lblEvaluation);
             this.Controls.Add(this.pnlTop);
             this.Name = "ucEvaluationDetails";
             this.Size = new System.Drawing.Size(496, 660);
             this.Load += new System.EventHandler(this.ucEvaluationDetails_Load);
+            this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

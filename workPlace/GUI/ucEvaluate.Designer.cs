@@ -53,7 +53,7 @@
             this.lblRate.Location = new System.Drawing.Point(115, 53);
             this.lblRate.Name = "lblRate";
             this.lblRate.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.lblRate.Size = new System.Drawing.Size(102, 21);
+            this.lblRate.Size = new System.Drawing.Size(126, 25);
             this.lblRate.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblRate.TabIndex = 3;
             this.lblRate.Values.Text = "Rate: xx.x/10.0";
@@ -108,7 +108,8 @@
             // 
             // ucEvaluate
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.txtComment);

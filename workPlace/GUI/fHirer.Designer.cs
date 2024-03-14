@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.pnlLeft = new Krypton.Toolkit.KryptonPanel();
+            this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
+            this.picExit = new Krypton.Toolkit.KryptonPictureBox();
             this.btnHiring = new Krypton.Toolkit.KryptonButton();
             this.btnProfile = new Krypton.Toolkit.KryptonButton();
             this.btnHome = new Krypton.Toolkit.KryptonButton();
             this.pnlLeftTop = new Krypton.Toolkit.KryptonPanel();
             this.lblUnemployed = new System.Windows.Forms.Label();
-            this.pnlContainer = new Krypton.Toolkit.KryptonPanel();
-            this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
-            this.picExit = new Krypton.Toolkit.KryptonPictureBox();
             this.picAvatar = new Krypton.Toolkit.KryptonPictureBox();
+            this.pnlContainer = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).BeginInit();
             this.pnlLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlLeftTop)).BeginInit();
-            this.pnlLeftTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlLeftTop)).BeginInit();
+            this.pnlLeftTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -63,6 +63,30 @@
             this.pnlLeft.Size = new System.Drawing.Size(264, 749);
             this.pnlLeft.StateNormal.Color1 = System.Drawing.Color.White;
             this.pnlLeft.TabIndex = 0;
+            // 
+            // picLogOut
+            // 
+            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picLogOut.Image = global::GUI.Properties.Resources._618316_arrow_exit_logout_sign_out_icon;
+            this.picLogOut.Location = new System.Drawing.Point(170, 699);
+            this.picLogOut.Name = "picLogOut";
+            this.picLogOut.Size = new System.Drawing.Size(38, 38);
+            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogOut.TabIndex = 1;
+            this.picLogOut.TabStop = false;
+            this.picLogOut.Click += new System.EventHandler(this.picLogOut_Click);
+            // 
+            // picExit
+            // 
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picExit.Image = global::GUI.Properties.Resources._4781838_cancel_close_delete_exit_logout_icon;
+            this.picExit.Location = new System.Drawing.Point(214, 699);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(38, 38);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picExit.TabIndex = 1;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
             // btnHiring
             // 
@@ -190,43 +214,9 @@
             this.lblUnemployed.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnemployed.Location = new System.Drawing.Point(84, 139);
             this.lblUnemployed.Name = "lblUnemployed";
-            this.lblUnemployed.Size = new System.Drawing.Size(95, 19);
+            this.lblUnemployed.Size = new System.Drawing.Size(112, 23);
             this.lblUnemployed.TabIndex = 2;
             this.lblUnemployed.Text = "Unemployed";
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlContainer.Location = new System.Drawing.Point(270, 0);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(990, 749);
-            this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.pnlContainer.TabIndex = 1;
-            // 
-            // picLogOut
-            // 
-            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picLogOut.Image = global::GUI.Properties.Resources._618316_arrow_exit_logout_sign_out_icon;
-            this.picLogOut.Location = new System.Drawing.Point(170, 699);
-            this.picLogOut.Name = "picLogOut";
-            this.picLogOut.Size = new System.Drawing.Size(38, 38);
-            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogOut.TabIndex = 1;
-            this.picLogOut.TabStop = false;
-            this.picLogOut.Click += new System.EventHandler(this.picLogOut_Click);
-            // 
-            // picExit
-            // 
-            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picExit.Image = global::GUI.Properties.Resources._4781838_cancel_close_delete_exit_logout_icon;
-            this.picExit.Location = new System.Drawing.Point(214, 699);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(38, 38);
-            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picExit.TabIndex = 1;
-            this.picExit.TabStop = false;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
             // picAvatar
             // 
@@ -238,9 +228,20 @@
             this.picAvatar.TabIndex = 0;
             this.picAvatar.TabStop = false;
             // 
+            // pnlContainer
+            // 
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlContainer.Location = new System.Drawing.Point(270, 0);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(990, 749);
+            this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.pnlContainer.TabIndex = 1;
+            // 
             // fHirer
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1260, 749);
             this.Controls.Add(this.pnlContainer);
@@ -262,13 +263,13 @@
             this.Load += new System.EventHandler(this.fHirer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).EndInit();
             this.pnlLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeftTop)).EndInit();
             this.pnlLeftTop.ResumeLayout(false);
             this.pnlLeftTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -31,9 +31,9 @@
             this.kryptonComboBox1 = new Krypton.Toolkit.KryptonComboBox();
             this.kryptonComboBox2 = new Krypton.Toolkit.KryptonComboBox();
             this.pnlTop = new Krypton.Toolkit.KryptonPanel();
+            this.txtSearch = new Krypton.Toolkit.KryptonTextBox();
             this.flpContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            this.txtSearch = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).BeginInit();
@@ -48,7 +48,7 @@
             this.kryptonComboBox1.Location = new System.Drawing.Point(559, 21);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox1.Size = new System.Drawing.Size(168, 33);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(168, 37);
             this.kryptonComboBox1.Sorted = true;
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -64,7 +64,7 @@
             this.kryptonComboBox2.Location = new System.Drawing.Point(756, 21);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox2.Size = new System.Drawing.Size(168, 33);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(168, 37);
             this.kryptonComboBox2.Sorted = true;
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -81,10 +81,26 @@
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.pnlTop.Size = new System.Drawing.Size(1002, 80);
+            this.pnlTop.Size = new System.Drawing.Size(1002, 78);
             this.pnlTop.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.TabIndex = 4;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.Location = new System.Drawing.Point(35, 21);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.txtSearch.Size = new System.Drawing.Size(488, 53);
+            this.txtSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtSearch.StateCommon.Border.Rounding = 20F;
+            this.txtSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.ToolTipValues.Image = global::GUI.Properties.Resources._211818_search_icon;
             // 
             // flpContainer
             // 
@@ -103,26 +119,10 @@
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.InputControlStyle = Krypton.Toolkit.InputControlStyle.PanelAlternate;
-            this.txtSearch.Location = new System.Drawing.Point(35, 21);
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.txtSearch.Size = new System.Drawing.Size(488, 33);
-            this.txtSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSearch.StateCommon.Border.Rounding = 20F;
-            this.txtSearch.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.TabIndex = 0;
-            this.txtSearch.ToolTipValues.Image = global::GUI.Properties.Resources._211818_search_icon;
-            // 
             // ucHome
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.kryptonPictureBox1);
             this.Controls.Add(this.kryptonComboBox2);
