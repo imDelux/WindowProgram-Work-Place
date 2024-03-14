@@ -40,7 +40,7 @@
             this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.usSchedule1 = new GUI.ucSchedule();
+            this.ucSchedule1 = new GUI.ucSchedule();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
@@ -316,7 +316,7 @@
             // pnlContainer
             // 
             this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlContainer.Controls.Add(this.usSchedule1);
+            this.pnlContainer.Controls.Add(this.ucSchedule1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContainer.Location = new System.Drawing.Point(265, 0);
             this.pnlContainer.Name = "pnlContainer";
@@ -325,14 +325,14 @@
             // 
             // usSchedule1
             // 
-            this.usSchedule1.BackColor = System.Drawing.Color.Transparent;
-            this.usSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usSchedule1.Location = new System.Drawing.Point(0, 0);
-            this.usSchedule1.Name = "usSchedule1";
-            this.usSchedule1.Size = new System.Drawing.Size(995, 766);
-            this.usSchedule1.TabIndex = 0;
-            this.usSchedule1.Load += new System.EventHandler(this.usSchedule1_Load);
+            this.ucSchedule1.BackColor = System.Drawing.Color.Transparent;
+            this.ucSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ucSchedule1.Location = new System.Drawing.Point(0, 0);
+            this.ucSchedule1.Name = "usSchedule1";
+            this.ucSchedule1.Size = new System.Drawing.Size(995, 766);
+            this.ucSchedule1.TabIndex = 0;
+            this.ucSchedule1.Load += new System.EventHandler(this.usSchedule1_Load);
             // 
             // fWorker
             // 
@@ -391,6 +391,6 @@
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
-        private ucSchedule usSchedule1;
+        private ucSchedule ucSchedule1;
     }
 }
