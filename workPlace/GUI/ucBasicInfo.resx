@@ -117,44 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="4781838_cancel_close_delete_exit_logout_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4781838_cancel_close_delete_exit_logout_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="211818_search_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\211818_search_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="618316_arrow_exit_logout_sign out_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\618316_arrow_exit_logout_sign out_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6351933_filter_filters_funnel_seo_sort_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6351933_filter_filters_funnel_seo_sort_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6351933_filter_filters_funnel_seo_sort_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6351933_filter_filters_funnel_seo_sort_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="618316_arrow_exit_logout_sign out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\618316_arrow_exit_logout_sign out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4781838_cancel_close_delete_exit_logout_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4781838_cancel_close_delete_exit_logout_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4043260_avatar_male_man_portrait_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4043260_avatar_male_man_portrait_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="211818_search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\211818_search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4043260_avatar_male_man_portrait_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4043260_avatar_male_man_portrait_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4043260_avatar_male_man_portrait_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4043260_avatar_male_man_portrait_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
