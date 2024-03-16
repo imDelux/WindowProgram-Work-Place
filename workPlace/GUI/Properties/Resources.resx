@@ -133,6 +133,39 @@
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="211818_search_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211818_search_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="211818_search_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211818_search_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4043260_avatar_male_man_portrait_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4043260_avatar_male_man_portrait_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4043260_avatar_male_man_portrait_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4043260_avatar_male_man_portrait_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4043260_avatar_male_man_portrait_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4043260_avatar_male_man_portrait_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781838_cancel_close_delete_exit_logout_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781838_cancel_close_delete_exit_logout_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781838_cancel_close_delete_exit_logout_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781838_cancel_close_delete_exit_logout_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="618316_arrow_exit_logout_sign out_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\618316_arrow_exit_logout_sign out_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="618316_arrow_exit_logout_sign out_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\618316_arrow_exit_logout_sign out_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6351933_filter_filters_funnel_seo_sort_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6351933_filter_filters_funnel_seo_sort_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6351933_filter_filters_funnel_seo_sort_icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6351933_filter_filters_funnel_seo_sort_icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="man-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\man-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,5 +183,11 @@
   </data>
   <data name="work-place-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\work-place-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

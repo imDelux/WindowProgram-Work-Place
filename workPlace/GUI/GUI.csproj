@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -113,6 +114,50 @@
     </Compile>
     <Compile Include="ucProfile.Designer.cs">
       <DependentUpon>ucProfile.cs</DependentUpon>
+	</Compile>
+    <Compile Include="ucEvaluationDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEvaluationDetails.Designer.cs">
+      <DependentUpon>ucEvaluationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHirer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHirer.Designer.cs">
+      <DependentUpon>fHirer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fWorkerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fWorkerInfo.Designer.cs">
+      <DependentUpon>fWorkerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucBasicInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBasicInfo.Designer.cs">
+      <DependentUpon>ucBasicInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEvaluate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEvaluate.Designer.cs">
+      <DependentUpon>ucEvaluate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHiring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHiring.Designer.cs">
+      <DependentUpon>ucHiring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
     </Compile>
     <Compile Include="ucReview.cs">
       <SubType>UserControl</SubType>
@@ -140,6 +185,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fWorkerSkills.resx">
       <DependentUpon>fWorkerSkills.cs</DependentUpon>
+	</EmbeddedResource>
+    <Compile Include="ucWorker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWorker.Designer.cs">
+      <DependentUpon>ucWorker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucEvaluationDetails.resx">
+      <DependentUpon>ucEvaluationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHirer.resx">
+      <DependentUpon>fHirer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fWorkerInfo.resx">
+      <DependentUpon>fWorkerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,6 +225,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
+	</EmbeddedResource>
+    <EmbeddedResource Include="ucBasicInfo.resx">
+      <DependentUpon>ucBasicInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEvaluate.resx">
+      <DependentUpon>ucEvaluate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHiring.resx">
+      <DependentUpon>ucHiring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHome.resx">
+      <DependentUpon>ucHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucReview.resx">
       <DependentUpon>ucReview.cs</DependentUpon>
@@ -174,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSkill.resx">
       <DependentUpon>ucSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWorker.resx">
+      <DependentUpon>ucWorker.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -222,6 +297,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781838_cancel_close_delete_exit_logout_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\618316_arrow_exit_logout_sign out_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211818_search_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6351933_filter_filters_funnel_seo_sort_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4043260_avatar_male_man_portrait_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6351933_filter_filters_funnel_seo_sort_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211818_search_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\618316_arrow_exit_logout_sign out_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781838_cancel_close_delete_exit_logout_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4043260_avatar_male_man_portrait_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4043260_avatar_male_man_portrait_icon %282%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man-icon.png" />

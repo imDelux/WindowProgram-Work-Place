@@ -69,6 +69,16 @@ namespace GUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _211818_search_icon {
+            get {
+                object obj = ResourceManager.GetObject("211818_search_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -76,6 +86,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap arrow_left_thin {
             get {
                 object obj = ResourceManager.GetObject("arrow-left-thin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _211818_search_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("211818_search_icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -89,6 +109,16 @@ namespace GUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4043260_avatar_male_man_portrait_icon {
+            get {
+                object obj = ResourceManager.GetObject("4043260_avatar_male_man_portrait_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -99,6 +129,16 @@ namespace GUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4043260_avatar_male_man_portrait_icon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("4043260_avatar_male_man_portrait_icon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -106,6 +146,76 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4043260_avatar_male_man_portrait_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("4043260_avatar_male_man_portrait_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4781838_cancel_close_delete_exit_logout_icon {
+            get {
+                object obj = ResourceManager.GetObject("4781838_cancel_close_delete_exit_logout_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4781838_cancel_close_delete_exit_logout_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("4781838_cancel_close_delete_exit_logout_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _618316_arrow_exit_logout_sign_out_icon {
+            get {
+                object obj = ResourceManager.GetObject("618316_arrow_exit_logout_sign out_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _618316_arrow_exit_logout_sign_out_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("618316_arrow_exit_logout_sign out_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6351933_filter_filters_funnel_seo_sort_icon {
+            get {
+                object obj = ResourceManager.GetObject("6351933_filter_filters_funnel_seo_sort_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _6351933_filter_filters_funnel_seo_sort_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("6351933_filter_filters_funnel_seo_sort_icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +236,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap old_man {
             get {
                 object obj = ResourceManager.GetObject("old-man", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pro {
+            get {
+                object obj = ResourceManager.GetObject("Pro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +286,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap work_place_logo {
             get {
                 object obj = ResourceManager.GetObject("work-place-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        /// Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profile {
+            get {
+                object obj = ResourceManager.GetObject("Profile", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
