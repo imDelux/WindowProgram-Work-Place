@@ -323,13 +323,13 @@
             this.pnlContainer.Size = new System.Drawing.Size(995, 766);
             this.pnlContainer.TabIndex = 1;
             // 
-            // usSchedule1
+            // ucSchedule1
             // 
             this.ucSchedule1.BackColor = System.Drawing.Color.Transparent;
             this.ucSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ucSchedule1.Location = new System.Drawing.Point(0, 0);
-            this.ucSchedule1.Name = "usSchedule1";
+            this.ucSchedule1.Name = "ucSchedule1";
             this.ucSchedule1.Size = new System.Drawing.Size(995, 766);
             this.ucSchedule1.TabIndex = 0;
             // 
@@ -361,7 +361,6 @@
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.Rounding = 40F;
             this.StateCommon.Border.Width = 2;
             this.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.Text = "fWorker";

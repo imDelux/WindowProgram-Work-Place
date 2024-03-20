@@ -33,34 +33,34 @@
             this.txtName = new Krypton.Toolkit.KryptonTextBox();
             this.lblGender = new System.Windows.Forms.Label();
             this.lblBirth = new System.Windows.Forms.Label();
-            this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
+            this.txtPersonID = new Krypton.Toolkit.KryptonTextBox();
             this.lblPersonID = new System.Windows.Forms.Label();
-            this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
+            this.txtLocation = new Krypton.Toolkit.KryptonTextBox();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.cbMale = new Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase();
-            this.cbFemale = new Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
+            this.dtpBirth = new Krypton.Toolkit.KryptonDateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnConfirm = new Krypton.Toolkit.KryptonButton();
             this.btnCancle = new Krypton.Toolkit.KryptonButton();
+            this.rbtnMale = new Krypton.Toolkit.KryptonRadioButton();
+            this.rbtnFemale = new Krypton.Toolkit.KryptonRadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblName.Location = new System.Drawing.Point(58, 196);
+            this.lblName.Location = new System.Drawing.Point(46, 195);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(61, 21);
+            this.lblName.Size = new System.Drawing.Size(60, 19);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(242, 183);
+            this.txtName.Location = new System.Drawing.Point(230, 182);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(273, 43);
             this.txtName.StateActive.Content.Color1 = System.Drawing.Color.White;
@@ -80,151 +80,130 @@
             // lblGender
             // 
             this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblGender.Location = new System.Drawing.Point(58, 259);
+            this.lblGender.Location = new System.Drawing.Point(44, 259);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(74, 21);
+            this.lblGender.Size = new System.Drawing.Size(71, 19);
             this.lblGender.TabIndex = 3;
             this.lblGender.Text = "Gender";
             // 
             // lblBirth
             // 
             this.lblBirth.AutoSize = true;
-            this.lblBirth.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirth.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblBirth.Location = new System.Drawing.Point(58, 323);
+            this.lblBirth.Location = new System.Drawing.Point(46, 326);
             this.lblBirth.Name = "lblBirth";
-            this.lblBirth.Size = new System.Drawing.Size(45, 21);
+            this.lblBirth.Size = new System.Drawing.Size(42, 19);
             this.lblBirth.TabIndex = 5;
             this.lblBirth.Text = "Birth";
             // 
-            // kryptonTextBox3
+            // txtPersonID
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(242, 370);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(273, 43);
-            this.kryptonTextBox3.StateActive.Content.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtPersonID.Location = new System.Drawing.Point(230, 382);
+            this.txtPersonID.Name = "txtPersonID";
+            this.txtPersonID.Size = new System.Drawing.Size(273, 43);
+            this.txtPersonID.StateActive.Content.Color1 = System.Drawing.Color.White;
+            this.txtPersonID.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPersonID.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtPersonID.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtPersonID.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtPersonID.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 10F;
-            this.kryptonTextBox3.StateNormal.Content.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.kryptonTextBox3.TabIndex = 8;
+            this.txtPersonID.StateCommon.Border.Rounding = 10F;
+            this.txtPersonID.StateNormal.Content.Color1 = System.Drawing.Color.White;
+            this.txtPersonID.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPersonID.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtPersonID.TabIndex = 8;
             // 
             // lblPersonID
             // 
             this.lblPersonID.AutoSize = true;
-            this.lblPersonID.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPersonID.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPersonID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblPersonID.Location = new System.Drawing.Point(58, 383);
+            this.lblPersonID.Location = new System.Drawing.Point(46, 395);
             this.lblPersonID.Name = "lblPersonID";
-            this.lblPersonID.Size = new System.Drawing.Size(87, 21);
+            this.lblPersonID.Size = new System.Drawing.Size(86, 19);
             this.lblPersonID.TabIndex = 7;
             this.lblPersonID.Text = "Person ID";
             // 
-            // kryptonTextBox4
+            // txtLocation
             // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(242, 435);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(273, 43);
-            this.kryptonTextBox4.StateActive.Content.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox4.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtLocation.Location = new System.Drawing.Point(230, 457);
+            this.txtLocation.Name = "txtLocation";
+            this.txtLocation.Size = new System.Drawing.Size(273, 43);
+            this.txtLocation.StateActive.Content.Color1 = System.Drawing.Color.White;
+            this.txtLocation.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtLocation.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtLocation.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtLocation.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 10F;
-            this.kryptonTextBox4.StateNormal.Content.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox4.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.kryptonTextBox4.TabIndex = 10;
+            this.txtLocation.StateCommon.Border.Rounding = 10F;
+            this.txtLocation.StateNormal.Content.Color1 = System.Drawing.Color.White;
+            this.txtLocation.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocation.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtLocation.TabIndex = 10;
             // 
             // lblLocation
             // 
             this.lblLocation.AutoSize = true;
-            this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblLocation.Location = new System.Drawing.Point(58, 448);
+            this.lblLocation.Location = new System.Drawing.Point(46, 470);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(130, 21);
+            this.lblLocation.Size = new System.Drawing.Size(124, 19);
             this.lblLocation.TabIndex = 9;
             this.lblLocation.Text = "Work Location";
             // 
-            // cbMale
+            // kryptonPalette1
             // 
-            this.cbMale.Images.CheckedNormal = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbMale.Images.CheckedPressed = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbMale.Images.CheckedTracking = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbMale.Images.UncheckedNormal = global::GUI.Properties.Resources.checkbox;
-            this.cbMale.Images.UncheckedPressed = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbMale.Images.UncheckedTracking = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbMale.Location = new System.Drawing.Point(265, 259);
-            this.cbMale.Name = "cbMale";
-            this.cbMale.Size = new System.Drawing.Size(61, 24);
-            this.cbMale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.cbMale.TabIndex = 11;
-            this.cbMale.Values.Text = "Male";
+            this.kryptonPalette1.BaseFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.kryptonPalette1.BaseFontSize = 9F;
+            this.kryptonPalette1.BasePaletteType = Krypton.Toolkit.BasePaletteType.Custom;
+            this.kryptonPalette1.ThemeName = "";
+            this.kryptonPalette1.UseKryptonFileDialogs = true;
             // 
-            // cbFemale
+            // dtpBirth
             // 
-            this.cbFemale.Images.CheckedNormal = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbFemale.Images.CheckedPressed = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbFemale.Images.CheckedTracking = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbFemale.Images.UncheckedNormal = global::GUI.Properties.Resources.checkbox;
-            this.cbFemale.Images.UncheckedPressed = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbFemale.Images.UncheckedTracking = global::GUI.Properties.Resources.checkbox__1_;
-            this.cbFemale.Location = new System.Drawing.Point(406, 259);
-            this.cbFemale.Name = "cbFemale";
-            this.cbFemale.Size = new System.Drawing.Size(76, 24);
-            this.cbFemale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.cbFemale.TabIndex = 12;
-            this.cbFemale.Values.Text = "Female";
-            // 
-            // kryptonDateTimePicker1
-            // 
-            this.kryptonDateTimePicker1.CalendarDayStyle = Krypton.Toolkit.ButtonStyle.ButtonSpec;
-            this.kryptonDateTimePicker1.Images.CheckedNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.kryptonDateTimePicker1.Images.Common = global::GUI.Properties.Resources.square_small__1_;
-            this.kryptonDateTimePicker1.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.kryptonDateTimePicker1.Images.UncheckedNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(242, 312);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(273, 32);
-            this.kryptonDateTimePicker1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonDateTimePicker1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.dtpBirth.CalendarDayStyle = Krypton.Toolkit.ButtonStyle.ButtonSpec;
+            this.dtpBirth.Images.CheckedNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpBirth.Images.Common = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpBirth.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpBirth.Images.UncheckedNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpBirth.Location = new System.Drawing.Point(230, 314);
+            this.dtpBirth.Name = "dtpBirth";
+            this.dtpBirth.Size = new System.Drawing.Size(273, 32);
+            this.dtpBirth.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.dtpBirth.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.dtpBirth.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 10;
-            this.kryptonDateTimePicker1.StateCommon.Border.Width = 1;
-            this.kryptonDateTimePicker1.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.kryptonDateTimePicker1.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonDateTimePicker1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
-            this.kryptonDateTimePicker1.TabIndex = 13;
-            this.kryptonDateTimePicker1.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
+            this.dtpBirth.StateCommon.Border.Rounding = 10F;
+            this.dtpBirth.StateCommon.Border.Width = 1;
+            this.dtpBirth.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.dtpBirth.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirth.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
+            this.dtpBirth.TabIndex = 13;
+            this.dtpBirth.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GUI.Properties.Resources.picpeople__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(265, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(230, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 122);
+            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // btnConfirm
             // 
             this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnConfirm.Location = new System.Drawing.Point(304, 525);
+            this.btnConfirm.Location = new System.Drawing.Point(297, 542);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -288,7 +267,7 @@
             // btnCancle
             // 
             this.btnCancle.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnCancle.Location = new System.Drawing.Point(428, 525);
+            this.btnCancle.Location = new System.Drawing.Point(421, 542);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnCancle.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -350,37 +329,77 @@
             this.btnCancle.Values.Text = "Cancle";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
+            // rbtnMale
+            // 
+            this.rbtnMale.Location = new System.Drawing.Point(234, 259);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Size = new System.Drawing.Size(53, 19);
+            this.rbtnMale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnMale.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnMale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnMale.TabIndex = 17;
+            this.rbtnMale.Values.Text = "Male";
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.Location = new System.Drawing.Point(375, 259);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Size = new System.Drawing.Size(69, 19);
+            this.rbtnFemale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnFemale.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnFemale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnFemale.TabIndex = 18;
+            this.rbtnFemale.Values.Text = "Female";
+            // 
             // fSignUpInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(583, 600);
+            this.ClientSize = new System.Drawing.Size(566, 602);
+            this.CloseBox = false;
+            this.Controls.Add(this.rbtnFemale);
+            this.Controls.Add(this.rbtnMale);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.kryptonDateTimePicker1);
-            this.Controls.Add(this.cbFemale);
-            this.Controls.Add(this.cbMale);
-            this.Controls.Add(this.kryptonTextBox4);
+            this.Controls.Add(this.dtpBirth);
+            this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.lblLocation);
-            this.Controls.Add(this.kryptonTextBox3);
+            this.Controls.Add(this.txtPersonID);
             this.Controls.Add(this.lblPersonID);
             this.Controls.Add(this.lblBirth);
             this.Controls.Add(this.lblGender);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblName);
-            this.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ForeColor = System.Drawing.Color.White;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fSignUpInfo";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StateActive.Back.Color1 = System.Drawing.Color.White;
+            this.StateActive.Back.Color2 = System.Drawing.Color.White;
+            this.StateActive.Back.ColorAngle = 1F;
+            this.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateActive.Border.Rounding = 5F;
+            this.StateActive.Border.Width = 1;
+            this.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Back.ColorAngle = 1F;
             this.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.StateCommon.Border.Color2 = System.Drawing.Color.White;
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateCommon.Border.Rounding = 20;
-            this.Text = "fSignUpInfo";
+            this.StateCommon.Border.Width = 1;
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -392,16 +411,16 @@
         private Krypton.Toolkit.KryptonTextBox txtName;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblBirth;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
+        private Krypton.Toolkit.KryptonTextBox txtPersonID;
         private System.Windows.Forms.Label lblPersonID;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
+        private Krypton.Toolkit.KryptonTextBox txtLocation;
         private System.Windows.Forms.Label lblLocation;
-        private Krypton.Toolkit.KryptonCheckBox cbMale;
         private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette1;
-        private Krypton.Toolkit.KryptonCheckBox cbFemale;
-        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private Krypton.Toolkit.KryptonDateTimePicker dtpBirth;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Krypton.Toolkit.KryptonButton btnConfirm;
         private Krypton.Toolkit.KryptonButton btnCancle;
+        private Krypton.Toolkit.KryptonRadioButton rbtnMale;
+        private Krypton.Toolkit.KryptonRadioButton rbtnFemale;
     }
 }
