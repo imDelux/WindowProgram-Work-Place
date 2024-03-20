@@ -11,8 +11,6 @@ namespace Data
         /// <summary>
         /// Private attribute store some basic information about a person
         /// </summary>
-        #region Attributes
-
         private string _personID;
         private string _name;
         private bool _gender;
@@ -21,14 +19,10 @@ namespace Data
         private string _email;
         private string _location;
 
-        #endregion
-
         
         /// <summary>
         /// Public attribute use to get - set private attribute
         /// </summary>
-        #region
-
         public string PersonID { get { return _personID; } set { _personID = value; } }
         public string Name { get { return _name; } set { _name = value; } }
         public bool Gender { get { return _gender; } set { _gender = value; } }
@@ -36,8 +30,6 @@ namespace Data
         public string Telephone { get { return _tel; } set { _tel = value; } }
         public string Email { get { return _email; } set { _email = value; } }
         public string Location { get { return _location; } set { _location = value; } }
-
-        #endregion
 
         /// <summary>
         /// Basic constructor - set empty value for all attributes
@@ -53,6 +45,16 @@ namespace Data
             Location = string.Empty;
         }
 
+        /// <summary>
+        /// Initialize some information for object
+        /// </summary>
+        /// <param name="personID">Person identification code</param>
+        /// <param name="name"></param>
+        /// <param name="gender"></param>
+        /// <param name="birthDate"></param>
+        /// <param name="tel"></param>
+        /// <param name="email"></param>
+        /// <param name="location"></param>
         public Person(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location)
         {
             PersonID = personID;
