@@ -38,5 +38,30 @@ namespace Data
         public string Location { get { return _location; } set { _location = value; } }
 
         #endregion
+
+        /// <summary>
+        /// Basic constructor - set empty value for all attributes
+        /// </summary>
+        public Person() 
+        {
+            PersonID = string.Empty;
+            Name = string.Empty;
+            Gender = false;
+            BirthDate = DateTime.MinValue;
+            Telephone = string.Empty;
+            Email = string.Empty;
+            Location = string.Empty;
+        }
+
+        public Person(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location)
+        {
+            PersonID = personID;
+            Name = name;
+            Gender = gender;
+            BirthDate = birthDate;
+            Telephone = tel;
+            Email = email;
+            Location = location;
+        }
     }
 }
