@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{CAB50E49-0607-4C0B-AC44-4B5296C5DBF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{391CA29A-8184-44A3-8F06-1A17606115CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +17,16 @@ Global
 		{CAB50E49-0607-4C0B-AC44-4B5296C5DBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAB50E49-0607-4C0B-AC44-4B5296C5DBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAB50E49-0607-4C0B-AC44-4B5296C5DBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391CA29A-8184-44A3-8F06-1A17606115CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391CA29A-8184-44A3-8F06-1A17606115CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391CA29A-8184-44A3-8F06-1A17606115CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391CA29A-8184-44A3-8F06-1A17606115CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		RESX_SortFileContentOnSave = True
 		SolutionGuid = {C63E0137-9996-4226-ABEB-425451FEAC0D}
+		RESX_SortFileContentOnSave = True
 	EndGlobalSection
 EndGlobal

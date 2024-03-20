@@ -114,7 +114,7 @@
     </Compile>
     <Compile Include="ucProfile.Designer.cs">
       <DependentUpon>ucProfile.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="ucEvaluationDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,7 +183,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fWorkerSkills.resx">
       <DependentUpon>fWorkerSkills.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="ucWorker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,7 +262,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucBasicInfo.resx">
       <DependentUpon>ucBasicInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -457,6 +457,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\worker %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{391ca29a-8184-44a3-8f06-1a17606115ca}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
