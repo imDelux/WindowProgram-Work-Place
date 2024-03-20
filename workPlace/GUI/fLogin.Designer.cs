@@ -36,10 +36,10 @@
             this.usLogin1 = new GUI.usLogin();
             this.btnSignIn = new Krypton.Toolkit.KryptonButton();
             this.btnLogin = new Krypton.Toolkit.KryptonButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLoginScreen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).BeginInit();
             this.pnLayout.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoginScreen)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -76,7 +76,7 @@
             // 
             this.usLogin1.BackColor = System.Drawing.Color.White;
             this.usLogin1.Location = new System.Drawing.Point(3, 17);
-            this.usLogin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usLogin1.Margin = new System.Windows.Forms.Padding(2);
             this.usLogin1.Name = "usLogin1";
             this.usLogin1.Size = new System.Drawing.Size(476, 486);
             this.usLogin1.TabIndex = 0;
@@ -211,14 +211,14 @@
             this.btnLogin.Values.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // pictureBox1
+            // picLoginScreen
             // 
-            this.pictureBox1.Image = global::GUI.Properties.Resources.Untitled;
-            this.pictureBox1.Location = new System.Drawing.Point(455, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(592, 789);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.picLoginScreen.Image = global::GUI.Properties.Resources.Untitled;
+            this.picLoginScreen.Location = new System.Drawing.Point(455, 3);
+            this.picLoginScreen.Name = "picLoginScreen";
+            this.picLoginScreen.Size = new System.Drawing.Size(592, 789);
+            this.picLoginScreen.TabIndex = 12;
+            this.picLoginScreen.TabStop = false;
             // 
             // fLogin
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.pnLayout);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLoginScreen);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -265,7 +265,7 @@
             this.Text = "fLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).EndInit();
             this.pnLayout.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLoginScreen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,7 +275,7 @@
         private Krypton.Toolkit.KryptonCustomPaletteBase kryptonPalette1;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
         private Krypton.Toolkit.ButtonSpecAny buttonSpecAny2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLoginScreen;
         private Krypton.Toolkit.KryptonPanel pnLayout;
         private Krypton.Toolkit.KryptonButton btnSignIn;
         private Krypton.Toolkit.KryptonButton btnLogin;
