@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,57 +18,21 @@ namespace GUI
             InitializeComponent();
         }
 
-        #region Getter & Setter
-
-        private Image _avt;
-        private string _workername, _age, _place, _skill;
-
-        [Category("Edit Properties")]
-
-        public Image Avt
-        {
-            get { return _avt; }
-            set { _avt = value; picAvatar.Image = value; }
-        }
-
-        [Category("Edit Properties")]
-
-        public string WorkerName
-        {
-            get { return _workername; }
-            set { _workername = value; }
-        }
-
         private void lblWokerName_Click(object sender, EventArgs e)
         {
             fWorkerInfo fWorkerInfo = new fWorkerInfo();
             fWorkerInfo.ShowDialog();
         }
 
-        [Category("Edit Properties")]
-
-        public string Age
+        public void DataSetter(Worker worker)
         {
-            get { return _age; }
-            set { _age = value; }
+            // Check for invalid case
+            if (worker == null) { return; }
+            
+            // Set data
+            lblWokerName.Text = worker.Name;
+            lblAge.Text = "Age: " + (DateTime.Now.Year - worker.BirthDate.Year).ToString();
+            lblLocation.Text = "Location: " + worker.Location;
         }
-
-        [Category("Edit Properties")]
-
-        public string Place
-        {
-            get { return _place; }
-            set { _place = value; }
-        }
-
-        [Category("Edit Properties")]
-
-        public string Skill
-        {
-            get { return _skill; }
-            set { _skill = value; }
-        }
-
-        #endregion
     }
 }

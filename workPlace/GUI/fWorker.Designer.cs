@@ -332,7 +332,6 @@
             this.ucSchedule1.Name = "usSchedule1";
             this.ucSchedule1.Size = new System.Drawing.Size(995, 766);
             this.ucSchedule1.TabIndex = 0;
-            this.ucSchedule1.Load += new System.EventHandler(this.usSchedule1_Load);
             // 
             // fWorker
             // 

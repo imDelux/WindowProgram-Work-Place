@@ -45,7 +45,7 @@
             // 
             this.kryptonComboBox1.DropDownWidth = 121;
             this.kryptonComboBox1.IntegralHeight = false;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(559, 21);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(525, 21);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonComboBox1.Size = new System.Drawing.Size(168, 37);
@@ -61,7 +61,7 @@
             // 
             this.kryptonComboBox2.DropDownWidth = 121;
             this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(756, 21);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(722, 21);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.kryptonComboBox2.Size = new System.Drawing.Size(168, 37);
@@ -93,7 +93,7 @@
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.txtSearch.Size = new System.Drawing.Size(488, 53);
+            this.txtSearch.Size = new System.Drawing.Size(452, 53);
             this.txtSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -113,7 +113,7 @@
             // kryptonPictureBox1
             // 
             this.kryptonPictureBox1.Image = global::GUI.Properties.Resources._6351933_filter_filters_funnel_seo_sort_icon;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(948, 21);
+            this.kryptonPictureBox1.Location = new System.Drawing.Point(914, 21);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
             this.kryptonPictureBox1.Size = new System.Drawing.Size(30, 30);
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

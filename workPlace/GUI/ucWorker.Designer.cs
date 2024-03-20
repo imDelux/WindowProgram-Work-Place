@@ -69,7 +69,7 @@
             this.lblSkill.AutoSize = true;
             this.lblSkill.BackColor = System.Drawing.Color.White;
             this.lblSkill.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkill.Location = new System.Drawing.Point(16, 132);
+            this.lblSkill.Location = new System.Drawing.Point(29, 139);
             this.lblSkill.Name = "lblSkill";
             this.lblSkill.Size = new System.Drawing.Size(257, 21);
             this.lblSkill.TabIndex = 4;

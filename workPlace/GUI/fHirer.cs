@@ -13,37 +13,18 @@ namespace GUI
 {
     public partial class fHirer : KryptonForm
     {
-
-        static fHirer obj;
-
-        public static fHirer Instance
-        {
-            get
-            {
-                if (obj == null)
-                {
-                    obj = new fHirer();
-                }
-                return obj;
-            }
-        }
-
-        public Panel PnlContainer { get; set; }
-
         public fHirer()
         {
             InitializeComponent();
         }
 
-        private void picExit_Click(object sender, EventArgs e)
+        private void fHirer_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            ucHome uc = new ucHome();
+            AddUC(uc);
         }
 
-        private void picLogOut_Click(object sender, EventArgs e)
-        {
-            this.Close();       
-        }
+        #region Dashboard button event
 
         private void AddUC(UserControl uc)
         {
@@ -51,12 +32,6 @@ namespace GUI
             pnlContainer.Controls.Clear();
             pnlContainer.Controls.Add(uc);
             uc.BringToFront();
-        }
-
-        private void fHirer_Load(object sender, EventArgs e)
-        {
-            ucHome uc = new ucHome();
-            AddUC(uc);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -73,8 +48,15 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            //ucProfile uc = new ucProfile();
-            //AddUC(uc);
+            ucProfile uc = new ucProfile();
+            AddUC(uc);
+        }
+
+        #endregion
+
+        private void picExit_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

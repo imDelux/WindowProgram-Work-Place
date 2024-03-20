@@ -30,7 +30,6 @@ namespace GUI
 
         #endregion
 
-
         #region Exit and LogOut Event
         private void picExit_MouseLeave(object sender, EventArgs e)
         {
@@ -55,11 +54,9 @@ namespace GUI
             this.Close();
         }
 
-
-
         #endregion
 
-        #region Button events
+        #region Dashboard button events
         private void ChangeMainContent(UserControl usMainContent)
         {
             if (usMainContent == null) { return; }
@@ -89,10 +86,5 @@ namespace GUI
 
 
         #endregion
-
-        private void usSchedule1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

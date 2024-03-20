@@ -15,5 +15,19 @@ namespace Data
         private Job _job;
         private float _point;
         private string _comment;
+
+        public Job Job { get { return _job; } set { _job = value; } }
+        public float Point { get { return _point; } set { _point = value; } }
+        public string Comment { get { return _comment; } set { _comment = value; } }
+
+        /// <summary>
+        /// Basic constructor
+        /// </summary>
+        public Evaluate() 
+        {
+            Job = new Job();
+            Point = 0;
+            Comment = string.Empty;
+        }
     }
 }
