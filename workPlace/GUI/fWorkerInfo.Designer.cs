@@ -209,7 +209,6 @@
 
         #endregion
 
-        private ucBasicInfo ucBasicInfo1;
         private System.Windows.Forms.Label lblBasicInfo;
         private Krypton.Toolkit.KryptonButton btnInfo;
         private Krypton.Toolkit.KryptonButton btnHire;
