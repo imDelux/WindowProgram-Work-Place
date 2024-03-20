@@ -133,8 +133,6 @@
     <Compile Include="fWorkerInfo.Designer.cs">
       <DependentUpon>fWorkerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ucBasicInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,8 +217,6 @@
     <Compile Include="fSignUpInfo.Designer.cs">
       <DependentUpon>fSignUpInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
