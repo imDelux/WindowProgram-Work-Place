@@ -13,6 +13,8 @@ namespace GUI
 {
     public partial class ucWorker : UserControl
     {
+        // Who is being displayed
+        Worker currentDisplayWorker;
         public ucWorker()
         {
             InitializeComponent();
@@ -21,6 +23,7 @@ namespace GUI
         private void lblWokerName_Click(object sender, EventArgs e)
         {
             fWorkerInfo fWorkerInfo = new fWorkerInfo();
+            fWorkerInfo.DataSetter(currentDisplayWorker);
             fWorkerInfo.ShowDialog();
         }
 
@@ -28,6 +31,9 @@ namespace GUI
         {
             // Check for invalid case
             if (worker == null) { return; }
+
+            // Set current displaying worker
+            currentDisplayWorker = worker;
             
             // Set data
             lblWokerName.Text = worker.Name;

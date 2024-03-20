@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace GUI
         public ucBasicInfo()
         {
             InitializeComponent();
+        }
+
+        public void DataSetter(Worker worker)
+        {
+            lblWokerName.Text = worker.Name;
+            lblGender.Text = (worker.Gender == true ? "Male" : "Female");
+            lblBirth.Text = worker.BirthDate.ToShortDateString();
+            lblTelephone.Text = worker.Telephone;
+            lblEmail.Text = worker.Email;
+            lblLocation.Text = worker.Location;
         }
     }
 }

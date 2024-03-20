@@ -33,7 +33,7 @@
             this.btnHire = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.fpnlSkills = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucBasicInfo2 = new GUI.ucBasicInfo();
+            this.ucBasicInfoWorker = new GUI.ucBasicInfo();
             this.SuspendLayout();
             // 
             // lblBasicInfo
@@ -161,15 +161,15 @@
             this.fpnlSkills.Size = new System.Drawing.Size(652, 248);
             this.fpnlSkills.TabIndex = 13;
             // 
-            // ucBasicInfo2
+            // ucBasicInfoWorker
             // 
-            this.ucBasicInfo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.ucBasicInfo2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucBasicInfo2.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucBasicInfo2.Location = new System.Drawing.Point(0, 0);
-            this.ucBasicInfo2.Name = "ucBasicInfo2";
-            this.ucBasicInfo2.Size = new System.Drawing.Size(780, 516);
-            this.ucBasicInfo2.TabIndex = 11;
+            this.ucBasicInfoWorker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.ucBasicInfoWorker.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucBasicInfoWorker.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ucBasicInfoWorker.Location = new System.Drawing.Point(0, 0);
+            this.ucBasicInfoWorker.Name = "ucBasicInfoWorker";
+            this.ucBasicInfoWorker.Size = new System.Drawing.Size(780, 516);
+            this.ucBasicInfoWorker.TabIndex = 11;
             // 
             // fWorkerInfo
             // 
@@ -180,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(780, 904);
             this.Controls.Add(this.fpnlSkills);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.ucBasicInfo2);
+            this.Controls.Add(this.ucBasicInfoWorker);
             this.Controls.Add(this.btnHire);
             this.Controls.Add(this.lblBasicInfo);
             this.Controls.Add(this.btnInfo);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Label lblBasicInfo;
         private Krypton.Toolkit.KryptonButton btnInfo;
         private Krypton.Toolkit.KryptonButton btnHire;
-        private ucBasicInfo ucBasicInfo2;
+        private ucBasicInfo ucBasicInfoWorker;
         private Krypton.Toolkit.KryptonButton btnCancel;
         private System.Windows.Forms.FlowLayoutPanel fpnlSkills;
     }

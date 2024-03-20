@@ -1,4 +1,5 @@
-﻿using Krypton.Toolkit;
+﻿using Data;
+using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,6 +31,11 @@ namespace GUI
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void DataSetter(Worker worker)
+        {
+            ucBasicInfoWorker.DataSetter(worker);
         }
     }
 }

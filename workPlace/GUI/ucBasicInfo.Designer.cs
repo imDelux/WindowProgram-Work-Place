@@ -31,20 +31,21 @@
             this.lblWokerName = new Krypton.Toolkit.KryptonLabel();
             this.lblRate = new Krypton.Toolkit.KryptonLabel();
             this.btnInfo = new Krypton.Toolkit.KryptonButton();
-            this.lblBasicInfo = new System.Windows.Forms.Label();
             this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblGenderHead = new System.Windows.Forms.Label();
+            this.lblBirthHead = new System.Windows.Forms.Label();
+            this.lblTelephoneHead = new System.Windows.Forms.Label();
+            this.lblEmailHead = new System.Windows.Forms.Label();
+            this.lbLocationHead = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblBirth = new System.Windows.Forms.Label();
+            this.lblTelephone = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblLocation = new System.Windows.Forms.Label();
             this.btnDetail = new Krypton.Toolkit.KryptonButton();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
+            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblWokerName
@@ -90,19 +91,6 @@
             this.btnInfo.TabIndex = 5;
             this.btnInfo.Values.Text = "";
             // 
-            // lblBasicInfo
-            // 
-            this.lblBasicInfo.AutoSize = true;
-            this.lblBasicInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblBasicInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBasicInfo.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBasicInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblBasicInfo.Location = new System.Drawing.Point(100, 210);
-            this.lblBasicInfo.Name = "lblBasicInfo";
-            this.lblBasicInfo.Size = new System.Drawing.Size(388, 46);
-            this.lblBasicInfo.TabIndex = 7;
-            this.lblBasicInfo.Text = "Basic Information";
-            // 
             // picAvt
             // 
             this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
@@ -113,135 +101,135 @@
             this.picAvt.TabIndex = 1;
             this.picAvt.TabStop = false;
             // 
-            // label1
+            // lblGenderHead
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label1.Location = new System.Drawing.Point(77, 270);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 21);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Gender";
+            this.lblGenderHead.AutoSize = true;
+            this.lblGenderHead.BackColor = System.Drawing.Color.White;
+            this.lblGenderHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblGenderHead.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblGenderHead.Location = new System.Drawing.Point(0, 0);
+            this.lblGenderHead.Name = "lblGenderHead";
+            this.lblGenderHead.Size = new System.Drawing.Size(78, 21);
+            this.lblGenderHead.TabIndex = 8;
+            this.lblGenderHead.Text = "Gender";
             // 
-            // label2
+            // lblBirthHead
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label2.Location = new System.Drawing.Point(77, 314);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 21);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Birth date";
+            this.lblBirthHead.AutoSize = true;
+            this.lblBirthHead.BackColor = System.Drawing.Color.White;
+            this.lblBirthHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBirthHead.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblBirthHead.Location = new System.Drawing.Point(0, 44);
+            this.lblBirthHead.Name = "lblBirthHead";
+            this.lblBirthHead.Size = new System.Drawing.Size(104, 21);
+            this.lblBirthHead.TabIndex = 9;
+            this.lblBirthHead.Text = "Birth date";
             // 
-            // label3
+            // lblTelephoneHead
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label3.Location = new System.Drawing.Point(77, 358);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 21);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Telephone";
+            this.lblTelephoneHead.AutoSize = true;
+            this.lblTelephoneHead.BackColor = System.Drawing.Color.White;
+            this.lblTelephoneHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTelephoneHead.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelephoneHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblTelephoneHead.Location = new System.Drawing.Point(0, 88);
+            this.lblTelephoneHead.Name = "lblTelephoneHead";
+            this.lblTelephoneHead.Size = new System.Drawing.Size(107, 21);
+            this.lblTelephoneHead.TabIndex = 10;
+            this.lblTelephoneHead.Text = "Telephone";
             // 
-            // label4
+            // lblEmailHead
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label4.Location = new System.Drawing.Point(77, 403);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Email";
+            this.lblEmailHead.AutoSize = true;
+            this.lblEmailHead.BackColor = System.Drawing.Color.White;
+            this.lblEmailHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblEmailHead.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblEmailHead.Location = new System.Drawing.Point(0, 133);
+            this.lblEmailHead.Name = "lblEmailHead";
+            this.lblEmailHead.Size = new System.Drawing.Size(62, 21);
+            this.lblEmailHead.TabIndex = 11;
+            this.lblEmailHead.Text = "Email";
             // 
-            // label5
+            // lbLocationHead
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label5.Location = new System.Drawing.Point(77, 449);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 21);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Work location";
+            this.lbLocationHead.AutoSize = true;
+            this.lbLocationHead.BackColor = System.Drawing.Color.White;
+            this.lbLocationHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbLocationHead.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLocationHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lbLocationHead.Location = new System.Drawing.Point(0, 179);
+            this.lbLocationHead.Name = "lbLocationHead";
+            this.lbLocationHead.Size = new System.Drawing.Size(142, 21);
+            this.lbLocationHead.TabIndex = 12;
+            this.lbLocationHead.Text = "Work location";
             // 
-            // label6
+            // lblGender
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label6.Location = new System.Drawing.Point(241, 270);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 21);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Male";
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.White;
+            this.lblGender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblGender.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblGender.Location = new System.Drawing.Point(164, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(54, 21);
+            this.lblGender.TabIndex = 13;
+            this.lblGender.Text = "Male";
             // 
-            // label7
+            // lblBirth
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label7.Location = new System.Drawing.Point(241, 314);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 21);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "29-02-2004";
+            this.lblBirth.AutoSize = true;
+            this.lblBirth.BackColor = System.Drawing.Color.White;
+            this.lblBirth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblBirth.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblBirth.Location = new System.Drawing.Point(164, 44);
+            this.lblBirth.Name = "lblBirth";
+            this.lblBirth.Size = new System.Drawing.Size(102, 21);
+            this.lblBirth.TabIndex = 14;
+            this.lblBirth.Text = "29-02-2004";
             // 
-            // label8
+            // lblTelephone
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label8.Location = new System.Drawing.Point(241, 358);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 21);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "0908-338-919";
+            this.lblTelephone.AutoSize = true;
+            this.lblTelephone.BackColor = System.Drawing.Color.White;
+            this.lblTelephone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTelephone.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblTelephone.Location = new System.Drawing.Point(164, 88);
+            this.lblTelephone.Name = "lblTelephone";
+            this.lblTelephone.Size = new System.Drawing.Size(122, 21);
+            this.lblTelephone.TabIndex = 15;
+            this.lblTelephone.Text = "0908-338-919";
             // 
-            // label9
+            // lblEmail
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label9.Location = new System.Drawing.Point(241, 403);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(199, 21);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "bienxhuy@gmail.com";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.White;
+            this.lblEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblEmail.Location = new System.Drawing.Point(164, 133);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(199, 21);
+            this.lblEmail.TabIndex = 16;
+            this.lblEmail.Text = "bienxhuy@gmail.com";
             // 
-            // label10
+            // lblLocation
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label10.Location = new System.Drawing.Point(241, 449);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(156, 21);
-            this.label10.TabIndex = 17;
-            this.label10.Text = "Ho Chi Minh City";
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.BackColor = System.Drawing.Color.White;
+            this.lblLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblLocation.Location = new System.Drawing.Point(164, 179);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(156, 21);
+            this.lblLocation.TabIndex = 17;
+            this.lblLocation.Text = "Ho Chi Minh City";
             // 
             // btnDetail
             // 
@@ -281,23 +269,31 @@
             this.btnDetail.TabIndex = 18;
             this.btnDetail.Values.Text = "Detail";
             // 
+            // pnlContainer
+            // 
+            this.pnlContainer.BackColor = System.Drawing.Color.White;
+            this.pnlContainer.Controls.Add(this.lblGender);
+            this.pnlContainer.Controls.Add(this.lblGenderHead);
+            this.pnlContainer.Controls.Add(this.lblLocation);
+            this.pnlContainer.Controls.Add(this.lblBirthHead);
+            this.pnlContainer.Controls.Add(this.lblEmail);
+            this.pnlContainer.Controls.Add(this.lblTelephoneHead);
+            this.pnlContainer.Controls.Add(this.lblTelephone);
+            this.pnlContainer.Controls.Add(this.lblEmailHead);
+            this.pnlContainer.Controls.Add(this.lblBirth);
+            this.pnlContainer.Controls.Add(this.lbLocationHead);
+            this.pnlContainer.Location = new System.Drawing.Point(94, 267);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(592, 209);
+            this.pnlContainer.TabIndex = 19;
+            // 
             // ucBasicInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.Controls.Add(this.pnlContainer);
             this.Controls.Add(this.btnDetail);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblBasicInfo);
             this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.lblRate);
             this.Controls.Add(this.lblWokerName);
@@ -306,6 +302,8 @@
             this.Name = "ucBasicInfo";
             this.Size = new System.Drawing.Size(780, 516);
             ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
+            this.pnlContainer.ResumeLayout(false);
+            this.pnlContainer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,17 +315,17 @@
         private Krypton.Toolkit.KryptonLabel lblWokerName;
         private Krypton.Toolkit.KryptonLabel lblRate;
         private Krypton.Toolkit.KryptonButton btnInfo;
-        private System.Windows.Forms.Label lblBasicInfo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblGenderHead;
+        private System.Windows.Forms.Label lblBirthHead;
+        private System.Windows.Forms.Label lblTelephoneHead;
+        private System.Windows.Forms.Label lblEmailHead;
+        private System.Windows.Forms.Label lbLocationHead;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblBirth;
+        private System.Windows.Forms.Label lblTelephone;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblLocation;
         private Krypton.Toolkit.KryptonButton btnDetail;
+        private System.Windows.Forms.Panel pnlContainer;
     }
 }
