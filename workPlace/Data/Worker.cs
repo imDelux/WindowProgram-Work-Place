@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace EntityModel
 {
     public class Worker : Person
     {
@@ -34,8 +34,8 @@ namespace Data
         /// <param name="email"></param>
         /// <param name="location"></param>
         /// <param name="skills"></param>
-        public Worker(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location, List<Skill> skills) 
-            : base(personID, name, gender, birthDate, tel, email, location)
+        public Worker(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location,string password, List<Skill> skills) 
+            : base(personID, name, gender, birthDate, tel, email, location, password)
         {
             SkillList = skills;
         }

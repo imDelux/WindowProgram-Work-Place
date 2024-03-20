@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityModel
+namespace Data
 {
-    internal class Program
+    public class HirerDAO
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

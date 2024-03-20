@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace EntityModel
 {
     public class Hirer : Person
     {
@@ -23,7 +23,7 @@ namespace Data
         /// <param name="tel"></param>
         /// <param name="email"></param>
         /// <param name="location"></param>
-        public Hirer(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location)
-            : base(personID, name, gender, birthDate, tel, email, location) { }
+        public Hirer(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location, string password)
+            : base(personID, name, gender, birthDate, tel, email, location, password) { }
     }
 }

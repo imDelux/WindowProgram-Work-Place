@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace EntityModel
 {
     public class Person
     {
@@ -18,6 +18,7 @@ namespace Data
         private string _tel;
         private string _email;
         private string _location;
+        private string _password;
 
         
         /// <summary>
@@ -30,6 +31,7 @@ namespace Data
         public string Telephone { get { return _tel; } set { _tel = value; } }
         public string Email { get { return _email; } set { _email = value; } }
         public string Location { get { return _location; } set { _location = value; } }
+        public string Password { get { return _password; } set { _password = value; } }
 
         /// <summary>
         /// Basic constructor - set empty value for all attributes
@@ -43,6 +45,7 @@ namespace Data
             Telephone = string.Empty;
             Email = string.Empty;
             Location = string.Empty;
+            Password = string.Empty;
         }
 
         /// <summary>
@@ -55,7 +58,7 @@ namespace Data
         /// <param name="tel"></param>
         /// <param name="email"></param>
         /// <param name="location"></param>
-        public Person(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location)
+        public Person(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location, string password)
         {
             PersonID = personID;
             Name = name;
@@ -64,6 +67,7 @@ namespace Data
             Telephone = tel;
             Email = email;
             Location = location;
+            Password = password;
         }
     }
 }

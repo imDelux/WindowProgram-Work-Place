@@ -44,6 +44,9 @@
             this.btnCancle = new Krypton.Toolkit.KryptonButton();
             this.rbtnMale = new Krypton.Toolkit.KryptonRadioButton();
             this.rbtnFemale = new Krypton.Toolkit.KryptonRadioButton();
+            this.rbtnWorker = new Krypton.Toolkit.KryptonRadioButton();
+            this.rbtnHirer = new Krypton.Toolkit.KryptonRadioButton();
+            this.lblRole = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,7 +206,7 @@
             // btnConfirm
             // 
             this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnConfirm.Location = new System.Drawing.Point(297, 542);
+            this.btnConfirm.Location = new System.Drawing.Point(302, 575);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -263,11 +266,12 @@
             this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.TabIndex = 15;
             this.btnConfirm.Values.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancle
             // 
             this.btnCancle.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnCancle.Location = new System.Drawing.Point(421, 542);
+            this.btnCancle.Location = new System.Drawing.Point(426, 575);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnCancle.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -333,10 +337,10 @@
             // 
             this.rbtnMale.Location = new System.Drawing.Point(234, 259);
             this.rbtnMale.Name = "rbtnMale";
-            this.rbtnMale.Size = new System.Drawing.Size(53, 19);
+            this.rbtnMale.Size = new System.Drawing.Size(57, 21);
             this.rbtnMale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.rbtnMale.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.rbtnMale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnMale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnMale.TabIndex = 17;
             this.rbtnMale.Values.Text = "Male";
             // 
@@ -344,20 +348,56 @@
             // 
             this.rbtnFemale.Location = new System.Drawing.Point(375, 259);
             this.rbtnFemale.Name = "rbtnFemale";
-            this.rbtnFemale.Size = new System.Drawing.Size(69, 19);
+            this.rbtnFemale.Size = new System.Drawing.Size(75, 21);
             this.rbtnFemale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.rbtnFemale.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.rbtnFemale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnFemale.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnFemale.TabIndex = 18;
             this.rbtnFemale.Values.Text = "Female";
+            // 
+            // rbtnWorker
+            // 
+            this.rbtnWorker.Location = new System.Drawing.Point(375, 530);
+            this.rbtnWorker.Name = "rbtnWorker";
+            this.rbtnWorker.Size = new System.Drawing.Size(73, 21);
+            this.rbtnWorker.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnWorker.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnWorker.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnWorker.TabIndex = 21;
+            this.rbtnWorker.Values.Text = "Worker";
+            // 
+            // rbtnHirer
+            // 
+            this.rbtnHirer.Location = new System.Drawing.Point(234, 530);
+            this.rbtnHirer.Name = "rbtnHirer";
+            this.rbtnHirer.Size = new System.Drawing.Size(57, 21);
+            this.rbtnHirer.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnHirer.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.rbtnHirer.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnHirer.TabIndex = 20;
+            this.rbtnHirer.Values.Text = "Hirer";
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblRole.Location = new System.Drawing.Point(44, 530);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(92, 19);
+            this.lblRole.TabIndex = 19;
+            this.lblRole.Text = "You\'re a ?";
             // 
             // fSignUpInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(566, 602);
+            this.ClientSize = new System.Drawing.Size(566, 642);
             this.CloseBox = false;
+            this.Controls.Add(this.rbtnWorker);
+            this.Controls.Add(this.rbtnHirer);
+            this.Controls.Add(this.lblRole);
             this.Controls.Add(this.rbtnFemale);
             this.Controls.Add(this.rbtnMale);
             this.Controls.Add(this.btnCancle);
@@ -422,5 +462,8 @@
         private Krypton.Toolkit.KryptonButton btnCancle;
         private Krypton.Toolkit.KryptonRadioButton rbtnMale;
         private Krypton.Toolkit.KryptonRadioButton rbtnFemale;
+        private Krypton.Toolkit.KryptonRadioButton rbtnWorker;
+        private Krypton.Toolkit.KryptonRadioButton rbtnHirer;
+        private System.Windows.Forms.Label lblRole;
     }
 }

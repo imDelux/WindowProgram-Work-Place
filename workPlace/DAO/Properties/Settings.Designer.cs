@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EntityModel.Properties {
+namespace DAO.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -28,9 +28,9 @@ namespace EntityModel.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=WorkPlace;Integrated Security=" +
             "True")]
-        public string connStr {
+        public string conn {
             get {
-                return ((string)(this["connStr"]));
+                return ((string)(this["conn"]));
             }
         }
     }

@@ -1,4 +1,6 @@
-﻿using Data;
+﻿using DAO;
+using Data;
+using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +16,7 @@ namespace GUI
 {
     public partial class ucHome : UserControl
     {
-        DataReader reader = new DataReader();
+        DbConnection dbConn = new DbConnection();
 
         public ucHome()
         {
@@ -26,7 +28,7 @@ namespace GUI
             fpnlContainer.Controls.Clear();
 
             // Get the worker list from database
-            List<Worker> listWorker = reader.getWorkerList();
+            List<Worker> listWorker = dbConn.getWorkerList();
 
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 

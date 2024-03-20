@@ -35,7 +35,6 @@
             this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
             this.txtRewritepass = new Krypton.Toolkit.KryptonTextBox();
             this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
-            this.txtUsername = new Krypton.Toolkit.KryptonTextBox();
             this.SuspendLayout();
             // 
             // lblContext
@@ -125,7 +124,7 @@
             // 
             // txtPhonenum
             // 
-            this.txtPhonenum.Location = new System.Drawing.Point(139, 334);
+            this.txtPhonenum.Location = new System.Drawing.Point(139, 183);
             this.txtPhonenum.Name = "txtPhonenum";
             this.txtPhonenum.Size = new System.Drawing.Size(301, 45);
             this.txtPhonenum.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -134,7 +133,7 @@
             this.txtPhonenum.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtPhonenum.StateCommon.Border.Rounding = 20;
+            this.txtPhonenum.StateCommon.Border.Rounding = 20F;
             this.txtPhonenum.StateCommon.Border.Width = 2;
             this.txtPhonenum.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtPhonenum.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,7 +144,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(139, 270);
+            this.txtEmail.Location = new System.Drawing.Point(139, 114);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(301, 45);
             this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -154,7 +153,7 @@
             this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtEmail.StateCommon.Border.Rounding = 20;
+            this.txtEmail.StateCommon.Border.Rounding = 20F;
             this.txtEmail.StateCommon.Border.Width = 2;
             this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -165,7 +164,7 @@
             // 
             // txtRewritepass
             // 
-            this.txtRewritepass.Location = new System.Drawing.Point(139, 210);
+            this.txtRewritepass.Location = new System.Drawing.Point(139, 325);
             this.txtRewritepass.Name = "txtRewritepass";
             this.txtRewritepass.Size = new System.Drawing.Size(301, 45);
             this.txtRewritepass.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -174,7 +173,7 @@
             this.txtRewritepass.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtRewritepass.StateCommon.Border.Rounding = 20;
+            this.txtRewritepass.StateCommon.Border.Rounding = 20F;
             this.txtRewritepass.StateCommon.Border.Width = 2;
             this.txtRewritepass.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtRewritepass.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,7 +184,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(139, 149);
+            this.txtPassword.Location = new System.Drawing.Point(139, 254);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(301, 45);
             this.txtPassword.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -194,7 +193,7 @@
             this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtPassword.StateCommon.Border.Rounding = 20;
+            this.txtPassword.StateCommon.Border.Rounding = 20F;
             this.txtPassword.StateCommon.Border.Width = 2;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,26 +201,6 @@
             this.txtPassword.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.txtPassword.TabIndex = 35;
             this.txtPassword.Text = "Password";
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Location = new System.Drawing.Point(139, 89);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(301, 45);
-            this.txtUsername.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtUsername.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.txtUsername.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtUsername.StateCommon.Border.Rounding = 20;
-            this.txtUsername.StateCommon.Border.Width = 2;
-            this.txtUsername.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.txtUsername.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.StateCommon.Content.Padding = new System.Windows.Forms.Padding(20, 4, 10, 4);
-            this.txtUsername.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
-            this.txtUsername.TabIndex = 34;
-            this.txtUsername.Text = "Enter your username";
             // 
             // usSignUp
             // 
@@ -235,7 +214,6 @@
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtRewritepass);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
             this.Name = "usSignUp";
             this.Size = new System.Drawing.Size(496, 525);
             this.ResumeLayout(false);
@@ -252,6 +230,5 @@
         private Krypton.Toolkit.KryptonTextBox txtEmail;
         private Krypton.Toolkit.KryptonTextBox txtRewritepass;
         private Krypton.Toolkit.KryptonTextBox txtPassword;
-        private Krypton.Toolkit.KryptonTextBox txtUsername;
     }
 }

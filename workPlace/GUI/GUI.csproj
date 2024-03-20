@@ -459,9 +459,13 @@
     <None Include="Resources\worker %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Data.csproj">
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{1d961ac3-f692-4076-83b5-133420d9051b}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\EntityModel.csproj">
       <Project>{391ca29a-8184-44a3-8f06-1a17606115ca}</Project>
-      <Name>Data</Name>
+      <Name>EntityModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

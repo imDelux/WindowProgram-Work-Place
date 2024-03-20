@@ -20,8 +20,7 @@ namespace GUI
         private void btnNext_Click(object sender, EventArgs e)
         {
             fChooseRole fChooseRole1 = new fChooseRole();
-            this.Hide();
-            fChooseRole1.Show();
+            fChooseRole1.ShowDialog();
         }
         private void btnForgotpass_Click(object sender, EventArgs e)
         {

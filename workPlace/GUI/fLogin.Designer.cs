@@ -231,21 +231,25 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.StateActive.Back.Color2 = System.Drawing.Color.White;
-            this.StateActive.Border.Color1 = System.Drawing.Color.Transparent;
+            this.StateActive.Border.Color1 = System.Drawing.Color.White;
             this.StateActive.Border.Color2 = System.Drawing.Color.White;
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateActive.Border.Rounding = 5F;
+            this.StateActive.Border.Width = 1;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color2 = System.Drawing.Color.White;
             this.StateCommon.Border.Draw = Krypton.Toolkit.InheritBool.False;
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.StateCommon.Border.Rounding = 5F;
+            this.StateCommon.Border.Width = 1;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Header.Border.Color1 = System.Drawing.Color.Transparent;
@@ -262,7 +266,6 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateInactive.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.Text = "Welcome to Work Place";
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).EndInit();
             this.pnLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLoginScreen)).EndInit();

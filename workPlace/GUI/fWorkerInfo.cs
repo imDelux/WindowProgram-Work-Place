@@ -1,4 +1,5 @@
 ﻿using Data;
+using EntityModel;
 using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
