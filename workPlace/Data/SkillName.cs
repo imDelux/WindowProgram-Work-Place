@@ -11,5 +11,8 @@ namespace Data
         None,
         PlumbingRepair,
         ElectricityRepair,
+        Carpentry,
+        HVAC,
+        Masonry
     }
 }
