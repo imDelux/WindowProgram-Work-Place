@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace DAO
 {
@@ -43,6 +44,52 @@ namespace DAO
                 conn.Close();
             }
             return result;
+        }
+
+        /// <summary>
+        /// Fetch data about a person
+        /// </summary>
+        /// <param name="sqlCommand">SQL command</param>
+        /// <returns>Person need, if not appear return null</returns>
+        public Person FetchPerson(string sqlCommand)
+        {
+            // Store result
+            Person resultPerson = new Person();
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            SqlCommand cmd = new SqlCommand(sqlCommand, conn);
+
+            // Read data
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            // If no row found
+            if (!reader.HasRows)
+            {
+                resultPerson = null;
+            }
+            else
+            {
+                reader.Read();
+                resultPerson.PersonID = reader["PersonID"].ToString();
+                resultPerson.Name = reader["Name"].ToString();
+                resultPerson.Gender = reader["Gender"].ToString() == "Male" ? true : false;
+                if (DateTime.TryParse(reader["BirthDate"].ToString(), out DateTime resultBirth) == true)
+                {
+                    resultPerson.BirthDate = resultBirth;
+                }
+                resultPerson.Telephone = reader["Telephone"].ToString();
+                resultPerson.Email = reader["Email"].ToString();
+                resultPerson.Location = reader["Location"].ToString();
+            }
+
+            // Disconnect to database
+            conn.Close();
+
+            // Return result
+            return resultPerson;
         }
 
         /// <summary>

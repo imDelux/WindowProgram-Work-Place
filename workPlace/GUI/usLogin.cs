@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,10 @@ namespace GUI
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            fChooseRole fChooseRole1 = new fChooseRole();
+            // Get login data
+            Person person = new Person() { Email = txtEmail.Text, Password = txtPassword.Text };
+
+            fChooseRole fChooseRole1 = new fChooseRole(person);
             fChooseRole1.ShowDialog();
         }
         private void btnForgotpass_Click(object sender, EventArgs e)

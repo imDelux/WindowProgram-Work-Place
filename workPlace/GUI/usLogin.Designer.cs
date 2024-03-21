@@ -31,7 +31,7 @@
             this.cbRememberPass = new Krypton.Toolkit.KryptonCheckBox();
             this.lblContext = new System.Windows.Forms.Label();
             this.lblThumbnail = new System.Windows.Forms.Label();
-            this.txtUsername = new Krypton.Toolkit.KryptonTextBox();
+            this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
             this.btnForgotpass = new Krypton.Toolkit.KryptonButton();
             this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
             this.btnNext = new Krypton.Toolkit.KryptonButton();
@@ -59,7 +59,6 @@
             this.cbRememberPass.StateCommon.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRememberPass.TabIndex = 30;
             this.cbRememberPass.Values.Text = "Remember for 30 days";
-
             // 
             // lblContext
             // 
@@ -72,7 +71,6 @@
             this.lblContext.Size = new System.Drawing.Size(241, 18);
             this.lblContext.TabIndex = 29;
             this.lblContext.Text = "Welcome back! Please enter your detail";
-        
             // 
             // lblThumbnail
             // 
@@ -86,25 +84,25 @@
             this.lblThumbnail.TabIndex = 28;
             this.lblThumbnail.Text = "Sign In";
             // 
-            // txtUsername
+            // txtEmail
             // 
-            this.txtUsername.Location = new System.Drawing.Point(131, 144);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(301, 45);
-            this.txtUsername.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtUsername.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.txtUsername.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
-            this.txtUsername.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtEmail.Location = new System.Drawing.Point(131, 144);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(301, 45);
+            this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.txtEmail.StateCommon.Border.Color2 = System.Drawing.SystemColors.HighlightText;
+            this.txtEmail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtUsername.StateCommon.Border.Rounding = 20;
-            this.txtUsername.StateCommon.Border.Width = 2;
-            this.txtUsername.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
-            this.txtUsername.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.StateCommon.Content.Padding = new System.Windows.Forms.Padding(20, 4, 10, 4);
-            this.txtUsername.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
-            this.txtUsername.TabIndex = 24;
-            this.txtUsername.Text = "Enter your email";
+            this.txtEmail.StateCommon.Border.Rounding = 20F;
+            this.txtEmail.StateCommon.Border.Width = 2;
+            this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(20, 4, 10, 4);
+            this.txtEmail.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
+            this.txtEmail.TabIndex = 24;
+            this.txtEmail.Text = "Enter your email";
             // 
             // btnForgotpass
             // 
@@ -138,7 +136,7 @@
             this.txtPassword.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtPassword.StateCommon.Border.Rounding = 20;
+            this.txtPassword.StateCommon.Border.Rounding = 20F;
             this.txtPassword.StateCommon.Border.Width = 2;
             this.txtPassword.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -227,7 +225,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
-
             // 
             // usLogin
             // 
@@ -239,7 +236,7 @@
             this.Controls.Add(this.cbRememberPass);
             this.Controls.Add(this.lblContext);
             this.Controls.Add(this.lblThumbnail);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnForgotpass);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnNext);
@@ -257,7 +254,7 @@
         private Krypton.Toolkit.KryptonCheckBox cbRememberPass;
         private System.Windows.Forms.Label lblContext;
         private System.Windows.Forms.Label lblThumbnail;
-        private Krypton.Toolkit.KryptonTextBox txtUsername;
+        private Krypton.Toolkit.KryptonTextBox txtEmail;
         private Krypton.Toolkit.KryptonButton btnForgotpass;
         private Krypton.Toolkit.KryptonTextBox txtPassword;
         private Krypton.Toolkit.KryptonButton btnNext;

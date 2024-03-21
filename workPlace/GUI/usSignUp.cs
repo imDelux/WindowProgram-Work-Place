@@ -1,5 +1,4 @@
-﻿using Data;
-using EntityModel;
+﻿using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +23,7 @@ namespace GUI
             // Get person in form of object
             Person person = new Person("", "", false, DateTime.Now, txtPhonenum.Text, txtEmail.Text, "", txtPassword.Text);
 
-            fSignUpInfo fSignUpInfo1 = new fSignUpInfo();
+            fSignUpInfo fSignUpInfo1 = new fSignUpInfo(person);
             fSignUpInfo1.ShowDialog();
         }
     }

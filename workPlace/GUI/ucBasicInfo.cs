@@ -1,5 +1,4 @@
-﻿using Data;
-using EntityModel;
+﻿using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

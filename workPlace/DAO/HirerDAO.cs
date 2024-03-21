@@ -1,12 +1,13 @@
-﻿using System;
+﻿using EntityModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace DAO
 {
-    public class HirerDAO
+    public class HirerDAO : PersonDAO
     {
     }
 }

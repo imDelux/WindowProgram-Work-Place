@@ -47,7 +47,11 @@
             this.rbtnWorker = new Krypton.Toolkit.KryptonRadioButton();
             this.rbtnHirer = new Krypton.Toolkit.KryptonRadioButton();
             this.lblRole = new System.Windows.Forms.Label();
+            this.pnlGenderContainer = new System.Windows.Forms.Panel();
+            this.pnlRoleContainer = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlGenderContainer.SuspendLayout();
+            this.pnlRoleContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
@@ -66,7 +70,7 @@
             this.txtName.Location = new System.Drawing.Point(230, 182);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(273, 43);
-            this.txtName.StateActive.Content.Color1 = System.Drawing.Color.White;
+            this.txtName.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.txtName.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -75,6 +79,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtName.StateCommon.Border.Rounding = 10F;
+            this.txtName.StateCommon.Content.Color1 = System.Drawing.Color.Black;
             this.txtName.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtName.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
@@ -107,7 +112,7 @@
             this.txtPersonID.Location = new System.Drawing.Point(230, 382);
             this.txtPersonID.Name = "txtPersonID";
             this.txtPersonID.Size = new System.Drawing.Size(273, 43);
-            this.txtPersonID.StateActive.Content.Color1 = System.Drawing.Color.White;
+            this.txtPersonID.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.txtPersonID.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPersonID.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.txtPersonID.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -116,6 +121,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPersonID.StateCommon.Border.Rounding = 10F;
+            this.txtPersonID.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.txtPersonID.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPersonID.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtPersonID.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPersonID.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
@@ -137,7 +144,7 @@
             this.txtLocation.Location = new System.Drawing.Point(230, 457);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(273, 43);
-            this.txtLocation.StateActive.Content.Color1 = System.Drawing.Color.White;
+            this.txtLocation.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.txtLocation.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.txtLocation.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -146,6 +153,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtLocation.StateCommon.Border.Rounding = 10F;
+            this.txtLocation.StateCommon.Content.Color1 = System.Drawing.Color.Black;
             this.txtLocation.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtLocation.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
@@ -335,7 +343,7 @@
             // 
             // rbtnMale
             // 
-            this.rbtnMale.Location = new System.Drawing.Point(234, 259);
+            this.rbtnMale.Location = new System.Drawing.Point(2, 3);
             this.rbtnMale.Name = "rbtnMale";
             this.rbtnMale.Size = new System.Drawing.Size(57, 21);
             this.rbtnMale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -346,7 +354,7 @@
             // 
             // rbtnFemale
             // 
-            this.rbtnFemale.Location = new System.Drawing.Point(375, 259);
+            this.rbtnFemale.Location = new System.Drawing.Point(143, 3);
             this.rbtnFemale.Name = "rbtnFemale";
             this.rbtnFemale.Size = new System.Drawing.Size(75, 21);
             this.rbtnFemale.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -357,7 +365,7 @@
             // 
             // rbtnWorker
             // 
-            this.rbtnWorker.Location = new System.Drawing.Point(375, 530);
+            this.rbtnWorker.Location = new System.Drawing.Point(143, 6);
             this.rbtnWorker.Name = "rbtnWorker";
             this.rbtnWorker.Size = new System.Drawing.Size(73, 21);
             this.rbtnWorker.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -368,7 +376,7 @@
             // 
             // rbtnHirer
             // 
-            this.rbtnHirer.Location = new System.Drawing.Point(234, 530);
+            this.rbtnHirer.Location = new System.Drawing.Point(3, 6);
             this.rbtnHirer.Name = "rbtnHirer";
             this.rbtnHirer.Size = new System.Drawing.Size(57, 21);
             this.rbtnHirer.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -388,6 +396,24 @@
             this.lblRole.TabIndex = 19;
             this.lblRole.Text = "You\'re a ?";
             // 
+            // pnlGenderContainer
+            // 
+            this.pnlGenderContainer.Controls.Add(this.rbtnFemale);
+            this.pnlGenderContainer.Controls.Add(this.rbtnMale);
+            this.pnlGenderContainer.Location = new System.Drawing.Point(230, 257);
+            this.pnlGenderContainer.Name = "pnlGenderContainer";
+            this.pnlGenderContainer.Size = new System.Drawing.Size(218, 38);
+            this.pnlGenderContainer.TabIndex = 22;
+            // 
+            // pnlRoleContainer
+            // 
+            this.pnlRoleContainer.Controls.Add(this.rbtnHirer);
+            this.pnlRoleContainer.Controls.Add(this.rbtnWorker);
+            this.pnlRoleContainer.Location = new System.Drawing.Point(230, 523);
+            this.pnlRoleContainer.Name = "pnlRoleContainer";
+            this.pnlRoleContainer.Size = new System.Drawing.Size(218, 36);
+            this.pnlRoleContainer.TabIndex = 23;
+            // 
             // fSignUpInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -395,11 +421,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(566, 642);
             this.CloseBox = false;
-            this.Controls.Add(this.rbtnWorker);
-            this.Controls.Add(this.rbtnHirer);
+            this.Controls.Add(this.pnlRoleContainer);
+            this.Controls.Add(this.pnlGenderContainer);
             this.Controls.Add(this.lblRole);
-            this.Controls.Add(this.rbtnFemale);
-            this.Controls.Add(this.rbtnMale);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.pictureBox1);
@@ -441,6 +465,10 @@
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlGenderContainer.ResumeLayout(false);
+            this.pnlGenderContainer.PerformLayout();
+            this.pnlRoleContainer.ResumeLayout(false);
+            this.pnlRoleContainer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,5 +493,7 @@
         private Krypton.Toolkit.KryptonRadioButton rbtnWorker;
         private Krypton.Toolkit.KryptonRadioButton rbtnHirer;
         private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Panel pnlGenderContainer;
+        private System.Windows.Forms.Panel pnlRoleContainer;
     }
 }

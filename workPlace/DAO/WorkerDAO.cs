@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAO
 {
-    public class WorkerDAO
+    public class WorkerDAO : PersonDAO
     {
     }
 }

@@ -1,10 +1,11 @@
-﻿using Data;
-using EntityModel;
+﻿using EntityModel;
+using DAO;
 using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace GUI
     {
         // Indicate who is sign up
         Person currentPerson;
+        PersonDAO personDAO = new PersonDAO();
 
         public fSignUpInfo()
         {
@@ -37,6 +39,20 @@ namespace GUI
             currentPerson.Gender = rbtnMale.Checked ? true : false;
             currentPerson.BirthDate = dtpBirth.Value;
             currentPerson.Location = txtLocation.Text;
+
+            // Try to add person to the database
+            string result = personDAO.Add(currentPerson, (rbtnHirer.Checked == true ? "Hirer" : "Worker"));
+
+            // Check result 
+            if (result == "Successful")
+            {
+                MessageBox.Show("Successful", "Notification");
+                this.Close();
+            }
+            else
+            {
+                // Base on what error return
+            }
         }
 
         private void btnCancle_Click(object sender, EventArgs e)
