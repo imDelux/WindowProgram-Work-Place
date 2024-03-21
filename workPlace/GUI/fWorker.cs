@@ -1,4 +1,5 @@
-﻿using Krypton.Toolkit;
+﻿using EntityModel;
+using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,17 @@ namespace GUI
 {
     public partial class fWorker : KryptonForm
     {
+        // Current worker user
+        Person currentWorker = null;
         public fWorker()
         {
             InitializeComponent();
+        }
+
+        public fWorker(Person worker)
+        {
+            InitializeComponent();
+            currentWorker = worker;
         }
 
 
@@ -80,7 +89,7 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ucProfile profileContent = new ucProfile();
+            ucProfile profileContent = new ucProfile(currentWorker, false);
             ChangeMainContent(profileContent);
         }
 

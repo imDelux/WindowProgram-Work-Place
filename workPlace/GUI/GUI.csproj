@@ -133,12 +133,6 @@
     <Compile Include="fWorkerInfo.Designer.cs">
       <DependentUpon>fWorkerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucBasicInfo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucBasicInfo.Designer.cs">
-      <DependentUpon>ucBasicInfo.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucEvaluate.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,9 +256,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucBasicInfo.resx">
-      <DependentUpon>ucBasicInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucEvaluate.resx">
       <DependentUpon>ucEvaluate.cs</DependentUpon>

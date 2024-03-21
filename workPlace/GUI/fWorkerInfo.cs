@@ -36,7 +36,12 @@ namespace GUI
 
         public void DataSetter(Worker worker)
         {
-            ucBasicInfoWorker.DataSetter(worker);
+            lblWokerName.Text = worker.Name;
+            lblGender.Text = (worker.Gender == true ? "Male" : "Female");
+            lblBirth.Text = worker.BirthDate.ToShortDateString();
+            lblTelephone.Text = worker.Telephone;
+            lblEmail.Text = worker.Email;
+            lblLocation.Text = worker.Location;
         }
     }
 }

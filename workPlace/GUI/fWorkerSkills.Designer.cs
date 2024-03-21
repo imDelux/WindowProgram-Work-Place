@@ -32,10 +32,7 @@
             this.btnAdjust = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.fpnlSkillContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlEdgeRight = new System.Windows.Forms.Panel();
             this.ucSkill1 = new GUI.ucSkill();
-            this.ucSkill2 = new GUI.ucSkill();
-            this.pnlEdgeLeft = new System.Windows.Forms.Panel();
             this.fpnlSkillContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +41,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Tahoma", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblTitle.Location = new System.Drawing.Point(186, 24);
+            this.lblTitle.Location = new System.Drawing.Point(175, 10);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(346, 57);
             this.lblTitle.TabIndex = 1;
@@ -52,7 +49,7 @@
             // 
             // btnAdjust
             // 
-            this.btnAdjust.Location = new System.Drawing.Point(342, 770);
+            this.btnAdjust.Location = new System.Drawing.Point(334, 677);
             this.btnAdjust.Name = "btnAdjust";
             this.btnAdjust.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnAdjust.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -108,7 +105,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(514, 770);
+            this.btnCancel.Location = new System.Drawing.Point(506, 677);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -168,19 +165,10 @@
             // fpnlSkillContainer
             // 
             this.fpnlSkillContainer.Controls.Add(this.ucSkill1);
-            this.fpnlSkillContainer.Controls.Add(this.ucSkill2);
-            this.fpnlSkillContainer.Location = new System.Drawing.Point(44, 104);
+            this.fpnlSkillContainer.Location = new System.Drawing.Point(33, 95);
             this.fpnlSkillContainer.Name = "fpnlSkillContainer";
-            this.fpnlSkillContainer.Size = new System.Drawing.Size(610, 629);
+            this.fpnlSkillContainer.Size = new System.Drawing.Size(610, 557);
             this.fpnlSkillContainer.TabIndex = 4;
-            // 
-            // pnlEdgeRight
-            // 
-            this.pnlEdgeRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.pnlEdgeRight.Location = new System.Drawing.Point(684, -15);
-            this.pnlEdgeRight.Name = "pnlEdgeRight";
-            this.pnlEdgeRight.Size = new System.Drawing.Size(32, 922);
-            this.pnlEdgeRight.TabIndex = 5;
             // 
             // ucSkill1
             // 
@@ -189,38 +177,28 @@
             this.ucSkill1.Size = new System.Drawing.Size(610, 208);
             this.ucSkill1.TabIndex = 0;
             // 
-            // ucSkill2
-            // 
-            this.ucSkill2.Location = new System.Drawing.Point(3, 217);
-            this.ucSkill2.Name = "ucSkill2";
-            this.ucSkill2.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill2.TabIndex = 1;
-            // 
-            // pnlEdgeLeft
-            // 
-            this.pnlEdgeLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.pnlEdgeLeft.Location = new System.Drawing.Point(0, 0);
-            this.pnlEdgeLeft.Name = "pnlEdgeLeft";
-            this.pnlEdgeLeft.Size = new System.Drawing.Size(10, 922);
-            this.pnlEdgeLeft.TabIndex = 6;
-            // 
             // fWorkerSkills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(694, 858);
-            this.Controls.Add(this.pnlEdgeLeft);
-            this.Controls.Add(this.pnlEdgeRight);
+            this.ClientSize = new System.Drawing.Size(676, 746);
+            this.CloseBox = false;
             this.Controls.Add(this.fpnlSkillContainer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdjust);
             this.Controls.Add(this.lblTitle);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.HeaderStyle = Krypton.Toolkit.HeaderStyle.DockInactive;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fWorkerSkills";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StateActive.Back.Color1 = System.Drawing.Color.White;
+            this.StateActive.Back.Color2 = System.Drawing.Color.White;
             this.StateActive.Border.Color1 = System.Drawing.Color.Transparent;
             this.StateActive.Border.Color2 = System.Drawing.Color.Transparent;
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -228,7 +206,20 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateActive.Border.Rounding = 20F;
             this.StateActive.Border.Width = 1;
-            this.Text = "fWorkerSkills";
+            this.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Header.Border.Color1 = System.Drawing.Color.Transparent;
+            this.StateCommon.Header.Border.Color2 = System.Drawing.Color.Transparent;
+            this.StateCommon.Header.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.fpnlSkillContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,8 +233,5 @@
         private Krypton.Toolkit.KryptonButton btnCancel;
         private System.Windows.Forms.FlowLayoutPanel fpnlSkillContainer;
         private ucSkill ucSkill1;
-        private ucSkill ucSkill2;
-        private System.Windows.Forms.Panel pnlEdgeRight;
-        private System.Windows.Forms.Panel pnlEdgeLeft;
     }
 }

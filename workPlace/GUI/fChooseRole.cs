@@ -52,17 +52,30 @@ namespace GUI
             // Worker case
             if (!role)
             {
+                // Take information first
                 Person worker = workerDAO.FetchBasicInformation(currentPerson, "Worker");
+
                 if (worker != null)
                 {
-                    fWorker workerMain = new fWorker();
-                    workerMain.Show();
+                    fWorker workerMain = new fWorker(worker);
+
+                    ((Form)this.TopLevelControl).Hide();
+                    workerMain.ShowDialog();
+                    this.Close();
                 }
             }
             // Hirer case
             else if (role)
             {
                 Person hirer = hirerDAO.FetchBasicInformation(currentPerson, "Hirer");
+                if (hirer != null)
+                {
+                    fHirer hirerMain = new fHirer(hirer);
+
+                    ((Form)this.TopLevelControl).Hide();
+                    hirerMain.ShowDialog();
+                    this.Close();
+                }
             }
         }
     }

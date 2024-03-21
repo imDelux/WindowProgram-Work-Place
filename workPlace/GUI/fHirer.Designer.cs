@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.pnlLeft = new Krypton.Toolkit.KryptonPanel();
-            this.btnHiring = new Krypton.Toolkit.KryptonButton();
-            this.btnProfile = new Krypton.Toolkit.KryptonButton();
-            this.btnHome = new Krypton.Toolkit.KryptonButton();
-            this.pnlContainer = new Krypton.Toolkit.KryptonPanel();
-            this.lblExtraText = new System.Windows.Forms.Label();
-            this.pnlLogoContainer = new System.Windows.Forms.Panel();
-            this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
             this.picExit = new Krypton.Toolkit.KryptonPictureBox();
+            this.btnProfile = new Krypton.Toolkit.KryptonButton();
+            this.btnHiring = new Krypton.Toolkit.KryptonButton();
+            this.btnHome = new Krypton.Toolkit.KryptonButton();
+            this.pnlLogoContainer = new System.Windows.Forms.Panel();
+            this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
+            this.lblExtraText = new System.Windows.Forms.Label();
+            this.pnlContainer = new Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).BeginInit();
             this.pnlLeft.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
-            this.pnlLogoContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            this.pnlLogoContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
@@ -63,41 +63,28 @@
             this.pnlLeft.StateNormal.Color1 = System.Drawing.Color.White;
             this.pnlLeft.TabIndex = 0;
             // 
-            // btnHiring
+            // picLogOut
             // 
-            this.btnHiring.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHiring.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHiring.Location = new System.Drawing.Point(0, 272);
-            this.btnHiring.Name = "btnHiring";
-            this.btnHiring.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHiring.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHiring.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHiring.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHiring.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnHiring.Size = new System.Drawing.Size(264, 56);
-            this.btnHiring.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.btnHiring.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btnHiring.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnHiring.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnHiring.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.btnHiring.StateCommon.Border.Rounding = 1F;
-            this.btnHiring.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnHiring.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHiring.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.btnHiring.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnHiring.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnHiring.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnHiring.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnHiring.TabIndex = 3;
-            this.btnHiring.Values.Text = "Hiring";
-            this.btnHiring.Click += new System.EventHandler(this.btnHiring_Click);
+            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picLogOut.Image = global::GUI.Properties.Resources.logout;
+            this.picLogOut.Location = new System.Drawing.Point(170, 712);
+            this.picLogOut.Name = "picLogOut";
+            this.picLogOut.Size = new System.Drawing.Size(40, 40);
+            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogOut.TabIndex = 13;
+            this.picLogOut.TabStop = false;
+            // 
+            // picExit
+            // 
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picExit.Image = global::GUI.Properties.Resources.reject;
+            this.picExit.Location = new System.Drawing.Point(212, 714);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(38, 38);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picExit.TabIndex = 12;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click_1);
             // 
             // btnProfile
             // 
@@ -135,6 +122,42 @@
             this.btnProfile.Values.Text = "Profile";
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
+            // btnHiring
+            // 
+            this.btnHiring.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHiring.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHiring.Location = new System.Drawing.Point(0, 272);
+            this.btnHiring.Name = "btnHiring";
+            this.btnHiring.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHiring.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHiring.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHiring.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHiring.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnHiring.Size = new System.Drawing.Size(264, 56);
+            this.btnHiring.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnHiring.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnHiring.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnHiring.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnHiring.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnHiring.StateCommon.Border.Rounding = 1F;
+            this.btnHiring.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnHiring.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHiring.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnHiring.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnHiring.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnHiring.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnHiring.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnHiring.TabIndex = 3;
+            this.btnHiring.Values.Text = "Hiring";
+            this.btnHiring.Click += new System.EventHandler(this.btnHiring_Click);
+            // 
             // btnHome
             // 
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -171,27 +194,6 @@
             this.btnHome.Values.Text = "Home";
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // pnlContainer
-            // 
-            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlContainer.Location = new System.Drawing.Point(265, 0);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(995, 766);
-            this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.pnlContainer.TabIndex = 1;
-            // 
-            // lblExtraText
-            // 
-            this.lblExtraText.AutoSize = true;
-            this.lblExtraText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtraText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblExtraText.Location = new System.Drawing.Point(75, 139);
-            this.lblExtraText.Name = "lblExtraText";
-            this.lblExtraText.Size = new System.Drawing.Size(115, 21);
-            this.lblExtraText.TabIndex = 1;
-            this.lblExtraText.Text = "Unemployed";
-            // 
             // pnlLogoContainer
             // 
             this.pnlLogoContainer.BackColor = System.Drawing.Color.White;
@@ -214,28 +216,26 @@
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
             // 
-            // picLogOut
+            // lblExtraText
             // 
-            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picLogOut.Image = global::GUI.Properties.Resources.logout;
-            this.picLogOut.Location = new System.Drawing.Point(170, 712);
-            this.picLogOut.Name = "picLogOut";
-            this.picLogOut.Size = new System.Drawing.Size(40, 40);
-            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogOut.TabIndex = 13;
-            this.picLogOut.TabStop = false;
+            this.lblExtraText.AutoSize = true;
+            this.lblExtraText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExtraText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblExtraText.Location = new System.Drawing.Point(75, 139);
+            this.lblExtraText.Name = "lblExtraText";
+            this.lblExtraText.Size = new System.Drawing.Size(115, 21);
+            this.lblExtraText.TabIndex = 1;
+            this.lblExtraText.Text = "Unemployed";
             // 
-            // picExit
+            // pnlContainer
             // 
-            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picExit.Image = global::GUI.Properties.Resources.reject;
-            this.picExit.Location = new System.Drawing.Point(212, 714);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(38, 38);
-            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picExit.TabIndex = 12;
-            this.picExit.TabStop = false;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click_1);
+            this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlContainer.Location = new System.Drawing.Point(265, 0);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(995, 766);
+            this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.pnlContainer.TabIndex = 1;
             // 
             // fHirer
             // 
@@ -249,25 +249,30 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fHirer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StateActive.Back.Color1 = System.Drawing.Color.White;
+            this.StateActive.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateActive.Border.Rounding = 20F;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.Rounding = 20F;
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.Text = "fHirer";
             this.Load += new System.EventHandler(this.fHirer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).EndInit();
             this.pnlLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.pnlLogoContainer.ResumeLayout(false);
             this.pnlLogoContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).EndInit();
             this.ResumeLayout(false);
 
         }

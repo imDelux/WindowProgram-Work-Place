@@ -1,4 +1,5 @@
-﻿using Krypton.Toolkit;
+﻿using EntityModel;
+using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +14,18 @@ namespace GUI
 {
     public partial class fHirer : KryptonForm
     {
+        // Current hirer user
+        Person currentHirer = null;
+
         public fHirer()
         {
             InitializeComponent();
+        }
+
+        public fHirer(Person hirer)
+        {
+            InitializeComponent();
+            currentHirer = hirer;
         }
 
         private void fHirer_Load(object sender, EventArgs e)
@@ -31,7 +41,7 @@ namespace GUI
             uc.Dock = DockStyle.Fill;
             pnlContainer.Controls.Clear();
             pnlContainer.Controls.Add(uc);
-            uc.BringToFront();
+            uc.Dock = DockStyle.Fill;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -48,7 +58,7 @@ namespace GUI
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ucProfile uc = new ucProfile();
+            ucProfile uc = new ucProfile(currentHirer, true);
             AddUC(uc);
         }
 

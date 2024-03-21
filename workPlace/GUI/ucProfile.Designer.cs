@@ -52,10 +52,15 @@
             this.btnEvaluateContainer.Location = new System.Drawing.Point(41, 30);
             this.btnEvaluateContainer.Name = "btnEvaluateContainer";
             this.btnEvaluateContainer.Size = new System.Drawing.Size(464, 702);
+            this.btnEvaluateContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnEvaluateContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
             this.btnEvaluateContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnEvaluateContainer.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnEvaluateContainer.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnEvaluateContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
             this.btnEvaluateContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -63,8 +68,8 @@
             this.btnEvaluateContainer.StateDisabled.Border.Width = 1;
             this.btnEvaluateContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnEvaluateContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnEvaluateContainer.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnEvaluateContainer.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnEvaluateContainer.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
             this.btnEvaluateContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -79,10 +84,15 @@
             this.btnBasicInformationContainer.Location = new System.Drawing.Point(547, 30);
             this.btnBasicInformationContainer.Name = "btnBasicInformationContainer";
             this.btnBasicInformationContainer.Size = new System.Drawing.Size(406, 702);
+            this.btnBasicInformationContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnBasicInformationContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
             this.btnBasicInformationContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnBasicInformationContainer.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnBasicInformationContainer.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnBasicInformationContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
             this.btnBasicInformationContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -90,8 +100,8 @@
             this.btnBasicInformationContainer.StateDisabled.Border.Width = 1;
             this.btnBasicInformationContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
             this.btnBasicInformationContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnBasicInformationContainer.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnBasicInformationContainer.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnBasicInformationContainer.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
             this.btnBasicInformationContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -250,7 +260,6 @@
             this.Controls.Add(this.btnEvaluateContainer);
             this.Name = "ucProfile";
             this.Size = new System.Drawing.Size(995, 766);
-            this.Load += new System.EventHandler(this.usProfile_Load);
             this.pnlBasicInformationContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();

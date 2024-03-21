@@ -54,12 +54,11 @@
             // lblLocation
             // 
             this.lblLocation.AutoEllipsis = true;
-            this.lblLocation.AutoSize = true;
             this.lblLocation.BackColor = System.Drawing.Color.White;
             this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.Location = new System.Drawing.Point(139, 98);
+            this.lblLocation.Location = new System.Drawing.Point(139, 92);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(230, 21);
+            this.lblLocation.Size = new System.Drawing.Size(275, 50);
             this.lblLocation.TabIndex = 4;
             this.lblLocation.Text = "Location: Ho Chi Minh City";
             // 
@@ -69,7 +68,7 @@
             this.lblSkill.AutoSize = true;
             this.lblSkill.BackColor = System.Drawing.Color.White;
             this.lblSkill.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkill.Location = new System.Drawing.Point(29, 139);
+            this.lblSkill.Location = new System.Drawing.Point(29, 148);
             this.lblSkill.Name = "lblSkill";
             this.lblSkill.Size = new System.Drawing.Size(257, 21);
             this.lblSkill.TabIndex = 4;
@@ -81,7 +80,7 @@
             this.lblAge.AutoSize = true;
             this.lblAge.BackColor = System.Drawing.Color.White;
             this.lblAge.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(139, 68);
+            this.lblAge.Location = new System.Drawing.Point(139, 64);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(73, 21);
             this.lblAge.TabIndex = 4;
@@ -109,7 +108,7 @@
             // 
             this.picAvatar.BackColor = System.Drawing.Color.White;
             this.picAvatar.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvatar.Location = new System.Drawing.Point(33, 27);
+            this.picAvatar.Location = new System.Drawing.Point(35, 33);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(98, 98);
             this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
