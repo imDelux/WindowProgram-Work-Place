@@ -99,7 +99,7 @@ namespace DAO
         /// </summary>
         /// <param name="sqlCommand"></param>
         /// <returns>Skill need, otherwise return null</returns>
-        public List<Skill> FetchSkill(string sqlCommand)
+        public List<Skill> FetchSkill(string personID)
         {
             // Store result
             List<Skill> result = new List<Skill>();
@@ -113,6 +113,7 @@ namespace DAO
             conn.Open();
 
             // Initialize SQL command
+            string sqlCommand = string.Format("SELECT * FROM Skills WHERE PersonID = '{0}'", personID);
             SqlCommand cmd = new SqlCommand(sqlCommand, conn);
 
             // Read data

@@ -19,6 +19,7 @@ namespace GUI
         // Input a person to display that person's skills
         Person currentWorker;
         SkillDAO skillDAO = new SkillDAO();
+        DbConnection connection = new DbConnection();
 
         public fWorkerSkills()
         {
@@ -29,11 +30,23 @@ namespace GUI
         {
             InitializeComponent();
             currentWorker = worker;
+            DataSetter();
         }
 
         private void DataSetter()
         {
+            // Get skill list of current worker
+            List<Skill> skillList = new List<Skill>();
+            skillList = connection.FetchSkill(currentWorker.PersonID);
 
+            // Generate uc Skill
+            fpnlSkillContainer.Controls.Clear();
+            foreach (Skill skill in skillList)
+            {
+                ucSkill ithskill = new ucSkill(skill);
+                fpnlSkillContainer.Controls.Add(ithskill);
+                ithskill.Dock = DockStyle.Top;
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -53,6 +66,7 @@ namespace GUI
             if (addSkillResult == DialogResult.OK)
             {
                 skillDAO.Add(newSkill, currentWorker);
+                DataSetter();
             }
         }
     }

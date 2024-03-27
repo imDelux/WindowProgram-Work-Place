@@ -15,6 +15,7 @@ namespace GUI
     {
         // Who is being displayed
         Worker currentDisplayWorker;
+
         public ucWorker()
         {
             InitializeComponent();

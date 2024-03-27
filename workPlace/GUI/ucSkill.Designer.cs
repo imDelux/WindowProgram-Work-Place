@@ -30,7 +30,7 @@
         {
             this.btnSkillNameContainer = new Krypton.Toolkit.KryptonButton();
             this.btnSkillDescribeContainer = new Krypton.Toolkit.KryptonButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblExpectedWage = new System.Windows.Forms.Label();
             this.picEdit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picEdit)).BeginInit();
             this.SuspendLayout();
@@ -77,16 +77,16 @@
             this.btnSkillDescribeContainer.TabIndex = 3;
             this.btnSkillDescribeContainer.Values.Text = "";
             // 
-            // label1
+            // lblExpectedWage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(286, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 23);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Expected Wage: 20$ - 22$";
+            this.lblExpectedWage.AutoSize = true;
+            this.lblExpectedWage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpectedWage.ForeColor = System.Drawing.Color.Gray;
+            this.lblExpectedWage.Location = new System.Drawing.Point(287, 30);
+            this.lblExpectedWage.Name = "lblExpectedWage";
+            this.lblExpectedWage.Size = new System.Drawing.Size(264, 23);
+            this.lblExpectedWage.TabIndex = 4;
+            this.lblExpectedWage.Text = "Expected Wage: 20$ - 22$";
             // 
             // picEdit
             // 
@@ -104,7 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.picEdit);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblExpectedWage);
             this.Controls.Add(this.btnSkillDescribeContainer);
             this.Controls.Add(this.btnSkillNameContainer);
             this.Name = "ucSkill";
@@ -119,7 +119,7 @@
 
         private Krypton.Toolkit.KryptonButton btnSkillNameContainer;
         private Krypton.Toolkit.KryptonButton btnSkillDescribeContainer;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblExpectedWage;
         private System.Windows.Forms.PictureBox picEdit;
     }
 }

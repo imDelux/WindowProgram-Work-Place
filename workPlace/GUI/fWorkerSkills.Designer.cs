@@ -34,7 +34,6 @@
             this.fpnlSkillContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlAddContainer = new System.Windows.Forms.Panel();
             this.picAdd = new System.Windows.Forms.PictureBox();
-            this.fpnlSkillContainer.SuspendLayout();
             this.pnlAddContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdd)).BeginInit();
             this.SuspendLayout();
@@ -168,26 +167,25 @@
             // fpnlSkillContainer
             // 
             this.fpnlSkillContainer.AutoScroll = true;
-            this.fpnlSkillContainer.Controls.Add(this.pnlAddContainer);
-            this.fpnlSkillContainer.Location = new System.Drawing.Point(33, 95);
+            this.fpnlSkillContainer.BackColor = System.Drawing.Color.White;
+            this.fpnlSkillContainer.Location = new System.Drawing.Point(33, 89);
             this.fpnlSkillContainer.Name = "fpnlSkillContainer";
-            this.fpnlSkillContainer.Size = new System.Drawing.Size(636, 557);
+            this.fpnlSkillContainer.Size = new System.Drawing.Size(636, 508);
             this.fpnlSkillContainer.TabIndex = 4;
             // 
             // pnlAddContainer
             // 
             this.pnlAddContainer.Controls.Add(this.picAdd);
-            this.pnlAddContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlAddContainer.Location = new System.Drawing.Point(3, 3);
+            this.pnlAddContainer.Location = new System.Drawing.Point(45, 603);
             this.pnlAddContainer.Name = "pnlAddContainer";
-            this.pnlAddContainer.Size = new System.Drawing.Size(610, 91);
+            this.pnlAddContainer.Size = new System.Drawing.Size(610, 58);
             this.pnlAddContainer.TabIndex = 1;
             // 
             // picAdd
             // 
             this.picAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAdd.Image = global::GUI.Properties.Resources.add_;
-            this.picAdd.Location = new System.Drawing.Point(281, 20);
+            this.picAdd.Location = new System.Drawing.Point(278, 3);
             this.picAdd.Name = "picAdd";
             this.picAdd.Size = new System.Drawing.Size(50, 50);
             this.picAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,6 +200,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(704, 746);
             this.CloseBox = false;
+            this.Controls.Add(this.pnlAddContainer);
             this.Controls.Add(this.fpnlSkillContainer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
@@ -239,7 +238,6 @@
             this.StateCommon.Header.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.fpnlSkillContainer.ResumeLayout(false);
             this.pnlAddContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picAdd)).EndInit();
             this.ResumeLayout(false);
