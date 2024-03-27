@@ -34,11 +34,6 @@
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.fpnlSkills = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlBasicInforContainer = new System.Windows.Forms.Panel();
-            this.btnDetail = new Krypton.Toolkit.KryptonButton();
-            this.lblRate = new Krypton.Toolkit.KryptonLabel();
-            this.lblWokerName = new Krypton.Toolkit.KryptonLabel();
-            this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.lblGender = new System.Windows.Forms.Label();
             this.lblGenderHead = new System.Windows.Forms.Label();
@@ -50,9 +45,14 @@
             this.lblEmailHead = new System.Windows.Forms.Label();
             this.lblBirth = new System.Windows.Forms.Label();
             this.lblWorkLocationHead = new System.Windows.Forms.Label();
+            this.btnDetail = new Krypton.Toolkit.KryptonButton();
+            this.lblRate = new Krypton.Toolkit.KryptonLabel();
+            this.lblWokerName = new Krypton.Toolkit.KryptonLabel();
+            this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
+            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.pnlBasicInforContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
             this.pnlContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBasicInfo
@@ -192,97 +192,6 @@
             this.pnlBasicInforContainer.Name = "pnlBasicInforContainer";
             this.pnlBasicInforContainer.Size = new System.Drawing.Size(585, 505);
             this.pnlBasicInforContainer.TabIndex = 14;
-            // 
-            // btnDetail
-            // 
-            this.btnDetail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDetail.Location = new System.Drawing.Point(461, 98);
-            this.btnDetail.Name = "btnDetail";
-            this.btnDetail.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnDetail.OverrideDefault.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnDetail.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetail.OverrideDefault.Border.Rounding = 5F;
-            this.btnDetail.OverrideDefault.Border.Width = 1;
-            this.btnDetail.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnDetail.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnDetail.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetail.OverrideFocus.Border.Rounding = 5F;
-            this.btnDetail.OverrideFocus.Border.Width = 1;
-            this.btnDetail.Size = new System.Drawing.Size(73, 25);
-            this.btnDetail.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.btnDetail.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnDetail.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnDetail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDetail.StateCommon.Border.Rounding = 5F;
-            this.btnDetail.StateCommon.Border.Width = 1;
-            this.btnDetail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnDetail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnDetail.TabIndex = 32;
-            this.btnDetail.Values.Text = "Detail";
-            // 
-            // lblRate
-            // 
-            this.lblRate.Location = new System.Drawing.Point(227, 96);
-            this.lblRate.Name = "lblRate";
-            this.lblRate.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.lblRate.Size = new System.Drawing.Size(165, 27);
-            this.lblRate.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblRate.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblRate.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRate.TabIndex = 21;
-            this.lblRate.Values.Text = "Rate: 8.45/10.0 (8)";
-            // 
-            // lblWokerName
-            // 
-            this.lblWokerName.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.lblWokerName.Location = new System.Drawing.Point(225, 50);
-            this.lblWokerName.Name = "lblWokerName";
-            this.lblWokerName.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.lblWokerName.Size = new System.Drawing.Size(235, 40);
-            this.lblWokerName.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWokerName.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWokerName.StateCommon.ShortText.Font = new System.Drawing.Font("Cooper Black", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWokerName.TabIndex = 20;
-            this.lblWokerName.Values.Text = "Bien Xuan Huy";
-            // 
-            // picAvt
-            // 
-            this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvt.Location = new System.Drawing.Point(59, 30);
-            this.picAvt.Name = "picAvt";
-            this.picAvt.Size = new System.Drawing.Size(130, 130);
-            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvt.TabIndex = 19;
-            this.picAvt.TabStop = false;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Enabled = false;
-            this.kryptonButton1.Location = new System.Drawing.Point(37, 195);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(515, 281);
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 10F;
-            this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.TabIndex = 22;
-            this.kryptonButton1.Values.Text = "";
             // 
             // pnlContainer
             // 
@@ -431,6 +340,97 @@
             this.lblWorkLocationHead.TabIndex = 12;
             this.lblWorkLocationHead.Text = "Work location";
             // 
+            // btnDetail
+            // 
+            this.btnDetail.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDetail.Location = new System.Drawing.Point(461, 98);
+            this.btnDetail.Name = "btnDetail";
+            this.btnDetail.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideDefault.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetail.OverrideDefault.Border.Rounding = 5F;
+            this.btnDetail.OverrideDefault.Border.Width = 1;
+            this.btnDetail.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnDetail.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetail.OverrideFocus.Border.Rounding = 5F;
+            this.btnDetail.OverrideFocus.Border.Width = 1;
+            this.btnDetail.Size = new System.Drawing.Size(73, 25);
+            this.btnDetail.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnDetail.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnDetail.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnDetail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDetail.StateCommon.Border.Rounding = 5F;
+            this.btnDetail.StateCommon.Border.Width = 1;
+            this.btnDetail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnDetail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnDetail.TabIndex = 32;
+            this.btnDetail.Values.Text = "Detail";
+            // 
+            // lblRate
+            // 
+            this.lblRate.Location = new System.Drawing.Point(227, 96);
+            this.lblRate.Name = "lblRate";
+            this.lblRate.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.lblRate.Size = new System.Drawing.Size(165, 27);
+            this.lblRate.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblRate.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblRate.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRate.TabIndex = 21;
+            this.lblRate.Values.Text = "Rate: 8.45/10.0 (8)";
+            // 
+            // lblWokerName
+            // 
+            this.lblWokerName.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
+            this.lblWokerName.Location = new System.Drawing.Point(225, 50);
+            this.lblWokerName.Name = "lblWokerName";
+            this.lblWokerName.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.lblWokerName.Size = new System.Drawing.Size(235, 40);
+            this.lblWokerName.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblWokerName.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblWokerName.StateCommon.ShortText.Font = new System.Drawing.Font("Cooper Black", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWokerName.TabIndex = 20;
+            this.lblWokerName.Values.Text = "Bien Xuan Huy";
+            // 
+            // picAvt
+            // 
+            this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
+            this.picAvt.Location = new System.Drawing.Point(59, 30);
+            this.picAvt.Name = "picAvt";
+            this.picAvt.Size = new System.Drawing.Size(130, 130);
+            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvt.TabIndex = 19;
+            this.picAvt.TabStop = false;
+            // 
+            // kryptonButton1
+            // 
+            this.kryptonButton1.Enabled = false;
+            this.kryptonButton1.Location = new System.Drawing.Point(37, 195);
+            this.kryptonButton1.Name = "kryptonButton1";
+            this.kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.kryptonButton1.Size = new System.Drawing.Size(515, 281);
+            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StateCommon.Border.Rounding = 10F;
+            this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.kryptonButton1.TabIndex = 22;
+            this.kryptonButton1.Values.Text = "";
+            // 
             // fWorkerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -458,7 +458,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateActive.Border.Rounding = 20F;
-            this.StateActive.Border.Width = 1;
+            this.StateActive.Border.Width = 2;
             this.StateActive.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateActive.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
@@ -474,9 +474,9 @@
             this.Load += new System.EventHandler(this.fWorkerInfo_Load);
             this.pnlBasicInforContainer.ResumeLayout(false);
             this.pnlBasicInforContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
             this.pnlContainer.ResumeLayout(false);
             this.pnlContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

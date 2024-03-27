@@ -29,79 +29,85 @@
         private void InitializeComponent()
         {
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnAdjust = new Krypton.Toolkit.KryptonButton();
+            this.btnConfirm = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.fpnlSkillContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlAddContainer = new System.Windows.Forms.Panel();
+            this.picAdd = new System.Windows.Forms.PictureBox();
+            this.ucSkill3 = new GUI.ucSkill();
+            this.ucSkill2 = new GUI.ucSkill();
             this.ucSkill1 = new GUI.ucSkill();
             this.fpnlSkillContainer.SuspendLayout();
+            this.pnlAddContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblTitle.Location = new System.Drawing.Point(175, 10);
+            this.lblTitle.Location = new System.Drawing.Point(188, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(346, 57);
+            this.lblTitle.Size = new System.Drawing.Size(326, 62);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "YOUR SKILLS";
             // 
-            // btnAdjust
+            // btnConfirm
             // 
-            this.btnAdjust.Location = new System.Drawing.Point(334, 677);
-            this.btnAdjust.Name = "btnAdjust";
-            this.btnAdjust.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnAdjust.OverrideDefault.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnAdjust.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnConfirm.Location = new System.Drawing.Point(334, 677);
+            this.btnConfirm.Name = "btnConfirm";
+            this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnConfirm.OverrideDefault.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnConfirm.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdjust.OverrideDefault.Border.Rounding = 10F;
-            this.btnAdjust.OverrideDefault.Border.Width = 1;
-            this.btnAdjust.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdjust.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAdjust.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdjust.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnAdjust.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnAdjust.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnConfirm.OverrideDefault.Border.Rounding = 10F;
+            this.btnConfirm.OverrideDefault.Border.Width = 1;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnConfirm.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.OverrideFocus.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnConfirm.OverrideFocus.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnConfirm.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdjust.OverrideFocus.Border.Rounding = 10F;
-            this.btnAdjust.OverrideFocus.Border.Width = 1;
-            this.btnAdjust.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdjust.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAdjust.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdjust.Size = new System.Drawing.Size(140, 50);
-            this.btnAdjust.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnAdjust.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnAdjust.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnConfirm.OverrideFocus.Border.Rounding = 10F;
+            this.btnConfirm.OverrideFocus.Border.Width = 1;
+            this.btnConfirm.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnConfirm.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.Size = new System.Drawing.Size(140, 50);
+            this.btnConfirm.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnConfirm.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnConfirm.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdjust.StateNormal.Border.Rounding = 10F;
-            this.btnAdjust.StateNormal.Border.Width = 1;
-            this.btnAdjust.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdjust.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAdjust.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdjust.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnAdjust.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnAdjust.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnAdjust.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnConfirm.StateNormal.Border.Rounding = 10F;
+            this.btnConfirm.StateNormal.Border.Width = 1;
+            this.btnConfirm.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnConfirm.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnConfirm.StateTracking.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnConfirm.StateTracking.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnConfirm.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnAdjust.StateTracking.Border.Rounding = 10F;
-            this.btnAdjust.StateTracking.Border.Width = 1;
-            this.btnAdjust.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnAdjust.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnAdjust.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdjust.TabIndex = 2;
-            this.btnAdjust.Values.Text = "Adjust";
+            this.btnConfirm.StateTracking.Border.Rounding = 10F;
+            this.btnConfirm.StateTracking.Border.Width = 1;
+            this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnConfirm.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm.TabIndex = 2;
+            this.btnConfirm.Values.Text = "Adjust";
             // 
             // btnCancel
             // 
@@ -164,15 +170,54 @@
             // 
             // fpnlSkillContainer
             // 
+            this.fpnlSkillContainer.AutoScroll = true;
+            this.fpnlSkillContainer.Controls.Add(this.ucSkill3);
+            this.fpnlSkillContainer.Controls.Add(this.ucSkill2);
             this.fpnlSkillContainer.Controls.Add(this.ucSkill1);
+            this.fpnlSkillContainer.Controls.Add(this.pnlAddContainer);
             this.fpnlSkillContainer.Location = new System.Drawing.Point(33, 95);
             this.fpnlSkillContainer.Name = "fpnlSkillContainer";
-            this.fpnlSkillContainer.Size = new System.Drawing.Size(610, 557);
+            this.fpnlSkillContainer.Size = new System.Drawing.Size(636, 557);
             this.fpnlSkillContainer.TabIndex = 4;
+            // 
+            // pnlAddContainer
+            // 
+            this.pnlAddContainer.Controls.Add(this.picAdd);
+            this.pnlAddContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlAddContainer.Location = new System.Drawing.Point(3, 645);
+            this.pnlAddContainer.Name = "pnlAddContainer";
+            this.pnlAddContainer.Size = new System.Drawing.Size(610, 91);
+            this.pnlAddContainer.TabIndex = 1;
+            // 
+            // picAdd
+            // 
+            this.picAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAdd.Image = global::GUI.Properties.Resources.add_;
+            this.picAdd.Location = new System.Drawing.Point(281, 20);
+            this.picAdd.Name = "picAdd";
+            this.picAdd.Size = new System.Drawing.Size(50, 50);
+            this.picAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAdd.TabIndex = 0;
+            this.picAdd.TabStop = false;
+            this.picAdd.Click += new System.EventHandler(this.picAdd_Click);
+            // 
+            // ucSkill3
+            // 
+            this.ucSkill3.Location = new System.Drawing.Point(3, 3);
+            this.ucSkill3.Name = "ucSkill3";
+            this.ucSkill3.Size = new System.Drawing.Size(610, 208);
+            this.ucSkill3.TabIndex = 3;
+            // 
+            // ucSkill2
+            // 
+            this.ucSkill2.Location = new System.Drawing.Point(3, 217);
+            this.ucSkill2.Name = "ucSkill2";
+            this.ucSkill2.Size = new System.Drawing.Size(610, 208);
+            this.ucSkill2.TabIndex = 2;
             // 
             // ucSkill1
             // 
-            this.ucSkill1.Location = new System.Drawing.Point(3, 3);
+            this.ucSkill1.Location = new System.Drawing.Point(3, 431);
             this.ucSkill1.Name = "ucSkill1";
             this.ucSkill1.Size = new System.Drawing.Size(610, 208);
             this.ucSkill1.TabIndex = 0;
@@ -182,11 +227,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(676, 746);
+            this.ClientSize = new System.Drawing.Size(704, 746);
             this.CloseBox = false;
             this.Controls.Add(this.fpnlSkillContainer);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnAdjust);
+            this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblTitle);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -199,20 +244,21 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.StateActive.Back.Color2 = System.Drawing.Color.White;
-            this.StateActive.Border.Color1 = System.Drawing.Color.Transparent;
-            this.StateActive.Border.Color2 = System.Drawing.Color.Transparent;
+            this.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateActive.Border.Rounding = 20F;
-            this.StateActive.Border.Width = 1;
+            this.StateActive.Border.Width = 2;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.StateCommon.Border.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.Width = 2;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Header.Border.Color1 = System.Drawing.Color.Transparent;
@@ -221,6 +267,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.fpnlSkillContainer.ResumeLayout(false);
+            this.pnlAddContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picAdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,9 +277,13 @@
         #endregion
 
         private System.Windows.Forms.Label lblTitle;
-        private Krypton.Toolkit.KryptonButton btnAdjust;
+        private Krypton.Toolkit.KryptonButton btnConfirm;
         private Krypton.Toolkit.KryptonButton btnCancel;
         private System.Windows.Forms.FlowLayoutPanel fpnlSkillContainer;
         private ucSkill ucSkill1;
+        private System.Windows.Forms.Panel pnlAddContainer;
+        private System.Windows.Forms.PictureBox picAdd;
+        private ucSkill ucSkill3;
+        private ucSkill ucSkill2;
     }
 }

@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonPalette1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.pnLayout = new Krypton.Toolkit.KryptonPanel();
+            this.usLogin1 = new GUI.usLogin();
             this.btnSignIn = new Krypton.Toolkit.KryptonButton();
             this.btnLogin = new Krypton.Toolkit.KryptonButton();
             this.picLoginScreen = new System.Windows.Forms.PictureBox();
-            this.usLogin1 = new GUI.usLogin();
             ((System.ComponentModel.ISupportInitialize)(this.pnLayout)).BeginInit();
             this.pnLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoginScreen)).BeginInit();
@@ -57,6 +57,16 @@
             this.pnLayout.Size = new System.Drawing.Size(505, 533);
             this.pnLayout.StateCommon.Color1 = System.Drawing.Color.White;
             this.pnLayout.TabIndex = 13;
+            // 
+            // usLogin1
+            // 
+            this.usLogin1.BackColor = System.Drawing.Color.White;
+            this.usLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usLogin1.Location = new System.Drawing.Point(0, 0);
+            this.usLogin1.Margin = new System.Windows.Forms.Padding(2);
+            this.usLogin1.Name = "usLogin1";
+            this.usLogin1.Size = new System.Drawing.Size(505, 533);
+            this.usLogin1.TabIndex = 0;
             // 
             // btnSignIn
             // 
@@ -197,16 +207,6 @@
             this.picLoginScreen.TabIndex = 12;
             this.picLoginScreen.TabStop = false;
             // 
-            // usLogin1
-            // 
-            this.usLogin1.BackColor = System.Drawing.Color.White;
-            this.usLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usLogin1.Location = new System.Drawing.Point(0, 0);
-            this.usLogin1.Margin = new System.Windows.Forms.Padding(2);
-            this.usLogin1.Name = "usLogin1";
-            this.usLogin1.Size = new System.Drawing.Size(505, 533);
-            this.usLogin1.TabIndex = 0;
-            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -248,9 +248,8 @@
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.StateCommon.Border.Rounding = 5F;
             this.StateCommon.Border.Width = 1;
-            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Header.Border.Color1 = System.Drawing.Color.Transparent;
             this.StateCommon.Header.Border.Color2 = System.Drawing.Color.Transparent;

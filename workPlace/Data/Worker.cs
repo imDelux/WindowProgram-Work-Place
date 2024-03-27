@@ -12,7 +12,7 @@ namespace EntityModel
         /// Skill list of a worker
         /// </summary>
         private List<Skill> _skillList;
-
+        
         public List<Skill> SkillList { get {  return _skillList; } set {  _skillList = value; } }
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace EntityModel
         {
             SkillList = new List<Skill>();
         }
-
+        
         /// <summary>
         /// Constructor with parameters
         /// </summary>

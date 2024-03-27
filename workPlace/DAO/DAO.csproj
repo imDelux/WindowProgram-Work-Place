@@ -53,6 +53,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SkillDAO.cs" />
     <Compile Include="WorkerDAO.cs" />
   </ItemGroup>
   <ItemGroup>

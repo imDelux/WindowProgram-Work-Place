@@ -98,7 +98,7 @@
             // 
             // picAvt
             // 
-            this.picAvt.Image = global::GUI.Properties.Resources._4043260_avatar_male_man_portrait_icon__2_;
+            this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
             this.picAvt.Location = new System.Drawing.Point(32, 22);
             this.picAvt.Name = "picAvt";
             this.picAvt.Size = new System.Drawing.Size(60, 60);

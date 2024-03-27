@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.btnSkillNameContainer = new Krypton.Toolkit.KryptonButton();
-            this.lblSkillRate = new System.Windows.Forms.Label();
             this.btnSkillDescribeContainer = new Krypton.Toolkit.KryptonButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.picEdit = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSkillNameContainer
@@ -54,16 +56,6 @@
             this.btnSkillNameContainer.TabIndex = 0;
             this.btnSkillNameContainer.Values.Text = "Skill name goes there";
             // 
-            // lblSkillRate
-            // 
-            this.lblSkillRate.AutoSize = true;
-            this.lblSkillRate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkillRate.Location = new System.Drawing.Point(289, 30);
-            this.lblSkillRate.Name = "lblSkillRate";
-            this.lblSkillRate.Size = new System.Drawing.Size(84, 23);
-            this.lblSkillRate.TabIndex = 2;
-            this.lblSkillRate.Text = "0.0/10.0";
-            // 
             // btnSkillDescribeContainer
             // 
             this.btnSkillDescribeContainer.Enabled = false;
@@ -85,15 +77,39 @@
             this.btnSkillDescribeContainer.TabIndex = 3;
             this.btnSkillDescribeContainer.Values.Text = "";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(286, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(264, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Expected Wage: 20$ - 22$";
+            // 
+            // picEdit
+            // 
+            this.picEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picEdit.Image = global::GUI.Properties.Resources.edit;
+            this.picEdit.Location = new System.Drawing.Point(569, 16);
+            this.picEdit.Name = "picEdit";
+            this.picEdit.Size = new System.Drawing.Size(25, 25);
+            this.picEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEdit.TabIndex = 5;
+            this.picEdit.TabStop = false;
+            // 
             // ucSkill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.picEdit);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSkillDescribeContainer);
-            this.Controls.Add(this.lblSkillRate);
             this.Controls.Add(this.btnSkillNameContainer);
             this.Name = "ucSkill";
             this.Size = new System.Drawing.Size(610, 208);
+            ((System.ComponentModel.ISupportInitialize)(this.picEdit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,7 +118,8 @@
         #endregion
 
         private Krypton.Toolkit.KryptonButton btnSkillNameContainer;
-        private System.Windows.Forms.Label lblSkillRate;
         private Krypton.Toolkit.KryptonButton btnSkillDescribeContainer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picEdit;
     }
 }

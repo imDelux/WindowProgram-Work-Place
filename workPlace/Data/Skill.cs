@@ -13,12 +13,14 @@ namespace EntityModel
         /// </summary>
         private SkillName _skillName;
         private string _skillDescription;
+        private int _expectedWage;
 
         /// <summary>
         /// Properties
         /// </summary>
         public SkillName SkillName { get { return _skillName; } set { _skillName = value; } }
         public string SkillDescription { get { return _skillDescription; } set { _skillDescription = value; } }
+        public float ExpectedWage { get { return _expectedWage; } set { _expectedWage = value; } }
 
         /// <summary>
         /// Basic constructor
@@ -27,6 +29,7 @@ namespace EntityModel
         {
             SkillName = SkillName.None;
             SkillDescription = string.Empty;
+            ExpectedWage = 0;
         }
 
         /// <summary>
@@ -34,10 +37,12 @@ namespace EntityModel
         /// </summary>
         /// <param name="skillName"></param>
         /// <param name="skillDescription"></param>
-        public Skill(SkillName skillName, string skillDescription)
+        /// <param name="expectedWage"></param>
+        public Skill(SkillName skillName, string skillDescription, float expectedWage)
         {
             SkillName = skillName; 
             SkillDescription = skillDescription;
+            ExpectedWage = expectedWage;
         }
     }
 }

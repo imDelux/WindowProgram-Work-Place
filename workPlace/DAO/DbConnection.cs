@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace DAO
             catch (Exception ex)
             {
                 result = ex.ToString();
+
             }
             finally
             {
@@ -90,6 +92,54 @@ namespace DAO
 
             // Return result
             return resultPerson;
+        }
+
+        /// <summary>
+        /// Fetch a specific skill from database
+        /// </summary>
+        /// <param name="sqlCommand"></param>
+        /// <returns>Skill need, otherwise return null</returns>
+        public Skill FetchSkill(string sqlCommand)
+        {
+            // Store result
+            Skill resultSkill = new Skill();
+
+            // Connet to database
+            conn.Open();
+
+            // Initialize SQL command
+            SqlCommand cmd = new SqlCommand(sqlCommand, conn);
+
+            // Read data
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            // Track data if it has
+            if (!reader.HasRows)
+            {
+                resultSkill = null;
+            }
+            else
+            {
+                reader.Read();
+                
+                // Try parse the skill name first
+                if (Enum.TryParse(reader["SkillName"].ToString(), out SkillName skillName) == true)
+                {
+                    resultSkill.SkillName = skillName;
+                }
+                else
+                {
+                    resultSkill.SkillName = SkillName.None;
+                }
+                resultSkill.SkillDescription = reader["SkillDescription"].ToString();
+                resultSkill.ExpectedWage = float.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
+            }
+
+            // Disconnect from database
+            conn.Close();
+
+            // Return result
+            return resultSkill;
         }
 
         /// <summary>
