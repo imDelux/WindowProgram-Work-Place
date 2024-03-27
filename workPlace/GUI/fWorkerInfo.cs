@@ -16,7 +16,7 @@ namespace GUI
     public partial class fWorkerInfo : KryptonForm
     {
         // Current worker
-        Worker worker = null;
+        Person worker = null;
         DbConnection connection = new DbConnection();
 
         public fWorkerInfo()
@@ -24,16 +24,11 @@ namespace GUI
             InitializeComponent();
         }
 
-        public fWorkerInfo(Worker worker)
+        public fWorkerInfo(Person worker)
         {
             InitializeComponent();
             this.worker = worker;
             DataSetter();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void DataSetter()
@@ -50,13 +45,23 @@ namespace GUI
             lblLocation.Text = worker.Location;
 
             // Generate skill list
-            List<Skill> skillList = connection.FetchSkill(worker.PersonID);
+            List<Skill> skillList = connection.FetchSkillList(worker.PersonID);
             fpnlSkills.Controls.Clear();
             foreach (Skill skill in skillList)
             {
                 ucSkill ithskill = new ucSkill(skill);
                 fpnlSkills.Controls.Add(ithskill);
             }
+        }
+
+        private void btnHire_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

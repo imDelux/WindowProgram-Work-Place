@@ -14,14 +14,14 @@ namespace GUI
     public partial class ucWorker : UserControl
     {
         // Who is being displayed
-        Worker currentDisplayWorker;
+        Person currentDisplayWorker;
 
         public ucWorker()
         {
             InitializeComponent();
         }
 
-        public ucWorker(Worker worker)
+        public ucWorker(Person worker)
         {
             InitializeComponent();
             this.currentDisplayWorker = worker;

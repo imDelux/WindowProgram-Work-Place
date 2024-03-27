@@ -124,6 +124,7 @@
             this.btnHire.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHire.TabIndex = 10;
             this.btnHire.Values.Text = "Hire";
+            this.btnHire.Click += new System.EventHandler(this.btnHire_Click);
             // 
             // btnCancel
             // 

@@ -168,7 +168,6 @@
             // 
             // lblNumbJobsReceived
             // 
-            this.lblNumbJobsReceived.AutoSize = true;
             this.lblNumbJobsReceived.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(178)))), ((int)(((byte)(184)))));
             this.lblNumbJobsReceived.Font = new System.Drawing.Font("Verdana", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumbJobsReceived.ForeColor = System.Drawing.Color.Black;
@@ -176,7 +175,7 @@
             this.lblNumbJobsReceived.Name = "lblNumbJobsReceived";
             this.lblNumbJobsReceived.Size = new System.Drawing.Size(232, 145);
             this.lblNumbJobsReceived.TabIndex = 7;
-            this.lblNumbJobsReceived.Text = "12";
+            this.lblNumbJobsReceived.Text = "0";
             this.lblNumbJobsReceived.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -227,9 +226,9 @@
             // 
             this.fpnlNewJobNotificationContainer.AutoScroll = true;
             this.fpnlNewJobNotificationContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
-            this.fpnlNewJobNotificationContainer.Location = new System.Drawing.Point(35, 91);
+            this.fpnlNewJobNotificationContainer.Location = new System.Drawing.Point(35, 97);
             this.fpnlNewJobNotificationContainer.Name = "fpnlNewJobNotificationContainer";
-            this.fpnlNewJobNotificationContainer.Size = new System.Drawing.Size(572, 214);
+            this.fpnlNewJobNotificationContainer.Size = new System.Drawing.Size(572, 208);
             this.fpnlNewJobNotificationContainer.TabIndex = 14;
             // 
             // fpnlNewEvaluateNotificationContainer
@@ -266,7 +265,7 @@
             this.panel2.Size = new System.Drawing.Size(572, 14);
             this.panel2.TabIndex = 9;
             // 
-            // usNotification
+            // ucNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -286,9 +285,8 @@
             this.Controls.Add(this.btnIncomingJobContainer);
             this.Controls.Add(this.btnNewEvaluateNotificationContainer);
             this.Controls.Add(this.btnNewJobNotificationContainer);
-            this.Name = "usNotification";
+            this.Name = "ucNotification";
             this.Size = new System.Drawing.Size(995, 766);
-            this.Load += new System.EventHandler(this.usNotification_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

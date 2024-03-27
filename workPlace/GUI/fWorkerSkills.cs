@@ -39,7 +39,7 @@ namespace GUI
             if (currentWorker == null) { return; }
 
             // Get skill list of current worker
-            List<Skill> skillList = connection.FetchSkill(currentWorker.PersonID);
+            List<Skill> skillList = connection.FetchSkillList(currentWorker.PersonID);
 
             // Generate uc Skill
             fpnlSkillContainer.Controls.Clear();

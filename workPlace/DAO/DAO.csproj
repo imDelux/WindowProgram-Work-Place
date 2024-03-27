@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DbConnection.cs" />
     <Compile Include="HirerDAO.cs" />
+    <Compile Include="JobDAO.cs" />
     <Compile Include="PersonDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

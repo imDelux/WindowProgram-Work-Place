@@ -99,7 +99,7 @@ namespace DAO
         /// </summary>
         /// <param name="sqlCommand"></param>
         /// <returns>Skill need, otherwise return null</returns>
-        public List<Skill> FetchSkill(string personID)
+        public List<Skill> FetchSkillList(string personID)
         {
             // Store result
             List<Skill> result = new List<Skill>();
@@ -146,10 +146,10 @@ namespace DAO
         /// Get worker data in database
         /// </summary>
         /// <returns>A list of worker in database</returns>
-        public List<Worker> getWorkerList()
+        public List<Person> FetchWorkerList()
         {
             // Result storage
-            List<Worker> list = new List<Worker>();
+            List<Person> list = new List<Person>();
             
             // Store information of each worker
             string personID, fname, tel, email, location, password;
@@ -179,7 +179,7 @@ namespace DAO
                 location = reader["Location"].ToString();
                 password = reader["Password"].ToString();
 
-                list.Add(new Worker(personID, fname, gender, birth, tel, email, location, password, new List<Skill> { }));
+                list.Add(new Person(personID, fname, gender, birth, tel, email, location, password));
             }
 
             // Close connection
