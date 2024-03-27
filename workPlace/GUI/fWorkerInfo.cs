@@ -56,7 +56,8 @@ namespace GUI
 
         private void btnHire_Click(object sender, EventArgs e)
         {
-
+            fHireMessage fHireMessage = new fHireMessage();
+            fHireMessage.ShowDialog();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

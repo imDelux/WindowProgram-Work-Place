@@ -18,9 +18,9 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void fHireMessage_Load(object sender, EventArgs e)
+        private void btnCancle_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

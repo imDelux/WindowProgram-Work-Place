@@ -33,7 +33,7 @@
             this.txtJobname = new Krypton.Toolkit.KryptonTextBox();
             this.lblJobname = new System.Windows.Forms.Label();
             this.lblThumbnail = new System.Windows.Forms.Label();
-            this.txtJobdes = new Krypton.Toolkit.KryptonTextBox();
+            this.txtJobDes = new Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             // btnCancle
             // 
             this.btnCancle.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnCancle.Location = new System.Drawing.Point(298, 403);
+            this.btnCancle.Location = new System.Drawing.Point(359, 430);
             this.btnCancle.Name = "btnCancle";
             this.btnCancle.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnCancle.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -104,11 +104,12 @@
             this.btnCancle.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancle.TabIndex = 35;
             this.btnCancle.Values.Text = "Cancle";
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnConfirm
             // 
             this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnConfirm.Location = new System.Drawing.Point(174, 403);
+            this.btnConfirm.Location = new System.Drawing.Point(230, 430);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -171,9 +172,9 @@
             // 
             // txtJobname
             // 
-            this.txtJobname.Location = new System.Drawing.Point(132, 145);
+            this.txtJobname.Location = new System.Drawing.Point(46, 101);
             this.txtJobname.Name = "txtJobname";
-            this.txtJobname.Size = new System.Drawing.Size(273, 43);
+            this.txtJobname.Size = new System.Drawing.Size(404, 43);
             this.txtJobname.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.txtJobname.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobname.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
@@ -192,53 +193,54 @@
             // lblJobname
             // 
             this.lblJobname.AutoSize = true;
-            this.lblJobname.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobname.Location = new System.Drawing.Point(144, 126);
+            this.lblJobname.Location = new System.Drawing.Point(52, 70);
             this.lblJobname.Name = "lblJobname";
-            this.lblJobname.Size = new System.Drawing.Size(75, 16);
+            this.lblJobname.Size = new System.Drawing.Size(101, 28);
             this.lblJobname.TabIndex = 24;
             this.lblJobname.Text = " Job name";
             // 
             // lblThumbnail
             // 
             this.lblThumbnail.AutoSize = true;
-            this.lblThumbnail.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThumbnail.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThumbnail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.lblThumbnail.Location = new System.Drawing.Point(101, 40);
+            this.lblThumbnail.Location = new System.Drawing.Point(100, -5);
             this.lblThumbnail.Name = "lblThumbnail";
-            this.lblThumbnail.Size = new System.Drawing.Size(318, 49);
+            this.lblThumbnail.Size = new System.Drawing.Size(323, 60);
             this.lblThumbnail.TabIndex = 39;
             this.lblThumbnail.Text = "Hirer Message";
             // 
-            // txtJobdes
+            // txtJobDes
             // 
-            this.txtJobdes.Location = new System.Drawing.Point(132, 220);
-            this.txtJobdes.Name = "txtJobdes";
-            this.txtJobdes.Size = new System.Drawing.Size(273, 43);
-            this.txtJobdes.StateActive.Content.Color1 = System.Drawing.Color.Black;
-            this.txtJobdes.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJobdes.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtJobdes.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.txtJobdes.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.txtJobdes.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtJobDes.Location = new System.Drawing.Point(46, 187);
+            this.txtJobDes.Multiline = true;
+            this.txtJobDes.Name = "txtJobDes";
+            this.txtJobDes.Size = new System.Drawing.Size(404, 91);
+            this.txtJobDes.StateActive.Content.Color1 = System.Drawing.Color.Black;
+            this.txtJobDes.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobDes.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtJobDes.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtJobDes.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txtJobDes.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtJobdes.StateCommon.Border.Rounding = 10F;
-            this.txtJobdes.StateCommon.Content.Color1 = System.Drawing.Color.Black;
-            this.txtJobdes.StateNormal.Content.Color1 = System.Drawing.Color.White;
-            this.txtJobdes.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJobdes.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtJobdes.TabIndex = 41;
+            this.txtJobDes.StateCommon.Border.Rounding = 10F;
+            this.txtJobDes.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.txtJobDes.StateNormal.Content.Color1 = System.Drawing.Color.White;
+            this.txtJobDes.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobDes.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.txtJobDes.TabIndex = 41;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.label1.Location = new System.Drawing.Point(144, 201);
+            this.label1.Location = new System.Drawing.Point(52, 156);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.Size = new System.Drawing.Size(151, 28);
             this.label1.TabIndex = 40;
             this.label1.Text = " Job description";
             // 
@@ -249,9 +251,9 @@
             this.dtpDate.Images.Common = global::GUI.Properties.Resources.square_small__1_;
             this.dtpDate.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
             this.dtpDate.Images.UncheckedNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.dtpDate.Location = new System.Drawing.Point(132, 272);
+            this.dtpDate.Location = new System.Drawing.Point(119, 303);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(273, 32);
+            this.dtpDate.Size = new System.Drawing.Size(330, 39);
             this.dtpDate.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.dtpDate.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.dtpDate.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -260,7 +262,7 @@
             this.dtpDate.StateCommon.Border.Rounding = 10F;
             this.dtpDate.StateCommon.Border.Width = 1;
             this.dtpDate.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.dtpDate.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDate.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDate.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
             this.dtpDate.TabIndex = 43;
             this.dtpDate.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
@@ -268,19 +270,19 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblDate.Location = new System.Drawing.Point(41, 285);
+            this.lblDate.Location = new System.Drawing.Point(51, 307);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(47, 19);
+            this.lblDate.Size = new System.Drawing.Size(53, 28);
             this.lblDate.TabIndex = 42;
             this.lblDate.Text = "Date";
             // 
             // txtWage
             // 
-            this.txtWage.Location = new System.Drawing.Point(132, 331);
+            this.txtWage.Location = new System.Drawing.Point(119, 360);
             this.txtWage.Name = "txtWage";
-            this.txtWage.Size = new System.Drawing.Size(273, 43);
+            this.txtWage.Size = new System.Drawing.Size(330, 43);
             this.txtWage.StateActive.Content.Color1 = System.Drawing.Color.Black;
             this.txtWage.StateActive.Content.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWage.StateActive.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
@@ -299,11 +301,11 @@
             // lblWage
             // 
             this.lblWage.AutoSize = true;
-            this.lblWage.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWage.Location = new System.Drawing.Point(41, 343);
+            this.lblWage.Location = new System.Drawing.Point(51, 365);
             this.lblWage.Name = "lblWage";
-            this.lblWage.Size = new System.Drawing.Size(57, 19);
+            this.lblWage.Size = new System.Drawing.Size(62, 28);
             this.lblWage.TabIndex = 45;
             this.lblWage.Text = "Wage";
             // 
@@ -312,12 +314,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(493, 501);
+            this.ClientSize = new System.Drawing.Size(493, 490);
+            this.CloseBox = false;
             this.Controls.Add(this.lblWage);
             this.Controls.Add(this.txtWage);
             this.Controls.Add(this.dtpDate);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.txtJobdes);
+            this.Controls.Add(this.txtJobDes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblThumbnail);
             this.Controls.Add(this.btnCancle);
@@ -325,17 +328,25 @@
             this.Controls.Add(this.txtJobname);
             this.Controls.Add(this.lblJobname);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fHireMessage";
+            this.ShowIcon = false;
+            this.StateActive.Back.Color1 = System.Drawing.Color.White;
+            this.StateActive.Back.Color2 = System.Drawing.Color.White;
+            this.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateActive.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateActive.Border.Rounding = 20F;
+            this.StateActive.Border.Width = 2;
+            this.StateActive.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.StateActive.Header.Back.Color2 = System.Drawing.Color.White;
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Text = "fHireMessage";
-            this.Load += new System.EventHandler(this.fHireMessage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,7 +358,7 @@
         private Krypton.Toolkit.KryptonTextBox txtJobname;
         private System.Windows.Forms.Label lblJobname;
         private System.Windows.Forms.Label lblThumbnail;
-        private Krypton.Toolkit.KryptonTextBox txtJobdes;
+        private Krypton.Toolkit.KryptonTextBox txtJobDes;
         private System.Windows.Forms.Label label1;
         private Krypton.Toolkit.KryptonDateTimePicker dtpDate;
         private System.Windows.Forms.Label lblDate;
