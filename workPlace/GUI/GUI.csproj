@@ -71,6 +71,12 @@
     <Compile Include="fAddSkill.Designer.cs">
       <DependentUpon>fAddSkill.cs</DependentUpon>
     </Compile>
+    <Compile Include="fHireMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHireMessage.Designer.cs">
+      <DependentUpon>fHireMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="fJobDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="fAddSkill.resx">
       <DependentUpon>fAddSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHireMessage.resx">
+      <DependentUpon>fHireMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fJobDetail.resx">
       <DependentUpon>fJobDetail.cs</DependentUpon>
