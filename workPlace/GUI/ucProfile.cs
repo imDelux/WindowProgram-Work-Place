@@ -41,6 +41,7 @@ namespace GUI
 
         private void DataSetter()
         {
+            // Error detect
             if (displayingPerson == null) { return; }
 
             lblName.Text = displayingPerson.Name;

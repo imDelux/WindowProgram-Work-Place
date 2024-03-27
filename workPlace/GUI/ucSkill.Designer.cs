@@ -82,7 +82,7 @@
             this.lblExpectedWage.AutoSize = true;
             this.lblExpectedWage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblExpectedWage.ForeColor = System.Drawing.Color.Gray;
-            this.lblExpectedWage.Location = new System.Drawing.Point(287, 30);
+            this.lblExpectedWage.Location = new System.Drawing.Point(272, 32);
             this.lblExpectedWage.Name = "lblExpectedWage";
             this.lblExpectedWage.Size = new System.Drawing.Size(264, 23);
             this.lblExpectedWage.TabIndex = 4;

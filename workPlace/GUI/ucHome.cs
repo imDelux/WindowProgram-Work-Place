@@ -32,8 +32,7 @@ namespace GUI
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 
             {
-                ucWorker workerPreview = new ucWorker();
-                workerPreview.DataSetter(listWorker[i]);
+                ucWorker workerPreview = new ucWorker(listWorker[i]);
                 fpnlContainer.Controls.Add(workerPreview);
             }
         }

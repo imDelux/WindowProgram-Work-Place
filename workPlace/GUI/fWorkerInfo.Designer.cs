@@ -471,7 +471,6 @@
             this.StateCommon.Border.Width = 1;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.Load += new System.EventHandler(this.fWorkerInfo_Load);
             this.pnlBasicInforContainer.ResumeLayout(false);
             this.pnlBasicInforContainer.PerformLayout();
             this.pnlContainer.ResumeLayout(false);

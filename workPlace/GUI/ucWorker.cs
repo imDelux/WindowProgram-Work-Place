@@ -21,25 +21,28 @@ namespace GUI
             InitializeComponent();
         }
 
+        public ucWorker(Worker worker)
+        {
+            InitializeComponent();
+            this.currentDisplayWorker = worker;
+            DataSetter();
+        }
+
         private void lblWokerName_Click(object sender, EventArgs e)
         {
-            fWorkerInfo fWorkerInfo = new fWorkerInfo();
-            fWorkerInfo.DataSetter(currentDisplayWorker);
+            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker);
             fWorkerInfo.ShowDialog();
         }
 
-        public void DataSetter(Worker worker)
+        private void DataSetter()
         {
             // Check for invalid case
-            if (worker == null) { return; }
-
-            // Set current displaying worker
-            currentDisplayWorker = worker;
+            if (currentDisplayWorker == null) { return; }
             
             // Set data
-            lblWokerName.Text = worker.Name;
-            lblAge.Text = "Age: " + (DateTime.Now.Year - worker.BirthDate.Year).ToString();
-            lblLocation.Text = "Location: " + worker.Location;
+            lblWokerName.Text = currentDisplayWorker.Name;
+            lblAge.Text = "Age: " + (DateTime.Now.Year - currentDisplayWorker.BirthDate.Year).ToString();
+            lblLocation.Text = "Location: " + currentDisplayWorker.Location;
         }
     }
 }

@@ -30,6 +30,10 @@ namespace GUI
 
         private void DataSetter()
         {
+            // Error detect
+            if (currentSkill ==  null) { return; }
+
+            // Set data
             btnSkillNameContainer.Text = currentSkill.SkillName.ToString();
             btnSkillDescribeContainer.Text = currentSkill.SkillDescription.ToString();
             lblExpectedWage.Text = "Expected Wage: " + currentSkill.ExpectedWage.ToString() + "$";

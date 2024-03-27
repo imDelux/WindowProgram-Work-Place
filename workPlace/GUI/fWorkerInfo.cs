@@ -15,18 +15,20 @@ namespace GUI
 {
     public partial class fWorkerInfo : KryptonForm
     {
+        // Current worker
+        Worker worker = null;
+        DbConnection connection = new DbConnection();
+
         public fWorkerInfo()
         {
             InitializeComponent();
         }
 
-        private void fWorkerInfo_Load(object sender, EventArgs e)
+        public fWorkerInfo(Worker worker)
         {
-            for (int i = 0; i < 5; i++)
-            {
-                ucSkill skill = new ucSkill();
-                fpnlSkills.Controls.Add(skill);
-            }
+            InitializeComponent();
+            this.worker = worker;
+            DataSetter();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -34,14 +36,27 @@ namespace GUI
             this.Close();
         }
 
-        public void DataSetter(Worker worker)
+        private void DataSetter()
         {
+            // Error detect
+            if (worker == null) { return; }
+
+            // Worker basic information
             lblWokerName.Text = worker.Name;
             lblGender.Text = (worker.Gender == true ? "Male" : "Female");
             lblBirth.Text = worker.BirthDate.ToShortDateString();
             lblTelephone.Text = worker.Telephone;
             lblEmail.Text = worker.Email;
             lblLocation.Text = worker.Location;
+
+            // Generate skill list
+            List<Skill> skillList = connection.FetchSkill(worker.PersonID);
+            fpnlSkills.Controls.Clear();
+            foreach (Skill skill in skillList)
+            {
+                ucSkill ithskill = new ucSkill(skill);
+                fpnlSkills.Controls.Add(ithskill);
+            }
         }
     }
 }

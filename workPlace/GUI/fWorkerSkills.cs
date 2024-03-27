@@ -35,9 +35,11 @@ namespace GUI
 
         private void DataSetter()
         {
+            // Error detect
+            if (currentWorker == null) { return; }
+
             // Get skill list of current worker
-            List<Skill> skillList = new List<Skill>();
-            skillList = connection.FetchSkill(currentWorker.PersonID);
+            List<Skill> skillList = connection.FetchSkill(currentWorker.PersonID);
 
             // Generate uc Skill
             fpnlSkillContainer.Controls.Clear();
@@ -45,7 +47,6 @@ namespace GUI
             {
                 ucSkill ithskill = new ucSkill(skill);
                 fpnlSkillContainer.Controls.Add(ithskill);
-                ithskill.Dock = DockStyle.Top;
             }
         }
 
