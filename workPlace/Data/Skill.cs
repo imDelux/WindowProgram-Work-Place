@@ -20,7 +20,7 @@ namespace EntityModel
         /// </summary>
         public SkillName SkillName { get { return _skillName; } set { _skillName = value; } }
         public string SkillDescription { get { return _skillDescription; } set { _skillDescription = value; } }
-        public float ExpectedWage { get { return _expectedWage; } set { _expectedWage = value; } }
+        public int ExpectedWage { get { return _expectedWage; } set { _expectedWage = value; } }
 
         /// <summary>
         /// Basic constructor
@@ -38,7 +38,7 @@ namespace EntityModel
         /// <param name="skillName"></param>
         /// <param name="skillDescription"></param>
         /// <param name="expectedWage"></param>
-        public Skill(SkillName skillName, string skillDescription, float expectedWage)
+        public Skill(SkillName skillName, string skillDescription, int expectedWage)
         {
             SkillName = skillName; 
             SkillDescription = skillDescription;

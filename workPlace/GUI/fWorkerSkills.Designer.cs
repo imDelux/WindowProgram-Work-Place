@@ -34,9 +34,6 @@
             this.fpnlSkillContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlAddContainer = new System.Windows.Forms.Panel();
             this.picAdd = new System.Windows.Forms.PictureBox();
-            this.ucSkill3 = new GUI.ucSkill();
-            this.ucSkill2 = new GUI.ucSkill();
-            this.ucSkill1 = new GUI.ucSkill();
             this.fpnlSkillContainer.SuspendLayout();
             this.pnlAddContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAdd)).BeginInit();
@@ -171,9 +168,6 @@
             // fpnlSkillContainer
             // 
             this.fpnlSkillContainer.AutoScroll = true;
-            this.fpnlSkillContainer.Controls.Add(this.ucSkill3);
-            this.fpnlSkillContainer.Controls.Add(this.ucSkill2);
-            this.fpnlSkillContainer.Controls.Add(this.ucSkill1);
             this.fpnlSkillContainer.Controls.Add(this.pnlAddContainer);
             this.fpnlSkillContainer.Location = new System.Drawing.Point(33, 95);
             this.fpnlSkillContainer.Name = "fpnlSkillContainer";
@@ -184,7 +178,7 @@
             // 
             this.pnlAddContainer.Controls.Add(this.picAdd);
             this.pnlAddContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlAddContainer.Location = new System.Drawing.Point(3, 645);
+            this.pnlAddContainer.Location = new System.Drawing.Point(3, 3);
             this.pnlAddContainer.Name = "pnlAddContainer";
             this.pnlAddContainer.Size = new System.Drawing.Size(610, 91);
             this.pnlAddContainer.TabIndex = 1;
@@ -200,27 +194,6 @@
             this.picAdd.TabIndex = 0;
             this.picAdd.TabStop = false;
             this.picAdd.Click += new System.EventHandler(this.picAdd_Click);
-            // 
-            // ucSkill3
-            // 
-            this.ucSkill3.Location = new System.Drawing.Point(3, 3);
-            this.ucSkill3.Name = "ucSkill3";
-            this.ucSkill3.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill3.TabIndex = 3;
-            // 
-            // ucSkill2
-            // 
-            this.ucSkill2.Location = new System.Drawing.Point(3, 217);
-            this.ucSkill2.Name = "ucSkill2";
-            this.ucSkill2.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill2.TabIndex = 2;
-            // 
-            // ucSkill1
-            // 
-            this.ucSkill1.Location = new System.Drawing.Point(3, 431);
-            this.ucSkill1.Name = "ucSkill1";
-            this.ucSkill1.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill1.TabIndex = 0;
             // 
             // fWorkerSkills
             // 
@@ -280,10 +253,7 @@
         private Krypton.Toolkit.KryptonButton btnConfirm;
         private Krypton.Toolkit.KryptonButton btnCancel;
         private System.Windows.Forms.FlowLayoutPanel fpnlSkillContainer;
-        private ucSkill ucSkill1;
         private System.Windows.Forms.Panel pnlAddContainer;
         private System.Windows.Forms.PictureBox picAdd;
-        private ucSkill ucSkill3;
-        private ucSkill ucSkill2;
     }
 }

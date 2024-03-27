@@ -53,7 +53,7 @@ namespace GUI
 
         private void lblUserSkill_Click(object sender, EventArgs e)
         {
-            fWorkerSkills fWorkerSkills = new fWorkerSkills();
+            fWorkerSkills fWorkerSkills = new fWorkerSkills(displayingPerson);
             fWorkerSkills.ShowDialog();
         }
     }

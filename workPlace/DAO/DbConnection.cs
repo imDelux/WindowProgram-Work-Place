@@ -49,7 +49,7 @@ namespace DAO
         }
 
         /// <summary>
-        /// Fetch data about a person
+        /// Fetch data about A PERSON
         /// </summary>
         /// <param name="sqlCommand">SQL command</param>
         /// <returns>Person need, if not appear return null</returns>
@@ -95,14 +95,19 @@ namespace DAO
         }
 
         /// <summary>
-        /// Fetch a specific skill from database
+        /// Fetch a skill list of a person (worker) from database
         /// </summary>
         /// <param name="sqlCommand"></param>
         /// <returns>Skill need, otherwise return null</returns>
-        public Skill FetchSkill(string sqlCommand)
+        public List<Skill> FetchSkill(string sqlCommand)
         {
             // Store result
-            Skill resultSkill = new Skill();
+            List<Skill> result = new List<Skill>();
+
+            // Store information of each skill
+            SkillName skill;
+            int skillExpectedWage;
+            string skillDescription;
 
             // Connet to database
             conn.Open();
@@ -112,34 +117,28 @@ namespace DAO
 
             // Read data
             SqlDataReader reader = cmd.ExecuteReader();
-
-            // Track data if it has
-            if (!reader.HasRows)
+            while (reader.Read())
             {
-                resultSkill = null;
-            }
-            else
-            {
-                reader.Read();
-                
                 // Try parse the skill name first
                 if (Enum.TryParse(reader["SkillName"].ToString(), out SkillName skillName) == true)
                 {
-                    resultSkill.SkillName = skillName;
+                    skill = skillName;
                 }
                 else
                 {
-                    resultSkill.SkillName = SkillName.None;
+                    skill = SkillName.None;
                 }
-                resultSkill.SkillDescription = reader["SkillDescription"].ToString();
-                resultSkill.ExpectedWage = float.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
+                skillDescription = reader["SkillDescription"].ToString();
+                skillExpectedWage = int.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
+
+                result.Add(new Skill(skill, skillDescription, skillExpectedWage));
             }
 
             // Disconnect from database
             conn.Close();
 
             // Return result
-            return resultSkill;
+            return result;
         }
 
         /// <summary>
@@ -150,6 +149,11 @@ namespace DAO
         {
             // Result storage
             List<Worker> list = new List<Worker>();
+            
+            // Store information of each worker
+            string personID, fname, tel, email, location, password;
+            bool gender;
+            DateTime birth;
 
             // Connect to database
             conn.Open();
@@ -162,10 +166,6 @@ namespace DAO
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string personID, fname, tel, email, location, password;
-                bool gender;
-                DateTime birth;
-
                 personID = reader["PersonID"].ToString();
                 fname = reader["Name"].ToString();
                 gender = reader["Gender"].ToString() == "Male" ? true : false;

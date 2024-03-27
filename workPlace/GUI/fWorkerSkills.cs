@@ -1,4 +1,5 @@
-﻿using EntityModel;
+﻿using DAO;
+using EntityModel;
 using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
@@ -14,10 +15,25 @@ using System.Windows.Forms;
 namespace GUI
 {
     public partial class fWorkerSkills : KryptonForm
-    {        
+    {
+        // Input a person to display that person's skills
+        Person currentWorker;
+        SkillDAO skillDAO = new SkillDAO();
+
         public fWorkerSkills()
         {
             InitializeComponent();
+        }
+
+        public fWorkerSkills(Person worker)
+        {
+            InitializeComponent();
+            currentWorker = worker;
+        }
+
+        private void DataSetter()
+        {
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -31,7 +47,13 @@ namespace GUI
             Skill newSkill = new Skill();
 
             fAddSkill fAddSkill = new fAddSkill(newSkill);
-            fAddSkill.ShowDialog();
+            DialogResult addSkillResult = fAddSkill.ShowDialog();
+
+            // Check if user has chosen to add new skill    
+            if (addSkillResult == DialogResult.OK)
+            {
+                skillDAO.Add(newSkill, currentWorker);
+            }
         }
     }
 }

@@ -60,6 +60,7 @@
             // 
             // txtComment
             // 
+            this.txtComment.Enabled = false;
             this.txtComment.Location = new System.Drawing.Point(32, 102);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
@@ -73,7 +74,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtComment.StateCommon.Border.Rounding = 20F;
             this.txtComment.TabIndex = 4;
-            this.txtComment.Text = "Run.";
+            this.txtComment.Text = "...";
             // 
             // btnDetails
             // 

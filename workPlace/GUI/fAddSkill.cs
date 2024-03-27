@@ -39,6 +39,8 @@ namespace GUI
             skill.SkillName = (SkillName)cbSkillName.SelectedItem;
             skill.ExpectedWage = int.Parse(txtExpectedWage.Text);
             skill.SkillDescription = txtSkillDescription.Text;
+
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

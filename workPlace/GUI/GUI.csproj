@@ -121,12 +121,6 @@
     <Compile Include="ucProfile.Designer.cs">
       <DependentUpon>ucProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEvaluationDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucEvaluationDetails.Designer.cs">
-      <DependentUpon>ucEvaluationDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="fHirer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,9 +187,6 @@
     <Compile Include="ucWorker.Designer.cs">
       <DependentUpon>ucWorker.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ucEvaluationDetails.resx">
-      <DependentUpon>ucEvaluationDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fHirer.resx">
       <DependentUpon>fHirer.cs</DependentUpon>
     </EmbeddedResource>
