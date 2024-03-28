@@ -15,22 +15,24 @@ namespace GUI
     {
         // Who is being displayed
         Person currentDisplayWorker;
+        Person currentUsingHirer;
 
         public ucWorker()
         {
             InitializeComponent();
         }
 
-        public ucWorker(Person worker)
+        public ucWorker(Person worker, Person hirer)
         {
             InitializeComponent();
             this.currentDisplayWorker = worker;
+            this.currentUsingHirer = hirer;
             DataSetter();
         }
 
         private void lblWokerName_Click(object sender, EventArgs e)
         {
-            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker);
+            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker, currentUsingHirer);
             fWorkerInfo.ShowDialog();
         }
 

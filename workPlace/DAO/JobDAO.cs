@@ -14,8 +14,8 @@ namespace DAO
         public void Add(Job nJob)
         {
             string sqlCmd = string.Format("INSERT INTO Job(JobID, HirerID, WorkerID , JobName, JobDescription, Date, Wage, JobStatus, Paid, Accept) " +
-                "VALUES ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}',)",
-                nJob.JobID, nJob.HirerID, nJob.WorkerID, nJob.JobName, nJob.JobDescription, nJob.Date, nJob.Wage, nJob.JobStatus, nJob.PaidStatus, nJob.Accept);
+                "VALUES (NEWID(), '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')",
+                nJob.HirerID, nJob.WorkerID, nJob.JobName, nJob.JobDescription, nJob.Date, nJob.Wage, nJob.JobStatus, nJob.PaidStatus, nJob.Accept);
             dbConn.Execute(sqlCmd);
         }
     }

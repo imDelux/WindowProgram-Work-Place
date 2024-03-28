@@ -15,11 +15,19 @@ namespace GUI
 {
     public partial class ucHome : UserControl
     {
+        Person currentUsingHirer = null;
         DbConnection dbConn = new DbConnection();
 
         public ucHome()
         {
             InitializeComponent();
+        }
+
+        public ucHome(Person hirer)
+        {
+            InitializeComponent();
+            this.currentUsingHirer = hirer;
+            GenerateDynamicUserControl();
         }
 
         private void GenerateDynamicUserControl()
@@ -32,14 +40,9 @@ namespace GUI
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 
             {
-                ucWorker workerPreview = new ucWorker(listWorker[i]);
+                ucWorker workerPreview = new ucWorker(listWorker[i], currentUsingHirer);
                 fpnlContainer.Controls.Add(workerPreview);
             }
-        }
-
-        private void ucHome_Load(object sender, EventArgs e)
-        {
-            GenerateDynamicUserControl();
         }
     }
 }

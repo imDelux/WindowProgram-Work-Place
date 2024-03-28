@@ -15,16 +15,18 @@ namespace GUI
     {
         // Current displaying skill
         Skill currentSkill;
+        bool editable;
 
         public ucSkill()
         {
             InitializeComponent();
         }
 
-        public ucSkill(Skill skill)
+        public ucSkill(Skill skill, bool editable)
         {
             InitializeComponent();
             this.currentSkill = skill;
+            this.editable = editable;
             DataSetter();
         }
 
@@ -32,6 +34,9 @@ namespace GUI
         {
             // Error detect
             if (currentSkill ==  null) { return; }
+
+            // Hide edit button in case can't edit
+            if (!editable) { picEdit.Visible = false; }
 
             // Set data
             btnSkillNameContainer.Text = currentSkill.SkillName.ToString();

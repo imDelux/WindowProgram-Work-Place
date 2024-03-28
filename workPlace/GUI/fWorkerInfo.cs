@@ -16,7 +16,8 @@ namespace GUI
     public partial class fWorkerInfo : KryptonForm
     {
         // Current worker
-        Person worker = null;
+        Person currentDisplayingWorker = null;
+        Person currentUsingHirer = null;
         DbConnection connection = new DbConnection();
 
         public fWorkerInfo()
@@ -24,39 +25,40 @@ namespace GUI
             InitializeComponent();
         }
 
-        public fWorkerInfo(Person worker)
+        public fWorkerInfo(Person worker, Person hirer)
         {
             InitializeComponent();
-            this.worker = worker;
+            this.currentDisplayingWorker = worker;
+            this.currentUsingHirer = hirer;
             DataSetter();
         }
 
         private void DataSetter()
         {
             // Error detect
-            if (worker == null) { return; }
+            if (currentDisplayingWorker == null) { return; }
 
             // Worker basic information
-            lblWokerName.Text = worker.Name;
-            lblGender.Text = (worker.Gender == true ? "Male" : "Female");
-            lblBirth.Text = worker.BirthDate.ToShortDateString();
-            lblTelephone.Text = worker.Telephone;
-            lblEmail.Text = worker.Email;
-            lblLocation.Text = worker.Location;
-
+            lblWokerName.Text = currentDisplayingWorker.Name;
+            lblGender.Text = (currentDisplayingWorker.Gender == true ? "Male" : "Female");
+            lblBirth.Text = currentDisplayingWorker.BirthDate.ToShortDateString();
+            lblTelephone.Text = currentDisplayingWorker.Telephone;
+            lblEmail.Text = currentDisplayingWorker.Email;
+            lblLocation.Text = currentDisplayingWorker.Location;
+                
             // Generate skill list
-            List<Skill> skillList = connection.FetchSkillList(worker.PersonID);
+            List<Skill> skillList = connection.FetchSkillList(currentDisplayingWorker.PersonID);
             fpnlSkills.Controls.Clear();
             foreach (Skill skill in skillList)
             {
-                ucSkill ithskill = new ucSkill(skill);
+                ucSkill ithskill = new ucSkill(skill, true);
                 fpnlSkills.Controls.Add(ithskill);
             }
         }
 
         private void btnHire_Click(object sender, EventArgs e)
         {
-            fHireMessage fHireMessage = new fHireMessage();
+            fHireMessage fHireMessage = new fHireMessage(currentDisplayingWorker, currentUsingHirer);
             fHireMessage.ShowDialog();
         }
 

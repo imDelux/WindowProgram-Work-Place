@@ -131,7 +131,6 @@
             this.Controls.Add(this.fpnlContainer);
             this.Name = "ucHome";
             this.Size = new System.Drawing.Size(1002, 749);
-            this.Load += new System.EventHandler(this.ucHome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).EndInit();

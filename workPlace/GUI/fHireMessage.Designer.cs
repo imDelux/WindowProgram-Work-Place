@@ -35,7 +35,7 @@
             this.lblThumbnail = new System.Windows.Forms.Label();
             this.txtJobDes = new Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpDate = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.dtpDateJob = new Krypton.Toolkit.KryptonDateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.txtWage = new Krypton.Toolkit.KryptonTextBox();
             this.lblWage = new System.Windows.Forms.Label();
@@ -169,6 +169,7 @@
             this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.TabIndex = 34;
             this.btnConfirm.Values.Text = "Confirm";
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // txtJobname
             // 
@@ -208,7 +209,7 @@
             this.lblThumbnail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.lblThumbnail.Location = new System.Drawing.Point(100, -5);
             this.lblThumbnail.Name = "lblThumbnail";
-            this.lblThumbnail.Size = new System.Drawing.Size(323, 60);
+            this.lblThumbnail.Size = new System.Drawing.Size(314, 59);
             this.lblThumbnail.TabIndex = 39;
             this.lblThumbnail.Text = "Hirer Message";
             // 
@@ -244,28 +245,28 @@
             this.label1.TabIndex = 40;
             this.label1.Text = " Job description";
             // 
-            // dtpDate
+            // dtpDateJob
             // 
-            this.dtpDate.CalendarDayStyle = Krypton.Toolkit.ButtonStyle.ButtonSpec;
-            this.dtpDate.Images.CheckedNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.dtpDate.Images.Common = global::GUI.Properties.Resources.square_small__1_;
-            this.dtpDate.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.dtpDate.Images.UncheckedNormal = global::GUI.Properties.Resources.square_small__1_;
-            this.dtpDate.Location = new System.Drawing.Point(119, 303);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(330, 39);
-            this.dtpDate.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.dtpDate.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.dtpDate.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.dtpDateJob.CalendarDayStyle = Krypton.Toolkit.ButtonStyle.ButtonSpec;
+            this.dtpDateJob.Images.CheckedNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpDateJob.Images.Common = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpDateJob.Images.IndeterminateNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpDateJob.Images.UncheckedNormal = global::GUI.Properties.Resources.square_small__1_;
+            this.dtpDateJob.Location = new System.Drawing.Point(119, 303);
+            this.dtpDateJob.Name = "dtpDateJob";
+            this.dtpDateJob.Size = new System.Drawing.Size(330, 39);
+            this.dtpDateJob.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.dtpDateJob.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.dtpDateJob.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.dtpDate.StateCommon.Border.Rounding = 10F;
-            this.dtpDate.StateCommon.Border.Width = 1;
-            this.dtpDate.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.dtpDate.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDate.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
-            this.dtpDate.TabIndex = 43;
-            this.dtpDate.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
+            this.dtpDateJob.StateCommon.Border.Rounding = 10F;
+            this.dtpDateJob.StateCommon.Border.Width = 1;
+            this.dtpDateJob.StateCommon.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.dtpDateJob.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDateJob.StateCommon.Content.Padding = new System.Windows.Forms.Padding(0);
+            this.dtpDateJob.TabIndex = 43;
+            this.dtpDateJob.UpDownButtonStyle = Krypton.Toolkit.ButtonStyle.Form;
             // 
             // lblDate
             // 
@@ -318,7 +319,7 @@
             this.CloseBox = false;
             this.Controls.Add(this.lblWage);
             this.Controls.Add(this.txtWage);
-            this.Controls.Add(this.dtpDate);
+            this.Controls.Add(this.dtpDateJob);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.txtJobDes);
             this.Controls.Add(this.label1);
@@ -333,6 +334,7 @@
             this.MinimizeBox = false;
             this.Name = "fHireMessage";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StateActive.Back.Color1 = System.Drawing.Color.White;
             this.StateActive.Back.Color2 = System.Drawing.Color.White;
             this.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -360,7 +362,7 @@
         private System.Windows.Forms.Label lblThumbnail;
         private Krypton.Toolkit.KryptonTextBox txtJobDes;
         private System.Windows.Forms.Label label1;
-        private Krypton.Toolkit.KryptonDateTimePicker dtpDate;
+        private Krypton.Toolkit.KryptonDateTimePicker dtpDateJob;
         private System.Windows.Forms.Label lblDate;
         private Krypton.Toolkit.KryptonTextBox txtWage;
         private System.Windows.Forms.Label lblWage;
