@@ -40,15 +40,17 @@
             this.lblMainMessage.Size = new System.Drawing.Size(231, 25);
             this.lblMainMessage.TabIndex = 1;
             this.lblMainMessage.Text = "Message goes here ...";
+            this.lblMainMessage.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             // 
-            // usNewNotificationMessage
+            // ucNewNotificationMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.lblMainMessage);
-            this.Name = "usNewNotificationMessage";
+            this.Name = "ucNewNotificationMessage";
             this.Size = new System.Drawing.Size(572, 42);
+            this.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

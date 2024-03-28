@@ -69,11 +69,11 @@ namespace EntityModel
         /// <param name="wage"></param>
         /// <param name="jobStatus"></param>
         /// <param name="paidStatus"></param>
-        public Job(string jobID, Worker worker, Hirer hirer, string jobName, string jobDescription, DateTime date, float wage, bool jobStatus, bool paidStatus, bool accept)
+        public Job(string jobID, string workerID, string hirerID, string jobName, string jobDescription, DateTime date, float wage, bool jobStatus, bool paidStatus, bool accept)
         {
             JobID = jobID;
-            WorkerID = string.Empty;
-            HirerID = string.Empty;
+            WorkerID = workerID;
+            HirerID = hirerID;
             JobName = jobName;
             JobDescription = jobDescription;
             Date = date;

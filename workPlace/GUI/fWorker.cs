@@ -83,7 +83,7 @@ namespace GUI
 
         private void btnNotification_Click(object sender, EventArgs e)
         {
-            ucNotification notificationContent = new ucNotification();
+            ucNotification notificationContent = new ucNotification(currentWorker);
             ChangeMainContent(notificationContent);
         }
 

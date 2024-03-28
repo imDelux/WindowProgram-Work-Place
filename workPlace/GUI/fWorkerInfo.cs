@@ -58,7 +58,7 @@ namespace GUI
 
         private void btnHire_Click(object sender, EventArgs e)
         {
-            fHireMessage fHireMessage = new fHireMessage(currentDisplayingWorker, currentUsingHirer);
+            fJobDisplay fHireMessage = new fJobDisplay(currentDisplayingWorker, currentUsingHirer);
             fHireMessage.ShowDialog();
         }
 

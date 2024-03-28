@@ -49,11 +49,11 @@ namespace DAO
         }
 
         /// <summary>
-        /// Fetch data about A PERSON
+        /// Fetch person base on command
         /// </summary>
-        /// <param name="sqlCommand">SQL command</param>
-        /// <returns>Person need, if not appear return null</returns>
-        public Person FetchPerson(string sqlCommand)
+        /// <param name="strCmd"></param>
+        /// <returns></returns>
+        public Person FetchPerson(string strCmd)
         {
             // Store result
             Person resultPerson = new Person();
@@ -62,7 +62,55 @@ namespace DAO
             conn.Open();
 
             // Initialize SQL command
-            SqlCommand cmd = new SqlCommand(sqlCommand, conn);
+            SqlCommand cmd = new SqlCommand(strCmd, conn);
+
+            // Read data
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            // If no row found
+            if (!reader.HasRows)
+            {
+                resultPerson = null;
+            }
+            else
+            {
+                reader.Read();
+                resultPerson.PersonID = reader["PersonID"].ToString();
+                resultPerson.Name = reader["Name"].ToString();
+                resultPerson.Gender = reader["Gender"].ToString() == "Male" ? true : false;
+                if (DateTime.TryParse(reader["BirthDate"].ToString(), out DateTime resultBirth) == true)
+                {
+                    resultPerson.BirthDate = resultBirth;
+                }
+                resultPerson.Telephone = reader["Telephone"].ToString();
+                resultPerson.Email = reader["Email"].ToString();
+                resultPerson.Location = reader["Location"].ToString();
+            }
+
+            // Disconnect to database
+            conn.Close();
+
+            // Return result
+            return resultPerson;
+        }
+
+        /// <summary>
+        /// Fetch person base on person id
+        /// </summary>
+        /// <param name="personID"></param>
+        /// <param name="table"></param>
+        /// <returns></returns>
+        public Person FetchPerson(string personID, string table)
+        {
+            // Store result
+            Person resultPerson = new Person();
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            string strCmd = string.Format("SELECT * FROM {0} WHERE PersonID = '{1}'", table, personID);
+            SqlCommand cmd = new SqlCommand(strCmd, conn);
 
             // Read data
             SqlDataReader reader = cmd.ExecuteReader();
@@ -186,6 +234,55 @@ namespace DAO
             conn.Close();
 
             return list;
+        }
+
+        /// <summary>
+        /// Fetch a job list equivalent to a specific person
+        /// </summary>
+        /// <param name="person"></param>
+        /// <param name="isWorker">Check if person is worker or not</param>
+        /// <returns></returns>
+        public List<Job> FetchJobList(Person person, bool isWorker)
+        {
+            // Result storage
+            List<Job> result = new List<Job>();
+            string jobID, hirerID, workerID, jobName, jobDescription;
+            DateTime jobDate;
+            int wage;
+            bool jobStatus, isPaid, isAccepted;
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            string collumn = (isWorker ? "WorkerID" : "HirerID");
+            string strCMD = string.Format("SELECT * FROM Job WHERE {0} = '{1}'", collumn, person.PersonID);
+            SqlCommand sqlCommand = new SqlCommand(strCMD, conn);
+
+            // Read data
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            while(reader.Read())
+            {
+                jobID = reader["JobID"].ToString();
+                hirerID = reader["HirerID"].ToString();
+                workerID = reader["WorkerID"].ToString();
+                jobName = reader["JobName"].ToString();
+                jobDescription = reader["JobDescription"].ToString();
+                if (DateTime.TryParse(reader["Date"].ToString(), out jobDate) == false)
+                {
+                    jobDate = DateTime.Now;
+                }
+                wage = int.Parse(reader["Wage"].ToString());
+                jobStatus = (reader["JobStatus"].ToString() == "True" ? true : false);
+                isPaid = (reader["Paid"].ToString() == "True" ? true : false);
+                isAccepted = (reader["Accept"].ToString() == "True" ? true : false);
+
+                result.Add(new Job(jobID, workerID, hirerID, jobName, jobDescription, jobDate, wage, jobStatus, isPaid, isAccepted));
+            }
+
+            // Close connection and return
+            conn.Close();
+            return result;
         }
     }
 }
