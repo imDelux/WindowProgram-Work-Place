@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.lblDay = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonButton1.Enabled = false;
+            this.kryptonButton1.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
             this.kryptonButton1.Location = new System.Drawing.Point(0, 0);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(111, 75);
+            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.Size = new System.Drawing.Size(126, 91);
             this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.StateDisabled.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -46,39 +48,39 @@
             this.kryptonButton1.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateDisabled.Border.Rounding = 5F;
-            this.kryptonButton1.StateDisabled.Border.Width = 1;
+            this.kryptonButton1.StateDisabled.Border.Rounding = 0F;
+            this.kryptonButton1.StateDisabled.Border.Width = 0;
+            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateNormal.Content.Padding = new System.Windows.Forms.Padding(5, -1, -1, 40);
+            this.kryptonButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
+            this.kryptonButton1.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonButton1.StatePressed.Content.Padding = new System.Windows.Forms.Padding(5, -1, -1, 40);
+            this.kryptonButton1.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.StateTracking.Content.Padding = new System.Windows.Forms.Padding(5, -1, -1, 40);
+            this.kryptonButton1.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonButton1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "";
             // 
-            // lblDay
-            // 
-            this.lblDay.AutoSize = true;
-            this.lblDay.BackColor = System.Drawing.Color.White;
-            this.lblDay.Font = new System.Drawing.Font("Verdana Ref", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.ForeColor = System.Drawing.Color.Black;
-            this.lblDay.Location = new System.Drawing.Point(7, 7);
-            this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(38, 27);
-            this.lblDay.TabIndex = 1;
-            this.lblDay.Text = "00";
-            // 
-            // usDay
+            // ucDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.lblDay);
             this.Controls.Add(this.kryptonButton1);
-            this.Name = "usDay";
-            this.Size = new System.Drawing.Size(111, 75);
+            this.Name = "ucDay";
+            this.Size = new System.Drawing.Size(125, 85);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private System.Windows.Forms.Label lblDay;
     }
 }

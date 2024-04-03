@@ -95,5 +95,10 @@ namespace GUI
 
 
         #endregion
+
+        private void ucSchedule1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

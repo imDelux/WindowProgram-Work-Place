@@ -26,7 +26,7 @@ namespace GUI
         // Change day number on label
         public void Day(int day)
         {
-            lblDay.Text = day.ToString();
+            kryptonButton1.Text = day.ToString();
         }
     }
 }

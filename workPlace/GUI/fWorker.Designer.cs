@@ -325,10 +325,8 @@
             // 
             // ucSchedule1
             // 
-            this.ucSchedule1.BackColor = System.Drawing.Color.Transparent;
-            this.ucSchedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucSchedule1.Location = new System.Drawing.Point(0, 0);
+            this.ucSchedule1.Location = new System.Drawing.Point(-3, 0);
             this.ucSchedule1.Name = "ucSchedule1";
             this.ucSchedule1.Size = new System.Drawing.Size(995, 766);
             this.ucSchedule1.TabIndex = 0;

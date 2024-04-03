@@ -47,92 +47,92 @@
             // fpnlDayContainer
             // 
             this.fpnlDayContainer.BackColor = System.Drawing.Color.Transparent;
-            this.fpnlDayContainer.Location = new System.Drawing.Point(89, 207);
+            this.fpnlDayContainer.Location = new System.Drawing.Point(19, 172);
             this.fpnlDayContainer.Name = "fpnlDayContainer";
-            this.fpnlDayContainer.Size = new System.Drawing.Size(815, 486);
+            this.fpnlDayContainer.Size = new System.Drawing.Size(952, 542);
             this.fpnlDayContainer.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(111, 147);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(66, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.Size = new System.Drawing.Size(51, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Sunday";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(230, 147);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label2.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(191, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 25);
+            this.label2.Size = new System.Drawing.Size(52, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Monday";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(444, 147);
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(437, 133);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.Size = new System.Drawing.Size(73, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "Wednesday";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(343, 147);
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label4.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(318, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 25);
+            this.label4.Size = new System.Drawing.Size(55, 21);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tuesday";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(703, 147);
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(725, 133);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 25);
+            this.label5.Size = new System.Drawing.Size(44, 21);
             this.label5.TabIndex = 6;
             this.label5.Text = "Friday";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(575, 147);
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(577, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 25);
+            this.label6.Size = new System.Drawing.Size(61, 21);
             this.label6.TabIndex = 5;
             this.label6.Text = "Thursday";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(807, 147);
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiLight Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(835, 133);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 25);
+            this.label8.Size = new System.Drawing.Size(60, 21);
             this.label8.TabIndex = 7;
             this.label8.Text = "Saturday";
             // 
@@ -140,7 +140,7 @@
             // 
             this.lblYearAndMonth.AutoSize = true;
             this.lblYearAndMonth.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYearAndMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblYearAndMonth.ForeColor = System.Drawing.Color.White;
             this.lblYearAndMonth.Location = new System.Drawing.Point(80, 49);
             this.lblYearAndMonth.Name = "lblYearAndMonth";
             this.lblYearAndMonth.Size = new System.Drawing.Size(256, 40);
@@ -151,9 +151,9 @@
             // kryptonButton1
             // 
             this.kryptonButton1.Enabled = false;
-            this.kryptonButton1.Location = new System.Drawing.Point(79, 130);
+            this.kryptonButton1.Location = new System.Drawing.Point(19, 116);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(837, 55);
+            this.kryptonButton1.Size = new System.Drawing.Size(916, 55);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.White;
@@ -161,20 +161,21 @@
             this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonButton1.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.StateDisabled.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.kryptonButton1.StateDisabled.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.kryptonButton1.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateDisabled.Border.Rounding = 10F;
-            this.kryptonButton1.StateDisabled.Border.Width = 3;
+            this.kryptonButton1.StateDisabled.Border.Rounding = 5F;
+            this.kryptonButton1.StateDisabled.Border.Width = 2;
             this.kryptonButton1.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.kryptonButton1.StateNormal.Border.Color2 = System.Drawing.Color.Black;
             this.kryptonButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateNormal.Border.Rounding = 10F;
-            this.kryptonButton1.StateNormal.Border.Width = 3;
+            this.kryptonButton1.StateNormal.Border.Rounding = 2F;
+            this.kryptonButton1.StateNormal.Border.Width = 0;
             this.kryptonButton1.TabIndex = 13;
             this.kryptonButton1.Values.Text = "";
             // 
@@ -204,7 +205,7 @@
             this.picNextMonth.TabStop = false;
             this.picNextMonth.Click += new System.EventHandler(this.picNextMonth_Click);
             // 
-            // usSchedule
+            // ucSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -221,7 +222,7 @@
             this.Controls.Add(this.fpnlDayContainer);
             this.Controls.Add(this.kryptonButton1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "usSchedule";
+            this.Name = "ucSchedule";
             this.Size = new System.Drawing.Size(995, 766);
             this.Load += new System.EventHandler(this.usSchedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPreviousMonth)).EndInit();
