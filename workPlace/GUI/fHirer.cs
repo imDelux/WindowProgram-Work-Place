@@ -30,8 +30,8 @@ namespace GUI
 
         private void fHirer_Load(object sender, EventArgs e)
         {
-            ucHome uc = new ucHome(currentHirer);
-            AddUC(uc);
+            //ucHome uc = new ucHome(currentHirer);
+            //AddUC(uc);
         }
 
         #region Dashboard button event
