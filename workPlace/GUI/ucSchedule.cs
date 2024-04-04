@@ -1,7 +1,9 @@
-﻿using System;
+﻿using EntityModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -13,17 +15,34 @@ namespace GUI
 {
     public partial class ucSchedule : UserControl
     {
+        // Person whose events are displayed
+        Person person = null;
+        List<Job> jobOfWorker = new List<Job>();
+
+        // Fetch data from database
+        DAO.DbConnection dbConn = new DAO.DbConnection();   
+
         // Store current time that display on the calendar
         DateTime currentTimeInCalendar = DateTime.Now;
+
+        // Day list on schedule
+        List<ucDay> dayList = new List<ucDay>();    
 
         public ucSchedule()
         {
             InitializeComponent();
         }
 
-        // Load calendar
-        private void usSchedule_Load(object sender, EventArgs e)
+        // Display event of a person onto schedule
+        public ucSchedule(Person person)
         {
+            InitializeComponent();
+            this.person = person;
+
+            // Fetch job data
+            jobOfWorker = dbConn.FetchJobList(person, true);
+
+            // Display day onto calendar
             DisplayDays(currentTimeInCalendar);
         }
 
@@ -32,6 +51,7 @@ namespace GUI
         {
             // Clear all current days (if has)
             fpnlDayContainer.Controls.Clear();
+            dayList.Clear();
 
             // Get amount of days in month
             int amountDayInMonth = DateTime.DaysInMonth(now.Year, now.Month);
@@ -53,11 +73,41 @@ namespace GUI
             }
 
             // Display days in input month
-            for (int i = 1; i <= amountDayInMonth; i++) 
-            {
+            for (int i = 1; i <= amountDayInMonth; i++)
+            { 
                 ucDay day = new ucDay();
                 day.Day(i);
+
+                // Check for today 
+                if (now.Month == DateTime.Now.Month && i == DateTime.Now.Day && now.Year == DateTime.Now.Year)
+                {
+                    day.Highlight();
+                }
+
+                // Add day to container and day list
                 fpnlDayContainer.Controls.Add(day);
+                dayList.Add(day);
+            }
+
+            // Map event
+            MapEvent();
+        }
+
+        /// <summary>
+        /// Map job event onto day
+        /// </summary>
+        private void MapEvent()
+        {
+            // Filter job in current month
+            List<Job> currentMonthJob = jobOfWorker.Where(x => 
+            (x.Date.Month == currentTimeInCalendar.Month 
+            && x.Date.Year == currentTimeInCalendar.Year
+            && x.Accept == true
+            && x.JobStatus == false)).ToList();
+            
+            foreach (Job job in currentMonthJob) 
+            {
+                dayList[job.Date.Day - 1].AddEvent(job);
             }
         }
 

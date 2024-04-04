@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,20 @@ namespace GUI
         // Change day number on label
         public void Day(int day)
         {
-            kryptonButton1.Text = day.ToString();
+            btnContainer.Text = day.ToString();
+        }
+
+        // Highlight day
+        public void Highlight()
+        {
+
+        }
+
+        // Add an event onto a day in schedule
+        public void AddEvent(Job job)
+        {
+            ucEvent ucEvent = new ucEvent(job);
+            fpnlEventContainer.Controls.Add(ucEvent);
         }
     }
 }

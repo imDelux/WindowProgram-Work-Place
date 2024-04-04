@@ -1,4 +1,6 @@
-﻿using Krypton.Toolkit;
+﻿using DAO;
+using EntityModel;
+using Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +15,33 @@ namespace GUI
 {
     public partial class fJobDetail : KryptonForm
     {
+        // Store current display job
+        Job currentDisplayingJob = null;
+
+        // Get the hirer name by access to database
+        DAO.DbConnection dbConn = new DAO.DbConnection();
+
         public fJobDetail()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public fJobDetail(Job job)
         {
-            this.Close();
+            InitializeComponent();
+            this.currentDisplayingJob = job;
+            DataSetter();
+        }
+
+        private void DataSetter()
+        {
+            lblHirerName.Text = dbConn.FetchPerson(currentDisplayingJob.HirerID, "Hirer").Name;
+            lblJobName.Text = currentDisplayingJob.JobName;
+            lblJobDescript.Text = currentDisplayingJob.JobDescription;
+            lblJobDate.Text = currentDisplayingJob.Date.ToShortDateString();
+            lblJobWage.Text = currentDisplayingJob.Wage.ToString() + "$";
+            cbPaid.Checked = (currentDisplayingJob.PaidStatus == true ? true : false);
+            cbStatus.Checked = (currentDisplayingJob.JobStatus == true ? true : false);
         }
     }
 }

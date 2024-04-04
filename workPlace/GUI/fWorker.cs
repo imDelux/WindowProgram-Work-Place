@@ -37,6 +37,12 @@ namespace GUI
             }
         }
 
+        private void fWorker_Load(object sender, EventArgs e)
+        {
+            ucSchedule ucSchedule = new ucSchedule(currentWorker);
+            ChangeMainContent(ucSchedule);
+        }
+
         #endregion
 
         #region Exit and LogOut Event
@@ -77,7 +83,7 @@ namespace GUI
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            ucSchedule scheduleContent = new ucSchedule();
+            ucSchedule scheduleContent = new ucSchedule(currentWorker);
             ChangeMainContent(scheduleContent);
         }
 
@@ -94,11 +100,6 @@ namespace GUI
         }
 
 
-        #endregion
-
-        private void ucSchedule1_Load(object sender, EventArgs e)
-        {
-
-        }
+        #endregion      
     }
 }

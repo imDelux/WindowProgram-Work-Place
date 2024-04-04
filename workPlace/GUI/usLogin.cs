@@ -23,9 +23,17 @@ namespace GUI
             // Get login data
             Person person = new Person() { Email = txtEmail.Text, Password = txtPassword.Text };
 
+            // Hide login form
+            this.TopLevelControl.Hide();
+
+            // Display choose role form
             fChooseRole fChooseRole1 = new fChooseRole(person);
             fChooseRole1.ShowDialog();
+
+            // Show login form
+            this.TopLevelControl.Show();
         }
+
         private void btnForgotpass_Click(object sender, EventArgs e)
         {
 
