@@ -40,13 +40,11 @@
             this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
-            this.ucSchedule1 = new GUI.ucSchedule();
             this.pnlDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
             this.pnlLogoContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonCustomPaletteBase1
@@ -316,20 +314,11 @@
             // pnlContainer
             // 
             this.pnlContainer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlContainer.Controls.Add(this.ucSchedule1);
             this.pnlContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlContainer.Location = new System.Drawing.Point(265, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(995, 766);
             this.pnlContainer.TabIndex = 1;
-            // 
-            // ucSchedule1
-            // 
-            this.ucSchedule1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ucSchedule1.Location = new System.Drawing.Point(-3, 0);
-            this.ucSchedule1.Name = "ucSchedule1";
-            this.ucSchedule1.Size = new System.Drawing.Size(995, 766);
-            this.ucSchedule1.TabIndex = 0;
             // 
             // fWorker
             // 
@@ -363,13 +352,13 @@
             this.StateCommon.OverlayHeaders = Krypton.Toolkit.InheritBool.False;
             this.Text = "fWorker";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fWorker_FormClosing);
+            this.Load += new System.EventHandler(this.fWorker_Load);
             this.pnlDashboard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.pnlLogoContainer.ResumeLayout(false);
             this.pnlLogoContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.pnlContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -387,6 +376,5 @@
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
-        private ucSchedule ucSchedule1;
     }
 }

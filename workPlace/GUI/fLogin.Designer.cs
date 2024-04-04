@@ -236,7 +236,7 @@
             this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.StateActive.Border.Rounding = 5F;
+            this.StateActive.Border.Rounding = 10F;
             this.StateActive.Border.Width = 1;
             this.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.StateCommon.Back.Color2 = System.Drawing.Color.White;

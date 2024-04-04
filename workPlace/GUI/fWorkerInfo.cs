@@ -51,7 +51,7 @@ namespace GUI
             fpnlSkills.Controls.Clear();
             foreach (Skill skill in skillList)
             {
-                ucSkill ithskill = new ucSkill(skill, true);
+                ucSkill ithskill = new ucSkill(skill, false);
                 fpnlSkills.Controls.Add(ithskill);
             }
         }

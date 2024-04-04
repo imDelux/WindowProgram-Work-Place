@@ -106,11 +106,11 @@
     <Compile Include="ucDay.Designer.cs">
       <DependentUpon>ucDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEventOfDay.cs">
+    <Compile Include="ucEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucEventOfDay.Designer.cs">
-      <DependentUpon>ucEventOfDay.cs</DependentUpon>
+    <Compile Include="ucEvent.Designer.cs">
+      <DependentUpon>ucEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="ucIncomingNotificationMessage.cs">
       <SubType>UserControl</SubType>
@@ -263,8 +263,8 @@
     <EmbeddedResource Include="ucDay.resx">
       <DependentUpon>ucDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucEventOfDay.resx">
-      <DependentUpon>ucEventOfDay.cs</DependentUpon>
+    <EmbeddedResource Include="ucEvent.resx">
+      <DependentUpon>ucEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucIncomingNotificationMessage.resx">
       <DependentUpon>ucIncomingNotificationMessage.cs</DependentUpon>

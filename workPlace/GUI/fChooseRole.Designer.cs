@@ -39,7 +39,7 @@
             this.lblThumbnail.AutoSize = true;
             this.lblThumbnail.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThumbnail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.lblThumbnail.Location = new System.Drawing.Point(308, 125);
+            this.lblThumbnail.Location = new System.Drawing.Point(282, 73);
             this.lblThumbnail.Name = "lblThumbnail";
             this.lblThumbnail.Size = new System.Drawing.Size(421, 56);
             this.lblThumbnail.TabIndex = 0;
@@ -48,7 +48,7 @@
             // btnHirer
             // 
             this.btnHirer.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.btnHirer.Location = new System.Drawing.Point(580, 244);
+            this.btnHirer.Location = new System.Drawing.Point(554, 192);
             this.btnHirer.Name = "btnHirer";
             this.btnHirer.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnHirer.OverrideDefault.Back.Image = global::GUI.Properties.Resources.employee__2_;
@@ -116,7 +116,7 @@
             // btnWorker
             // 
             this.btnWorker.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.btnWorker.Location = new System.Drawing.Point(211, 244);
+            this.btnWorker.Location = new System.Drawing.Point(185, 192);
             this.btnWorker.Name = "btnWorker";
             this.btnWorker.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnWorker.OverrideDefault.Back.Image = global::GUI.Properties.Resources.worker__2_;
@@ -184,7 +184,7 @@
             // btnConfirm
             // 
             this.btnConfirm.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnConfirm.Location = new System.Drawing.Point(458, 510);
+            this.btnConfirm.Location = new System.Drawing.Point(432, 458);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.OverrideDefault.Back.Color1 = System.Drawing.Color.MediumPurple;
             this.btnConfirm.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -251,18 +251,32 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1029, 596);
+            this.ClientSize = new System.Drawing.Size(970, 582);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.btnWorker);
             this.Controls.Add(this.btnHirer);
             this.Controls.Add(this.lblThumbnail);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "fChooseRole";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StateActive.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateActive.Border.Rounding = 10F;
+            this.StateActive.Border.Width = 1;
+            this.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Border.Color2 = System.Drawing.Color.White;
             this.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.Text = "fChooseRole";
+            this.StateCommon.Border.Width = 1;
+            this.StateCommon.Header.Back.Color1 = System.Drawing.Color.White;
+            this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
             this.ResumeLayout(false);
             this.PerformLayout();
 
