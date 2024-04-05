@@ -112,12 +112,6 @@
     <Compile Include="ucEvent.Designer.cs">
       <DependentUpon>ucEvent.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucIncomingNotificationMessage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucIncomingNotificationMessage.Designer.cs">
-      <DependentUpon>ucIncomingNotificationMessage.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucNewNotificationMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,18 +141,6 @@
     </Compile>
     <Compile Include="fWorkerInfo.Designer.cs">
       <DependentUpon>fWorkerInfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucEvaluate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucEvaluate.Designer.cs">
-      <DependentUpon>ucEvaluate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucHiring.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucHiring.Designer.cs">
-      <DependentUpon>ucHiring.cs</DependentUpon>
     </Compile>
     <Compile Include="ucHome.cs">
       <SubType>UserControl</SubType>
@@ -266,9 +248,6 @@
     <EmbeddedResource Include="ucEvent.resx">
       <DependentUpon>ucEvent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucIncomingNotificationMessage.resx">
-      <DependentUpon>ucIncomingNotificationMessage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ucNewNotificationMessage.resx">
       <DependentUpon>ucNewNotificationMessage.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,12 +256,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucEvaluate.resx">
-      <DependentUpon>ucEvaluate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucHiring.resx">
-      <DependentUpon>ucHiring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucHome.resx">
       <DependentUpon>ucHome.cs</DependentUpon>

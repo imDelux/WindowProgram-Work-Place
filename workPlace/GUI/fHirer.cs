@@ -30,8 +30,9 @@ namespace GUI
 
         private void fHirer_Load(object sender, EventArgs e)
         {
-            //ucHome uc = new ucHome(currentHirer);
-            //AddUC(uc);
+            // Load home
+            ucHome uc = new ucHome(currentHirer);
+            AddUC(uc);
         }
 
         #region Dashboard button event
@@ -52,13 +53,23 @@ namespace GUI
 
         private void btnHiring_Click(object sender, EventArgs e)
         {
-            ucHiring uc = new ucHiring();
-            AddUC(uc);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
             ucProfile uc = new ucProfile(currentHirer, true);
+            AddUC(uc);
+        }
+
+        private void btnWaiting_Click(object sender, EventArgs e)
+        {
+            ucWaiting uc = new ucWaiting();
+            AddUC(uc);
+        }
+
+        private void btnAccepted_Click(object sender, EventArgs e)
+        {
+            ucAccepted uc = new ucAccepted();
             AddUC(uc);
         }
 
