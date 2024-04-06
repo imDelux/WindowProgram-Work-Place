@@ -13,17 +13,17 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucHome : UserControl
+    public partial class ucHome02 : UserControl
     {
         Person currentUsingHirer = null;
         DbConnection dbConn = new DbConnection();
 
-        public ucHome()
+        public ucHome02()
         {
             InitializeComponent();
         }
 
-        public ucHome(Person hirer)
+        public ucHome02(Person hirer)
         {
             InitializeComponent();
             this.currentUsingHirer = hirer;

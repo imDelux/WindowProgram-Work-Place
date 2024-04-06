@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class ucHome
+    partial class ucHome02
     {
         /// <summary> 
         /// Required designer variable.
@@ -45,10 +45,11 @@
             // 
             this.kryptonComboBox1.DropDownWidth = 121;
             this.kryptonComboBox1.IntegralHeight = false;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(525, 21);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(420, 17);
+            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox1.Size = new System.Drawing.Size(168, 37);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(134, 33);
             this.kryptonComboBox1.Sorted = true;
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -61,10 +62,11 @@
             // 
             this.kryptonComboBox2.DropDownWidth = 121;
             this.kryptonComboBox2.IntegralHeight = false;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(722, 21);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(578, 17);
+            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
             this.kryptonComboBox2.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonComboBox2.Size = new System.Drawing.Size(168, 37);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(134, 33);
             this.kryptonComboBox2.Sorted = true;
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -79,9 +81,10 @@
             this.pnlTop.Controls.Add(this.kryptonComboBox1);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.pnlTop.Size = new System.Drawing.Size(1002, 78);
+            this.pnlTop.Size = new System.Drawing.Size(802, 62);
             this.pnlTop.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.TabIndex = 4;
@@ -89,11 +92,12 @@
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Location = new System.Drawing.Point(35, 21);
+            this.txtSearch.Location = new System.Drawing.Point(28, 17);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.txtSearch.Size = new System.Drawing.Size(452, 53);
+            this.txtSearch.Size = new System.Drawing.Size(362, 42);
             this.txtSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -105,32 +109,35 @@
             // fpnlContainer
             // 
             this.fpnlContainer.AutoScroll = true;
-            this.fpnlContainer.Location = new System.Drawing.Point(50, 94);
+            this.fpnlContainer.Location = new System.Drawing.Point(40, 75);
+            this.fpnlContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fpnlContainer.Name = "fpnlContainer";
-            this.fpnlContainer.Size = new System.Drawing.Size(902, 635);
+            this.fpnlContainer.Size = new System.Drawing.Size(722, 508);
             this.fpnlContainer.TabIndex = 5;
             // 
             // kryptonPictureBox1
             // 
             this.kryptonPictureBox1.Image = global::GUI.Properties.Resources._6351933_filter_filters_funnel_seo_sort_icon;
-            this.kryptonPictureBox1.Location = new System.Drawing.Point(914, 21);
+            this.kryptonPictureBox1.Location = new System.Drawing.Point(731, 17);
+            this.kryptonPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kryptonPictureBox1.Name = "kryptonPictureBox1";
-            this.kryptonPictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.kryptonPictureBox1.Size = new System.Drawing.Size(24, 24);
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
             // 
-            // ucHome
+            // ucHome02
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.kryptonPictureBox1);
             this.Controls.Add(this.kryptonComboBox2);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.fpnlContainer);
-            this.Name = "ucHome";
-            this.Size = new System.Drawing.Size(1002, 749);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "ucHome02";
+            this.Size = new System.Drawing.Size(802, 599);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).EndInit();

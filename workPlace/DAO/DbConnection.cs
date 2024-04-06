@@ -153,6 +153,7 @@ namespace DAO
             List<Skill> result = new List<Skill>();
 
             // Store information of each skill
+            Category category;
             SkillName skill;
             int skillExpectedWage;
             string skillDescription;
@@ -169,6 +170,14 @@ namespace DAO
             while (reader.Read())
             {
                 // Try parse the skill name first
+                if (Enum.TryParse(reader["Category"].ToString(), out Category categoryName) == true)
+                {
+                    category = categoryName;
+                }
+                else
+                {
+                    category = Category.None;
+                }
                 if (Enum.TryParse(reader["SkillName"].ToString(), out SkillName skillName) == true)
                 {
                     skill = skillName;
@@ -180,7 +189,7 @@ namespace DAO
                 skillDescription = reader["SkillDescription"].ToString();
                 skillExpectedWage = int.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
 
-                result.Add(new Skill(skill, skillDescription, skillExpectedWage));
+                result.Add(new Skill(category, skill, skillDescription, skillExpectedWage));
             }
 
             // Disconnect from database

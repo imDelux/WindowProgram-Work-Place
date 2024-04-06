@@ -31,7 +31,7 @@ namespace GUI
         private void fHirer_Load(object sender, EventArgs e)
         {
             // Load home
-            ucHome uc = new ucHome(currentHirer);
+            ucHome01 uc = new ucHome01(currentHirer);
             AddUC(uc);
         }
 
@@ -47,7 +47,7 @@ namespace GUI
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ucHome uc = new ucHome(currentHirer);
+            ucHome01 uc = new ucHome01(currentHirer);
             AddUC(uc);
         }
 
@@ -61,17 +61,17 @@ namespace GUI
             AddUC(uc);
         }
 
-        private void btnWaiting_Click(object sender, EventArgs e)
-        {
-            ucWaiting uc = new ucWaiting();
-            AddUC(uc);
-        }
+        //private void btnWaiting_Click(object sender, EventArgs e)
+        //{
+        //    ucWaiting uc = new ucWaiting();
+        //    AddUC(uc);
+        //}
 
-        private void btnAccepted_Click(object sender, EventArgs e)
-        {
-            ucAccepted uc = new ucAccepted();
-            AddUC(uc);
-        }
+        //private void btnAccepted_Click(object sender, EventArgs e)
+        //{
+        //    ucAccepted uc = new ucAccepted();
+        //    AddUC(uc);
+        //}
 
         #endregion
 
