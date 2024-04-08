@@ -29,26 +29,28 @@
         private void InitializeComponent()
         {
             this.pnlLeft = new Krypton.Toolkit.KryptonPanel();
-            this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
-            this.picExit = new Krypton.Toolkit.KryptonPictureBox();
+            this.btnPost = new Krypton.Toolkit.KryptonButton();
             this.btnProfile = new Krypton.Toolkit.KryptonButton();
             this.btnHiring = new Krypton.Toolkit.KryptonButton();
             this.btnHome = new Krypton.Toolkit.KryptonButton();
             this.pnlLogoContainer = new System.Windows.Forms.Panel();
-            this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             this.lblExtraText = new System.Windows.Forms.Label();
             this.pnlContainer = new Krypton.Toolkit.KryptonPanel();
+            this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
+            this.picExit = new Krypton.Toolkit.KryptonPictureBox();
+            this.picLogo = new Krypton.Toolkit.KryptonPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).BeginInit();
             this.pnlLeft.SuspendLayout();
+            this.pnlLogoContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
-            this.pnlLogoContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeft
             // 
+            this.pnlLeft.Controls.Add(this.btnPost);
             this.pnlLeft.Controls.Add(this.picLogOut);
             this.pnlLeft.Controls.Add(this.picExit);
             this.pnlLeft.Controls.Add(this.btnProfile);
@@ -63,28 +65,46 @@
             this.pnlLeft.StateNormal.Color1 = System.Drawing.Color.White;
             this.pnlLeft.TabIndex = 0;
             // 
-            // picLogOut
+            // btnPost
             // 
-            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picLogOut.Image = global::GUI.Properties.Resources.logout;
-            this.picLogOut.Location = new System.Drawing.Point(170, 712);
-            this.picLogOut.Name = "picLogOut";
-            this.picLogOut.Size = new System.Drawing.Size(40, 40);
-            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogOut.TabIndex = 13;
-            this.picLogOut.TabStop = false;
-            // 
-            // picExit
-            // 
-            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picExit.Image = global::GUI.Properties.Resources.reject;
-            this.picExit.Location = new System.Drawing.Point(212, 714);
-            this.picExit.Name = "picExit";
-            this.picExit.Size = new System.Drawing.Size(38, 38);
-            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picExit.TabIndex = 12;
-            this.picExit.TabStop = false;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click_1);
+            this.btnPost.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPost.Location = new System.Drawing.Point(0, 384);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPost.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnPost.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPost.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnPost.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
+            this.btnPost.Size = new System.Drawing.Size(264, 56);
+            this.btnPost.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.btnPost.StateCommon.Back.Color2 = System.Drawing.Color.White;
+            this.btnPost.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnPost.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.btnPost.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.btnPost.StateCommon.Border.Rounding = 0F;
+            this.btnPost.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnPost.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPost.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnPost.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnPost.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnPost.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.btnPost.StateNormal.Border.Width = 1;
+            this.btnPost.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnPost.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnPost.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnPost.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnPost.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnPost.StateTracking.Border.Width = 1;
+            this.btnPost.TabIndex = 14;
+            this.btnPost.Values.Text = "Post";
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
             // btnProfile
             // 
@@ -220,17 +240,6 @@
             this.pnlLogoContainer.Size = new System.Drawing.Size(264, 216);
             this.pnlLogoContainer.TabIndex = 1;
             // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::GUI.Properties.Resources.work_place_logo;
-            this.picLogo.InitialImage = global::GUI.Properties.Resources.work_place_logo;
-            this.picLogo.Location = new System.Drawing.Point(86, 42);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(92, 92);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
             // lblExtraText
             // 
             this.lblExtraText.AutoSize = true;
@@ -251,6 +260,40 @@
             this.pnlContainer.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.pnlContainer.StateCommon.Color2 = System.Drawing.Color.Transparent;
             this.pnlContainer.TabIndex = 1;
+            // 
+            // picLogOut
+            // 
+            this.picLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picLogOut.Image = global::GUI.Properties.Resources.logout;
+            this.picLogOut.Location = new System.Drawing.Point(170, 712);
+            this.picLogOut.Name = "picLogOut";
+            this.picLogOut.Size = new System.Drawing.Size(40, 40);
+            this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogOut.TabIndex = 13;
+            this.picLogOut.TabStop = false;
+            // 
+            // picExit
+            // 
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picExit.Image = global::GUI.Properties.Resources.reject;
+            this.picExit.Location = new System.Drawing.Point(212, 714);
+            this.picExit.Name = "picExit";
+            this.picExit.Size = new System.Drawing.Size(38, 38);
+            this.picExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picExit.TabIndex = 12;
+            this.picExit.TabStop = false;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click_1);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::GUI.Properties.Resources.work_place_logo;
+            this.picLogo.InitialImage = global::GUI.Properties.Resources.work_place_logo;
+            this.picLogo.Location = new System.Drawing.Point(86, 42);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(92, 92);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
             // fHirer
             // 
@@ -281,12 +324,12 @@
             this.Load += new System.EventHandler(this.fHirer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pnlLeft)).EndInit();
             this.pnlLeft.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
             this.pnlLogoContainer.ResumeLayout(false);
             this.pnlLogoContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlContainer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogOut)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,5 +346,6 @@
         private System.Windows.Forms.Label lblExtraText;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private Krypton.Toolkit.KryptonPictureBox picExit;
+        private Krypton.Toolkit.KryptonButton btnPost;
     }
 }

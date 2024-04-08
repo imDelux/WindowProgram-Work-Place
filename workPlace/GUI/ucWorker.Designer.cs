@@ -93,7 +93,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(0);
             this.btnBack.Name = "btnBack";
             this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnBack.Size = new System.Drawing.Size(430, 222);
+            this.btnBack.Size = new System.Drawing.Size(419, 212);
             this.btnBack.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btnBack.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btnBack.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -128,7 +128,7 @@
             this.Controls.Add(this.lblWokerName);
             this.Controls.Add(this.btnBack);
             this.Name = "ucWorker";
-            this.Size = new System.Drawing.Size(430, 222);
+            this.Size = new System.Drawing.Size(423, 214);
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

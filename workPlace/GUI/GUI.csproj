@@ -86,6 +86,12 @@
     <Compile Include="fJobDetail.Designer.cs">
       <DependentUpon>fJobDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPostJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPostJob.Designer.cs">
+      <DependentUpon>fPostJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="fWorker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,11 +112,23 @@
     <Compile Include="ucDay.Designer.cs">
       <DependentUpon>ucDay.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucDoneJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDoneJob.Designer.cs">
+      <DependentUpon>ucDoneJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucEvent.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucEvent.Designer.cs">
       <DependentUpon>ucEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHiring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHiring.Designer.cs">
+      <DependentUpon>ucHiring.cs</DependentUpon>
     </Compile>
     <Compile Include="ucNewNotificationMessage.cs">
       <SubType>UserControl</SubType>
@@ -123,6 +141,18 @@
     </Compile>
     <Compile Include="ucNotification.Designer.cs">
       <DependentUpon>ucNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPost.Designer.cs">
+      <DependentUpon>ucPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucPostedpost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucPostedpost.Designer.cs">
+      <DependentUpon>ucPostedpost.cs</DependentUpon>
     </Compile>
     <Compile Include="ucProfile.cs">
       <SubType>UserControl</SubType>
@@ -175,12 +205,21 @@
     <EmbeddedResource Include="fJobDetail.resx">
       <DependentUpon>fJobDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fPostJob.resx">
+      <DependentUpon>fPostJob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fWorker.resx">
       <DependentUpon>fWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fWorkerSkills.resx">
       <DependentUpon>fWorkerSkills.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="ucWaiting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucWaiting.Designer.cs">
+      <DependentUpon>ucWaiting.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucWorker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,14 +284,26 @@
     <EmbeddedResource Include="ucDay.resx">
       <DependentUpon>ucDay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucDoneJob.resx">
+      <DependentUpon>ucDoneJob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucEvent.resx">
       <DependentUpon>ucEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHiring.resx">
+      <DependentUpon>ucHiring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNewNotificationMessage.resx">
       <DependentUpon>ucNewNotificationMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNotification.resx">
       <DependentUpon>ucNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPost.resx">
+      <DependentUpon>ucPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucPostedpost.resx">
+      <DependentUpon>ucPostedpost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
@@ -268,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSkill.resx">
       <DependentUpon>ucSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucWaiting.resx">
+      <DependentUpon>ucWaiting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorker.resx">
       <DependentUpon>ucWorker.cs</DependentUpon>
@@ -461,6 +515,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-chimney.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rec %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-small-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-small-right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ask.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
