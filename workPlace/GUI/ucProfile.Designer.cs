@@ -31,6 +31,8 @@
             this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
             this.btnBasicInformationContainer = new Krypton.Toolkit.KryptonButton();
             this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.ucReview1 = new GUI.ucReview();
+            this.ucReview2 = new GUI.ucReview();
             this.pnlBasicInformationContainer = new System.Windows.Forms.Panel();
             this.lblLocation = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -41,9 +43,6 @@
             this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.lblAdjustInformation = new System.Windows.Forms.Label();
             this.lblChangePassword = new System.Windows.Forms.Label();
-            this.lblUserSkill = new System.Windows.Forms.Label();
-            this.ucReview1 = new GUI.ucReview();
-            this.ucReview2 = new GUI.ucReview();
             this.fpnlReviewContainer.SuspendLayout();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
@@ -123,6 +122,20 @@
             this.fpnlReviewContainer.Name = "fpnlReviewContainer";
             this.fpnlReviewContainer.Size = new System.Drawing.Size(414, 636);
             this.fpnlReviewContainer.TabIndex = 2;
+            // 
+            // ucReview1
+            // 
+            this.ucReview1.Location = new System.Drawing.Point(3, 3);
+            this.ucReview1.Name = "ucReview1";
+            this.ucReview1.Size = new System.Drawing.Size(414, 209);
+            this.ucReview1.TabIndex = 0;
+            // 
+            // ucReview2
+            // 
+            this.ucReview2.Location = new System.Drawing.Point(3, 218);
+            this.ucReview2.Name = "ucReview2";
+            this.ucReview2.Size = new System.Drawing.Size(414, 209);
+            this.ucReview2.TabIndex = 1;
             // 
             // pnlBasicInformationContainer
             // 
@@ -237,40 +250,11 @@
             this.lblChangePassword.TabIndex = 8;
             this.lblChangePassword.Text = "Change Password";
             // 
-            // lblUserSkill
-            // 
-            this.lblUserSkill.AutoSize = true;
-            this.lblUserSkill.BackColor = System.Drawing.Color.White;
-            this.lblUserSkill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblUserSkill.Font = new System.Drawing.Font("Century Gothic", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserSkill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(83)))), ((int)(((byte)(247)))));
-            this.lblUserSkill.Location = new System.Drawing.Point(840, 617);
-            this.lblUserSkill.Name = "lblUserSkill";
-            this.lblUserSkill.Size = new System.Drawing.Size(94, 22);
-            this.lblUserSkill.TabIndex = 9;
-            this.lblUserSkill.Text = "Your Skills";
-            this.lblUserSkill.Click += new System.EventHandler(this.lblUserSkill_Click);
-            // 
-            // ucReview1
-            // 
-            this.ucReview1.Location = new System.Drawing.Point(3, 3);
-            this.ucReview1.Name = "ucReview1";
-            this.ucReview1.Size = new System.Drawing.Size(414, 209);
-            this.ucReview1.TabIndex = 0;
-            // 
-            // ucReview2
-            // 
-            this.ucReview2.Location = new System.Drawing.Point(3, 218);
-            this.ucReview2.Name = "ucReview2";
-            this.ucReview2.Size = new System.Drawing.Size(414, 209);
-            this.ucReview2.TabIndex = 1;
-            // 
             // ucProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
-            this.Controls.Add(this.lblUserSkill);
             this.Controls.Add(this.lblChangePassword);
             this.Controls.Add(this.lblAdjustInformation);
             this.Controls.Add(this.pnlBasicInformationContainer);
@@ -303,7 +287,6 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAdjustInformation;
         private System.Windows.Forms.Label lblChangePassword;
-        private System.Windows.Forms.Label lblUserSkill;
         private ucReview ucReview1;
         private ucReview ucReview2;
     }

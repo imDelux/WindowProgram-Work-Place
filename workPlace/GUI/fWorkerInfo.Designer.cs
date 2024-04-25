@@ -28,58 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblBasicInfo = new System.Windows.Forms.Label();
             this.btnHire = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
-            this.fpnlSkills = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlBasicInforContainer = new System.Windows.Forms.Panel();
-            this.pnlContainer = new System.Windows.Forms.Panel();
+            this.btnBasicInformationContainer = new Krypton.Toolkit.KryptonButton();
+            this.pnlBasicInformationContainer = new System.Windows.Forms.Panel();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.lblAgeHead = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.lblTelephoneHead = new System.Windows.Forms.Label();
-            this.lblTelephone = new System.Windows.Forms.Label();
-            this.lblEmailHead = new System.Windows.Forms.Label();
+            this.lblPhone = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
-            this.lblWorkLocationHead = new System.Windows.Forms.Label();
-            this.lblRate = new Krypton.Toolkit.KryptonLabel();
-            this.lblWokerName = new Krypton.Toolkit.KryptonLabel();
-            this.picAvt = new Krypton.Toolkit.KryptonPictureBox();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ucReview3 = new GUI.ucReview();
+            this.lblOverrallRating = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
+            this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
+            this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.ucReview1 = new GUI.ucReview();
             this.ucReview2 = new GUI.ucReview();
-            this.ucReview4 = new GUI.ucReview();
-            this.ucSkill3 = new GUI.ucSkill();
-            this.ucSkill1 = new GUI.ucSkill();
-            this.ucSkill2 = new GUI.ucSkill();
-            this.btnInfo = new Krypton.Toolkit.KryptonButton();
-            this.fpnlSkills.SuspendLayout();
-            this.pnlBasicInforContainer.SuspendLayout();
-            this.pnlContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlBasicInformationContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
+            this.fpnlReviewContainer.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblBasicInfo
-            // 
-            this.lblBasicInfo.AutoSize = true;
-            this.lblBasicInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblBasicInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblBasicInfo.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBasicInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblBasicInfo.Location = new System.Drawing.Point(524, -1);
-            this.lblBasicInfo.Name = "lblBasicInfo";
-            this.lblBasicInfo.Size = new System.Drawing.Size(138, 46);
-            this.lblBasicInfo.TabIndex = 9;
-            this.lblBasicInfo.Text = "Skills";
             // 
             // btnHire
             // 
             this.btnHire.AutoSize = true;
-            this.btnHire.Location = new System.Drawing.Point(453, 742);
+            this.btnHire.Location = new System.Drawing.Point(306, 731);
             this.btnHire.Name = "btnHire";
             this.btnHire.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnHire.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -119,7 +91,7 @@
             // btnCancel
             // 
             this.btnCancel.AutoSize = true;
-            this.btnCancel.Location = new System.Drawing.Point(589, 742);
+            this.btnCancel.Location = new System.Drawing.Point(442, 731);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.White;
             this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.White;
@@ -162,293 +134,181 @@
             this.btnCancel.Values.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // fpnlSkills
+            // btnBasicInformationContainer
             // 
-            this.fpnlSkills.AutoScroll = true;
-            this.fpnlSkills.BackColor = System.Drawing.Color.White;
-            this.fpnlSkills.Controls.Add(this.ucSkill3);
-            this.fpnlSkills.Controls.Add(this.ucSkill1);
-            this.fpnlSkills.Controls.Add(this.ucSkill2);
-            this.fpnlSkills.Location = new System.Drawing.Point(500, 53);
-            this.fpnlSkills.Name = "fpnlSkills";
-            this.fpnlSkills.Size = new System.Drawing.Size(652, 636);
-            this.fpnlSkills.TabIndex = 13;
+            this.btnBasicInformationContainer.Enabled = false;
+            this.btnBasicInformationContainer.Location = new System.Drawing.Point(27, 12);
+            this.btnBasicInformationContainer.Name = "btnBasicInformationContainer";
+            this.btnBasicInformationContainer.Size = new System.Drawing.Size(368, 702);
+            this.btnBasicInformationContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnBasicInformationContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnBasicInformationContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnBasicInformationContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnBasicInformationContainer.StateDisabled.Border.Rounding = 40F;
+            this.btnBasicInformationContainer.StateDisabled.Border.Width = 1;
+            this.btnBasicInformationContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnBasicInformationContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnBasicInformationContainer.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnBasicInformationContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnBasicInformationContainer.StateNormal.Border.Rounding = 40F;
+            this.btnBasicInformationContainer.StateNormal.Border.Width = 1;
+            this.btnBasicInformationContainer.TabIndex = 13;
+            this.btnBasicInformationContainer.Values.Text = "";
             // 
-            // pnlBasicInforContainer
+            // pnlBasicInformationContainer
             // 
-            this.pnlBasicInforContainer.Controls.Add(this.pnlContainer);
-            this.pnlBasicInforContainer.Controls.Add(this.lblRate);
-            this.pnlBasicInforContainer.Controls.Add(this.lblWokerName);
-            this.pnlBasicInforContainer.Controls.Add(this.picAvt);
-            this.pnlBasicInforContainer.Controls.Add(this.kryptonButton1);
-            this.pnlBasicInforContainer.Location = new System.Drawing.Point(37, 0);
-            this.pnlBasicInforContainer.Name = "pnlBasicInforContainer";
-            this.pnlBasicInforContainer.Size = new System.Drawing.Size(414, 296);
-            this.pnlBasicInforContainer.TabIndex = 14;
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.BackColor = System.Drawing.Color.White;
-            this.pnlContainer.Controls.Add(this.lblLocation);
-            this.pnlContainer.Controls.Add(this.lblAgeHead);
-            this.pnlContainer.Controls.Add(this.lblEmail);
-            this.pnlContainer.Controls.Add(this.lblTelephoneHead);
-            this.pnlContainer.Controls.Add(this.lblTelephone);
-            this.pnlContainer.Controls.Add(this.lblEmailHead);
-            this.pnlContainer.Controls.Add(this.lblAge);
-            this.pnlContainer.Controls.Add(this.lblWorkLocationHead);
-            this.pnlContainer.Location = new System.Drawing.Point(49, 107);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(312, 162);
-            this.pnlContainer.TabIndex = 33;
+            this.pnlBasicInformationContainer.BackColor = System.Drawing.Color.White;
+            this.pnlBasicInformationContainer.Controls.Add(this.lblLocation);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblEmail);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblPhone);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblAge);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblOverrallRating);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblName);
+            this.pnlBasicInformationContainer.Controls.Add(this.picUserAvatar);
+            this.pnlBasicInformationContainer.Location = new System.Drawing.Point(48, 48);
+            this.pnlBasicInformationContainer.Name = "pnlBasicInformationContainer";
+            this.pnlBasicInformationContainer.Size = new System.Drawing.Size(326, 301);
+            this.pnlBasicInformationContainer.TabIndex = 14;
             // 
             // lblLocation
             // 
-            this.lblLocation.BackColor = System.Drawing.Color.White;
-            this.lblLocation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblLocation.Location = new System.Drawing.Point(98, 133);
+            this.lblLocation.Location = new System.Drawing.Point(12, 258);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(185, 21);
-            this.lblLocation.TabIndex = 17;
-            this.lblLocation.Text = "Ho Chi Minh City";
-            // 
-            // lblAgeHead
-            // 
-            this.lblAgeHead.AutoSize = true;
-            this.lblAgeHead.BackColor = System.Drawing.Color.White;
-            this.lblAgeHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAgeHead.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgeHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblAgeHead.Location = new System.Drawing.Point(0, 0);
-            this.lblAgeHead.Name = "lblAgeHead";
-            this.lblAgeHead.Size = new System.Drawing.Size(37, 17);
-            this.lblAgeHead.TabIndex = 9;
-            this.lblAgeHead.Text = "Age";
+            this.lblLocation.Size = new System.Drawing.Size(298, 26);
+            this.lblLocation.TabIndex = 6;
+            this.lblLocation.Text = "Location: Ho Chi Minh City";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.White;
-            this.lblEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblEmail.Location = new System.Drawing.Point(98, 87);
+            this.lblEmail.Location = new System.Drawing.Point(12, 223);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(163, 20);
-            this.lblEmail.TabIndex = 16;
-            this.lblEmail.Text = "bienxhuy@gmail.com";
+            this.lblEmail.Size = new System.Drawing.Size(257, 20);
+            this.lblEmail.TabIndex = 5;
+            this.lblEmail.Text = "Email: bienxhuy@gmail.com";
             // 
-            // lblTelephoneHead
+            // lblPhone
             // 
-            this.lblTelephoneHead.AutoSize = true;
-            this.lblTelephoneHead.BackColor = System.Drawing.Color.White;
-            this.lblTelephoneHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTelephoneHead.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelephoneHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblTelephoneHead.Location = new System.Drawing.Point(0, 44);
-            this.lblTelephoneHead.Name = "lblTelephoneHead";
-            this.lblTelephoneHead.Size = new System.Drawing.Size(87, 17);
-            this.lblTelephoneHead.TabIndex = 10;
-            this.lblTelephoneHead.Text = "Telephone";
-            // 
-            // lblTelephone
-            // 
-            this.lblTelephone.AutoSize = true;
-            this.lblTelephone.BackColor = System.Drawing.Color.White;
-            this.lblTelephone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblTelephone.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelephone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblTelephone.Location = new System.Drawing.Point(98, 42);
-            this.lblTelephone.Name = "lblTelephone";
-            this.lblTelephone.Size = new System.Drawing.Size(99, 20);
-            this.lblTelephone.TabIndex = 15;
-            this.lblTelephone.Text = "0908-338-919";
-            // 
-            // lblEmailHead
-            // 
-            this.lblEmailHead.AutoSize = true;
-            this.lblEmailHead.BackColor = System.Drawing.Color.White;
-            this.lblEmailHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblEmailHead.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblEmailHead.Location = new System.Drawing.Point(0, 89);
-            this.lblEmailHead.Name = "lblEmailHead";
-            this.lblEmailHead.Size = new System.Drawing.Size(51, 17);
-            this.lblEmailHead.TabIndex = 11;
-            this.lblEmailHead.Text = "Email";
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblPhone.Location = new System.Drawing.Point(12, 188);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(201, 20);
+            this.lblPhone.TabIndex = 4;
+            this.lblPhone.Text = "Phone: 0908-338-917";
             // 
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.BackColor = System.Drawing.Color.White;
-            this.lblAge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAge.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblAge.Location = new System.Drawing.Point(98, -2);
+            this.lblAge.Location = new System.Drawing.Point(12, 153);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(25, 20);
-            this.lblAge.TabIndex = 14;
-            this.lblAge.Text = "19";
+            this.lblAge.Size = new System.Drawing.Size(78, 20);
+            this.lblAge.TabIndex = 3;
+            this.lblAge.Text = "Age: 19";
             // 
-            // lblWorkLocationHead
+            // lblOverrallRating
             // 
-            this.lblWorkLocationHead.AutoSize = true;
-            this.lblWorkLocationHead.BackColor = System.Drawing.Color.White;
-            this.lblWorkLocationHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblWorkLocationHead.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWorkLocationHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWorkLocationHead.Location = new System.Drawing.Point(0, 135);
-            this.lblWorkLocationHead.Name = "lblWorkLocationHead";
-            this.lblWorkLocationHead.Size = new System.Drawing.Size(75, 17);
-            this.lblWorkLocationHead.TabIndex = 12;
-            this.lblWorkLocationHead.Text = "Location";
+            this.lblOverrallRating.AutoSize = true;
+            this.lblOverrallRating.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverrallRating.Location = new System.Drawing.Point(148, 90);
+            this.lblOverrallRating.Name = "lblOverrallRating";
+            this.lblOverrallRating.Size = new System.Drawing.Size(157, 21);
+            this.lblOverrallRating.TabIndex = 2;
+            this.lblOverrallRating.Text = "Rate: 9.7/10.0 (5)";
             // 
-            // lblRate
+            // lblName
             // 
-            this.lblRate.Location = new System.Drawing.Point(120, 53);
-            this.lblRate.Name = "lblRate";
-            this.lblRate.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.lblRate.Size = new System.Drawing.Size(146, 24);
-            this.lblRate.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblRate.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblRate.StateCommon.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRate.TabIndex = 21;
-            this.lblRate.Values.Text = "Rate: 8.45/10.0 (8)";
+            this.lblName.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(145, 25);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(165, 65);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Current User Name";
             // 
-            // lblWokerName
+            // picUserAvatar
             // 
-            this.lblWokerName.LabelStyle = Krypton.Toolkit.LabelStyle.BoldPanel;
-            this.lblWokerName.Location = new System.Drawing.Point(116, 22);
-            this.lblWokerName.Name = "lblWokerName";
-            this.lblWokerName.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.lblWokerName.Size = new System.Drawing.Size(194, 34);
-            this.lblWokerName.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWokerName.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblWokerName.StateCommon.ShortText.Font = new System.Drawing.Font("Cooper Black", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWokerName.TabIndex = 20;
-            this.lblWokerName.Values.Text = "Bien Xuan Huy";
+            this.picUserAvatar.Image = global::GUI.Properties.Resources.old_man;
+            this.picUserAvatar.Location = new System.Drawing.Point(16, 15);
+            this.picUserAvatar.Name = "picUserAvatar";
+            this.picUserAvatar.Size = new System.Drawing.Size(110, 110);
+            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserAvatar.TabIndex = 0;
+            this.picUserAvatar.TabStop = false;
             // 
-            // picAvt
+            // btnEvaluateContainer
             // 
-            this.picAvt.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvt.Location = new System.Drawing.Point(49, 19);
-            this.picAvt.Name = "picAvt";
-            this.picAvt.Size = new System.Drawing.Size(61, 58);
-            this.picAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvt.TabIndex = 19;
-            this.picAvt.TabStop = false;
-            // 
-            // kryptonButton1
-            // 
-            this.kryptonButton1.Enabled = false;
-            this.kryptonButton1.Location = new System.Drawing.Point(38, 97);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.kryptonButton1.Size = new System.Drawing.Size(333, 182);
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnEvaluateContainer.Enabled = false;
+            this.btnEvaluateContainer.Location = new System.Drawing.Point(429, 12);
+            this.btnEvaluateContainer.Name = "btnEvaluateContainer";
+            this.btnEvaluateContainer.Size = new System.Drawing.Size(464, 702);
+            this.btnEvaluateContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 10F;
-            this.kryptonButton1.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.TabIndex = 22;
-            this.kryptonButton1.Values.Text = "";
+            this.btnEvaluateContainer.StateDisabled.Back.Color1 = System.Drawing.Color.White;
+            this.btnEvaluateContainer.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnEvaluateContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnEvaluateContainer.StateDisabled.Border.Rounding = 40F;
+            this.btnEvaluateContainer.StateDisabled.Border.Width = 1;
+            this.btnEvaluateContainer.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnEvaluateContainer.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnEvaluateContainer.StateNormal.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateNormal.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnEvaluateContainer.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnEvaluateContainer.StateNormal.Border.Rounding = 40F;
+            this.btnEvaluateContainer.StateNormal.Border.Width = 1;
+            this.btnEvaluateContainer.TabIndex = 7;
+            this.btnEvaluateContainer.Values.Text = "";
             // 
-            // flowLayoutPanel1
+            // fpnlReviewContainer
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.ucReview3);
-            this.flowLayoutPanel1.Controls.Add(this.ucReview1);
-            this.flowLayoutPanel1.Controls.Add(this.ucReview2);
-            this.flowLayoutPanel1.Controls.Add(this.ucReview4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 328);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(442, 391);
-            this.flowLayoutPanel1.TabIndex = 15;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.label1.Location = new System.Drawing.Point(169, 293);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 32);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Reviews";
-            // 
-            // ucReview3
-            // 
-            this.ucReview3.Location = new System.Drawing.Point(3, 3);
-            this.ucReview3.Name = "ucReview3";
-            this.ucReview3.Size = new System.Drawing.Size(414, 209);
-            this.ucReview3.TabIndex = 2;
+            this.fpnlReviewContainer.AutoScroll = true;
+            this.fpnlReviewContainer.BackColor = System.Drawing.Color.White;
+            this.fpnlReviewContainer.Controls.Add(this.ucReview1);
+            this.fpnlReviewContainer.Controls.Add(this.ucReview2);
+            this.fpnlReviewContainer.Location = new System.Drawing.Point(457, 48);
+            this.fpnlReviewContainer.Name = "fpnlReviewContainer";
+            this.fpnlReviewContainer.Size = new System.Drawing.Size(414, 636);
+            this.fpnlReviewContainer.TabIndex = 15;
             // 
             // ucReview1
             // 
-            this.ucReview1.Location = new System.Drawing.Point(3, 218);
+            this.ucReview1.Location = new System.Drawing.Point(3, 3);
             this.ucReview1.Name = "ucReview1";
             this.ucReview1.Size = new System.Drawing.Size(414, 209);
-            this.ucReview1.TabIndex = 3;
+            this.ucReview1.TabIndex = 0;
             // 
             // ucReview2
             // 
-            this.ucReview2.Location = new System.Drawing.Point(3, 433);
+            this.ucReview2.Location = new System.Drawing.Point(3, 218);
             this.ucReview2.Name = "ucReview2";
             this.ucReview2.Size = new System.Drawing.Size(414, 209);
-            this.ucReview2.TabIndex = 4;
-            // 
-            // ucReview4
-            // 
-            this.ucReview4.Location = new System.Drawing.Point(3, 648);
-            this.ucReview4.Name = "ucReview4";
-            this.ucReview4.Size = new System.Drawing.Size(414, 209);
-            this.ucReview4.TabIndex = 5;
-            // 
-            // ucSkill3
-            // 
-            this.ucSkill3.Location = new System.Drawing.Point(3, 3);
-            this.ucSkill3.Name = "ucSkill3";
-            this.ucSkill3.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill3.TabIndex = 1;
-            // 
-            // ucSkill1
-            // 
-            this.ucSkill1.Location = new System.Drawing.Point(3, 217);
-            this.ucSkill1.Name = "ucSkill1";
-            this.ucSkill1.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill1.TabIndex = 0;
-            // 
-            // ucSkill2
-            // 
-            this.ucSkill2.Location = new System.Drawing.Point(3, 431);
-            this.ucSkill2.Name = "ucSkill2";
-            this.ucSkill2.Size = new System.Drawing.Size(610, 208);
-            this.ucSkill2.TabIndex = 1;
-            // 
-            // btnInfo
-            // 
-            this.btnInfo.Enabled = false;
-            this.btnInfo.Location = new System.Drawing.Point(488, 12);
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.btnInfo.Size = new System.Drawing.Size(680, 708);
-            this.btnInfo.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.btnInfo.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.btnInfo.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnInfo.StateCommon.Border.Rounding = 10F;
-            this.btnInfo.StateDisabled.Back.Color1 = System.Drawing.Color.White;
-            this.btnInfo.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnInfo.TabIndex = 8;
-            this.btnInfo.Values.Text = "";
+            this.ucReview2.TabIndex = 1;
             // 
             // fWorkerInfo
             // 
@@ -456,16 +316,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(1192, 795);
+            this.ClientSize = new System.Drawing.Size(922, 781);
             this.CloseBox = false;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.lblBasicInfo);
-            this.Controls.Add(this.pnlBasicInforContainer);
-            this.Controls.Add(this.fpnlSkills);
+            this.Controls.Add(this.fpnlReviewContainer);
+            this.Controls.Add(this.btnEvaluateContainer);
+            this.Controls.Add(this.pnlBasicInformationContainer);
+            this.Controls.Add(this.btnBasicInformationContainer);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnHire);
-            this.Controls.Add(this.btnInfo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -492,13 +350,10 @@
             this.StateCommon.Border.Width = 1;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.fpnlSkills.ResumeLayout(false);
-            this.pnlBasicInforContainer.ResumeLayout(false);
-            this.pnlBasicInforContainer.PerformLayout();
-            this.pnlContainer.ResumeLayout(false);
-            this.pnlContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvt)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.pnlBasicInformationContainer.ResumeLayout(false);
+            this.pnlBasicInformationContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
+            this.fpnlReviewContainer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -506,33 +361,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblBasicInfo;
         private Krypton.Toolkit.KryptonButton btnHire;
         private Krypton.Toolkit.KryptonButton btnCancel;
-        private System.Windows.Forms.FlowLayoutPanel fpnlSkills;
-        private System.Windows.Forms.Panel pnlBasicInforContainer;
-        private Krypton.Toolkit.KryptonLabel lblRate;
-        private Krypton.Toolkit.KryptonLabel lblWokerName;
-        private Krypton.Toolkit.KryptonPictureBox picAvt;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private System.Windows.Forms.Panel pnlContainer;
+        private Krypton.Toolkit.KryptonButton btnBasicInformationContainer;
+        private System.Windows.Forms.Panel pnlBasicInformationContainer;
         private System.Windows.Forms.Label lblLocation;
-        private System.Windows.Forms.Label lblAgeHead;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblTelephoneHead;
-        private System.Windows.Forms.Label lblTelephone;
-        private System.Windows.Forms.Label lblEmailHead;
+        private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAge;
-        private System.Windows.Forms.Label lblWorkLocationHead;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private ucReview ucReview3;
+        private System.Windows.Forms.Label lblOverrallRating;
+        private System.Windows.Forms.Label lblName;
+        private Krypton.Toolkit.KryptonPictureBox picUserAvatar;
+        private Krypton.Toolkit.KryptonButton btnEvaluateContainer;
+        private System.Windows.Forms.FlowLayoutPanel fpnlReviewContainer;
         private ucReview ucReview1;
         private ucReview ucReview2;
-        private ucReview ucReview4;
-        private System.Windows.Forms.Label label1;
-        private ucSkill ucSkill3;
-        private ucSkill ucSkill1;
-        private ucSkill ucSkill2;
-        private Krypton.Toolkit.KryptonButton btnInfo;
     }
 }

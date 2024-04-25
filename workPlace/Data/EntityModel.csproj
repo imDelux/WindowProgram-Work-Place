@@ -55,7 +55,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Skill.cs" />
     <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>

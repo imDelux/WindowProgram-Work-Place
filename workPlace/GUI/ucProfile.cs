@@ -31,12 +31,12 @@ namespace GUI
         {
             InitializeComponent();
 
-            displayingPerson = person;
-            if (type == true)
-            {
-                this.lblUserSkill.Visible = false;
-            }
-            DataSetter();
+            //displayingPerson = person;
+            //if (type == true)
+            //{
+            //    this.lblUserSkill.Visible = false;
+            //}
+            //DataSetter();
         }
 
         private void DataSetter()
@@ -50,12 +50,6 @@ namespace GUI
             lblPhone.Text = "Phone: " + displayingPerson.Telephone;
             lblEmail.Text = "Email: " + displayingPerson.Email;
             lblLocation.Text = "Location: " + displayingPerson.Location;
-        }
-
-        private void lblUserSkill_Click(object sender, EventArgs e)
-        {
-            fWorkerSkills fWorkerSkills = new fWorkerSkills(displayingPerson);
-            fWorkerSkills.ShowDialog();
         }
     }
 }

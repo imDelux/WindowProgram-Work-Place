@@ -20,7 +20,7 @@ namespace GUI
 
         public void DataSetter(CategorySkill cat)
         {
-            lblCategory.Text = cat.CategoryName;
+            lblCategory.Text = cat.Type;
             lblWorkerAmount.Text = "#" + cat.NumbWorker.ToString() + " workers";
         }
     }

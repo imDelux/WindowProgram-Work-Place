@@ -135,59 +135,18 @@ namespace DAO
         }
 
         /// <summary>
-        /// Fetch a skill list of a person (worker) from database
-        /// </summary>
-        /// <param name="sqlCommand"></param>
-        /// <returns>Skill need, otherwise return null</returns>
-        public List<Skill> FetchSkillList(string personID)
-        {
-            // Store result
-            List<Skill> result = new List<Skill>();
-
-            // Store information of each skill
-            string skillCategory;
-            string skillName;
-            int skillExpectedWage;
-            string skillDescription;
-
-            // Connet to database
-            conn.Open();
-
-            // Initialize SQL command
-            string sqlCommand = string.Format("SELECT * FROM Skills WHERE PersonID = '{0}'", personID);
-            SqlCommand cmd = new SqlCommand(sqlCommand, conn);
-
-            // Read data
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                skillCategory = reader["SkillCategory"].ToString();
-                skillName = reader["SkillName"].ToString();
-                skillDescription = reader["SkillDescription"].ToString();
-                skillExpectedWage = int.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
-
-                result.Add(new Skill(skillCategory, skillName, skillDescription, skillExpectedWage));
-            }
-
-            // Disconnect from database
-            conn.Close();
-
-            // Return result
-            return result;
-        }
-
-        /// <summary>
         /// Get worker data in database
         /// </summary>
         /// <returns>A list of worker in database</returns>
-        public List<Person> FetchWorkerList()
+        public List<Worker> FetchWorkerList()
         {
             // Result storage
-            List<Person> list = new List<Person>();
+            List<Worker> list = new List<Worker>();
             
             // Store information of each worker
-            string personID, fname, tel, email, location;
-            int age;
+            string personID, fname, tel, email, location, skillName, skillDescription, skillType;
+            bool isActive;
+            int age, expectedWage;
 
             // Connect to database
             conn.Open();
@@ -206,48 +165,13 @@ namespace DAO
                 tel = reader["Telephone"].ToString();
                 email = reader["Email"].ToString();
                 location = reader["Location"].ToString();
+                isActive = (reader["IsActive"].ToString() == "True" ? true : false);
+                skillName = reader["SkillName"].ToString();
+                skillDescription = reader["SkillDescription"].ToString();
+                skillType = reader["SkillType"].ToString();
+                expectedWage = int.Parse(reader["ExpectedWage"].ToString());
 
-                list.Add(new Person(personID, fname, age, tel, email, location, string.Empty));
-            }
-
-            // Close connection
-            conn.Close();
-
-            return list;
-        }
-
-        /// <summary>
-        /// Fetch worker list base on skill category
-        /// </summary>
-        /// <returns></returns>
-        public List<Person> FetchWorkerList(string cat)
-        {
-            // Result storage
-            List<Person> list = new List<Person>();
-
-            // Store information of each worker
-            string personID, fname, tel, email, location;
-            int age;
-
-            // Connect to database
-            conn.Open();
-
-            // Initialize SQL command
-            string strCmd = string.Format("SELECT w.PersonID, Name, Age, Telephone, Email, Location FROM Worker w, Skills s WHERE w.PersonID = s.PersonID AND s.SkillCategory = 'cat'");
-            SqlCommand cmd = new SqlCommand(strCmd, conn);
-
-            // Read data
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-                personID = reader["PersonID"].ToString();
-                fname = reader["Name"].ToString();
-                age = int.Parse(reader["Age"].ToString());
-                tel = reader["Telephone"].ToString();
-                email = reader["Email"].ToString();
-                location = reader["Location"].ToString();
-
-                list.Add(new Person(personID, fname, age, tel, email, location, string.Empty));
+                list.Add(new Worker(personID, fname, age, tel, email, location, string.Empty, isActive, skillName, skillDescription, skillType, expectedWage));
             }
 
             // Close connection
@@ -324,7 +248,7 @@ namespace DAO
             conn.Open();
 
             // Initialize SQL command to get skill category
-            string strCmdCat = string.Format("SELECT * FROM SkillCategory");
+            string strCmdCat = string.Format("SELECT * FROM SkillTypeList");
             SqlCommand sqlCommandCat = new SqlCommand(strCmdCat, conn);
 
             // Read category
@@ -332,7 +256,8 @@ namespace DAO
             while (readerCat.Read())
             {
                 categorySkill = new CategorySkill();
-                categorySkill.CategoryName = readerCat["Category"].ToString();
+                categorySkill.Id = readerCat["Id"].ToString();
+                categorySkill.Type = readerCat["Type"].ToString();
                 categorySkill.NumbWorker = int.Parse(readerCat["NumbWorker"].ToString());
 
                 result.Add(categorySkill);
@@ -341,41 +266,6 @@ namespace DAO
             // Close connection and return
             conn.Close();
             return result;
-        }
-
-        /// <summary>
-        /// Fill skill in each category
-        /// </summary>
-        /// <param name="categorySkill"></param>
-        /// <returns></returns>
-        public void FillSkill(List<CategorySkill> categorySkill)
-        {
-            // Open
-            conn.Open();
-
-            // Initialize
-            string strCmd = string.Format("SELECT * FROM SkillList");
-            SqlCommand sqlCommand = new SqlCommand(strCmd, conn);
-
-            // Read
-            SqlDataReader reader = sqlCommand.ExecuteReader();
-            while(reader.Read())
-            {
-                string skillCate = reader["SkillCategory"].ToString();
-                string skillName = reader["SkillName"].ToString();
-
-                foreach (CategorySkill cat in categorySkill)
-                {
-                    if (cat.CategoryName == skillCate)
-                    {
-                        cat.SkillList.Add(skillName);
-                        break;
-                    }
-                }
-            }
-
-            // Close & Return
-            conn.Close();
         }
     }
 }

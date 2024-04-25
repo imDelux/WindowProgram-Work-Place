@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbbSkillName = new Krypton.Toolkit.KryptonComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,52 +35,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
-            this.txtExpectedWage = new Krypton.Toolkit.KryptonTextBox();
             this.lblSkillCategoryHead = new System.Windows.Forms.Label();
             this.cbbSkillCategory = new Krypton.Toolkit.KryptonComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillName)).BeginInit();
+            this.txtExpectedWage = new Krypton.Toolkit.KryptonTextBox();
+            this.txtSkillName = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.cbbSkillCategory)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cbbSkillName
-            // 
-            this.cbbSkillName.DropButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.cbbSkillName.DropDownWidth = 212;
-            this.cbbSkillName.IntegralHeight = false;
-            this.cbbSkillName.Location = new System.Drawing.Point(38, 174);
-            this.cbbSkillName.Name = "cbbSkillName";
-            this.cbbSkillName.Size = new System.Drawing.Size(420, 40);
-            this.cbbSkillName.StateActive.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.cbbSkillName.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.cbbSkillName.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.cbbSkillName.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.cbbSkillName.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbbSkillName.StateCommon.ComboBox.Border.Rounding = 10F;
-            this.cbbSkillName.StateCommon.ComboBox.Border.Width = 2;
-            this.cbbSkillName.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbbSkillName.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbSkillName.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 2);
-            this.cbbSkillName.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
-            this.cbbSkillName.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
-            this.cbbSkillName.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbbSkillName.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbbSkillName.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbSkillName.StateNormal.ComboBox.Content.Padding = new System.Windows.Forms.Padding(-1, 3, -1, -1);
-            this.cbbSkillName.StateTracking.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbbSkillName.StateTracking.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbbSkillName.StateTracking.Item.Border.Color1 = System.Drawing.Color.Transparent;
-            this.cbbSkillName.StateTracking.Item.Border.Color2 = System.Drawing.Color.Transparent;
-            this.cbbSkillName.StateTracking.Item.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbbSkillName.StateTracking.Item.Border.Width = 0;
-            this.cbbSkillName.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbbSkillName.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbbSkillName.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbSkillName.TabIndex = 0;
-            this.cbbSkillName.Text = "Choose your skill ...";
             // 
             // lblTitle
             // 
@@ -92,7 +51,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(303, 45);
             this.lblTitle.TabIndex = 2;
-            this.lblTitle.Text = "ADD NEW SKILL";
+            this.lblTitle.Text = "ADJUST SKILL";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -265,23 +224,6 @@
             this.btnCancel.Values.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // txtExpectedWage
-            // 
-            this.txtExpectedWage.Location = new System.Drawing.Point(38, 252);
-            this.txtExpectedWage.Multiline = true;
-            this.txtExpectedWage.Name = "txtExpectedWage";
-            this.txtExpectedWage.Size = new System.Drawing.Size(417, 38);
-            this.txtExpectedWage.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtExpectedWage.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.txtExpectedWage.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpectedWage.StateCommon.Border.Rounding = 10F;
-            this.txtExpectedWage.StateCommon.Border.Width = 2;
-            this.txtExpectedWage.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExpectedWage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
-            this.txtExpectedWage.TabIndex = 15;
-            // 
             // lblSkillCategoryHead
             // 
             this.lblSkillCategoryHead.AutoSize = true;
@@ -332,7 +274,40 @@
             this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbSkillCategory.TabIndex = 16;
             this.cbbSkillCategory.Text = "Choose your skill ...";
-            this.cbbSkillCategory.SelectedValueChanged += new System.EventHandler(this.cbbSkillCategory_SelectedValueChanged);
+            // 
+            // txtExpectedWage
+            // 
+            this.txtExpectedWage.Location = new System.Drawing.Point(38, 252);
+            this.txtExpectedWage.Multiline = true;
+            this.txtExpectedWage.Name = "txtExpectedWage";
+            this.txtExpectedWage.Size = new System.Drawing.Size(417, 38);
+            this.txtExpectedWage.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtExpectedWage.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtExpectedWage.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpectedWage.StateCommon.Border.Rounding = 10F;
+            this.txtExpectedWage.StateCommon.Border.Width = 2;
+            this.txtExpectedWage.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExpectedWage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
+            this.txtExpectedWage.TabIndex = 15;
+            // 
+            // txtSkillName
+            // 
+            this.txtSkillName.Location = new System.Drawing.Point(38, 174);
+            this.txtSkillName.Multiline = true;
+            this.txtSkillName.Name = "txtSkillName";
+            this.txtSkillName.Size = new System.Drawing.Size(417, 38);
+            this.txtSkillName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtSkillName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtSkillName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtSkillName.StateCommon.Border.Rounding = 10F;
+            this.txtSkillName.StateCommon.Border.Width = 2;
+            this.txtSkillName.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSkillName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
+            this.txtSkillName.TabIndex = 18;
             // 
             // fAddSkill
             // 
@@ -341,6 +316,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(488, 499);
             this.CloseBox = false;
+            this.Controls.Add(this.txtSkillName);
             this.Controls.Add(this.lblSkillCategoryHead);
             this.Controls.Add(this.cbbSkillCategory);
             this.Controls.Add(this.txtExpectedWage);
@@ -351,7 +327,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.cbbSkillName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -375,7 +350,6 @@
             this.StateCommon.Border.Width = 2;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
-            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbbSkillCategory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -383,8 +357,6 @@
         }
 
         #endregion
-
-        private Krypton.Toolkit.KryptonComboBox cbbSkillName;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -392,8 +364,9 @@
         private System.Windows.Forms.Label label6;
         private Krypton.Toolkit.KryptonButton btnAdd;
         private Krypton.Toolkit.KryptonButton btnCancel;
-        private Krypton.Toolkit.KryptonTextBox txtExpectedWage;
         private System.Windows.Forms.Label lblSkillCategoryHead;
         private Krypton.Toolkit.KryptonComboBox cbbSkillCategory;
+        private Krypton.Toolkit.KryptonTextBox txtExpectedWage;
+        private Krypton.Toolkit.KryptonTextBox txtSkillName;
     }
 }

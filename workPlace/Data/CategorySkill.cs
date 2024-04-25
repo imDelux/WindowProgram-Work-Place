@@ -8,24 +8,21 @@ namespace EntityModel
 {
     public class CategorySkill
     {
-        private string _categoryName;
-        private List<string> skillList;
+        private string _id;
+        private string _type;
         private int _numbWorker;
 
-        public string CategoryName { get { return _categoryName; } set { _categoryName = value; } }
-        public List<string> SkillList { get { return skillList; } set { skillList = value; } }
+        public string Id { get { return _id; } set { _id = value; } }
+        public string Type { get { return _type; } set { _type = value; } }
         public int NumbWorker { get { return _numbWorker; } set { _numbWorker = value; } }
 
         public CategorySkill() 
-        { 
-            CategoryName = string.Empty;
-            SkillList = new List<string>();
-        }
+        { }
 
-        public CategorySkill(string categoryName, List<string> skillList, int numbWorker)
+        public CategorySkill(string id, string type, int numbWorker)
         {
-            this.CategoryName = categoryName;
-            this.SkillList = skillList;
+            this.Id = id;
+            this.Type = type;
             this.NumbWorker = numbWorker;
         }
     }

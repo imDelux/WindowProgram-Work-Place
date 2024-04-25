@@ -39,20 +39,13 @@ namespace GUI
             if (currentDisplayingWorker == null) { return; }
 
             // Worker basic information
-            lblWokerName.Text = currentDisplayingWorker.Name;
+            lblName.Text = currentDisplayingWorker.Name;
             lblAge.Text = currentDisplayingWorker.Age.ToString();
-            lblTelephone.Text = currentDisplayingWorker.Telephone;
+            lblPhone.Text = currentDisplayingWorker.Telephone;
             lblEmail.Text = currentDisplayingWorker.Email;
             lblLocation.Text = currentDisplayingWorker.Location;
-                
-            // Generate skill list
-            List<Skill> skillList = connection.FetchSkillList(currentDisplayingWorker.PersonID);
-            fpnlSkills.Controls.Clear();
-            foreach (Skill skill in skillList)
-            {
-                ucSkill ithskill = new ucSkill(skill, false);
-                fpnlSkills.Controls.Add(ithskill);
-            }
+            
+            // Skill
         }
 
         private void btnHire_Click(object sender, EventArgs e)

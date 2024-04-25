@@ -37,7 +37,7 @@ namespace GUI
             fpnlContainer.Controls.Clear();
 
             // Get the worker list from database
-            List<Person> listWorker = dbConn.FetchWorkerList(category.CategoryName);
+            List<Worker> listWorker = dbConn.FetchWorkerList();
 
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 

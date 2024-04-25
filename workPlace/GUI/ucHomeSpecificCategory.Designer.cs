@@ -34,13 +34,10 @@
             this.txtSearch = new Krypton.Toolkit.KryptonTextBox();
             this.fpnlContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
-            this.ucWorker1 = new GUI.ucWorker();
-            this.ucWorker2 = new GUI.ucWorker();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).BeginInit();
             this.pnlTop.SuspendLayout();
-            this.fpnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,8 +105,6 @@
             // fpnlContainer
             // 
             this.fpnlContainer.AutoScroll = true;
-            this.fpnlContainer.Controls.Add(this.ucWorker1);
-            this.fpnlContainer.Controls.Add(this.ucWorker2);
             this.fpnlContainer.Location = new System.Drawing.Point(46, 94);
             this.fpnlContainer.Name = "fpnlContainer";
             this.fpnlContainer.Size = new System.Drawing.Size(930, 635);
@@ -124,24 +119,6 @@
             this.kryptonPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
-            // 
-            // ucWorker1
-            // 
-            this.ucWorker1.AutoSize = true;
-            this.ucWorker1.BackColor = System.Drawing.Color.Transparent;
-            this.ucWorker1.Location = new System.Drawing.Point(3, 3);
-            this.ucWorker1.Name = "ucWorker1";
-            this.ucWorker1.Size = new System.Drawing.Size(448, 183);
-            this.ucWorker1.TabIndex = 0;
-            // 
-            // ucWorker2
-            // 
-            this.ucWorker2.AutoSize = true;
-            this.ucWorker2.BackColor = System.Drawing.Color.Transparent;
-            this.ucWorker2.Location = new System.Drawing.Point(457, 3);
-            this.ucWorker2.Name = "ucWorker2";
-            this.ucWorker2.Size = new System.Drawing.Size(448, 183);
-            this.ucWorker2.TabIndex = 1;
             // 
             // ucHomeSpecificCategory
             // 
@@ -159,8 +136,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            this.fpnlContainer.ResumeLayout(false);
-            this.fpnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -173,7 +148,5 @@
         private Krypton.Toolkit.KryptonPanel pnlTop;
         private System.Windows.Forms.FlowLayoutPanel fpnlContainer;
         private Krypton.Toolkit.KryptonTextBox txtSearch;
-        private ucWorker ucWorker1;
-        private ucWorker ucWorker2;
     }
 }

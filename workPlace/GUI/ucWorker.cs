@@ -42,7 +42,6 @@ namespace GUI
             if (currentDisplayWorker == null) { return; }
             
             // Set data
-            lblWokerName.Text = currentDisplayWorker.Name;
             lblAge.Text = "Age: " + currentDisplayWorker.Age;
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;
         }

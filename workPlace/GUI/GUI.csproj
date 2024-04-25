@@ -98,12 +98,6 @@
     <Compile Include="fWorker.Designer.cs">
       <DependentUpon>fWorker.cs</DependentUpon>
     </Compile>
-    <Compile Include="fWorkerSkills.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fWorkerSkills.Designer.cs">
-      <DependentUpon>fWorkerSkills.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ucDay.cs">
@@ -196,12 +190,6 @@
     <Compile Include="ucSchedule.Designer.cs">
       <DependentUpon>ucSchedule.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucSkill.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucSkill.Designer.cs">
-      <DependentUpon>ucSkill.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="fAddSkill.resx">
       <DependentUpon>fAddSkill.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,15 +205,6 @@
     <EmbeddedResource Include="fWorker.resx">
       <DependentUpon>fWorker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fWorkerSkills.resx">
-      <DependentUpon>fWorkerSkills.cs</DependentUpon>
-    </EmbeddedResource>
-    <Compile Include="ucSkillTag.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucSkillTag.Designer.cs">
-      <DependentUpon>ucSkillTag.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucWorker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -334,12 +313,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSchedule.resx">
       <DependentUpon>ucSchedule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucSkill.resx">
-      <DependentUpon>ucSkill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucSkillTag.resx">
-      <DependentUpon>ucSkillTag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorker.resx">
       <DependentUpon>ucWorker.cs</DependentUpon>
