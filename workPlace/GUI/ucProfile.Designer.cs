@@ -35,13 +35,16 @@
             this.lblLocation = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
             this.lblOverrallRating = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.lblAdjustInformation = new System.Windows.Forms.Label();
             this.lblChangePassword = new System.Windows.Forms.Label();
             this.lblUserSkill = new System.Windows.Forms.Label();
+            this.ucReview1 = new GUI.ucReview();
+            this.ucReview2 = new GUI.ucReview();
+            this.fpnlReviewContainer.SuspendLayout();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +117,8 @@
             // 
             this.fpnlReviewContainer.AutoScroll = true;
             this.fpnlReviewContainer.BackColor = System.Drawing.Color.White;
+            this.fpnlReviewContainer.Controls.Add(this.ucReview1);
+            this.fpnlReviewContainer.Controls.Add(this.ucReview2);
             this.fpnlReviewContainer.Location = new System.Drawing.Point(66, 64);
             this.fpnlReviewContainer.Name = "fpnlReviewContainer";
             this.fpnlReviewContainer.Size = new System.Drawing.Size(414, 636);
@@ -125,13 +130,13 @@
             this.pnlBasicInformationContainer.Controls.Add(this.lblLocation);
             this.pnlBasicInformationContainer.Controls.Add(this.lblEmail);
             this.pnlBasicInformationContainer.Controls.Add(this.lblPhone);
-            this.pnlBasicInformationContainer.Controls.Add(this.lblBirthDate);
+            this.pnlBasicInformationContainer.Controls.Add(this.lblAge);
             this.pnlBasicInformationContainer.Controls.Add(this.lblOverrallRating);
             this.pnlBasicInformationContainer.Controls.Add(this.lblName);
             this.pnlBasicInformationContainer.Controls.Add(this.picUserAvatar);
             this.pnlBasicInformationContainer.Location = new System.Drawing.Point(572, 64);
             this.pnlBasicInformationContainer.Name = "pnlBasicInformationContainer";
-            this.pnlBasicInformationContainer.Size = new System.Drawing.Size(357, 327);
+            this.pnlBasicInformationContainer.Size = new System.Drawing.Size(357, 301);
             this.pnlBasicInformationContainer.TabIndex = 3;
             // 
             // lblLocation
@@ -140,9 +145,9 @@
             this.lblLocation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.lblLocation.Location = new System.Drawing.Point(12, 258);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(342, 55);
+            this.lblLocation.Size = new System.Drawing.Size(342, 26);
             this.lblLocation.TabIndex = 6;
-            this.lblLocation.Text = "Location: District 9, Ho Chi Minh City";
+            this.lblLocation.Text = "Location: Ho Chi Minh City";
             // 
             // lblEmail
             // 
@@ -166,16 +171,16 @@
             this.lblPhone.TabIndex = 4;
             this.lblPhone.Text = "Phone: 0908-338-917";
             // 
-            // lblBirthDate
+            // lblAge
             // 
-            this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblBirthDate.Location = new System.Drawing.Point(12, 153);
-            this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(215, 20);
-            this.lblBirthDate.TabIndex = 3;
-            this.lblBirthDate.Text = "Birth Date: 07/02/2004";
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblAge.Location = new System.Drawing.Point(12, 153);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(78, 20);
+            this.lblAge.TabIndex = 3;
+            this.lblAge.Text = "Age: 19";
             // 
             // lblOverrallRating
             // 
@@ -246,6 +251,20 @@
             this.lblUserSkill.Text = "Your Skills";
             this.lblUserSkill.Click += new System.EventHandler(this.lblUserSkill_Click);
             // 
+            // ucReview1
+            // 
+            this.ucReview1.Location = new System.Drawing.Point(3, 3);
+            this.ucReview1.Name = "ucReview1";
+            this.ucReview1.Size = new System.Drawing.Size(414, 209);
+            this.ucReview1.TabIndex = 0;
+            // 
+            // ucReview2
+            // 
+            this.ucReview2.Location = new System.Drawing.Point(3, 218);
+            this.ucReview2.Name = "ucReview2";
+            this.ucReview2.Size = new System.Drawing.Size(414, 209);
+            this.ucReview2.TabIndex = 1;
+            // 
             // ucProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -260,6 +279,7 @@
             this.Controls.Add(this.btnEvaluateContainer);
             this.Name = "ucProfile";
             this.Size = new System.Drawing.Size(995, 766);
+            this.fpnlReviewContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
@@ -277,12 +297,14 @@
         private Krypton.Toolkit.KryptonPictureBox picUserAvatar;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblOverrallRating;
-        private System.Windows.Forms.Label lblBirthDate;
+        private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblLocation;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAdjustInformation;
         private System.Windows.Forms.Label lblChangePassword;
         private System.Windows.Forms.Label lblUserSkill;
+        private ucReview ucReview1;
+        private ucReview ucReview2;
     }
 }

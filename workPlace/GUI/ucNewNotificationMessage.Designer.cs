@@ -28,28 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMainMessage = new System.Windows.Forms.Label();
+            this.lblJobDescription = new System.Windows.Forms.Label();
+            this.lblJobName = new System.Windows.Forms.Label();
+            this.lblWage = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblMainMessage
+            // lblJobDescription
             // 
-            this.lblMainMessage.AutoSize = true;
-            this.lblMainMessage.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMainMessage.Location = new System.Drawing.Point(10, 8);
-            this.lblMainMessage.Name = "lblMainMessage";
-            this.lblMainMessage.Size = new System.Drawing.Size(231, 25);
-            this.lblMainMessage.TabIndex = 1;
-            this.lblMainMessage.Text = "Message goes here ...";
-            this.lblMainMessage.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
+            this.lblJobDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobDescription.ForeColor = System.Drawing.Color.Gray;
+            this.lblJobDescription.Location = new System.Drawing.Point(316, 5);
+            this.lblJobDescription.Name = "lblJobDescription";
+            this.lblJobDescription.Size = new System.Drawing.Size(330, 35);
+            this.lblJobDescription.TabIndex = 2;
+            this.lblJobDescription.Text = "Chieu 13g tai nga ba Di An anh can chu sua tivi";
+            this.lblJobDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblJobName
+            // 
+            this.lblJobName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobName.Location = new System.Drawing.Point(13, 3);
+            this.lblJobName.Name = "lblJobName";
+            this.lblJobName.Size = new System.Drawing.Size(267, 35);
+            this.lblJobName.TabIndex = 3;
+            this.lblJobName.Text = "SUA TIVI BI HONG NGUON";
+            this.lblJobName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblWage
+            // 
+            this.lblWage.AutoSize = true;
+            this.lblWage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWage.ForeColor = System.Drawing.Color.Gray;
+            this.lblWage.Location = new System.Drawing.Point(723, 6);
+            this.lblWage.Name = "lblWage";
+            this.lblWage.Size = new System.Drawing.Size(60, 28);
+            this.lblWage.TabIndex = 4;
+            this.lblWage.Text = "100$";
+            this.lblWage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblDate
+            // 
+            this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.Gray;
+            this.lblDate.Location = new System.Drawing.Point(851, 6);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(69, 28);
+            this.lblDate.TabIndex = 6;
+            this.lblDate.Text = "10/03";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ucNewNotificationMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.lblMainMessage);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.lblWage);
+            this.Controls.Add(this.lblJobName);
+            this.Controls.Add(this.lblJobDescription);
+            this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.Name = "ucNewNotificationMessage";
-            this.Size = new System.Drawing.Size(572, 42);
+            this.Size = new System.Drawing.Size(923, 42);
             this.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -57,6 +99,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblMainMessage;
+        private System.Windows.Forms.Label lblJobDescription;
+        private System.Windows.Forms.Label lblJobName;
+        private System.Windows.Forms.Label lblWage;
+        private System.Windows.Forms.Label lblDate;
     }
 }

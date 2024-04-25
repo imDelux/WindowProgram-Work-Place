@@ -112,11 +112,11 @@
     <Compile Include="ucDay.Designer.cs">
       <DependentUpon>ucDay.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucDoneJob.cs">
+    <Compile Include="ucHiringCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucDoneJob.Designer.cs">
-      <DependentUpon>ucDoneJob.cs</DependentUpon>
+    <Compile Include="ucHiringCard.Designer.cs">
+      <DependentUpon>ucHiringCard.cs</DependentUpon>
     </Compile>
     <Compile Include="ucEvent.cs">
       <SubType>UserControl</SubType>
@@ -129,6 +129,12 @@
     </Compile>
     <Compile Include="ucHiring.Designer.cs">
       <DependentUpon>ucHiring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucHomeCategoryChoose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucHomeCategoryChoose.Designer.cs">
+      <DependentUpon>ucHomeCategoryChoose.cs</DependentUpon>
     </Compile>
     <Compile Include="ucNewNotificationMessage.cs">
       <SubType>UserControl</SubType>
@@ -148,11 +154,11 @@
     <Compile Include="ucPost.Designer.cs">
       <DependentUpon>ucPost.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucPostedpost.cs">
+    <Compile Include="ucJobCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucPostedpost.Designer.cs">
-      <DependentUpon>ucPostedpost.cs</DependentUpon>
+    <Compile Include="ucJobCard.Designer.cs">
+      <DependentUpon>ucJobCard.cs</DependentUpon>
     </Compile>
     <Compile Include="ucProfile.cs">
       <SubType>UserControl</SubType>
@@ -172,11 +178,11 @@
     <Compile Include="fWorkerInfo.Designer.cs">
       <DependentUpon>fWorkerInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucHome.cs">
+    <Compile Include="ucHomeSpecificCategory.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucHome.Designer.cs">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <Compile Include="ucHomeSpecificCategory.Designer.cs">
+      <DependentUpon>ucHomeSpecificCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="ucReview.cs">
       <SubType>UserControl</SubType>
@@ -214,11 +220,11 @@
     <EmbeddedResource Include="fWorkerSkills.resx">
       <DependentUpon>fWorkerSkills.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="ucWaiting.cs">
+    <Compile Include="ucSkillTag.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucWaiting.Designer.cs">
-      <DependentUpon>ucWaiting.cs</DependentUpon>
+    <Compile Include="ucSkillTag.Designer.cs">
+      <DependentUpon>ucSkillTag.cs</DependentUpon>
     </Compile>
     <Compile Include="ucWorker.cs">
       <SubType>UserControl</SubType>
@@ -249,6 +255,12 @@
     </Compile>
     <Compile Include="fSignUpInfo.Designer.cs">
       <DependentUpon>fSignUpInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCategoryCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCategoryCard.Designer.cs">
+      <DependentUpon>ucCategoryCard.cs</DependentUpon>
     </Compile>
     <Compile Include="usLogin.cs">
       <SubType>UserControl</SubType>
@@ -281,17 +293,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucCategoryCard.resx">
+      <DependentUpon>ucCategoryCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucDay.resx">
       <DependentUpon>ucDay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucDoneJob.resx">
-      <DependentUpon>ucDoneJob.cs</DependentUpon>
+    <EmbeddedResource Include="ucHiringCard.resx">
+      <DependentUpon>ucHiringCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucEvent.resx">
       <DependentUpon>ucEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucHiring.resx">
       <DependentUpon>ucHiring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHomeCategoryChoose.resx">
+      <DependentUpon>ucHomeCategoryChoose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNewNotificationMessage.resx">
       <DependentUpon>ucNewNotificationMessage.cs</DependentUpon>
@@ -302,14 +320,14 @@
     <EmbeddedResource Include="ucPost.resx">
       <DependentUpon>ucPost.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucPostedpost.resx">
-      <DependentUpon>ucPostedpost.cs</DependentUpon>
+    <EmbeddedResource Include="ucJobCard.resx">
+      <DependentUpon>ucJobCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucProfile.resx">
       <DependentUpon>ucProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucHome.resx">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <EmbeddedResource Include="ucHomeSpecificCategory.resx">
+      <DependentUpon>ucHomeSpecificCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucReview.resx">
       <DependentUpon>ucReview.cs</DependentUpon>
@@ -320,8 +338,8 @@
     <EmbeddedResource Include="ucSkill.resx">
       <DependentUpon>ucSkill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucWaiting.resx">
-      <DependentUpon>ucWaiting.cs</DependentUpon>
+    <EmbeddedResource Include="ucSkillTag.resx">
+      <DependentUpon>ucSkillTag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucWorker.resx">
       <DependentUpon>ucWorker.cs</DependentUpon>
@@ -560,6 +578,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_density_circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_density_circle1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

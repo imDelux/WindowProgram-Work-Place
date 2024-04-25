@@ -38,7 +38,7 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "ucEvent";
-            this.Size = new System.Drawing.Size(15, 20);
+            this.Size = new System.Drawing.Size(10, 15);
             this.Click += new System.EventHandler(this.ucEvent_Click);
             this.ResumeLayout(false);
 

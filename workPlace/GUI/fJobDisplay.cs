@@ -125,9 +125,13 @@ namespace GUI
             newOffer.JobDescription = txtJobDes.Text;
             newOffer.Date = dtpDateJob.Value;
             newOffer.Wage = int.Parse(txtWage.Text);
-            newOffer.Accept = false;
-            newOffer.JobStatus = false;
-            newOffer.PaidStatus = false;
+            newOffer.IsMorning = true;
+            newOffer.IsAccepted = false;
+            newOffer.IsRejected = false;
+            newOffer.IsComplete = false;
+            newOffer.IsEvaluated = false;
+            newOffer.IsPaid = false;
+            newOffer.IsRead = false;
 
             // Add new job to database
             jobDAO.Add(newOffer);

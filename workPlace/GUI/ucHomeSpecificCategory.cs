@@ -13,20 +13,22 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucHome : UserControl
+    public partial class ucHomeSpecificCategory : UserControl
     {
         Person currentUsingHirer = null;
+        CategorySkill category = null;
         DbConnection dbConn = new DbConnection();
 
-        public ucHome()
+        public ucHomeSpecificCategory()
         {
             InitializeComponent();
         }
 
-        public ucHome(Person hirer)
+        public ucHomeSpecificCategory(Person hirer, CategorySkill category)
         {
             InitializeComponent();
             this.currentUsingHirer = hirer;
+            this.category = category;
             GenerateDynamicUserControl();
         }
 
@@ -35,7 +37,7 @@ namespace GUI
             fpnlContainer.Controls.Clear();
 
             // Get the worker list from database
-            List<Person> listWorker = dbConn.FetchWorkerList();
+            List<Person> listWorker = dbConn.FetchWorkerList(category.CategoryName);
 
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 

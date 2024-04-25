@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategorySkill.cs" />
     <Compile Include="Evaluate.cs" />
     <Compile Include="Hirer.cs" />
     <Compile Include="Job.cs" />
@@ -55,7 +56,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Skill.cs" />
-    <Compile Include="SkillName.cs" />
     <Compile Include="Worker.cs" />
   </ItemGroup>
   <ItemGroup>

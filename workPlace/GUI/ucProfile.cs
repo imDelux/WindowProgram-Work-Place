@@ -46,7 +46,7 @@ namespace GUI
 
             lblName.Text = displayingPerson.Name;
             lblOverrallRating.Text = "Rate: 7.9/10.0";
-            lblBirthDate.Text = "Birth Date: " + displayingPerson.BirthDate.ToShortDateString();
+            lblAge.Text = "Age: " + displayingPerson.Age.ToString();
             lblPhone.Text = "Phone: " + displayingPerson.Telephone;
             lblEmail.Text = "Email: " + displayingPerson.Email;
             lblLocation.Text = "Location: " + displayingPerson.Location;

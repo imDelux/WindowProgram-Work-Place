@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucPost : UserControl
+    public partial class ucJobCard : UserControl
     {
-        public ucPost()
+        public ucJobCard()
         {
             InitializeComponent();
-        }
-
-        private void picAddPost_Click(object sender, EventArgs e)
-        {
-            fPostJob form = new fPostJob();
-            form.ShowDialog();
         }
     }
 }

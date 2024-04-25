@@ -77,11 +77,7 @@ namespace DAO
                 reader.Read();
                 resultPerson.PersonID = reader["PersonID"].ToString();
                 resultPerson.Name = reader["Name"].ToString();
-                resultPerson.Gender = reader["Gender"].ToString() == "Male" ? true : false;
-                if (DateTime.TryParse(reader["BirthDate"].ToString(), out DateTime resultBirth) == true)
-                {
-                    resultPerson.BirthDate = resultBirth;
-                }
+                resultPerson.Age = int.Parse(reader["Age"].ToString());
                 resultPerson.Telephone = reader["Telephone"].ToString();
                 resultPerson.Email = reader["Email"].ToString();
                 resultPerson.Location = reader["Location"].ToString();
@@ -125,11 +121,7 @@ namespace DAO
                 reader.Read();
                 resultPerson.PersonID = reader["PersonID"].ToString();
                 resultPerson.Name = reader["Name"].ToString();
-                resultPerson.Gender = reader["Gender"].ToString() == "Male" ? true : false;
-                if (DateTime.TryParse(reader["BirthDate"].ToString(), out DateTime resultBirth) == true)
-                {
-                    resultPerson.BirthDate = resultBirth;
-                }
+                resultPerson.Age = int.Parse(reader["Age"].ToString());
                 resultPerson.Telephone = reader["Telephone"].ToString();
                 resultPerson.Email = reader["Email"].ToString();
                 resultPerson.Location = reader["Location"].ToString();
@@ -153,7 +145,8 @@ namespace DAO
             List<Skill> result = new List<Skill>();
 
             // Store information of each skill
-            SkillName skill;
+            string skillCategory;
+            string skillName;
             int skillExpectedWage;
             string skillDescription;
 
@@ -168,19 +161,12 @@ namespace DAO
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                // Try parse the skill name first
-                if (Enum.TryParse(reader["SkillName"].ToString(), out SkillName skillName) == true)
-                {
-                    skill = skillName;
-                }
-                else
-                {
-                    skill = SkillName.None;
-                }
+                skillCategory = reader["SkillCategory"].ToString();
+                skillName = reader["SkillName"].ToString();
                 skillDescription = reader["SkillDescription"].ToString();
                 skillExpectedWage = int.Parse(reader["ExpectedWage"].ToString(), CultureInfo.InvariantCulture.NumberFormat);
 
-                result.Add(new Skill(skill, skillDescription, skillExpectedWage));
+                result.Add(new Skill(skillCategory, skillName, skillDescription, skillExpectedWage));
             }
 
             // Disconnect from database
@@ -200,9 +186,8 @@ namespace DAO
             List<Person> list = new List<Person>();
             
             // Store information of each worker
-            string personID, fname, tel, email, location, password;
-            bool gender;
-            DateTime birth;
+            string personID, fname, tel, email, location;
+            int age;
 
             // Connect to database
             conn.Open();
@@ -217,17 +202,52 @@ namespace DAO
             {
                 personID = reader["PersonID"].ToString();
                 fname = reader["Name"].ToString();
-                gender = reader["Gender"].ToString() == "Male" ? true : false;
-                if (DateTime.TryParse(reader["BirthDate"].ToString(), out birth) == false)
-                {
-                    birth = DateTime.Now;
-                }
+                age = int.Parse(reader["Age"].ToString());
                 tel = reader["Telephone"].ToString();
                 email = reader["Email"].ToString();
                 location = reader["Location"].ToString();
-                password = reader["Password"].ToString();
 
-                list.Add(new Person(personID, fname, gender, birth, tel, email, location, password));
+                list.Add(new Person(personID, fname, age, tel, email, location, string.Empty));
+            }
+
+            // Close connection
+            conn.Close();
+
+            return list;
+        }
+
+        /// <summary>
+        /// Fetch worker list base on skill category
+        /// </summary>
+        /// <returns></returns>
+        public List<Person> FetchWorkerList(string cat)
+        {
+            // Result storage
+            List<Person> list = new List<Person>();
+
+            // Store information of each worker
+            string personID, fname, tel, email, location;
+            int age;
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            string strCmd = string.Format("SELECT w.PersonID, Name, Age, Telephone, Email, Location FROM Worker w, Skills s WHERE w.PersonID = s.PersonID AND s.SkillCategory = 'cat'");
+            SqlCommand cmd = new SqlCommand(strCmd, conn);
+
+            // Read data
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                personID = reader["PersonID"].ToString();
+                fname = reader["Name"].ToString();
+                age = int.Parse(reader["Age"].ToString());
+                tel = reader["Telephone"].ToString();
+                email = reader["Email"].ToString();
+                location = reader["Location"].ToString();
+
+                list.Add(new Person(personID, fname, age, tel, email, location, string.Empty));
             }
 
             // Close connection
@@ -249,7 +269,7 @@ namespace DAO
             string jobID, hirerID, workerID, jobName, jobDescription;
             DateTime jobDate;
             int wage;
-            bool jobStatus, isPaid, isAccepted;
+            bool isMorning, isAccept, isReject, isComplete, isEvaluate, isPaid, isRead;
 
             // Connect to database
             conn.Open();
@@ -273,16 +293,89 @@ namespace DAO
                     jobDate = DateTime.Now;
                 }
                 wage = int.Parse(reader["Wage"].ToString());
-                jobStatus = (reader["JobStatus"].ToString() == "True" ? true : false);
-                isPaid = (reader["Paid"].ToString() == "True" ? true : false);
-                isAccepted = (reader["Accept"].ToString() == "True" ? true : false);
 
-                result.Add(new Job(jobID, workerID, hirerID, jobName, jobDescription, jobDate, wage, jobStatus, isPaid, isAccepted));
+                isMorning = (reader["IsMorning"].ToString() == "True" ? true : false);
+                isAccept = (reader["IsAccepted"].ToString() == "True" ? true : false);
+                isReject = (reader["IsRejected"].ToString() == "True" ? true : false);
+                isComplete = (reader["IsComplete"].ToString() == "True" ? true : false);
+                isEvaluate = (reader["IsEvaluated"].ToString() == "True" ? true : false);
+                isPaid = (reader["IsPaid"].ToString() == "True" ? true : false);
+                isRead = (reader["IsRead"].ToString() == "True" ? true : false);
+
+                result.Add(new Job(jobID, workerID, hirerID, jobName, jobDescription, jobDate, wage, isMorning, isAccept, isReject, isComplete, isEvaluate, isPaid, isRead));
             }
 
             // Close connection and return
             conn.Close();
             return result;
+        }
+
+        /// <summary>
+        /// Fetch skill category
+        /// </summary>
+        /// <returns></returns>
+        public List<CategorySkill> FetchSkillCategory()
+        {
+            // Result
+            List<CategorySkill> result = new List<CategorySkill>();
+            CategorySkill categorySkill = new CategorySkill();
+
+            // Open connection
+            conn.Open();
+
+            // Initialize SQL command to get skill category
+            string strCmdCat = string.Format("SELECT * FROM SkillCategory");
+            SqlCommand sqlCommandCat = new SqlCommand(strCmdCat, conn);
+
+            // Read category
+            SqlDataReader readerCat = sqlCommandCat.ExecuteReader();
+            while (readerCat.Read())
+            {
+                categorySkill = new CategorySkill();
+                categorySkill.CategoryName = readerCat["Category"].ToString();
+                categorySkill.NumbWorker = int.Parse(readerCat["NumbWorker"].ToString());
+
+                result.Add(categorySkill);
+            }
+
+            // Close connection and return
+            conn.Close();
+            return result;
+        }
+
+        /// <summary>
+        /// Fill skill in each category
+        /// </summary>
+        /// <param name="categorySkill"></param>
+        /// <returns></returns>
+        public void FillSkill(List<CategorySkill> categorySkill)
+        {
+            // Open
+            conn.Open();
+
+            // Initialize
+            string strCmd = string.Format("SELECT * FROM SkillList");
+            SqlCommand sqlCommand = new SqlCommand(strCmd, conn);
+
+            // Read
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            while(reader.Read())
+            {
+                string skillCate = reader["SkillCategory"].ToString();
+                string skillName = reader["SkillName"].ToString();
+
+                foreach (CategorySkill cat in categorySkill)
+                {
+                    if (cat.CategoryName == skillCate)
+                    {
+                        cat.SkillList.Add(skillName);
+                        break;
+                    }
+                }
+            }
+
+            // Close & Return
+            conn.Close();
         }
     }
 }

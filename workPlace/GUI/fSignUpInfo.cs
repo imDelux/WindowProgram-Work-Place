@@ -36,8 +36,7 @@ namespace GUI
         {
             currentPerson.Name = txtName.Text;
             currentPerson.PersonID = txtPersonID.Text;
-            currentPerson.Gender = rbtnMale.Checked ? true : false;
-            currentPerson.BirthDate = dtpBirth.Value;
+            currentPerson.Age = int.Parse(txtAge.Text);
             currentPerson.Location = txtLocation.Text;
 
             // Try to add person to the database

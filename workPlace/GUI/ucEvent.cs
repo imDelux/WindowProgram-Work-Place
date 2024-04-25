@@ -24,6 +24,16 @@ namespace GUI
         {
             InitializeComponent();
             this.currentJobHold = jobEvent;
+
+            if (jobEvent.Date.Day == DateTime.Now.Day || jobEvent.Date.Day == DateTime.Now.Day + 1)  
+            {
+                Incoming();
+            }
+
+            if (jobEvent.IsEvaluated)
+            {
+                Evaluated();
+            }
         }
 
         private void ucEvent_Click(object sender, EventArgs e)
@@ -32,10 +42,14 @@ namespace GUI
             fJobDetail.ShowDialog();
         }
 
-        private void RandomColor()
+        public void Evaluated()
         {
-            Color color = new Color();
-            this.BackColor = color;
+            this.BackColor = Color.Yellow;
+        }
+
+        public void Incoming()
+        {
+            this.BackColor = Color.Red;
         }
     }
 }

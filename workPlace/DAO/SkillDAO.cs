@@ -14,8 +14,8 @@ namespace DAO
 
         public void Add(Skill newSkill, Person worker)
         {
-            string sqlCmd = string.Format("INSERT INTO Skills(PersonID, SkillName, SkillDescription, ExpectedWage) VALUES ('{0}', '{1}', '{2}', {3})", 
-                worker.PersonID, newSkill.SkillName.ToString(), newSkill.SkillDescription, newSkill.ExpectedWage);
+            string sqlCmd = string.Format("INSERT INTO Skills(PersonID, SkillName, SkillCategory, SkillDescription, ExpectedWage) VALUES ('{0}', '{1}', '{2}', '{3}', {4})", 
+                worker.PersonID, newSkill.SkillName, newSkill.SkillCategory, newSkill.SkillDescription, newSkill.ExpectedWage);
             dbConn.Execute(sqlCmd);
         }
     }

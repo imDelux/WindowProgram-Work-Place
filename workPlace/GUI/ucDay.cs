@@ -40,7 +40,7 @@ namespace GUI
         public void AddEvent(Job job)
         {
             ucEvent ucEvent = new ucEvent(job);
-            fpnlEventContainer.Controls.Add(ucEvent);
+            fpnlEventContainerMorning.Controls.Add(ucEvent);
         }
     }
 }

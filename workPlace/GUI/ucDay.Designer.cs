@@ -31,7 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucDay));
             this.btnContainer = new Krypton.Toolkit.KryptonButton();
             this.kryptonFontDialog1 = new Krypton.Toolkit.KryptonFontDialog();
-            this.fpnlEventContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlEventContainerMorning = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlEventContainerNight = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // btnContainer
@@ -87,19 +88,28 @@
             this.kryptonFontDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("kryptonFontDialog1.Icon")));
             this.kryptonFontDialog1.Title = null;
             // 
-            // fpnlEventContainer
+            // fpnlEventContainerMorning
             // 
-            this.fpnlEventContainer.BackColor = System.Drawing.Color.White;
-            this.fpnlEventContainer.Location = new System.Drawing.Point(9, 34);
-            this.fpnlEventContainer.Name = "fpnlEventContainer";
-            this.fpnlEventContainer.Size = new System.Drawing.Size(108, 38);
-            this.fpnlEventContainer.TabIndex = 1;
+            this.fpnlEventContainerMorning.BackColor = System.Drawing.Color.White;
+            this.fpnlEventContainerMorning.Location = new System.Drawing.Point(41, 13);
+            this.fpnlEventContainerMorning.Name = "fpnlEventContainerMorning";
+            this.fpnlEventContainerMorning.Size = new System.Drawing.Size(81, 25);
+            this.fpnlEventContainerMorning.TabIndex = 1;
+            // 
+            // fpnlEventContainerNight
+            // 
+            this.fpnlEventContainerNight.BackColor = System.Drawing.Color.White;
+            this.fpnlEventContainerNight.Location = new System.Drawing.Point(41, 44);
+            this.fpnlEventContainerNight.Name = "fpnlEventContainerNight";
+            this.fpnlEventContainerNight.Size = new System.Drawing.Size(81, 25);
+            this.fpnlEventContainerNight.TabIndex = 2;
             // 
             // ucDay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.fpnlEventContainer);
+            this.Controls.Add(this.fpnlEventContainerNight);
+            this.Controls.Add(this.fpnlEventContainerMorning);
             this.Controls.Add(this.btnContainer);
             this.Name = "ucDay";
             this.Size = new System.Drawing.Size(125, 85);
@@ -111,6 +121,7 @@
 
         private Krypton.Toolkit.KryptonButton btnContainer;
         private Krypton.Toolkit.KryptonFontDialog kryptonFontDialog1;
-        private System.Windows.Forms.FlowLayoutPanel fpnlEventContainer;
+        private System.Windows.Forms.FlowLayoutPanel fpnlEventContainerMorning;
+        private System.Windows.Forms.FlowLayoutPanel fpnlEventContainerNight;
     }
 }

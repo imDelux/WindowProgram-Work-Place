@@ -41,7 +41,7 @@ namespace GUI
             foreach(Job job in jobsOfWorker)
             {
                 // Job haven't been accepted 
-                if (job.Accept == false)
+                if (job.IsAccepted == false)
                 {
                     ucNewNotificationMessage newJobOffer = new ucNewNotificationMessage(currentUsingWorker ,job);
                     fpnlNewJobNotificationContainer.Controls.Add(newJobOffer);

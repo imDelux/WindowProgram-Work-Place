@@ -24,8 +24,8 @@ namespace DAO
 
         public string Add(Person person, string tableName)
         {
-            string sqlCmd = string.Format("INSERT INTO {0}(PersonID, Name, Gender, BirthDate, Telephone, Email, Location, Password) VALUES ('{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')",
-                tableName, person.PersonID, person.Name, (person.Gender == true ? "Male" : "Female"), person.BirthDate, person.Telephone, person.Email, person.Location, person.Password);
+            string sqlCmd = string.Format("INSERT INTO {0}(PersonID, Name, Age, Telephone, Email, Location, Password) VALUES ('{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                tableName, person.PersonID, person.Name, person.Age, person.Telephone, person.Email, person.Location, person.Password);
             return dbConn.Execute(sqlCmd);
         }
     }

@@ -12,11 +12,11 @@ namespace EntityModel
         /// point is how statisfied the writer feel
         /// comment describe more detail
         /// </summary>
-        private Job _job;
+        private string _jobID;
         private float _point;
         private string _comment;
 
-        public Job Job { get { return _job; } set { _job = value; } }
+        public string JobID { get { return _jobID; } set { _jobID = value; } }
         public float Point { get { return _point; } set { _point = value; } }
         public string Comment { get { return _comment; } set { _comment = value; } }
 
@@ -25,7 +25,7 @@ namespace EntityModel
         /// </summary>
         public Evaluate() 
         {
-            Job = new Job();
+            JobID = string.Empty;
             Point = 0;
             Comment = string.Empty;
         }

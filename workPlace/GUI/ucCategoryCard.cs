@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,21 +11,17 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucDoneJob : UserControl
+    public partial class ucCategoryCard : UserControl
     {
-        public ucDoneJob()
+        public ucCategoryCard()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        public void DataSetter(CategorySkill cat)
         {
-
-        }
-
-        private void ucDoneJob_Load(object sender, EventArgs e)
-        {
-
+            lblCategory.Text = cat.CategoryName;
+            lblWorkerAmount.Text = "#" + cat.NumbWorker.ToString() + " workers";
         }
     }
 }

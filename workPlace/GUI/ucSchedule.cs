@@ -102,8 +102,7 @@ namespace GUI
             List<Job> currentMonthJob = jobOfWorker.Where(x => 
             (x.Date.Month == currentTimeInCalendar.Month 
             && x.Date.Year == currentTimeInCalendar.Year
-            && x.Accept == true
-            && x.JobStatus == false)).ToList();
+            && x.IsAccepted == true)).ToList();
             
             foreach (Job job in currentMonthJob) 
             {

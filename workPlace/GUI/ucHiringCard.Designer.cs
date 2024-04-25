@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class ucWaiting
+    partial class ucHiringCard
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,88 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptbState = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblAge = new System.Windows.Forms.Label();
+            this.picJobStatus = new System.Windows.Forms.PictureBox();
+            this.lblWorkerName = new System.Windows.Forms.Label();
+            this.lblWorkerAge = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
             this.picAvatar = new System.Windows.Forms.PictureBox();
             this.lblJobDate = new System.Windows.Forms.Label();
-            this.lblJobdes = new System.Windows.Forms.Label();
+            this.lblJobDesciption = new System.Windows.Forms.Label();
             this.lblJobName = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnBack = new Krypton.Toolkit.KryptonButton();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbState)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJobStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // ptbState
+            // picJobStatus
             // 
-            this.ptbState.BackColor = System.Drawing.Color.White;
-            this.ptbState.Image = global::GUI.Properties.Resources.rec;
-            this.ptbState.Location = new System.Drawing.Point(407, 19);
-            this.ptbState.Name = "ptbState";
-            this.ptbState.Size = new System.Drawing.Size(39, 35);
-            this.ptbState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbState.TabIndex = 27;
-            this.ptbState.TabStop = false;
+            this.picJobStatus.BackColor = System.Drawing.Color.White;
+            this.picJobStatus.Image = global::GUI.Properties.Resources.rec__1_;
+            this.picJobStatus.Location = new System.Drawing.Point(444, 0);
+            this.picJobStatus.Name = "picJobStatus";
+            this.picJobStatus.Size = new System.Drawing.Size(36, 35);
+            this.picJobStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picJobStatus.TabIndex = 28;
+            this.picJobStatus.TabStop = false;
             // 
-            // pictureBox3
+            // lblWorkerName
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::GUI.Properties.Resources.line;
-            this.pictureBox3.Location = new System.Drawing.Point(266, 35);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 105);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
+            this.lblWorkerName.AutoEllipsis = true;
+            this.lblWorkerName.BackColor = System.Drawing.Color.White;
+            this.lblWorkerName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblWorkerName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWorkerName.Location = new System.Drawing.Point(120, 37);
+            this.lblWorkerName.Name = "lblWorkerName";
+            this.lblWorkerName.Size = new System.Drawing.Size(148, 27);
+            this.lblWorkerName.TabIndex = 42;
+            this.lblWorkerName.Text = "Gabiel Erickson";
+            this.lblWorkerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblAge
+            // lblWorkerAge
             // 
-            this.lblAge.AutoEllipsis = true;
-            this.lblAge.AutoSize = true;
-            this.lblAge.BackColor = System.Drawing.Color.White;
-            this.lblAge.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(123, 73);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(60, 16);
-            this.lblAge.TabIndex = 34;
-            this.lblAge.Text = "Age : 25";
+            this.lblWorkerAge.AutoEllipsis = true;
+            this.lblWorkerAge.AutoSize = true;
+            this.lblWorkerAge.BackColor = System.Drawing.Color.White;
+            this.lblWorkerAge.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWorkerAge.Location = new System.Drawing.Point(122, 74);
+            this.lblWorkerAge.Name = "lblWorkerAge";
+            this.lblWorkerAge.Size = new System.Drawing.Size(60, 16);
+            this.lblWorkerAge.TabIndex = 43;
+            this.lblWorkerAge.Text = "Age : 25";
             // 
             // lblLocation
             // 
             this.lblLocation.AutoEllipsis = true;
             this.lblLocation.BackColor = System.Drawing.Color.White;
             this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.Location = new System.Drawing.Point(123, 104);
+            this.lblLocation.Location = new System.Drawing.Point(122, 105);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(149, 36);
-            this.lblLocation.TabIndex = 35;
+            this.lblLocation.Size = new System.Drawing.Size(146, 23);
+            this.lblLocation.TabIndex = 44;
             this.lblLocation.Text = "Location: Ho Chi Minh City";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoEllipsis = true;
-            this.lblName.BackColor = System.Drawing.Color.White;
-            this.lblName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(121, 29);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(151, 34);
-            this.lblName.TabIndex = 33;
-            this.lblName.Text = "Gabiel Erickson";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picAvatar
             // 
             this.picAvatar.BackColor = System.Drawing.Color.White;
             this.picAvatar.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvatar.Location = new System.Drawing.Point(44, 36);
+            this.picAvatar.Location = new System.Drawing.Point(43, 37);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(71, 82);
             this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvatar.TabIndex = 32;
+            this.picAvatar.TabIndex = 41;
             this.picAvatar.TabStop = false;
             // 
             // lblJobDate
@@ -118,22 +107,22 @@
             this.lblJobDate.AutoSize = true;
             this.lblJobDate.BackColor = System.Drawing.Color.White;
             this.lblJobDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobDate.Location = new System.Drawing.Point(305, 72);
+            this.lblJobDate.Location = new System.Drawing.Point(299, 74);
             this.lblJobDate.Name = "lblJobDate";
             this.lblJobDate.Size = new System.Drawing.Size(67, 16);
-            this.lblJobDate.TabIndex = 30;
+            this.lblJobDate.TabIndex = 39;
             this.lblJobDate.Text = "Job date";
             // 
-            // lblJobdes
+            // lblJobDesciption
             // 
-            this.lblJobdes.AutoEllipsis = true;
-            this.lblJobdes.BackColor = System.Drawing.Color.White;
-            this.lblJobdes.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobdes.Location = new System.Drawing.Point(305, 104);
-            this.lblJobdes.Name = "lblJobdes";
-            this.lblJobdes.Size = new System.Drawing.Size(126, 36);
-            this.lblJobdes.TabIndex = 31;
-            this.lblJobdes.Text = "Job description goes  here";
+            this.lblJobDesciption.AutoEllipsis = true;
+            this.lblJobDesciption.BackColor = System.Drawing.Color.White;
+            this.lblJobDesciption.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobDesciption.Location = new System.Drawing.Point(299, 105);
+            this.lblJobDesciption.Name = "lblJobDesciption";
+            this.lblJobDesciption.Size = new System.Drawing.Size(126, 23);
+            this.lblJobDesciption.TabIndex = 40;
+            this.lblJobDesciption.Text = "Job description goes  here";
             // 
             // lblJobName
             // 
@@ -141,17 +130,28 @@
             this.lblJobName.BackColor = System.Drawing.Color.White;
             this.lblJobName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblJobName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobName.Location = new System.Drawing.Point(304, 19);
+            this.lblJobName.Location = new System.Drawing.Point(298, 37);
             this.lblJobName.Name = "lblJobName";
-            this.lblJobName.Size = new System.Drawing.Size(110, 53);
-            this.lblJobName.TabIndex = 29;
+            this.lblJobName.Size = new System.Drawing.Size(128, 27);
+            this.lblJobName.TabIndex = 38;
             this.lblJobName.Text = "Job name";
             this.lblJobName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::GUI.Properties.Resources.line;
+            this.pictureBox3.Location = new System.Drawing.Point(276, 18);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(10, 126);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 46;
+            this.pictureBox3.TabStop = false;
             // 
             // btnBack
             // 
             this.btnBack.Enabled = false;
-            this.btnBack.Location = new System.Drawing.Point(27, 9);
+            this.btnBack.Location = new System.Drawing.Point(20, 9);
             this.btnBack.Margin = new System.Windows.Forms.Padding(0);
             this.btnBack.Name = "btnBack";
             this.btnBack.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
@@ -163,44 +163,45 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btnBack.StateCommon.Border.Rounding = 20F;
             this.btnBack.StateCommon.Border.Width = 2;
-            this.btnBack.TabIndex = 36;
+            this.btnBack.TabIndex = 45;
             this.btnBack.Values.Text = "";
             // 
-            // ucWaiting
+            // ucHiringCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.ptbState);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.picJobStatus);
+            this.Controls.Add(this.lblWorkerName);
+            this.Controls.Add(this.lblWorkerAge);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.picAvatar);
             this.Controls.Add(this.lblJobDate);
-            this.Controls.Add(this.lblJobdes);
+            this.Controls.Add(this.lblJobDesciption);
             this.Controls.Add(this.lblJobName);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnBack);
-            this.Name = "ucWaiting";
+            this.Name = "ucHiringCard";
             this.Size = new System.Drawing.Size(485, 162);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbState)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJobStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox ptbState;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.PictureBox picJobStatus;
+        private System.Windows.Forms.Label lblWorkerName;
+        private System.Windows.Forms.Label lblWorkerAge;
         private System.Windows.Forms.Label lblLocation;
-        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox picAvatar;
         private System.Windows.Forms.Label lblJobDate;
-        private System.Windows.Forms.Label lblJobdes;
+        private System.Windows.Forms.Label lblJobDesciption;
         private System.Windows.Forms.Label lblJobName;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private Krypton.Toolkit.KryptonButton btnBack;
     }
 }

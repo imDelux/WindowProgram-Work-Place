@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbSkillName = new Krypton.Toolkit.KryptonComboBox();
+            this.cbbSkillName = new Krypton.Toolkit.KryptonComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,55 +37,58 @@
             this.btnAdd = new Krypton.Toolkit.KryptonButton();
             this.btnCancel = new Krypton.Toolkit.KryptonButton();
             this.txtExpectedWage = new Krypton.Toolkit.KryptonTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.cbSkillName)).BeginInit();
+            this.lblSkillCategoryHead = new System.Windows.Forms.Label();
+            this.cbbSkillCategory = new Krypton.Toolkit.KryptonComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillCategory)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbSkillName
+            // cbbSkillName
             // 
-            this.cbSkillName.DropButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.cbSkillName.DropDownWidth = 212;
-            this.cbSkillName.IntegralHeight = false;
-            this.cbSkillName.Location = new System.Drawing.Point(38, 92);
-            this.cbSkillName.Name = "cbSkillName";
-            this.cbSkillName.Size = new System.Drawing.Size(420, 40);
-            this.cbSkillName.StateActive.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.cbSkillName.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
-            this.cbSkillName.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.cbSkillName.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.cbSkillName.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cbbSkillName.DropButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
+            this.cbbSkillName.DropDownWidth = 212;
+            this.cbbSkillName.IntegralHeight = false;
+            this.cbbSkillName.Location = new System.Drawing.Point(38, 174);
+            this.cbbSkillName.Name = "cbbSkillName";
+            this.cbbSkillName.Size = new System.Drawing.Size(420, 40);
+            this.cbbSkillName.StateActive.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.cbbSkillName.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.cbbSkillName.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cbbSkillName.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cbbSkillName.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbSkillName.StateCommon.ComboBox.Border.Rounding = 10F;
-            this.cbSkillName.StateCommon.ComboBox.Border.Width = 2;
-            this.cbSkillName.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbSkillName.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSkillName.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 2);
-            this.cbSkillName.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
-            this.cbSkillName.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
-            this.cbSkillName.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbSkillName.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbSkillName.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSkillName.StateNormal.ComboBox.Content.Padding = new System.Windows.Forms.Padding(-1, 3, -1, -1);
-            this.cbSkillName.StateTracking.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbSkillName.StateTracking.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbSkillName.StateTracking.Item.Border.Color1 = System.Drawing.Color.Transparent;
-            this.cbSkillName.StateTracking.Item.Border.Color2 = System.Drawing.Color.Transparent;
-            this.cbSkillName.StateTracking.Item.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cbbSkillName.StateCommon.ComboBox.Border.Rounding = 10F;
+            this.cbbSkillName.StateCommon.ComboBox.Border.Width = 2;
+            this.cbbSkillName.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillName.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillName.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 2);
+            this.cbbSkillName.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
+            this.cbbSkillName.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
+            this.cbbSkillName.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillName.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillName.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillName.StateNormal.ComboBox.Content.Padding = new System.Windows.Forms.Padding(-1, 3, -1, -1);
+            this.cbbSkillName.StateTracking.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbbSkillName.StateTracking.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbbSkillName.StateTracking.Item.Border.Color1 = System.Drawing.Color.Transparent;
+            this.cbbSkillName.StateTracking.Item.Border.Color2 = System.Drawing.Color.Transparent;
+            this.cbbSkillName.StateTracking.Item.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cbSkillName.StateTracking.Item.Border.Width = 0;
-            this.cbSkillName.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbSkillName.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.cbSkillName.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSkillName.TabIndex = 0;
-            this.cbSkillName.Text = "Choose your skill ...";
+            this.cbbSkillName.StateTracking.Item.Border.Width = 0;
+            this.cbbSkillName.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillName.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillName.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillName.TabIndex = 0;
+            this.cbbSkillName.Text = "Choose your skill ...";
             // 
             // lblTitle
             // 
             this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Black", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.lblTitle.Location = new System.Drawing.Point(96, 0);
+            this.lblTitle.Location = new System.Drawing.Point(94, -7);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(303, 45);
             this.lblTitle.TabIndex = 2;
@@ -97,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.label1.Location = new System.Drawing.Point(29, 58);
+            this.label1.Location = new System.Drawing.Point(29, 140);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 31);
             this.label1.TabIndex = 3;
@@ -108,7 +111,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.label3.Location = new System.Drawing.Point(29, 146);
+            this.label3.Location = new System.Drawing.Point(29, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(177, 31);
             this.label3.TabIndex = 6;
@@ -116,7 +119,7 @@
             // 
             // txtSkillDescription
             // 
-            this.txtSkillDescription.Location = new System.Drawing.Point(38, 269);
+            this.txtSkillDescription.Location = new System.Drawing.Point(38, 329);
             this.txtSkillDescription.Multiline = true;
             this.txtSkillDescription.Name = "txtSkillDescription";
             this.txtSkillDescription.Size = new System.Drawing.Size(420, 103);
@@ -136,7 +139,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
-            this.label6.Location = new System.Drawing.Point(29, 235);
+            this.label6.Location = new System.Drawing.Point(29, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 31);
             this.label6.TabIndex = 11;
@@ -144,7 +147,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(275, 388);
+            this.btnAdd.Location = new System.Drawing.Point(275, 448);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnAdd.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -203,7 +206,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(387, 388);
+            this.btnCancel.Location = new System.Drawing.Point(387, 448);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.btnCancel.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
@@ -264,7 +267,7 @@
             // 
             // txtExpectedWage
             // 
-            this.txtExpectedWage.Location = new System.Drawing.Point(38, 180);
+            this.txtExpectedWage.Location = new System.Drawing.Point(38, 252);
             this.txtExpectedWage.Multiline = true;
             this.txtExpectedWage.Name = "txtExpectedWage";
             this.txtExpectedWage.Size = new System.Drawing.Size(417, 38);
@@ -279,13 +282,67 @@
             this.txtExpectedWage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
             this.txtExpectedWage.TabIndex = 15;
             // 
+            // lblSkillCategoryHead
+            // 
+            this.lblSkillCategoryHead.AutoSize = true;
+            this.lblSkillCategoryHead.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillCategoryHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.lblSkillCategoryHead.Location = new System.Drawing.Point(29, 63);
+            this.lblSkillCategoryHead.Name = "lblSkillCategoryHead";
+            this.lblSkillCategoryHead.Size = new System.Drawing.Size(119, 31);
+            this.lblSkillCategoryHead.TabIndex = 17;
+            this.lblSkillCategoryHead.Text = "Skill Field";
+            // 
+            // cbbSkillCategory
+            // 
+            this.cbbSkillCategory.DropButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorStack;
+            this.cbbSkillCategory.DropDownWidth = 212;
+            this.cbbSkillCategory.IntegralHeight = false;
+            this.cbbSkillCategory.Location = new System.Drawing.Point(38, 97);
+            this.cbbSkillCategory.Name = "cbbSkillCategory";
+            this.cbbSkillCategory.Size = new System.Drawing.Size(420, 40);
+            this.cbbSkillCategory.StateActive.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.cbbSkillCategory.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.White;
+            this.cbbSkillCategory.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cbbSkillCategory.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cbbSkillCategory.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbbSkillCategory.StateCommon.ComboBox.Border.Rounding = 10F;
+            this.cbbSkillCategory.StateCommon.ComboBox.Border.Width = 2;
+            this.cbbSkillCategory.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillCategory.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillCategory.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(3, 0, 0, 2);
+            this.cbbSkillCategory.StateCommon.DropBack.Color1 = System.Drawing.Color.White;
+            this.cbbSkillCategory.StateCommon.DropBack.Color2 = System.Drawing.Color.White;
+            this.cbbSkillCategory.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillCategory.StateCommon.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillCategory.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillCategory.StateNormal.ComboBox.Content.Padding = new System.Windows.Forms.Padding(-1, 3, -1, -1);
+            this.cbbSkillCategory.StateTracking.Item.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbbSkillCategory.StateTracking.Item.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbbSkillCategory.StateTracking.Item.Border.Color1 = System.Drawing.Color.Transparent;
+            this.cbbSkillCategory.StateTracking.Item.Border.Color2 = System.Drawing.Color.Transparent;
+            this.cbbSkillCategory.StateTracking.Item.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbbSkillCategory.StateTracking.Item.Border.Width = 0;
+            this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
+            this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSkillCategory.TabIndex = 16;
+            this.cbbSkillCategory.Text = "Choose your skill ...";
+            this.cbbSkillCategory.SelectedValueChanged += new System.EventHandler(this.cbbSkillCategory_SelectedValueChanged);
+            // 
             // fAddSkill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(488, 439);
+            this.ClientSize = new System.Drawing.Size(488, 499);
             this.CloseBox = false;
+            this.Controls.Add(this.lblSkillCategoryHead);
+            this.Controls.Add(this.cbbSkillCategory);
             this.Controls.Add(this.txtExpectedWage);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
@@ -294,7 +351,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.cbSkillName);
+            this.Controls.Add(this.cbbSkillName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -318,7 +375,8 @@
             this.StateCommon.Border.Width = 2;
             this.StateCommon.Header.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.White;
-            ((System.ComponentModel.ISupportInitialize)(this.cbSkillName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillCategory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,7 +384,7 @@
 
         #endregion
 
-        private Krypton.Toolkit.KryptonComboBox cbSkillName;
+        private Krypton.Toolkit.KryptonComboBox cbbSkillName;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -335,5 +393,7 @@
         private Krypton.Toolkit.KryptonButton btnAdd;
         private Krypton.Toolkit.KryptonButton btnCancel;
         private Krypton.Toolkit.KryptonTextBox txtExpectedWage;
+        private System.Windows.Forms.Label lblSkillCategoryHead;
+        private Krypton.Toolkit.KryptonComboBox cbbSkillCategory;
     }
 }

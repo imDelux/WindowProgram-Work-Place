@@ -31,7 +31,7 @@ namespace GUI
         private void fHirer_Load(object sender, EventArgs e)
         {
             // Load home
-            ucHome uc = new ucHome(currentHirer);
+            ucHomeCategoryChoose uc = new ucHomeCategoryChoose();
             AddUC(uc);
         }
 
@@ -47,7 +47,7 @@ namespace GUI
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ucHome uc = new ucHome(currentHirer);
+            ucHomeCategoryChoose uc = new ucHomeCategoryChoose();
             AddUC(uc);
         }
 

@@ -11,14 +11,16 @@ namespace EntityModel
         /// <summary>
         /// Basic attributes
         /// </summary>
-        private SkillName _skillName;
+        private string _skillCategory;
+        private string _skillName;
         private string _skillDescription;
         private int _expectedWage;
 
         /// <summary>
         /// Properties
         /// </summary>
-        public SkillName SkillName { get { return _skillName; } set { _skillName = value; } }
+        public string SkillCategory { get { return _skillCategory; } set { _skillCategory = value; } }
+        public string SkillName { get { return _skillName; } set { _skillName = value; } }
         public string SkillDescription { get { return _skillDescription; } set { _skillDescription = value; } }
         public int ExpectedWage { get { return _expectedWage; } set { _expectedWage = value; } }
 
@@ -27,7 +29,8 @@ namespace EntityModel
         /// </summary>
         public Skill() 
         {
-            SkillName = SkillName.None;
+            SkillCategory = string.Empty;
+            SkillName = string.Empty;
             SkillDescription = string.Empty;
             ExpectedWage = 0;
         }
@@ -38,8 +41,9 @@ namespace EntityModel
         /// <param name="skillName"></param>
         /// <param name="skillDescription"></param>
         /// <param name="expectedWage"></param>
-        public Skill(SkillName skillName, string skillDescription, int expectedWage)
+        public Skill(string skillField,string skillName, string skillDescription, int expectedWage)
         {
+            SkillCategory = skillField;
             SkillName = skillName; 
             SkillDescription = skillDescription;
             ExpectedWage = expectedWage;

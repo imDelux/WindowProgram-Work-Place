@@ -40,8 +40,7 @@ namespace GUI
 
             // Worker basic information
             lblWokerName.Text = currentDisplayingWorker.Name;
-            lblGender.Text = (currentDisplayingWorker.Gender == true ? "Male" : "Female");
-            lblBirth.Text = currentDisplayingWorker.BirthDate.ToShortDateString();
+            lblAge.Text = currentDisplayingWorker.Age.ToString();
             lblTelephone.Text = currentDisplayingWorker.Telephone;
             lblEmail.Text = currentDisplayingWorker.Email;
             lblLocation.Text = currentDisplayingWorker.Location;

@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucWaiting : UserControl
+    public partial class ucSkillTag : UserControl
     {
-        public ucWaiting()
+        public ucSkillTag()
         {
             InitializeComponent();
         }
-
-        
     }
 }

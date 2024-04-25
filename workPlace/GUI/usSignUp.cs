@@ -21,7 +21,7 @@ namespace GUI
         private void btnNext_Click(object sender, EventArgs e)
         {
             // Get person in form of object
-            Person person = new Person("", "", false, DateTime.Now, txtPhonenum.Text, txtEmail.Text, "", txtPassword.Text);
+            Person person = new Person("", "", 0, txtPhonenum.Text, txtEmail.Text, "", txtPassword.Text);
 
             fSignUpInfo fSignUpInfo1 = new fSignUpInfo(person);
             fSignUpInfo1.ShowDialog();

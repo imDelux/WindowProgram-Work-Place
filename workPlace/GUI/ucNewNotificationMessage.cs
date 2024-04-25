@@ -32,12 +32,16 @@ namespace GUI
             InitializeComponent();
             this.jobInNotification = newJob;
             this.currentUsingWorker = worker;
-            ChangeContent(this.jobInNotification.JobName);
+            ChangeContent();
         }
 
-        public void ChangeContent(string content)
+        public void ChangeContent()
         {
-            this.lblMainMessage.Text = content;
+            lblJobName.Text = jobInNotification.JobName;
+            lblJobDescription.Text = jobInNotification.JobDescription;
+            lblWage.Text = jobInNotification.Wage.ToString();
+            lblDate.Text = jobInNotification.Date.Day.ToString() + "/" + jobInNotification.Date.Month.ToString();
+            
         }
 
         private void ucNewNotificationMessage_Click(object sender, EventArgs e)

@@ -40,8 +40,8 @@ namespace GUI
             lblJobDescript.Text = currentDisplayingJob.JobDescription;
             lblJobDate.Text = currentDisplayingJob.Date.ToShortDateString();
             lblJobWage.Text = currentDisplayingJob.Wage.ToString() + "$";
-            cbPaid.Checked = (currentDisplayingJob.PaidStatus == true ? true : false);
-            cbStatus.Checked = (currentDisplayingJob.JobStatus == true ? true : false);
+            cbPaid.Checked = (currentDisplayingJob.IsPaid == true ? true : false);
+            cbStatus.Checked = (currentDisplayingJob.IsComplete == true ? true : false);
         }
     }
 }

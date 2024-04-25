@@ -43,7 +43,7 @@ namespace GUI
             
             // Set data
             lblWokerName.Text = currentDisplayWorker.Name;
-            lblAge.Text = "Age: " + (DateTime.Now.Year - currentDisplayWorker.BirthDate.Year).ToString();
+            lblAge.Text = "Age: " + currentDisplayWorker.Age;
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;
         }
     }

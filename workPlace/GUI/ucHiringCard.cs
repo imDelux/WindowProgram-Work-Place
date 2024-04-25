@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class ucPostedpost : UserControl
+    public partial class ucHiringCard : UserControl
     {
-        public ucPostedpost()
+        public ucHiringCard()
         {
             InitializeComponent();
         }

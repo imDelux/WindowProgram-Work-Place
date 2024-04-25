@@ -13,8 +13,7 @@ namespace EntityModel
         /// </summary>
         private string _personID;
         private string _name;
-        private bool _gender;
-        private DateTime _birthDate;
+        private int _age;
         private string _tel;
         private string _email;
         private string _location;
@@ -26,8 +25,7 @@ namespace EntityModel
         /// </summary>
         public string PersonID { get { return _personID; } set { _personID = value; } }
         public string Name { get { return _name; } set { _name = value; } }
-        public bool Gender { get { return _gender; } set { _gender = value; } }
-        public DateTime BirthDate { get { return _birthDate; } set { _birthDate = value; } }
+        public int Age { get { return _age; } set { _age = value; } }
         public string Telephone { get { return _tel; } set { _tel = value; } }
         public string Email { get { return _email; } set { _email = value; } }
         public string Location { get { return _location; } set { _location = value; } }
@@ -40,8 +38,7 @@ namespace EntityModel
         {
             PersonID = string.Empty;
             Name = string.Empty;
-            Gender = false;
-            BirthDate = DateTime.MinValue;
+            Age = 0;
             Telephone = string.Empty;
             Email = string.Empty;
             Location = string.Empty;
@@ -58,12 +55,11 @@ namespace EntityModel
         /// <param name="tel"></param>
         /// <param name="email"></param>
         /// <param name="location"></param>
-        public Person(string personID, string name, bool gender, DateTime birthDate, string tel, string email, string location, string password)
+        public Person(string personID, string name,int age, string tel, string email, string location, string password)
         {
             PersonID = personID;
             Name = name;
-            Gender = gender;
-            BirthDate = birthDate;
+            Age = age;
             Telephone = tel;
             Email = email;
             Location = location;

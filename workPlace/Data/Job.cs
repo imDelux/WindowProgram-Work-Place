@@ -13,8 +13,6 @@ namespace EntityModel
         /// Basic attributes about a job
         /// worker --> who work
         /// hirer --> who hiring
-        /// jobStatus --> determine if the job is done
-        /// paidStatus --> determine if hirer pays worker
         /// </summary>
         private string _id;
         private string _workerID;
@@ -23,9 +21,15 @@ namespace EntityModel
         private string _jobDescription;
         private DateTime _date;
         private float _wage;
-        private bool _jobStatus;
-        private bool _paidStatus;
-        private bool _accept;
+        private bool _isMorning;
+
+        // Job flags
+        private bool _isAccepted;
+        private bool _isRejected;
+        private bool _isComplete;
+        private bool _isEvaluated;
+        private bool _isPaid;
+        private bool _isRead;
 
         /// <summary>
         /// Properties
@@ -37,9 +41,13 @@ namespace EntityModel
         public string JobDescription { get { return _jobDescription; } set { _jobDescription = value; } }
         public DateTime Date { get { return _date; } set { _date = value; } }   
         public float Wage { get { return _wage; } set { _wage = value; } }
-        public bool JobStatus { get { return _jobStatus; } set { _jobStatus = value; } }
-        public bool PaidStatus { get { return _paidStatus; } set { _paidStatus = value; } }
-        public bool Accept { get { return _accept; } set { _accept = value; } }
+        public bool IsMorning { get { return _isMorning; } set { _isMorning = value; } }
+        public bool IsAccepted { get { return _isAccepted; } set { _isAccepted = value; } }
+        public bool IsRejected { get { return _isRejected; } set { _isRejected = value; } }
+        public bool IsComplete { get { return _isComplete; } set { _isComplete = value; } }
+        public bool IsEvaluated { get { return _isEvaluated; } set { _isEvaluated = value; } }
+        public bool IsPaid { get { return _isPaid; } set { _isPaid = value; } }
+        public bool IsRead { get { return _isRead; } set { _isRead = value; } }
 
         /// <summary>
         /// Basic constructor
@@ -53,9 +61,13 @@ namespace EntityModel
             JobDescription = string.Empty;
             Date = DateTime.MinValue;
             Wage = 0;
-            JobStatus = false;
-            PaidStatus = false;
-            Accept = false;
+            IsMorning = false;
+            IsAccepted = false;
+            IsRejected = false;
+            IsComplete = false;
+            IsEvaluated = false;
+            IsPaid = false;
+            IsRead= false;
         }
 
         /// <summary>
@@ -69,7 +81,8 @@ namespace EntityModel
         /// <param name="wage"></param>
         /// <param name="jobStatus"></param>
         /// <param name="paidStatus"></param>
-        public Job(string jobID, string workerID, string hirerID, string jobName, string jobDescription, DateTime date, float wage, bool jobStatus, bool paidStatus, bool accept)
+        public Job(string jobID, string workerID, string hirerID, string jobName, string jobDescription, DateTime date, float wage,
+            bool isMorning, bool isAccepted, bool isRejected, bool isComplete, bool isEvaluated, bool isPaid, bool isRead)
         {
             JobID = jobID;
             WorkerID = workerID;
@@ -78,9 +91,13 @@ namespace EntityModel
             JobDescription = jobDescription;
             Date = date;
             Wage = wage;
-            JobStatus = jobStatus;
-            PaidStatus = paidStatus;
-            Accept = accept;
+            IsMorning = isMorning;
+            IsAccepted = isAccepted;
+            IsRejected = isRejected;
+            IsComplete = isComplete;
+            IsEvaluated = isEvaluated;
+            IsPaid = isPaid;
+            IsRead = isRead;
         }
     }
 }
