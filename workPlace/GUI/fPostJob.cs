@@ -125,5 +125,14 @@ namespace GUI
             MessageBox.Show("Applied", "Notification", MessageBoxButtons.YesNo);
             this.Close();
         }
+
+        // Display profile of hirer
+        private void ptbAvatar_Click(object sender, EventArgs e)
+        {
+            if (currentPost == null) { return; }
+            fWorkerInfo fHirerInfo = new fWorkerInfo(dbConnection.FetchPerson(currentPost.HirerID, "Hirer"));
+            fHirerInfo.ShowDialog();
+
+        }
     }
 }

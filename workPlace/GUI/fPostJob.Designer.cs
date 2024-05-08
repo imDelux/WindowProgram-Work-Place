@@ -272,12 +272,14 @@
             // 
             // ptbAvatar
             // 
+            this.ptbAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ptbAvatar.Image = global::GUI.Properties.Resources.man;
             this.ptbAvatar.Location = new System.Drawing.Point(37, 54);
             this.ptbAvatar.Name = "ptbAvatar";
             this.ptbAvatar.Size = new System.Drawing.Size(73, 71);
             this.ptbAvatar.TabIndex = 0;
             this.ptbAvatar.TabStop = false;
+            this.ptbAvatar.Click += new System.EventHandler(this.ptbAvatar_Click);
             // 
             // pictureBox2
             // 
