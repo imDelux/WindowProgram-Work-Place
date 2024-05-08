@@ -52,7 +52,7 @@ namespace GUI
             // Display job on complete page
             List<Job> completeJob = jobOfHirer.Where(x => (x.IsComplete && !x.IsCanceled)).ToList();
             lblNoJobNotificationComplete.Visible = completeJob.Count == 0;
-            foreach (Job job in jobOfHirer)
+            foreach (Job job in completeJob)
             {
                 ucHiringCard ucHiringCard = new ucHiringCard(connection.FetchWorker_ID(job.WorkerID), job);
                 fpnlComplete.Controls.Add(ucHiringCard);
