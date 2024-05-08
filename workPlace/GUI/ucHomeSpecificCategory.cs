@@ -71,7 +71,14 @@ namespace GUI
         /// <param name="e"></param>
         private void cbbArrangeType_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (cbbArrangeType.SelectedIndex == 0)
+            {
+                GenerateDynamicUserControl(SummarizeData.TopMostRatedWorkers(currentDisplayingWorkerList));
+            }
+            else if (cbbArrangeType.SelectedIndex == 1)
+            {
+                GenerateDynamicUserControl(SummarizeData.TopMostReceiveJobWorker(currentDisplayingWorkerList));
+            }
         }
     }
 }

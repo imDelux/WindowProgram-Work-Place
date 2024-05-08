@@ -56,6 +56,7 @@ namespace GUI
                 picAvatar.Image = personDAO.LoadAvatar(currentDisplayWorker);
             }
             lblSkill.Text = currentDisplayWorker.SkillName;
+            lblRating.Text = SummarizeData.CalculateAveragePoint(currentDisplayWorker).ToString() + "/10.0";
             lblAvgWage.Text = currentDisplayWorker.ExpectedWage.ToString() + "$";
             lblAge.Text = "Age: " + currentDisplayWorker.Age;
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;

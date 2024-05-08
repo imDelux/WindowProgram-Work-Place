@@ -45,6 +45,7 @@ namespace GUI
         private void btnSave_Click(object sender, EventArgs e)
         {
             System.IO.File.Copy(avatarFilePath, Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + currentChangingAvaterPerson.PersonID + Path.GetExtension(avatarFilePath)), true);
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
     }

@@ -43,22 +43,24 @@ namespace DAO
         {
             Image result = null;
 
-            // Display avatar
-            if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpeg")))
             {
-                result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpeg"));
-            }
-            else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpg")))
-            {
-                result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpg"));
-            }
-            else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".gif")))
-            {
-                result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".gif"));
-            }
-            else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".bmp")))
-            {
-                result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".bmp"));
+                // Display avatar
+                if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpeg")))
+                {
+                    result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpeg"));
+                }
+                else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpg")))
+                {
+                    result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".jpg"));
+                }
+                else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".gif")))
+                {
+                    result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".gif"));
+                }
+                else if (File.Exists(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".bmp")))
+                {
+                    result = new Bitmap(Path.Combine(Environment.CurrentDirectory, @"Avatars\", @"avt_" + person.PersonID + @".bmp"));
+                }
             }
 
             return result;

@@ -99,7 +99,7 @@
             this.lblAvgWage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
             this.lblAvgWage.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvgWage.ForeColor = System.Drawing.Color.White;
-            this.lblAvgWage.Location = new System.Drawing.Point(249, 64);
+            this.lblAvgWage.Location = new System.Drawing.Point(267, 64);
             this.lblAvgWage.Margin = new System.Windows.Forms.Padding(5, 0, 3, 0);
             this.lblAvgWage.Name = "lblAvgWage";
             this.lblAvgWage.Size = new System.Drawing.Size(58, 23);
