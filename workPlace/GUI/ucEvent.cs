@@ -18,6 +18,7 @@ namespace GUI
         public ucEvent()
         {
             InitializeComponent();
+            this.Click -= ucEvent_Click;
         }
 
         public ucEvent(Job jobEvent, bool isHirer)
@@ -51,28 +52,28 @@ namespace GUI
             }
         }
 
-        private void ucEvent_Click(object sender, EventArgs e)
+        public void ucEvent_Click(object sender, EventArgs e)
         {
             fJobDetail fJobDetail = new fJobDetail(currentJobHold, false, true);
             fJobDetail.ShowDialog();
         }
 
-        private void Evaluated()
+        public void Evaluated()
         {
             this.BackColor = Color.Yellow;
         }
 
-        private void Incoming()
+        public void Incoming()
         {
             this.BackColor = Color.Orange;
         }
 
-        private void Done()
+        public void Done()
         {
             this.BackColor = Color.LightGreen;
         }
 
-        private void Cancel()
+        public void Cancel()
         {
             this.BackColor = Color.Red;
         }

@@ -74,6 +74,18 @@
     <Compile Include="fAddSkill.Designer.cs">
       <DependentUpon>fAddSkill.cs</DependentUpon>
     </Compile>
+    <Compile Include="fChangeInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangeInformation.Designer.cs">
+      <DependentUpon>fChangeInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePassword.Designer.cs">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="fChooseJobDate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +239,12 @@
     </Compile>
     <EmbeddedResource Include="fAddSkill.resx">
       <DependentUpon>fAddSkill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangeInformation.resx">
+      <DependentUpon>fChangeInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangePassword.resx">
+      <DependentUpon>fChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fChooseJobDate.resx">
       <DependentUpon>fChooseJobDate.cs</DependentUpon>

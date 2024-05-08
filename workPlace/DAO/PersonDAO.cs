@@ -32,6 +32,13 @@ namespace DAO
             return dbConn.Execute(sqlCmd);
         }
 
+        public string Update(Person person, string tableName)
+        {
+            string sqlCmd = string.Format("UPDATE {0} SET PersonID = '{1}', Name = '{2}', Age = '{3}', Telephone = '{4}', Email = '{5}', Location = '{6}', Password = '{7}' WHERE PersonID = '{8}'",
+                tableName, person.PersonID, person.Name, person.Age, person.Telephone, person.Email, person.Location, person.Password, person.PersonID);
+            return dbConn.Execute(sqlCmd);
+        }
+
         public Image LoadAvatar(Person person)
         {
             Image result = null;

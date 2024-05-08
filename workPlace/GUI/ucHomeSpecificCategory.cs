@@ -17,6 +17,7 @@ namespace GUI
     {
         Person currentUsingHirer = null;
         CategorySkill category = null;
+        List<Worker> currentDisplayingWorkerList = null;
         DbConnection dbConn = new DbConnection();
 
         public ucHomeSpecificCategory()
@@ -30,23 +31,47 @@ namespace GUI
             this.currentUsingHirer = hirer;
             this.category = category;
             this.lblCategory.Text = category.Type.ToString();
-            GenerateDynamicUserControl();
+            GetWorkerList();
+            GenerateDynamicUserControl(currentDisplayingWorkerList);
         }
 
-        private void GenerateDynamicUserControl()
+        private void GetWorkerList()
         {
-            fpnlContainer.Controls.Clear();
-
             // Get the worker list from database
-            List<Worker> listWorker = dbConn.FetchWorkerList(category);
-            listWorker = listWorker.Where(x => x.IsActive == true).ToList();   
+            currentDisplayingWorkerList = dbConn.FetchWorkerList(category);
+            currentDisplayingWorkerList = currentDisplayingWorkerList.Where(x => x.IsActive == true).ToList();
+        }
+
+        private void GenerateDynamicUserControl(List<Worker> workerList)
+        {
+            fpnlContainer.Controls.Clear();   
 
             // Generate user control
-            for (int i = 0; i < listWorker.Count; i++) 
+            for (int i = 0; i < workerList.Count; i++) 
             {
-                ucWorker workerPreview = new ucWorker(listWorker[i], currentUsingHirer);
+                ucWorker workerPreview = new ucWorker(workerList[i], currentUsingHirer);
                 fpnlContainer.Controls.Add(workerPreview);
             }
+        }
+
+        /// <summary>
+        /// Search
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            GenerateDynamicUserControl(SummarizeData.RelatedWorker(currentDisplayingWorkerList, txtSearch.Text));
+        }
+
+        /// <summary>
+        /// Rearrange the list by user choice
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cbbArrangeType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

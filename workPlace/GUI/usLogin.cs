@@ -31,7 +31,10 @@ namespace GUI
             fChooseRole1.ShowDialog();
 
             // Show login form
-            this.TopLevelControl.Show();
+            if (this.TopLevelControl != null)
+            {
+                this.TopLevelControl.Show();
+            }
         }
 
         private void btnForgotpass_Click(object sender, EventArgs e)

@@ -48,6 +48,9 @@ namespace GUI
 
             // Display day onto calendar
             DisplayDays(currentTimeInCalendar);
+
+            // Display guide image
+            DisplayGuideImage();
         }
 
         // Display all days of a specific month
@@ -128,6 +131,15 @@ namespace GUI
             // Subtract 1 month to current time
             currentTimeInCalendar = currentTimeInCalendar.AddMonths(1);
             DisplayDays(currentTimeInCalendar);
+        }
+
+        // Set color for ucEvent, which is used for help user identify events
+        private void DisplayGuideImage()
+        {
+            ucEventCancel.Cancel();
+            ucEventDone.Done();
+            ucEventEvaluated.Evaluated();
+            ucEventIncoming.Incoming();
         }
     }
 }

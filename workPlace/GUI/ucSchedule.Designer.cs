@@ -40,8 +40,20 @@
             this.btnDayInWeekContainer = new Krypton.Toolkit.KryptonButton();
             this.picPreviousMonth = new System.Windows.Forms.PictureBox();
             this.picNextMonth = new System.Windows.Forms.PictureBox();
+            this.pnlSymbolGuide = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.ucEventCancel = new GUI.ucEvent();
+            this.ucEventEvaluated = new GUI.ucEvent();
+            this.ucEventDone = new GUI.ucEvent();
+            this.ucEventIncoming = new GUI.ucEvent();
+            this.ucEventAccept = new GUI.ucEvent();
             ((System.ComponentModel.ISupportInitialize)(this.picPreviousMonth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNextMonth)).BeginInit();
+            this.pnlSymbolGuide.SuspendLayout();
             this.SuspendLayout();
             // 
             // fpnlDayContainer
@@ -205,10 +217,134 @@
             this.picNextMonth.TabStop = false;
             this.picNextMonth.Click += new System.EventHandler(this.picNextMonth_Click);
             // 
+            // pnlSymbolGuide
+            // 
+            this.pnlSymbolGuide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.pnlSymbolGuide.Controls.Add(this.label12);
+            this.pnlSymbolGuide.Controls.Add(this.label11);
+            this.pnlSymbolGuide.Controls.Add(this.label10);
+            this.pnlSymbolGuide.Controls.Add(this.label9);
+            this.pnlSymbolGuide.Controls.Add(this.label7);
+            this.pnlSymbolGuide.Controls.Add(this.ucEventCancel);
+            this.pnlSymbolGuide.Controls.Add(this.ucEventEvaluated);
+            this.pnlSymbolGuide.Controls.Add(this.ucEventDone);
+            this.pnlSymbolGuide.Controls.Add(this.ucEventIncoming);
+            this.pnlSymbolGuide.Controls.Add(this.ucEventAccept);
+            this.pnlSymbolGuide.Location = new System.Drawing.Point(614, 639);
+            this.pnlSymbolGuide.Name = "pnlSymbolGuide";
+            this.pnlSymbolGuide.Size = new System.Drawing.Size(325, 100);
+            this.pnlSymbolGuide.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(43, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 15);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Accepted";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(43, 66);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 15);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Incoming";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(146, 25);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 15);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Done";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(146, 66);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 15);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "Evaluated";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Consolas", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(248, 25);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 15);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Cancel";
+            // 
+            // ucEventCancel
+            // 
+            this.ucEventCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucEventCancel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucEventCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucEventCancel.Location = new System.Drawing.Point(228, 25);
+            this.ucEventCancel.Margin = new System.Windows.Forms.Padding(5);
+            this.ucEventCancel.Name = "ucEventCancel";
+            this.ucEventCancel.Size = new System.Drawing.Size(12, 17);
+            this.ucEventCancel.TabIndex = 5;
+            // 
+            // ucEventEvaluated
+            // 
+            this.ucEventEvaluated.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucEventEvaluated.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucEventEvaluated.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucEventEvaluated.Location = new System.Drawing.Point(126, 66);
+            this.ucEventEvaluated.Margin = new System.Windows.Forms.Padding(5);
+            this.ucEventEvaluated.Name = "ucEventEvaluated";
+            this.ucEventEvaluated.Size = new System.Drawing.Size(12, 17);
+            this.ucEventEvaluated.TabIndex = 4;
+            // 
+            // ucEventDone
+            // 
+            this.ucEventDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucEventDone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucEventDone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucEventDone.Location = new System.Drawing.Point(126, 25);
+            this.ucEventDone.Margin = new System.Windows.Forms.Padding(5);
+            this.ucEventDone.Name = "ucEventDone";
+            this.ucEventDone.Size = new System.Drawing.Size(12, 17);
+            this.ucEventDone.TabIndex = 3;
+            // 
+            // ucEventIncoming
+            // 
+            this.ucEventIncoming.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucEventIncoming.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucEventIncoming.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucEventIncoming.Location = new System.Drawing.Point(23, 66);
+            this.ucEventIncoming.Margin = new System.Windows.Forms.Padding(5);
+            this.ucEventIncoming.Name = "ucEventIncoming";
+            this.ucEventIncoming.Size = new System.Drawing.Size(12, 17);
+            this.ucEventIncoming.TabIndex = 2;
+            // 
+            // ucEventAccept
+            // 
+            this.ucEventAccept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucEventAccept.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucEventAccept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ucEventAccept.Location = new System.Drawing.Point(23, 25);
+            this.ucEventAccept.Margin = new System.Windows.Forms.Padding(5);
+            this.ucEventAccept.Name = "ucEventAccept";
+            this.ucEventAccept.Size = new System.Drawing.Size(12, 17);
+            this.ucEventAccept.TabIndex = 1;
+            // 
             // ucSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.pnlSymbolGuide);
             this.Controls.Add(this.picPreviousMonth);
             this.Controls.Add(this.picNextMonth);
             this.Controls.Add(this.lblYearAndMonth);
@@ -226,6 +362,8 @@
             this.Size = new System.Drawing.Size(995, 766);
             ((System.ComponentModel.ISupportInitialize)(this.picPreviousMonth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNextMonth)).EndInit();
+            this.pnlSymbolGuide.ResumeLayout(false);
+            this.pnlSymbolGuide.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +383,16 @@
         private System.Windows.Forms.PictureBox picNextMonth;
         private System.Windows.Forms.PictureBox picPreviousMonth;
         private Krypton.Toolkit.KryptonButton btnDayInWeekContainer;
+        private System.Windows.Forms.Panel pnlSymbolGuide;
+        private ucEvent ucEventCancel;
+        private ucEvent ucEventEvaluated;
+        private ucEvent ucEventDone;
+        private ucEvent ucEventIncoming;
+        private ucEvent ucEventAccept;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -16,13 +16,18 @@ namespace GUI
 {
     public partial class fWorkerInfo : KryptonForm
     {
-        // Current worker
+        // Store data
         Worker currentWorker = null;
         Person currentHirer = null;
+        bool isForHirer;
         DAO.DbConnection connection = new DAO.DbConnection();
         PersonDAO personDAO = new PersonDAO();
         EvaluateDAO evaluateDAO = new EvaluateDAO();
-        bool isForHirer;
+
+        // Post context
+        Post currentAppliedPost;
+        JobDAO jobDAO = new JobDAO();
+        PostDAO postDAO = new PostDAO();
 
         public fWorkerInfo()
         {
@@ -44,6 +49,7 @@ namespace GUI
             DataSetter();
         }
 
+
         /// <summary>
         /// Form works as a hirer's information preview
         /// </summary>
@@ -53,6 +59,24 @@ namespace GUI
             InitializeComponent();
             this.currentHirer = hirer;
             isForHirer = false;
+
+            DataSetter();
+        }
+
+        /// <summary>
+        /// Post context
+        /// </summary>
+        /// <param name="worker"></param>
+        /// <param name="post"></param>
+        public fWorkerInfo(Worker worker, Post post)
+        {
+            InitializeComponent();
+            this.currentWorker = worker;
+            this.currentAppliedPost = post;
+            isForHirer = true;
+
+            DataSetter();
+            PostContext();
         }
 
         private void DataSetter()
@@ -127,10 +151,48 @@ namespace GUI
             lblOverrallRating.Text = string.Format("Rate: {0}/10.0 ({1})", evaluateDAO.AveragePoint(evaluatesOfUser).ToString(), evaluatesOfUser.Count.ToString());
         }
 
+        private void PostContext()
+        {
+            btnHire.Text = "Accept";
+            btnHire.Click -= btnHire_Click;
+            btnHire.Click += btnAccept_Click;
+        }
+
         private void btnHire_Click(object sender, EventArgs e)
         {
             fJobDisplay fHireMessage = new fJobDisplay(currentWorker, currentHirer);
             fHireMessage.ShowDialog();
+        }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            // Generate job equivalent to post
+            Job nJob = new Job();
+            nJob.HirerID = currentAppliedPost.HirerID;
+            nJob.WorkerID = currentWorker.PersonID;
+            nJob.JobName = currentAppliedPost.Title;
+            nJob.JobDescription = currentAppliedPost.Description;
+            nJob.Date = currentAppliedPost.Date;
+            nJob.Wage = currentAppliedPost.Wage;
+            nJob.IsMorning = currentAppliedPost.IsMorning;
+            nJob.IsAccepted = true;
+            nJob.IsRejected = false;
+            nJob.IsComplete = false;
+            nJob.IsCanceled = false;
+            nJob.IsEvaluated = false;
+            nJob.IsWorkerRated = false;
+            nJob.IsRead = true;
+
+            // Add job
+            if (jobDAO.Add(nJob) == "Successful")
+            {
+                // Delete post 
+                postDAO.Delete(currentAppliedPost);
+
+                // Notify
+                MessageBox.Show("You hired this worker!", "Notification");
+                this.Close();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

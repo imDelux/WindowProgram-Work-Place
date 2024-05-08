@@ -21,7 +21,8 @@ namespace DAO
 
         public string Delete(Post post)
         {
-            string strCmd = string.Format("DELETE FROM Post Where ID = '{0}'", post.ID);
+            string strCmd = string.Format("DELETE FROM Post WHERE ID = '{0}';" +
+                "DELETE FROM Apply WHERE PostID = '{0}'", post.ID);
             return dbConn.Execute(strCmd);
         }
 

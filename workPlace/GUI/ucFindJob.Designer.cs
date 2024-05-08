@@ -31,6 +31,7 @@
             this.fpnlPostContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.lblSkillFieldHeader = new System.Windows.Forms.Label();
             this.cbbSkillField = new Krypton.Toolkit.KryptonComboBox();
+            this.lblNoPostNotification = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cbbSkillField)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,11 +71,23 @@
             this.cbbSkillField.TabIndex = 63;
             this.cbbSkillField.Text = "Skill fields";
             // 
+            // lblNoPostNotification
+            // 
+            this.lblNoPostNotification.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoPostNotification.ForeColor = System.Drawing.Color.Gray;
+            this.lblNoPostNotification.Location = new System.Drawing.Point(23, 109);
+            this.lblNoPostNotification.Name = "lblNoPostNotification";
+            this.lblNoPostNotification.Size = new System.Drawing.Size(941, 600);
+            this.lblNoPostNotification.TabIndex = 0;
+            this.lblNoPostNotification.Text = "No job in this field is posted";
+            this.lblNoPostNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ucFindJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.lblNoPostNotification);
             this.Controls.Add(this.cbbSkillField);
             this.Controls.Add(this.lblSkillFieldHeader);
             this.Controls.Add(this.fpnlPostContainer);
@@ -89,5 +102,6 @@
         private System.Windows.Forms.FlowLayoutPanel fpnlPostContainer;
         private System.Windows.Forms.Label lblSkillFieldHeader;
         private Krypton.Toolkit.KryptonComboBox cbbSkillField;
+        private System.Windows.Forms.Label lblNoPostNotification;
     }
 }

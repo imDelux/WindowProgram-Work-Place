@@ -9,80 +9,54 @@ namespace DAO
 {
     public class SummarizeData
     {
-        public void TopMostCanceledWorkers(List<Worker> workerList, List<List<Evaluate>> listEvaluations)
+        DbConnection dbConnection = new DbConnection();
+
+        private float CalculateAveragePoint(Worker worker)
         {
-            DbConnection dbConnection = new DbConnection();
-            List<List<Evaluate>> listEvaluate = new List<List<Evaluate>>();
-
-            // Fetch data
-            List<Worker> workers = dbConnection.FetchWorkerList();
-            for (int i = 0; i < workers.Count; i++)
+            List<Evaluate> evaluateList = dbConnection.FetchEvaluateOfAWorker(worker.PersonID);
+            float sum = 0;
+            foreach (Evaluate evaluate in evaluateList)
             {
-                List<Evaluate> evaluateOfAWorker = dbConnection.FetchCanceledJobOfAWorker(workers[i].PersonID);
-                listEvaluate.Add(evaluateOfAWorker);
+                sum += evaluate.Point;
             }
-
-            // Re-arrange data
-            for (int i = listEvaluate.Count - 1; i >= 0; i--)
-            {
-                for (int j = 0; j < i; j++)
-                {
-                    if (listEvaluate[j].Count < listEvaluate[j + 1].Count)
-                    {
-                        List<Evaluate> midEva = listEvaluate[j];
-                        listEvaluate[j] = listEvaluate[j + 1];
-                        listEvaluate[j + 1] = midEva;
-
-                        Worker midWorker = workers[j];
-                        workers[j] = workers[j + 1];
-                        workers[j + 1] = midWorker;
-                    }
-                }
-            }
+            return sum/evaluateList.Count;
         }
 
-        public void TopMostRatedWorkers(List<Worker> workerList, List<List<Evaluate>> listEvaluations)
+        public static List<Worker> TopMostReceiveJobWorker(List<Worker> trackList)
         {
-            DbConnection dbConnection = new DbConnection();
-            List<List<Evaluate>> listEvaluate = new List<List<Evaluate>>();
+            List<Worker> result = new List<Worker>();   
 
-            // Fetch data
-            List<Worker> workers = dbConnection.FetchWorkerList();
-            for (int i = 0; i < workers.Count; i++)
-            {
-                List<Evaluate> evaluateOfAWorker = dbConnection.FetchEvaluateOfAWorker(workers[i].PersonID);
-                listEvaluate.Add(evaluateOfAWorker);
-            }
+            return result;
+        }
 
-            // Re-arrange data
-            for (int i = listEvaluate.Count - 1; i >= 0; i--)
+        //public static List<Worker> TopMostRatedWorkers(List<Worker> trackList)
+        //{
+        //    // Sort
+        //    for (int i = trackList.Count - 1; i >= 0; --i)
+        //    {
+        //        for (int j = 0; j <)
+        //    }
+
+
+        //    return trackList;
+        //}
+
+        public static List<Worker> RelatedWorker(List<Worker> trackList, string key)
+        {
+            List<Worker> result = new List<Worker>();
+
+            foreach (Worker worker in trackList)
             {
-                for (int j = 0; j < i; j++)
+                if ((worker.Name.IndexOf(key, StringComparison.OrdinalIgnoreCase) >= 0
+                    || worker.SkillName.IndexOf(key, StringComparison.OrdinalIgnoreCase) >= 0
+                    || worker.Location.IndexOf(key, StringComparison.OrdinalIgnoreCase) >= 0)
+                    && worker.IsActive)
                 {
-                    float total1 = 0, total2 = 0;
-
-                    foreach (Evaluate eval in listEvaluate[j])
-                    {
-                        total1 += eval.Point;
-                    }
-
-                    foreach (Evaluate eval in listEvaluate[j + 1])
-                    {
-                        total2 += eval.Point;
-                    }
-
-                    if ((total1 / listEvaluate[j].Count) < (total2 / listEvaluate[j + 1].Count))
-                    {
-                        List<Evaluate> midEva = listEvaluate[j];
-                        listEvaluate[j] = listEvaluate[j + 1];
-                        listEvaluate[j + 1] = midEva;
-
-                        Worker midWorker = workers[j];
-                        workers[j] = workers[j + 1];
-                        workers[j + 1] = midWorker;
-                    }
+                    result.Add(worker);
                 }
             }
+
+            return result;
         }
     }
 }

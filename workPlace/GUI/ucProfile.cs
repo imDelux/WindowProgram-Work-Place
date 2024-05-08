@@ -142,5 +142,19 @@ namespace GUI
             picUserAvatar.Image.Dispose();
             fUploadAvatar.ShowDialog();
         }
+
+        private void lblChangePassword_Click(object sender, EventArgs e)
+        {
+            bool isWorker = displayingWorker != null;
+            fChangePassword fChangePassword = new fChangePassword(displayingPerson, isWorker ? "Worker" : "Hirer");
+            fChangePassword.ShowDialog();
+        }
+
+        private void lblAdjustInformation_Click(object sender, EventArgs e)
+        {
+            bool isWorker = displayingWorker != null;
+            fChangeInformation fChangeInformation = new fChangeInformation(displayingPerson, isWorker ? "Worker" : "Hirer");
+            fChangeInformation.ShowDialog();
+        }
     }
 }

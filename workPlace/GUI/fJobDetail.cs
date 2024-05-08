@@ -50,7 +50,8 @@ namespace GUI
             lblJobDescript.Text = currentDisplayingJob.JobDescription;
             lblJobDate.Text = currentDisplayingJob.Date.ToShortDateString() + (currentDisplayingJob.IsMorning ? " (morning}" : " (afternoon)");
             lblJobWage.Text = currentDisplayingJob.Wage.ToString() + "$";
-            cbDone.Checked = currentDisplayingJob.IsComplete == true;
+            cbDone.Checked = currentDisplayingJob.IsComplete;
+            cbCancel.Checked = currentDisplayingJob.IsCanceled;
 
             // If the job is rejected --> display delete button to delete job from view & disable check boxes
             // If the job is completed or cancel --> can not adjust this field anymore
@@ -67,6 +68,9 @@ namespace GUI
                 lblHirerNameHeader.Visible = false;
                 lblJobStatusHead.Visible = false;
                 cbDone.Visible = false;
+                cbCancel.Visible = false;
+                btnDelete.Visible = false;
+                btnRate.Visible = false;
 
                 // Then move the panel up a little bit 
                 pnlContainer.Location = new System.Drawing.Point(12, 12);
@@ -77,7 +81,8 @@ namespace GUI
             cbDone.Enabled = !isWorker && enable;
 
             // If the job is being watched by worker & isEvaluated & haven't been evaluated by worker--> give evaluated back by show btnRate
-            btnRate.Visible = isWorker && currentDisplayingJob.IsEvaluated && !currentDisplayingJob.IsWorkerRated;
+            // But if the job is cancel --> cannot give review
+            btnRate.Visible = isWorker && currentDisplayingJob.IsEvaluated && !currentDisplayingJob.IsWorkerRated && !currentDisplayingJob.IsCanceled;
         }
 
         /// <summary>

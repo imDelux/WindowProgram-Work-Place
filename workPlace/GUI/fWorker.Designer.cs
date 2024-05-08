@@ -82,6 +82,7 @@
             this.picLogOut.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogOut.TabIndex = 11;
             this.picLogOut.TabStop = false;
+            this.picLogOut.Click += new System.EventHandler(this.picLogOut_Click);
             this.picLogOut.MouseEnter += new System.EventHandler(this.picExit_MouseEnter);
             this.picLogOut.MouseLeave += new System.EventHandler(this.picExit_MouseLeave);
             // 

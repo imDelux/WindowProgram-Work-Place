@@ -82,6 +82,7 @@ namespace DAO
                 resultPerson.Telephone = reader["Telephone"].ToString();
                 resultPerson.Email = reader["Email"].ToString();
                 resultPerson.Location = reader["Location"].ToString();
+                resultPerson.Password = reader["Password"].ToString();
             }
 
             // Disconnect to database
@@ -124,6 +125,7 @@ namespace DAO
                 resultWorker.Telephone = reader["Telephone"].ToString();
                 resultWorker.Email = reader["Email"].ToString();
                 resultWorker.Location = reader["Location"].ToString();
+                resultWorker.Password = reader["Password"].ToString();
                 resultWorker.IsActive = reader["IsActive"].ToString() == "True";
                 resultWorker.SkillName = reader["SkillName"].ToString();
                 resultWorker.SkillDescription = reader["SkillDescription"].ToString();
@@ -176,6 +178,7 @@ namespace DAO
                 resultWorker.Telephone = reader["Telephone"].ToString();
                 resultWorker.Email = reader["Email"].ToString();
                 resultWorker.Location = reader["Location"].ToString();
+                resultWorker.Password = reader["Password"].ToString();
                 resultWorker.IsActive = reader["IsActive"].ToString() == "True";
                 resultWorker.SkillName = reader["SkillName"].ToString();
                 resultWorker.SkillDescription = reader["SkillDescription"].ToString();
@@ -224,6 +227,7 @@ namespace DAO
                 resultPerson.Telephone = reader["Telephone"].ToString();
                 resultPerson.Email = reader["Email"].ToString();
                 resultPerson.Location = reader["Location"].ToString();
+                resultPerson.Password = reader["Password"].ToString();
             }
 
             // Disconnect to database
@@ -323,6 +327,58 @@ namespace DAO
             conn.Close();
 
             return list;
+        }
+
+        /// <summary>
+        /// Fetch a job by job id
+        /// </summary>
+        /// <param name="person"></param>
+        /// <param name="isWorker">Check if person is worker or not</param>
+        /// <returns></returns>
+        public Job FetchJob_ID(string jID)
+        {
+            // Result storage
+            Job result = new Job();
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            string strCMD = string.Format("SELECT * FROM Job WHERE JobID = '{0}'", jID);
+            SqlCommand sqlCommand = new SqlCommand(strCMD, conn);
+
+            // Read data
+            SqlDataReader reader = sqlCommand.ExecuteReader();
+            while (reader.Read())
+            {
+                result.JobID = reader["JobID"].ToString();
+                result.HirerID = reader["HirerID"].ToString();
+                result.WorkerID = reader["WorkerID"].ToString();
+                result.JobName = reader["JobName"].ToString();
+                result.JobDescription = reader["JobDescription"].ToString();
+                if (DateTime.TryParse(reader["Date"].ToString(), out DateTime jobDate) == false)
+                {
+                    jobDate = DateTime.Now;
+                }
+                else
+                {
+                    result.Date = jobDate;
+                }
+                result.Wage = int.Parse(reader["Wage"].ToString());
+
+                result.IsMorning = reader["IsMorning"].ToString() == "True";
+                result.IsAccepted = reader["IsAccepted"].ToString() == "True";
+                result.IsRejected = reader["IsRejected"].ToString() == "True";
+                result.IsComplete = reader["IsComplete"].ToString() == "True";
+                result.IsCanceled = reader["IsCanceled"].ToString() == "True";
+                result.IsEvaluated = reader["IsEvaluated"].ToString() == "True";
+                result.IsWorkerRated = reader["IsWorkerRated"].ToString() == "True";
+                result.IsRead = reader["IsRead"].ToString() == "True";
+            }
+
+            // Close connection and return
+            conn.Close();
+            return result;
         }
 
         /// <summary>

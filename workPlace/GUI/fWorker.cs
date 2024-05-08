@@ -66,6 +66,11 @@ namespace GUI
 
         private void picExit_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void picLogOut_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
@@ -105,6 +110,6 @@ namespace GUI
             ChangeMainContent(profileContent);
         }
 
-        #endregion      
+        #endregion
     }
 }

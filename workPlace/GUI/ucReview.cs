@@ -47,9 +47,9 @@ namespace GUI
             lblComment.Text = currentDisplayingEvaluate.Comment;
         }
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        private void btnJobDetail_Click(object sender, EventArgs e)
         {
-            fJobDetail fJobDetail = new fJobDetail();
+            fJobDetail fJobDetail = new fJobDetail(dbConnection.FetchJob_ID(currentDisplayingEvaluate.JobID), true, currentDisplayingEvaluate.IsWorker);
             fJobDetail.ShowDialog();
         }
     }

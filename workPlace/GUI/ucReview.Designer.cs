@@ -175,7 +175,7 @@
             this.btnJobDetail.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJobDetail.TabIndex = 7;
             this.btnJobDetail.Values.Text = "Detail";
-            this.btnJobDetail.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.btnJobDetail.Click += new System.EventHandler(this.btnJobDetail_Click);
             // 
             // lblComment
             // 

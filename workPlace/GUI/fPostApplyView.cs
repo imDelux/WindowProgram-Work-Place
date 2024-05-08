@@ -63,7 +63,7 @@ namespace GUI
             }
             foreach(Worker worker in  appliedWorkerList)
             {
-                ucWorker ucWorker = new ucWorker(worker, dbConnection.FetchPerson(currentDisplayingPost.HirerID, "Hirer"));
+                ucWorker ucWorker = new ucWorker(worker, currentDisplayingPost);
                 fpnlWorkerList.Controls.Add(ucWorker);
             }
         }

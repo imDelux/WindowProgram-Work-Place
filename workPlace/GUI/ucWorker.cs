@@ -19,6 +19,9 @@ namespace GUI
         Person currentUsingHirer;
         PersonDAO personDAO = new PersonDAO();
 
+        // Post context
+        Post currentPostApplied;
+
         public ucWorker()
         {
             InitializeComponent();
@@ -30,6 +33,16 @@ namespace GUI
             this.currentDisplayWorker = worker;
             this.currentUsingHirer = hirer;
             DataSetter();
+        }
+        
+        // Post context
+        public ucWorker(Worker worker, Post post)
+        {
+            InitializeComponent();
+            this.currentDisplayWorker = worker;
+            currentPostApplied = post;
+            DataSetter();
+            PostContext();
         }
 
         private void DataSetter()
@@ -48,9 +61,21 @@ namespace GUI
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;
         }
 
+        private void PostContext()
+        {
+            picAvatar.Click -= picAvatar_Click;
+            picAvatar.Click += picAvatar_Click_PostContext;
+        }
+
         private void picAvatar_Click(object sender, EventArgs e)
         {
             fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker, currentUsingHirer);
+            fWorkerInfo.ShowDialog();
+        }
+
+        private void picAvatar_Click_PostContext(object sender, EventArgs e)
+        {
+            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker, currentPostApplied);
             fWorkerInfo.ShowDialog();
         }
     }

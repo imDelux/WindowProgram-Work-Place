@@ -222,6 +222,7 @@
             this.lblAdjustInformation.Size = new System.Drawing.Size(241, 21);
             this.lblAdjustInformation.TabIndex = 7;
             this.lblAdjustInformation.Text = "Adjust Profile’s Information";
+            this.lblAdjustInformation.Click += new System.EventHandler(this.lblAdjustInformation_Click);
             // 
             // lblChangePassword
             // 
@@ -235,6 +236,7 @@
             this.lblChangePassword.Size = new System.Drawing.Size(168, 21);
             this.lblChangePassword.TabIndex = 8;
             this.lblChangePassword.Text = "Change Password";
+            this.lblChangePassword.Click += new System.EventHandler(this.lblChangePassword_Click);
             // 
             // lblSkill
             // 

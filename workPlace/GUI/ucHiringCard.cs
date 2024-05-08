@@ -58,15 +58,15 @@ namespace GUI
             {
                 picJobStatus.Image = Properties.Resources.jobOnWaiting;
             }
-            // 2nd case: on going
-            else if (currentHoldingJob.IsAccepted &&  !currentHoldingJob.IsComplete) 
-            {
-                picJobStatus.Image = Properties.Resources.jobOnGoing;
-            }
-            // 3rd case: reject
+            // 2nd case: reject
             else if (currentHoldingJob.IsRejected)
             {
                 picJobStatus.Image = Properties.Resources.jobRejected;
+            }
+            // 3rd case: on going and remain case
+            else
+            {
+                picJobStatus.Image = Properties.Resources.jobOnGoing;
             }
         }
 

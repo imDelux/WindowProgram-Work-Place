@@ -65,6 +65,8 @@ namespace GUI
                 ucJobCard ucJobCard = new ucJobCard(currentUsingWorker, post, false);
                 fpnlPostContainer.Controls.Add(ucJobCard);
             }
+            // If have post then hide the label notification
+            lblNoPostNotification.Visible = (postOfCategory.Count == 0);
         }
 
         private void cbbSkillField_SelectedIndexChanged(object sender, EventArgs e)
