@@ -13,9 +13,14 @@ namespace GUI
 {
     public partial class ucDay : UserControl
     {
-        public ucDay()
+        DateTime holdingDay = DateTime.MinValue;
+        bool isHirer = false; // indicate this schedule for hirer or worker
+
+        public ucDay(DateTime holdingDay, bool isHirer)
         {
             InitializeComponent();
+            this.holdingDay = holdingDay;
+            this.isHirer = isHirer;
         }
 
         // Clear all control to enter blank mode
@@ -28,6 +33,14 @@ namespace GUI
         public void Day(int day)
         {
             btnContainer.Text = day.ToString();
+            // Adjust holding day of uc
+            holdingDay = holdingDay.AddDays(-holdingDay.Day + day);
+
+            // Add click event for ucDAY if current user is hirer
+            if (isHirer)
+            {
+                this.btnContainer.Click += btnContainer_Click;
+            }
         }
 
         // Highlight day
@@ -37,10 +50,24 @@ namespace GUI
         }
 
         // Add an event onto a day in schedule
-        public void AddEvent(Job job)
+        // Event display will be different if user is hirer
+        public void AddEvent(Job job, bool forHirer)
         {
-            ucEvent ucEvent = new ucEvent(job);
-            fpnlEventContainerMorning.Controls.Add(ucEvent);
+            ucEvent ucEvent = new ucEvent(job, forHirer);
+            if (job.IsMorning)
+            {
+                fpnlEventContainerMorning.Controls.Add(ucEvent);
+            }
+            else
+            {
+                fpnlEventContainerNight.Controls.Add(ucEvent);
+            }
+        }
+
+        private void btnContainer_Click(object sender, EventArgs e)
+        {
+            fChooseJobDate.jobDate = this.holdingDay;
+            ((Form)this.TopLevelControl).Close();
         }
     }
 }

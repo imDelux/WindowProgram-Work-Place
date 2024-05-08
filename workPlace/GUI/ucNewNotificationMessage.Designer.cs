@@ -36,6 +36,7 @@
             // 
             // lblJobDescription
             // 
+            this.lblJobDescription.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblJobDescription.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDescription.ForeColor = System.Drawing.Color.Gray;
             this.lblJobDescription.Location = new System.Drawing.Point(316, 5);
@@ -44,9 +45,11 @@
             this.lblJobDescription.TabIndex = 2;
             this.lblJobDescription.Text = "Chieu 13g tai nga ba Di An anh can chu sua tivi";
             this.lblJobDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblJobDescription.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             // 
             // lblJobName
             // 
+            this.lblJobName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblJobName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobName.Location = new System.Drawing.Point(13, 3);
             this.lblJobName.Name = "lblJobName";
@@ -54,10 +57,12 @@
             this.lblJobName.TabIndex = 3;
             this.lblJobName.Text = "SUA TIVI BI HONG NGUON";
             this.lblJobName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblJobName.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             // 
             // lblWage
             // 
             this.lblWage.AutoSize = true;
+            this.lblWage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblWage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWage.ForeColor = System.Drawing.Color.Gray;
             this.lblWage.Location = new System.Drawing.Point(723, 6);
@@ -66,11 +71,13 @@
             this.lblWage.TabIndex = 4;
             this.lblWage.Text = "100$";
             this.lblWage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblWage.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             // 
             // lblDate
             // 
             this.lblDate.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lblDate.AutoSize = true;
+            this.lblDate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDate.ForeColor = System.Drawing.Color.Gray;
             this.lblDate.Location = new System.Drawing.Point(851, 6);
@@ -79,6 +86,7 @@
             this.lblDate.TabIndex = 6;
             this.lblDate.Text = "10/03";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblDate.Click += new System.EventHandler(this.ucNewNotificationMessage_Click);
             // 
             // ucNewNotificationMessage
             // 
@@ -89,6 +97,7 @@
             this.Controls.Add(this.lblWage);
             this.Controls.Add(this.lblJobName);
             this.Controls.Add(this.lblJobDescription);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.Name = "ucNewNotificationMessage";
             this.Size = new System.Drawing.Size(923, 42);

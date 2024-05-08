@@ -74,6 +74,12 @@
     <Compile Include="fAddSkill.Designer.cs">
       <DependentUpon>fAddSkill.cs</DependentUpon>
     </Compile>
+    <Compile Include="fChooseJobDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChooseJobDate.Designer.cs">
+      <DependentUpon>fChooseJobDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="fJobDisplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,11 +92,29 @@
     <Compile Include="fJobDetail.Designer.cs">
       <DependentUpon>fJobDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPostApplyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPostApplyView.Designer.cs">
+      <DependentUpon>fPostApplyView.cs</DependentUpon>
+    </Compile>
     <Compile Include="fPostJob.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fPostJob.Designer.cs">
       <DependentUpon>fPostJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReview.Designer.cs">
+      <DependentUpon>fReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fUploadAvatar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUploadAvatar.Designer.cs">
+      <DependentUpon>fUploadAvatar.cs</DependentUpon>
     </Compile>
     <Compile Include="fWorker.cs">
       <SubType>Form</SubType>
@@ -100,11 +124,22 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ucDay.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucDay.Designer.cs">
       <DependentUpon>ucDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFindJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFindJob.Designer.cs">
+      <DependentUpon>ucFindJob.cs</DependentUpon>
     </Compile>
     <Compile Include="ucHiringCard.cs">
       <SubType>UserControl</SubType>
@@ -193,14 +228,26 @@
     <EmbeddedResource Include="fAddSkill.resx">
       <DependentUpon>fAddSkill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fChooseJobDate.resx">
+      <DependentUpon>fChooseJobDate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fJobDisplay.resx">
       <DependentUpon>fJobDisplay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fJobDetail.resx">
       <DependentUpon>fJobDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fPostApplyView.resx">
+      <DependentUpon>fPostApplyView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fPostJob.resx">
       <DependentUpon>fPostJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReview.resx">
+      <DependentUpon>fReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fUploadAvatar.resx">
+      <DependentUpon>fUploadAvatar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fWorker.resx">
       <DependentUpon>fWorker.cs</DependentUpon>
@@ -264,19 +311,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ucCategoryCard.resx">
       <DependentUpon>ucCategoryCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucDay.resx">
       <DependentUpon>ucDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFindJob.resx">
+      <DependentUpon>ucFindJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucHiringCard.resx">
       <DependentUpon>ucHiringCard.cs</DependentUpon>
@@ -517,10 +562,10 @@
     <None Include="Resources\house-chimney.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rec.png" />
+    <None Include="Resources\jobOnWaiting.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rec %281%29.png" />
+    <None Include="Resources\jobOnGoing.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\circle %281%29.png" />
@@ -557,6 +602,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_density_circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jobRejected.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

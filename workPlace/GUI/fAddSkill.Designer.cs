@@ -160,8 +160,8 @@
             this.btnAdd.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnAdd.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.TabIndex = 13;
-            this.btnAdd.Values.Text = "Add";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Values.Text = "Confirm";
+            this.btnAdd.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 

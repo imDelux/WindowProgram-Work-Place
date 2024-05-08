@@ -31,7 +31,7 @@ namespace GUI
         private void fHirer_Load(object sender, EventArgs e)
         {
             // Load home
-            ucHomeCategoryChoose uc = new ucHomeCategoryChoose();
+            ucHomeCategoryChoose uc = new ucHomeCategoryChoose(currentHirer);
             AddUC(uc);
         }
 
@@ -47,24 +47,24 @@ namespace GUI
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            ucHomeCategoryChoose uc = new ucHomeCategoryChoose();
+            ucHomeCategoryChoose uc = new ucHomeCategoryChoose(currentHirer);
             AddUC(uc);
         }
 
         private void btnHiring_Click(object sender, EventArgs e)
         {
-            ucHiring uc = new ucHiring();
+            ucHiring uc = new ucHiring(currentHirer);
             AddUC(uc);
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            ucProfile uc = new ucProfile(currentHirer, true);
+            ucProfile uc = new ucProfile(currentHirer);
             AddUC(uc);
         }     
         private void btnPost_Click(object sender, EventArgs e)
         {
-            ucPost uc = new ucPost();
+            ucPost uc = new ucPost(currentHirer);
             AddUC(uc);
         }
         #endregion

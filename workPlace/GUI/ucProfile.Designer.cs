@@ -31,8 +31,6 @@
             this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
             this.btnBasicInformationContainer = new Krypton.Toolkit.KryptonButton();
             this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucReview1 = new GUI.ucReview();
-            this.ucReview2 = new GUI.ucReview();
             this.pnlBasicInformationContainer = new System.Windows.Forms.Panel();
             this.lblLocation = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -43,7 +41,9 @@
             this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.lblAdjustInformation = new System.Windows.Forms.Label();
             this.lblChangePassword = new System.Windows.Forms.Label();
-            this.fpnlReviewContainer.SuspendLayout();
+            this.lblSkill = new System.Windows.Forms.Label();
+            this.cbActive = new System.Windows.Forms.CheckBox();
+            this.lblNoReviewNotification = new System.Windows.Forms.Label();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SuspendLayout();
@@ -116,26 +116,10 @@
             // 
             this.fpnlReviewContainer.AutoScroll = true;
             this.fpnlReviewContainer.BackColor = System.Drawing.Color.White;
-            this.fpnlReviewContainer.Controls.Add(this.ucReview1);
-            this.fpnlReviewContainer.Controls.Add(this.ucReview2);
             this.fpnlReviewContainer.Location = new System.Drawing.Point(66, 64);
             this.fpnlReviewContainer.Name = "fpnlReviewContainer";
             this.fpnlReviewContainer.Size = new System.Drawing.Size(414, 636);
             this.fpnlReviewContainer.TabIndex = 2;
-            // 
-            // ucReview1
-            // 
-            this.ucReview1.Location = new System.Drawing.Point(3, 3);
-            this.ucReview1.Name = "ucReview1";
-            this.ucReview1.Size = new System.Drawing.Size(414, 209);
-            this.ucReview1.TabIndex = 0;
-            // 
-            // ucReview2
-            // 
-            this.ucReview2.Location = new System.Drawing.Point(3, 218);
-            this.ucReview2.Name = "ucReview2";
-            this.ucReview2.Size = new System.Drawing.Size(414, 209);
-            this.ucReview2.TabIndex = 1;
             // 
             // pnlBasicInformationContainer
             // 
@@ -199,7 +183,7 @@
             // 
             this.lblOverrallRating.AutoSize = true;
             this.lblOverrallRating.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOverrallRating.Location = new System.Drawing.Point(148, 90);
+            this.lblOverrallRating.Location = new System.Drawing.Point(148, 88);
             this.lblOverrallRating.Name = "lblOverrallRating";
             this.lblOverrallRating.Size = new System.Drawing.Size(157, 21);
             this.lblOverrallRating.TabIndex = 2;
@@ -208,7 +192,7 @@
             // lblName
             // 
             this.lblName.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(145, 25);
+            this.lblName.Location = new System.Drawing.Point(145, 28);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(209, 65);
             this.lblName.TabIndex = 1;
@@ -216,13 +200,15 @@
             // 
             // picUserAvatar
             // 
+            this.picUserAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picUserAvatar.Image = global::GUI.Properties.Resources.old_man;
             this.picUserAvatar.Location = new System.Drawing.Point(16, 15);
             this.picUserAvatar.Name = "picUserAvatar";
             this.picUserAvatar.Size = new System.Drawing.Size(110, 110);
-            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picUserAvatar.TabIndex = 0;
             this.picUserAvatar.TabStop = false;
+            this.picUserAvatar.Click += new System.EventHandler(this.picUserAvatar_Click);
             // 
             // lblAdjustInformation
             // 
@@ -250,11 +236,55 @@
             this.lblChangePassword.TabIndex = 8;
             this.lblChangePassword.Text = "Change Password";
             // 
+            // lblSkill
+            // 
+            this.lblSkill.AutoSize = true;
+            this.lblSkill.BackColor = System.Drawing.Color.White;
+            this.lblSkill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSkill.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.lblSkill.Location = new System.Drawing.Point(855, 616);
+            this.lblSkill.Name = "lblSkill";
+            this.lblSkill.Size = new System.Drawing.Size(81, 21);
+            this.lblSkill.TabIndex = 9;
+            this.lblSkill.Text = "Your Skill";
+            this.lblSkill.Click += new System.EventHandler(this.lblSkill_Click);
+            // 
+            // cbActive
+            // 
+            this.cbActive.AutoSize = true;
+            this.cbActive.BackColor = System.Drawing.Color.White;
+            this.cbActive.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(166)))));
+            this.cbActive.Location = new System.Drawing.Point(845, 583);
+            this.cbActive.Name = "cbActive";
+            this.cbActive.Size = new System.Drawing.Size(92, 25);
+            this.cbActive.TabIndex = 10;
+            this.cbActive.Text = "Active";
+            this.cbActive.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cbActive.UseVisualStyleBackColor = false;
+            this.cbActive.Click += new System.EventHandler(this.cbActive_Click);
+            // 
+            // lblNoReviewNotification
+            // 
+            this.lblNoReviewNotification.BackColor = System.Drawing.Color.White;
+            this.lblNoReviewNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoReviewNotification.ForeColor = System.Drawing.Color.Gray;
+            this.lblNoReviewNotification.Location = new System.Drawing.Point(55, 349);
+            this.lblNoReviewNotification.Name = "lblNoReviewNotification";
+            this.lblNoReviewNotification.Size = new System.Drawing.Size(436, 72);
+            this.lblNoReviewNotification.TabIndex = 1;
+            this.lblNoReviewNotification.Text = "You has no reviews yet";
+            this.lblNoReviewNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ucProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.lblNoReviewNotification);
+            this.Controls.Add(this.cbActive);
+            this.Controls.Add(this.lblSkill);
             this.Controls.Add(this.lblChangePassword);
             this.Controls.Add(this.lblAdjustInformation);
             this.Controls.Add(this.pnlBasicInformationContainer);
@@ -263,7 +293,6 @@
             this.Controls.Add(this.btnEvaluateContainer);
             this.Name = "ucProfile";
             this.Size = new System.Drawing.Size(995, 766);
-            this.fpnlReviewContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
@@ -287,7 +316,8 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAdjustInformation;
         private System.Windows.Forms.Label lblChangePassword;
-        private ucReview ucReview1;
-        private ucReview ucReview2;
+        private System.Windows.Forms.Label lblSkill;
+        private System.Windows.Forms.CheckBox cbActive;
+        private System.Windows.Forms.Label lblNoReviewNotification;
     }
 }

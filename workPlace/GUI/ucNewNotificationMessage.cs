@@ -1,4 +1,5 @@
-﻿using EntityModel;
+﻿using DAO;
+using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,8 +16,9 @@ namespace GUI
     {
         // Object handle: job or ...
         Job jobInNotification = null;
-        Person currentUsingWorker = null;
+        Worker currentUsingWorker = null;
         DAO.DbConnection dbConnection = new DAO.DbConnection();
+        JobDAO JobDAO = new JobDAO();
 
         public ucNewNotificationMessage()
         {
@@ -27,7 +29,7 @@ namespace GUI
         /// Display new job offer notification
         /// </summary>
         /// <param name="newJob"></param>
-        public ucNewNotificationMessage(Person worker,Job newJob)
+        public ucNewNotificationMessage(Worker worker,Job newJob)
         {
             InitializeComponent();
             this.jobInNotification = newJob;
@@ -39,15 +41,24 @@ namespace GUI
         {
             lblJobName.Text = jobInNotification.JobName;
             lblJobDescription.Text = jobInNotification.JobDescription;
-            lblWage.Text = jobInNotification.Wage.ToString();
+            lblWage.Text = jobInNotification.Wage.ToString() + "$";
             lblDate.Text = jobInNotification.Date.Day.ToString() + "/" + jobInNotification.Date.Month.ToString();
             
+            // Black the content's title color if haven't read jet (default)
+            // if the content is read --> change into gray
+            if (jobInNotification.IsRead)
+            {
+                this.lblJobName.ForeColor = Color.Gray;
+            }
         }
 
         private void ucNewNotificationMessage_Click(object sender, EventArgs e)
         {
             fJobDisplay fJobDisplay = new fJobDisplay(currentUsingWorker, dbConnection.FetchPerson(jobInNotification.HirerID, "hirer"),jobInNotification, true);
             fJobDisplay.ShowDialog();
+            // Remark the job message as read by worker
+            jobInNotification.IsRead = true;
+            JobDAO.Update_Read(jobInNotification);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace GUI
     public partial class ucNotification : UserControl
     {
         // Current displaying worker
-        Person currentUsingWorker = null;  
+        Worker currentUsingWorker = null;  
         List<Job> jobsOfWorker = new List<Job>();
         DAO.DbConnection dbConn = new DAO.DbConnection();
 
@@ -25,7 +25,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        public ucNotification(Person worker)
+        public ucNotification(Worker worker)
         {
             InitializeComponent();
             this.currentUsingWorker = worker;
@@ -36,6 +36,12 @@ namespace GUI
         {
             // Get job list from database
             jobsOfWorker = dbConn.FetchJobList(currentUsingWorker, true);
+
+            // Filter out jobs that haven't accepted and rejected 
+            jobsOfWorker = jobsOfWorker.Where(x => (x.IsAccepted == false && x.IsRejected == false)).ToList();
+
+            // If no job is satisfied --> display no new notification message
+            if (jobsOfWorker.Count > 0) lblNoNotificationsMessage.Visible = false;  
 
             // Put notification on flow pannel
             foreach(Job job in jobsOfWorker)

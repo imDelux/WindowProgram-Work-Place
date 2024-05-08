@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNewJobNotificationHeader = new System.Windows.Forms.Label();
             this.fpnlNewJobNotificationContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblNoNotificationsMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnNewJobNotificationContainer
@@ -90,11 +91,24 @@
             this.fpnlNewJobNotificationContainer.Size = new System.Drawing.Size(923, 602);
             this.fpnlNewJobNotificationContainer.TabIndex = 14;
             // 
+            // lblNoNotificationsMessage
+            // 
+            this.lblNoNotificationsMessage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(229)))), ((int)(((byte)(239)))));
+            this.lblNoNotificationsMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoNotificationsMessage.ForeColor = System.Drawing.Color.Gray;
+            this.lblNoNotificationsMessage.Location = new System.Drawing.Point(35, 340);
+            this.lblNoNotificationsMessage.Name = "lblNoNotificationsMessage";
+            this.lblNoNotificationsMessage.Size = new System.Drawing.Size(923, 81);
+            this.lblNoNotificationsMessage.TabIndex = 15;
+            this.lblNoNotificationsMessage.Text = "You have no notification right now. \r\nLet\'s apply for some jobs.";
+            this.lblNoNotificationsMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ucNotification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.lblNoNotificationsMessage);
             this.Controls.Add(this.fpnlNewJobNotificationContainer);
             this.Controls.Add(this.lblNewJobNotificationHeader);
             this.Controls.Add(this.panel1);
@@ -112,5 +126,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblNewJobNotificationHeader;
         private System.Windows.Forms.FlowLayoutPanel fpnlNewJobNotificationContainer;
+        private System.Windows.Forms.Label lblNoNotificationsMessage;
     }
 }

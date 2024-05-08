@@ -28,31 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picJobStatus = new System.Windows.Forms.PictureBox();
             this.lblWorkerName = new System.Windows.Forms.Label();
             this.lblWorkerAge = new System.Windows.Forms.Label();
             this.lblLocation = new System.Windows.Forms.Label();
-            this.picAvatar = new System.Windows.Forms.PictureBox();
             this.lblJobDate = new System.Windows.Forms.Label();
             this.lblJobDesciption = new System.Windows.Forms.Label();
             this.lblJobName = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnBack = new Krypton.Toolkit.KryptonButton();
+            this.picJobStatus = new System.Windows.Forms.PictureBox();
+            this.picAvatar = new System.Windows.Forms.PictureBox();
+            this.picLine = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picJobStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLine)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picJobStatus
-            // 
-            this.picJobStatus.BackColor = System.Drawing.Color.White;
-            this.picJobStatus.Image = global::GUI.Properties.Resources.rec__1_;
-            this.picJobStatus.Location = new System.Drawing.Point(444, 0);
-            this.picJobStatus.Name = "picJobStatus";
-            this.picJobStatus.Size = new System.Drawing.Size(36, 35);
-            this.picJobStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picJobStatus.TabIndex = 28;
-            this.picJobStatus.TabStop = false;
             // 
             // lblWorkerName
             // 
@@ -66,6 +55,7 @@
             this.lblWorkerName.TabIndex = 42;
             this.lblWorkerName.Text = "Gabiel Erickson";
             this.lblWorkerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblWorkerName.Click += new System.EventHandler(this.lblJobName_Click);
             // 
             // lblWorkerAge
             // 
@@ -89,17 +79,6 @@
             this.lblLocation.Size = new System.Drawing.Size(146, 23);
             this.lblLocation.TabIndex = 44;
             this.lblLocation.Text = "Location: Ho Chi Minh City";
-            // 
-            // picAvatar
-            // 
-            this.picAvatar.BackColor = System.Drawing.Color.White;
-            this.picAvatar.Image = global::GUI.Properties.Resources.man_icon;
-            this.picAvatar.Location = new System.Drawing.Point(43, 37);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(71, 82);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvatar.TabIndex = 41;
-            this.picAvatar.TabStop = false;
             // 
             // lblJobDate
             // 
@@ -136,17 +115,7 @@
             this.lblJobName.TabIndex = 38;
             this.lblJobName.Text = "Job name";
             this.lblJobName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::GUI.Properties.Resources.line;
-            this.pictureBox3.Location = new System.Drawing.Point(276, 18);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(10, 126);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 46;
-            this.pictureBox3.TabStop = false;
+            this.lblJobName.Click += new System.EventHandler(this.lblJobName_Click);
             // 
             // btnBack
             // 
@@ -166,6 +135,40 @@
             this.btnBack.TabIndex = 45;
             this.btnBack.Values.Text = "";
             // 
+            // picJobStatus
+            // 
+            this.picJobStatus.BackColor = System.Drawing.Color.White;
+            this.picJobStatus.Image = global::GUI.Properties.Resources.jobOnWaiting;
+            this.picJobStatus.Location = new System.Drawing.Point(444, 0);
+            this.picJobStatus.Name = "picJobStatus";
+            this.picJobStatus.Size = new System.Drawing.Size(36, 35);
+            this.picJobStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picJobStatus.TabIndex = 28;
+            this.picJobStatus.TabStop = false;
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.BackColor = System.Drawing.Color.White;
+            this.picAvatar.Image = global::GUI.Properties.Resources.man_icon;
+            this.picAvatar.Location = new System.Drawing.Point(43, 46);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(71, 74);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 41;
+            this.picAvatar.TabStop = false;
+            this.picAvatar.Click += new System.EventHandler(this.lblJobName_Click);
+            // 
+            // picLine
+            // 
+            this.picLine.BackColor = System.Drawing.Color.White;
+            this.picLine.Image = global::GUI.Properties.Resources.line;
+            this.picLine.Location = new System.Drawing.Point(276, 18);
+            this.picLine.Name = "picLine";
+            this.picLine.Size = new System.Drawing.Size(10, 126);
+            this.picLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLine.TabIndex = 46;
+            this.picLine.TabStop = false;
+            // 
             // ucHiringCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -180,13 +183,13 @@
             this.Controls.Add(this.lblJobDate);
             this.Controls.Add(this.lblJobDesciption);
             this.Controls.Add(this.lblJobName);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.picLine);
             this.Controls.Add(this.btnBack);
             this.Name = "ucHiringCard";
             this.Size = new System.Drawing.Size(485, 162);
             ((System.ComponentModel.ISupportInitialize)(this.picJobStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLine)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,7 +204,7 @@
         private System.Windows.Forms.Label lblJobDate;
         private System.Windows.Forms.Label lblJobDesciption;
         private System.Windows.Forms.Label lblJobName;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picLine;
         private Krypton.Toolkit.KryptonButton btnBack;
     }
 }

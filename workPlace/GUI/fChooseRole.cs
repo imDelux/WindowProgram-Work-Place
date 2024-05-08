@@ -53,7 +53,7 @@ namespace GUI
             if (!role)
             {
                 // Take information first
-                Person worker = workerDAO.FetchBasicInformation(currentPerson, "Worker");
+                Worker worker = workerDAO.FetchBasicInformation(currentPerson);
 
                 if (worker != null)
                 {

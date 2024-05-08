@@ -15,13 +15,13 @@ namespace GUI
     public partial class fWorker : KryptonForm
     {
         // Current worker user
-        Person currentWorker = null;
+        Worker currentWorker = null;
         public fWorker()
         {
             InitializeComponent();
         }
 
-        public fWorker(Person worker)
+        public fWorker(Worker worker)
         {
             InitializeComponent();
             currentWorker = worker;
@@ -39,7 +39,7 @@ namespace GUI
 
         private void fWorker_Load(object sender, EventArgs e)
         {
-            ucSchedule ucSchedule = new ucSchedule(currentWorker);
+            ucSchedule ucSchedule = new ucSchedule(currentWorker, false);
             ChangeMainContent(ucSchedule);
         }
 
@@ -83,7 +83,7 @@ namespace GUI
 
         private void btnSchedule_Click(object sender, EventArgs e)
         {
-            ucSchedule scheduleContent = new ucSchedule(currentWorker);
+            ucSchedule scheduleContent = new ucSchedule(currentWorker, false);
             ChangeMainContent(scheduleContent);
         }
 
@@ -93,12 +93,17 @@ namespace GUI
             ChangeMainContent(notificationContent);
         }
 
-        private void btnProfile_Click(object sender, EventArgs e)
+        private void btnFindJobNotification_Click(Object sender, EventArgs e)
         {
-            ucProfile profileContent = new ucProfile(currentWorker, false);
-            ChangeMainContent(profileContent);
+            ucFindJob ucFindJob = new ucFindJob(currentWorker);
+            ChangeMainContent(ucFindJob);
         }
 
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            ucProfile profileContent = new ucProfile(currentWorker);
+            ChangeMainContent(profileContent);
+        }
 
         #endregion      
     }

@@ -31,16 +31,9 @@
             this.lblThumbnail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fpnlContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlPadding = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.ucHiringCard1 = new GUI.ucHiringCard();
-            this.ucHiringCard2 = new GUI.ucHiringCard();
-            this.ucHiringCard3 = new GUI.ucHiringCard();
-            this.ucHiringCard4 = new GUI.ucHiringCard();
-            this.ucHiringCard5 = new GUI.ucHiringCard();
-            this.ucHiringCard6 = new GUI.ucHiringCard();
-            this.ucHiringCard7 = new GUI.ucHiringCard();
-            this.ucHiringCard8 = new GUI.ucHiringCard();
-            this.ucHiringCard9 = new GUI.ucHiringCard();
+            this.lblNoJobNotification = new System.Windows.Forms.Label();
             this.fpnlContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -71,19 +64,19 @@
             // 
             this.fpnlContainer.AutoScroll = true;
             this.fpnlContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.fpnlContainer.Controls.Add(this.ucHiringCard1);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard2);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard3);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard4);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard5);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard6);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard7);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard8);
-            this.fpnlContainer.Controls.Add(this.ucHiringCard9);
-            this.fpnlContainer.Location = new System.Drawing.Point(3, 168);
+            this.fpnlContainer.Controls.Add(this.pnlPadding);
+            this.fpnlContainer.Controls.Add(this.lblNoJobNotification);
+            this.fpnlContainer.Location = new System.Drawing.Point(3, 169);
             this.fpnlContainer.Name = "fpnlContainer";
-            this.fpnlContainer.Size = new System.Drawing.Size(1038, 578);
+            this.fpnlContainer.Size = new System.Drawing.Size(1038, 577);
             this.fpnlContainer.TabIndex = 13;
+            // 
+            // pnlPadding
+            // 
+            this.pnlPadding.Location = new System.Drawing.Point(3, 3);
+            this.pnlPadding.Name = "pnlPadding";
+            this.pnlPadding.Size = new System.Drawing.Size(1008, 25);
+            this.pnlPadding.TabIndex = 0;
             // 
             // pictureBox4
             // 
@@ -95,86 +88,16 @@
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
-            // ucHiringCard1
+            // lblNoJobNotification
             // 
-            this.ucHiringCard1.AutoSize = true;
-            this.ucHiringCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard1.Location = new System.Drawing.Point(3, 3);
-            this.ucHiringCard1.Name = "ucHiringCard1";
-            this.ucHiringCard1.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard1.TabIndex = 0;
-            // 
-            // ucHiringCard2
-            // 
-            this.ucHiringCard2.AutoSize = true;
-            this.ucHiringCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard2.Location = new System.Drawing.Point(492, 3);
-            this.ucHiringCard2.Name = "ucHiringCard2";
-            this.ucHiringCard2.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard2.TabIndex = 1;
-            // 
-            // ucHiringCard3
-            // 
-            this.ucHiringCard3.AutoSize = true;
-            this.ucHiringCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard3.Location = new System.Drawing.Point(3, 162);
-            this.ucHiringCard3.Name = "ucHiringCard3";
-            this.ucHiringCard3.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard3.TabIndex = 2;
-            // 
-            // ucHiringCard4
-            // 
-            this.ucHiringCard4.AutoSize = true;
-            this.ucHiringCard4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard4.Location = new System.Drawing.Point(492, 162);
-            this.ucHiringCard4.Name = "ucHiringCard4";
-            this.ucHiringCard4.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard4.TabIndex = 3;
-            // 
-            // ucHiringCard5
-            // 
-            this.ucHiringCard5.AutoSize = true;
-            this.ucHiringCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard5.Location = new System.Drawing.Point(3, 321);
-            this.ucHiringCard5.Name = "ucHiringCard5";
-            this.ucHiringCard5.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard5.TabIndex = 4;
-            // 
-            // ucHiringCard6
-            // 
-            this.ucHiringCard6.AutoSize = true;
-            this.ucHiringCard6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard6.Location = new System.Drawing.Point(492, 321);
-            this.ucHiringCard6.Name = "ucHiringCard6";
-            this.ucHiringCard6.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard6.TabIndex = 5;
-            // 
-            // ucHiringCard7
-            // 
-            this.ucHiringCard7.AutoSize = true;
-            this.ucHiringCard7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard7.Location = new System.Drawing.Point(3, 480);
-            this.ucHiringCard7.Name = "ucHiringCard7";
-            this.ucHiringCard7.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard7.TabIndex = 6;
-            // 
-            // ucHiringCard8
-            // 
-            this.ucHiringCard8.AutoSize = true;
-            this.ucHiringCard8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard8.Location = new System.Drawing.Point(492, 480);
-            this.ucHiringCard8.Name = "ucHiringCard8";
-            this.ucHiringCard8.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard8.TabIndex = 7;
-            // 
-            // ucHiringCard9
-            // 
-            this.ucHiringCard9.AutoSize = true;
-            this.ucHiringCard9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ucHiringCard9.Location = new System.Drawing.Point(3, 639);
-            this.ucHiringCard9.Name = "ucHiringCard9";
-            this.ucHiringCard9.Size = new System.Drawing.Size(483, 153);
-            this.ucHiringCard9.TabIndex = 8;
+            this.lblNoJobNotification.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoJobNotification.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNoJobNotification.Location = new System.Drawing.Point(3, 31);
+            this.lblNoJobNotification.Name = "lblNoJobNotification";
+            this.lblNoJobNotification.Size = new System.Drawing.Size(1008, 546);
+            this.lblNoJobNotification.TabIndex = 1;
+            this.lblNoJobNotification.Text = "No job notification at the moment.\r\n";
+            this.lblNoJobNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ucHiring
             // 
@@ -188,7 +111,6 @@
             this.Name = "ucHiring";
             this.Size = new System.Drawing.Size(1017, 749);
             this.fpnlContainer.ResumeLayout(false);
-            this.fpnlContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,14 +122,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.FlowLayoutPanel fpnlContainer;
-        private ucHiringCard ucHiringCard1;
-        private ucHiringCard ucHiringCard2;
-        private ucHiringCard ucHiringCard3;
-        private ucHiringCard ucHiringCard4;
-        private ucHiringCard ucHiringCard5;
-        private ucHiringCard ucHiringCard6;
-        private ucHiringCard ucHiringCard7;
-        private ucHiringCard ucHiringCard8;
-        private ucHiringCard ucHiringCard9;
+        private System.Windows.Forms.Panel pnlPadding;
+        private System.Windows.Forms.Label lblNoJobNotification;
     }
 }

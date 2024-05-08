@@ -32,15 +32,14 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblJobTitle = new System.Windows.Forms.Label();
             this.txtJobTilte = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            this.txtJobDescription = new Krypton.Toolkit.KryptonTextBox();
             this.lblJobDes = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            this.kryptonDateTimePicker1 = new Krypton.Toolkit.KryptonDateTimePicker();
+            this.dtpJobDate = new Krypton.Toolkit.KryptonDateTimePicker();
             this.rbtnNight = new Krypton.Toolkit.KryptonRadioButton();
             this.rbtnMorning = new Krypton.Toolkit.KryptonRadioButton();
-            this.txtSkill = new Krypton.Toolkit.KryptonTextBox();
             this.lblSkill = new System.Windows.Forms.Label();
-            this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
+            this.txtWage = new Krypton.Toolkit.KryptonTextBox();
             this.lblWage = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ptbAvatar = new System.Windows.Forms.PictureBox();
@@ -48,11 +47,13 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnNext = new Krypton.Toolkit.KryptonButton();
             this.picExit = new Krypton.Toolkit.KryptonPictureBox();
+            this.cbbSkillField = new Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillField)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -79,7 +80,6 @@
             this.lblTitle.Size = new System.Drawing.Size(220, 36);
             this.lblTitle.TabIndex = 44;
             this.lblTitle.Text = "Increase quality of your hire";
-            this.lblTitle.Click += new System.EventHandler(this.lblJobdes_Click);
             // 
             // lblJobTitle
             // 
@@ -106,7 +106,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtJobTilte.StateCommon.Border.Rounding = 5F;
             this.txtJobTilte.StateCommon.Border.Width = 1;
-            this.txtJobTilte.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.txtJobTilte.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txtJobTilte.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobTilte.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
             this.txtJobTilte.StateNormal.Back.Color1 = System.Drawing.Color.White;
@@ -120,32 +120,32 @@
             this.txtJobTilte.TabIndex = 46;
             this.txtJobTilte.Text = "Add a title you are hiring for";
             // 
-            // kryptonTextBox1
+            // txtJobDescription
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(37, 265);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(320, 38);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtJobDescription.Location = new System.Drawing.Point(37, 265);
+            this.txtJobDescription.Name = "txtJobDescription";
+            this.txtJobDescription.Size = new System.Drawing.Size(320, 38);
+            this.txtJobDescription.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtJobDescription.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtJobDescription.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.txtJobDescription.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 5F;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonTextBox1.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonTextBox1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtJobDescription.StateCommon.Border.Rounding = 5F;
+            this.txtJobDescription.StateCommon.Border.Width = 1;
+            this.txtJobDescription.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtJobDescription.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F);
+            this.txtJobDescription.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
+            this.txtJobDescription.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.txtJobDescription.StateNormal.Border.Color1 = System.Drawing.Color.Black;
+            this.txtJobDescription.StateNormal.Border.Color2 = System.Drawing.Color.Black;
+            this.txtJobDescription.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateNormal.Border.Rounding = 3F;
-            this.kryptonTextBox1.StateNormal.Border.Width = 1;
-            this.kryptonTextBox1.TabIndex = 48;
-            this.kryptonTextBox1.Text = "Write down your description about job";
+            this.txtJobDescription.StateNormal.Border.Rounding = 3F;
+            this.txtJobDescription.StateNormal.Border.Width = 1;
+            this.txtJobDescription.TabIndex = 48;
+            this.txtJobDescription.Text = "Write down your description about job";
             // 
             // lblJobDes
             // 
@@ -171,21 +171,21 @@
             this.lblTime.TabIndex = 49;
             this.lblTime.Text = "Time";
             // 
-            // kryptonDateTimePicker1
+            // dtpJobDate
             // 
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(37, 347);
-            this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(320, 31);
-            this.kryptonDateTimePicker1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonDateTimePicker1.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonDateTimePicker1.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonDateTimePicker1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.dtpJobDate.Location = new System.Drawing.Point(37, 347);
+            this.dtpJobDate.Name = "dtpJobDate";
+            this.dtpJobDate.Size = new System.Drawing.Size(320, 31);
+            this.dtpJobDate.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.dtpJobDate.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.dtpJobDate.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.dtpJobDate.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonDateTimePicker1.StateCommon.Border.Rounding = 7F;
-            this.kryptonDateTimePicker1.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.kryptonDateTimePicker1.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonDateTimePicker1.TabIndex = 50;
+            this.dtpJobDate.StateCommon.Border.Rounding = 7F;
+            this.dtpJobDate.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.dtpJobDate.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpJobDate.TabIndex = 50;
             // 
             // rbtnNight
             // 
@@ -210,33 +210,6 @@
             this.rbtnMorning.TabIndex = 51;
             this.rbtnMorning.Values.Text = "Morning";
             // 
-            // txtSkill
-            // 
-            this.txtSkill.Location = new System.Drawing.Point(37, 452);
-            this.txtSkill.Name = "txtSkill";
-            this.txtSkill.Size = new System.Drawing.Size(320, 38);
-            this.txtSkill.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtSkill.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.txtSkill.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.txtSkill.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSkill.StateCommon.Border.Rounding = 5F;
-            this.txtSkill.StateCommon.Border.Width = 1;
-            this.txtSkill.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtSkill.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSkill.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
-            this.txtSkill.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.txtSkill.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.txtSkill.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.txtSkill.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSkill.StateNormal.Border.Rounding = 3F;
-            this.txtSkill.StateNormal.Border.Width = 1;
-            this.txtSkill.TabIndex = 54;
-            this.txtSkill.Text = "Update your skill";
-            // 
             // lblSkill
             // 
             this.lblSkill.AutoEllipsis = true;
@@ -249,32 +222,32 @@
             this.lblSkill.TabIndex = 53;
             this.lblSkill.Text = "Skill";
             // 
-            // kryptonTextBox2
+            // txtWage
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(37, 540);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(320, 38);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtWage.Location = new System.Drawing.Point(37, 536);
+            this.txtWage.Name = "txtWage";
+            this.txtWage.Size = new System.Drawing.Size(320, 38);
+            this.txtWage.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtWage.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txtWage.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.txtWage.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 5F;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
-            this.kryptonTextBox2.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateNormal.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox2.StateNormal.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonTextBox2.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtWage.StateCommon.Border.Rounding = 5F;
+            this.txtWage.StateCommon.Border.Width = 1;
+            this.txtWage.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
+            this.txtWage.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5);
+            this.txtWage.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.txtWage.StateNormal.Border.Color1 = System.Drawing.Color.Black;
+            this.txtWage.StateNormal.Border.Color2 = System.Drawing.Color.Black;
+            this.txtWage.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateNormal.Border.Rounding = 3F;
-            this.kryptonTextBox2.StateNormal.Border.Width = 1;
-            this.kryptonTextBox2.TabIndex = 56;
-            this.kryptonTextBox2.Text = "Add the wage you want";
+            this.txtWage.StateNormal.Border.Rounding = 3F;
+            this.txtWage.StateNormal.Border.Width = 1;
+            this.txtWage.TabIndex = 56;
+            this.txtWage.Text = "Add the wage you want";
             // 
             // lblWage
             // 
@@ -282,9 +255,9 @@
             this.lblWage.BackColor = System.Drawing.Color.White;
             this.lblWage.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWage.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblWage.Location = new System.Drawing.Point(34, 511);
+            this.lblWage.Location = new System.Drawing.Point(34, 507);
             this.lblWage.Name = "lblWage";
-            this.lblWage.Size = new System.Drawing.Size(220, 36);
+            this.lblWage.Size = new System.Drawing.Size(220, 26);
             this.lblWage.TabIndex = 55;
             this.lblWage.Text = "Wage";
             // 
@@ -328,7 +301,7 @@
             // btnNext
             // 
             this.btnNext.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnNext.Location = new System.Drawing.Point(166, 600);
+            this.btnNext.Location = new System.Drawing.Point(168, 598);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(55, 55);
             this.btnNext.StateCommon.Back.Color1 = System.Drawing.Color.Snow;
@@ -397,26 +370,44 @@
             this.picExit.TabStop = false;
             this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
+            // cbbSkillField
+            // 
+            this.cbbSkillField.DropDownWidth = 316;
+            this.cbbSkillField.IntegralHeight = false;
+            this.cbbSkillField.Location = new System.Drawing.Point(37, 458);
+            this.cbbSkillField.Name = "cbbSkillField";
+            this.cbbSkillField.Size = new System.Drawing.Size(320, 31);
+            this.cbbSkillField.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Black;
+            this.cbbSkillField.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cbbSkillField.StateCommon.ComboBox.Border.Rounding = 5F;
+            this.cbbSkillField.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.cbbSkillField.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Bahnschrift SemiLight SemiConde", 10.8F);
+            this.cbbSkillField.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cbbSkillField.TabIndex = 62;
+            this.cbbSkillField.Text = "Skill fields";
+            // 
             // fPostJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(398, 681);
+            this.ClientSize = new System.Drawing.Size(398, 676);
+            this.Controls.Add(this.cbbSkillField);
             this.Controls.Add(this.picExit);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.kryptonTextBox2);
+            this.Controls.Add(this.txtWage);
             this.Controls.Add(this.lblWage);
-            this.Controls.Add(this.txtSkill);
             this.Controls.Add(this.lblSkill);
             this.Controls.Add(this.rbtnNight);
             this.Controls.Add(this.rbtnMorning);
-            this.Controls.Add(this.kryptonDateTimePicker1);
+            this.Controls.Add(this.dtpJobDate);
             this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.kryptonTextBox1);
+            this.Controls.Add(this.txtJobDescription);
             this.Controls.Add(this.lblJobDes);
             this.Controls.Add(this.txtJobTilte);
             this.Controls.Add(this.lblJobTitle);
@@ -442,6 +433,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbbSkillField)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,20 +446,20 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblJobTitle;
         private Krypton.Toolkit.KryptonTextBox txtJobTilte;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox txtJobDescription;
         private System.Windows.Forms.Label lblJobDes;
         private System.Windows.Forms.Label lblTime;
-        private Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
+        private Krypton.Toolkit.KryptonDateTimePicker dtpJobDate;
         private Krypton.Toolkit.KryptonRadioButton rbtnNight;
         private Krypton.Toolkit.KryptonRadioButton rbtnMorning;
-        private Krypton.Toolkit.KryptonTextBox txtSkill;
         private System.Windows.Forms.Label lblSkill;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private Krypton.Toolkit.KryptonTextBox txtWage;
         private System.Windows.Forms.Label lblWage;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Krypton.Toolkit.KryptonButton btnNext;
         private Krypton.Toolkit.KryptonPictureBox picExit;
+        private Krypton.Toolkit.KryptonComboBox cbbSkillField;
     }
 }

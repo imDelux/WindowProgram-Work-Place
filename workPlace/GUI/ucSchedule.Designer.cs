@@ -140,7 +140,7 @@
             // 
             this.lblYearAndMonth.AutoSize = true;
             this.lblYearAndMonth.Font = new System.Drawing.Font("Verdana", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYearAndMonth.ForeColor = System.Drawing.Color.White;
+            this.lblYearAndMonth.ForeColor = System.Drawing.Color.DimGray;
             this.lblYearAndMonth.Location = new System.Drawing.Point(98, 56);
             this.lblYearAndMonth.Name = "lblYearAndMonth";
             this.lblYearAndMonth.Size = new System.Drawing.Size(256, 40);

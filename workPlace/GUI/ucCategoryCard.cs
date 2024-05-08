@@ -13,6 +13,8 @@ namespace GUI
 {
     public partial class ucCategoryCard : UserControl
     {
+        public CategorySkill currentDisplayingCategory = null;
+
         public ucCategoryCard()
         {
             InitializeComponent();
@@ -20,8 +22,8 @@ namespace GUI
 
         public void DataSetter(CategorySkill cat)
         {
+            currentDisplayingCategory = cat;
             lblCategory.Text = cat.Type;
-            lblWorkerAmount.Text = "#" + cat.NumbWorker.ToString() + " workers";
         }
     }
 }

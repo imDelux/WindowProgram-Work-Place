@@ -31,8 +31,8 @@
             this.lblJobName = new System.Windows.Forms.Label();
             this.lblJobDate = new System.Windows.Forms.Label();
             this.lblJobDescription = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblSkillField = new System.Windows.Forms.Label();
+            this.lblAppliedNumber = new System.Windows.Forms.Label();
             this.lblJobWage = new System.Windows.Forms.Label();
             this.btnContainer = new Krypton.Toolkit.KryptonButton();
             this.picDemo = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.lblJobName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblJobName.Font = new System.Drawing.Font("Comic Sans MS", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobName.ForeColor = System.Drawing.Color.Black;
-            this.lblJobName.Location = new System.Drawing.Point(187, 18);
+            this.lblJobName.Location = new System.Drawing.Point(187, 14);
             this.lblJobName.Name = "lblJobName";
             this.lblJobName.Size = new System.Drawing.Size(569, 49);
             this.lblJobName.TabIndex = 22;
@@ -60,7 +60,7 @@
             this.lblJobDate.BackColor = System.Drawing.Color.White;
             this.lblJobDate.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDate.ForeColor = System.Drawing.Color.Black;
-            this.lblJobDate.Location = new System.Drawing.Point(189, 67);
+            this.lblJobDate.Location = new System.Drawing.Point(189, 64);
             this.lblJobDate.Name = "lblJobDate";
             this.lblJobDate.Size = new System.Drawing.Size(89, 21);
             this.lblJobDate.TabIndex = 23;
@@ -78,31 +78,31 @@
             this.lblJobDescription.TabIndex = 24;
             this.lblJobDescription.Text = "Write your description in here";
             // 
-            // label1
+            // lblSkillField
             // 
-            this.label1.AutoEllipsis = true;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(189, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 21);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Required Skill: [what skill field?]";
+            this.lblSkillField.AutoEllipsis = true;
+            this.lblSkillField.AutoSize = true;
+            this.lblSkillField.BackColor = System.Drawing.Color.White;
+            this.lblSkillField.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillField.ForeColor = System.Drawing.Color.Black;
+            this.lblSkillField.Location = new System.Drawing.Point(189, 122);
+            this.lblSkillField.Name = "lblSkillField";
+            this.lblSkillField.Size = new System.Drawing.Size(269, 21);
+            this.lblSkillField.TabIndex = 26;
+            this.lblSkillField.Text = "Required Skill: [what skill field?]";
             // 
-            // label2
+            // lblAppliedNumber
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(774, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 23);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Applied: xx";
+            this.lblAppliedNumber.AutoEllipsis = true;
+            this.lblAppliedNumber.BackColor = System.Drawing.Color.White;
+            this.lblAppliedNumber.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAppliedNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblAppliedNumber.Location = new System.Drawing.Point(774, 102);
+            this.lblAppliedNumber.Name = "lblAppliedNumber";
+            this.lblAppliedNumber.Size = new System.Drawing.Size(121, 41);
+            this.lblAppliedNumber.TabIndex = 28;
+            this.lblAppliedNumber.Text = "Applied: xx";
+            this.lblAppliedNumber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblJobWage
             // 
@@ -113,7 +113,7 @@
             this.lblJobWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.lblJobWage.Location = new System.Drawing.Point(802, 15);
             this.lblJobWage.Name = "lblJobWage";
-            this.lblJobWage.Size = new System.Drawing.Size(93, 40);
+            this.lblJobWage.Size = new System.Drawing.Size(89, 39);
             this.lblJobWage.TabIndex = 29;
             this.lblJobWage.Text = "100$";
             // 
@@ -138,6 +138,7 @@
             // picDemo
             // 
             this.picDemo.BackColor = System.Drawing.Color.White;
+            this.picDemo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picDemo.Image = global::GUI.Properties.Resources.briefcase__1_;
             this.picDemo.Location = new System.Drawing.Point(43, 25);
             this.picDemo.Name = "picDemo";
@@ -152,8 +153,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.lblJobWage);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblAppliedNumber);
+            this.Controls.Add(this.lblSkillField);
             this.Controls.Add(this.picDemo);
             this.Controls.Add(this.lblJobDescription);
             this.Controls.Add(this.lblJobDate);
@@ -173,8 +174,8 @@
         private System.Windows.Forms.Label lblJobDate;
         private System.Windows.Forms.Label lblJobDescription;
         private System.Windows.Forms.PictureBox picDemo;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblSkillField;
+        private System.Windows.Forms.Label lblAppliedNumber;
         private System.Windows.Forms.Label lblJobWage;
         private Krypton.Toolkit.KryptonButton btnContainer;
     }

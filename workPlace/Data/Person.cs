@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,6 +65,26 @@ namespace EntityModel
             Email = email;
             Location = location;
             Password = password;
+        }
+
+        /// <summary>
+        /// Convert basic information of class person to worker
+        /// </summary>
+        /// <param name="person"></param>
+        /// <returns></returns>
+        public Worker ToWorker()
+        {
+            Worker worker = new Worker();
+
+            worker.PersonID = PersonID;
+            worker.Name = Name;
+            worker.Age = Age;
+            worker.Telephone = Telephone;
+            worker.Email = Email;
+            worker.Location = Location;
+            worker.Password = Password;
+            
+            return worker;
         }
     }
 }

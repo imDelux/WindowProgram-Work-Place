@@ -34,6 +34,7 @@
             this.txtSearch = new Krypton.Toolkit.KryptonTextBox();
             this.fpnlContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
+            this.lblCategory = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).BeginInit();
@@ -105,9 +106,9 @@
             // fpnlContainer
             // 
             this.fpnlContainer.AutoScroll = true;
-            this.fpnlContainer.Location = new System.Drawing.Point(46, 94);
+            this.fpnlContainer.Location = new System.Drawing.Point(46, 166);
             this.fpnlContainer.Name = "fpnlContainer";
-            this.fpnlContainer.Size = new System.Drawing.Size(930, 635);
+            this.fpnlContainer.Size = new System.Drawing.Size(930, 563);
             this.fpnlContainer.TabIndex = 5;
             // 
             // kryptonPictureBox1
@@ -120,11 +121,23 @@
             this.kryptonPictureBox1.TabIndex = 2;
             this.kryptonPictureBox1.TabStop = false;
             // 
+            // lblCategory
+            // 
+            this.lblCategory.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.lblCategory.Location = new System.Drawing.Point(35, 92);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(941, 54);
+            this.lblCategory.TabIndex = 6;
+            this.lblCategory.Text = "Category";
+            this.lblCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ucHomeSpecificCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.kryptonPictureBox1);
             this.Controls.Add(this.kryptonComboBox2);
             this.Controls.Add(this.pnlTop);
@@ -148,5 +161,6 @@
         private Krypton.Toolkit.KryptonPanel pnlTop;
         private System.Windows.Forms.FlowLayoutPanel fpnlContainer;
         private Krypton.Toolkit.KryptonTextBox txtSearch;
+        private System.Windows.Forms.Label lblCategory;
     }
 }

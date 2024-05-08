@@ -19,6 +19,9 @@ namespace GUI
         Person person = null;
         List<Job> jobOfWorker = new List<Job>();
 
+        // Display schedule of worker for hirer or not
+        bool isForHirer;
+
         // Fetch data from database
         DAO.DbConnection dbConn = new DAO.DbConnection();   
 
@@ -34,10 +37,11 @@ namespace GUI
         }
 
         // Display event of a person onto schedule
-        public ucSchedule(Person person)
+        public ucSchedule(Person person, bool isHirer)
         {
             InitializeComponent();
             this.person = person;
+            this.isForHirer = isHirer;
 
             // Fetch job data
             jobOfWorker = dbConn.FetchJobList(person, true);
@@ -67,7 +71,7 @@ namespace GUI
             // Ignore days in previous month
             for (int i = 1; i < dayOfWeek; i++)
             {
-                ucDay day = new ucDay();
+                ucDay day = new ucDay(now, isForHirer);
                 day.Blank();
                 fpnlDayContainer.Controls.Add(day);
             }
@@ -75,7 +79,7 @@ namespace GUI
             // Display days in input month
             for (int i = 1; i <= amountDayInMonth; i++)
             { 
-                ucDay day = new ucDay();
+                ucDay day = new ucDay(now, isForHirer);
                 day.Day(i);
 
                 // Check for today 
@@ -106,7 +110,7 @@ namespace GUI
             
             foreach (Job job in currentMonthJob) 
             {
-                dayList[job.Date.Day - 1].AddEvent(job);
+                dayList[job.Date.Day - 1].AddEvent(job, isForHirer);
             }
         }
 

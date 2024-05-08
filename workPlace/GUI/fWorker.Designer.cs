@@ -34,6 +34,7 @@
             this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
             this.picExit = new Krypton.Toolkit.KryptonPictureBox();
             this.btnProfile = new Krypton.Toolkit.KryptonButton();
+            this.btnFindJob = new Krypton.Toolkit.KryptonButton();
             this.btnNotification = new Krypton.Toolkit.KryptonButton();
             this.btnSchedule = new Krypton.Toolkit.KryptonButton();
             this.pnlLogoContainer = new System.Windows.Forms.Panel();
@@ -61,6 +62,7 @@
             this.pnlDashboard.Controls.Add(this.picLogOut);
             this.pnlDashboard.Controls.Add(this.picExit);
             this.pnlDashboard.Controls.Add(this.btnProfile);
+            this.pnlDashboard.Controls.Add(this.btnFindJob);
             this.pnlDashboard.Controls.Add(this.btnNotification);
             this.pnlDashboard.Controls.Add(this.btnSchedule);
             this.pnlDashboard.Controls.Add(this.pnlLogoContainer);
@@ -102,7 +104,7 @@
             this.btnProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
             this.btnProfile.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProfile.Location = new System.Drawing.Point(0, 328);
+            this.btnProfile.Location = new System.Drawing.Point(0, 384);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -157,6 +159,67 @@
             this.btnProfile.TabIndex = 9;
             this.btnProfile.Values.Text = "Profile";
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
+            // 
+            // btnFindJob
+            // 
+            this.btnFindJob.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
+            this.btnFindJob.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
+            this.btnFindJob.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFindJob.Location = new System.Drawing.Point(0, 328);
+            this.btnFindJob.Name = "btnFindJob";
+            this.btnFindJob.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnFindJob.OverrideDefault.Border.Width = 0;
+            this.btnFindJob.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnFindJob.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnFindJob.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindJob.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnFindJob.OverrideFocus.Border.Width = 0;
+            this.btnFindJob.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnFindJob.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnFindJob.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindJob.Size = new System.Drawing.Size(264, 56);
+            this.btnFindJob.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnFindJob.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnFindJob.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnFindJob.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnFindJob.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.btnFindJob.StateNormal.Border.Width = 1;
+            this.btnFindJob.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnFindJob.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnFindJob.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindJob.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnFindJob.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnFindJob.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnFindJob.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnFindJob.StatePressed.Border.Width = 0;
+            this.btnFindJob.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnFindJob.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnFindJob.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindJob.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btnFindJob.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnFindJob.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnFindJob.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnFindJob.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
+            this.btnFindJob.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnFindJob.StateTracking.Border.Width = 1;
+            this.btnFindJob.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnFindJob.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnFindJob.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFindJob.TabIndex = 12;
+            this.btnFindJob.Values.Text = "Find Job";
+            this.btnFindJob.Click += new System.EventHandler(this.btnFindJobNotification_Click);
             // 
             // btnNotification
             // 
@@ -376,5 +439,6 @@
         private Krypton.Toolkit.KryptonPictureBox picExit;
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
+        private Krypton.Toolkit.KryptonButton btnFindJob;
     }
 }

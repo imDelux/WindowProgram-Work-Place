@@ -1,4 +1,5 @@
-﻿using EntityModel;
+﻿using DAO;
+using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,15 +15,16 @@ namespace GUI
     public partial class ucWorker : UserControl
     {
         // Who is being displayed
-        Person currentDisplayWorker;
+        Worker currentDisplayWorker;
         Person currentUsingHirer;
+        PersonDAO personDAO = new PersonDAO();
 
         public ucWorker()
         {
             InitializeComponent();
         }
 
-        public ucWorker(Person worker, Person hirer)
+        public ucWorker(Worker worker, Person hirer)
         {
             InitializeComponent();
             this.currentDisplayWorker = worker;
@@ -30,20 +32,26 @@ namespace GUI
             DataSetter();
         }
 
-        private void lblWokerName_Click(object sender, EventArgs e)
-        {
-            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker, currentUsingHirer);
-            fWorkerInfo.ShowDialog();
-        }
-
         private void DataSetter()
         {
             // Check for invalid case
             if (currentDisplayWorker == null) { return; }
-            
+
             // Set data
+            if (personDAO.LoadAvatar(currentDisplayWorker) != null)
+            {
+                picAvatar.Image = personDAO.LoadAvatar(currentDisplayWorker);
+            }
+            lblSkill.Text = currentDisplayWorker.SkillName;
+            lblAvgWage.Text = currentDisplayWorker.ExpectedWage.ToString() + "$";
             lblAge.Text = "Age: " + currentDisplayWorker.Age;
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;
+        }
+
+        private void picAvatar_Click(object sender, EventArgs e)
+        {
+            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentDisplayWorker, currentUsingHirer);
+            fWorkerInfo.ShowDialog();
         }
     }
 }

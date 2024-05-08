@@ -29,6 +29,7 @@ namespace GUI
             InitializeComponent();
             this.currentUsingHirer = hirer;
             this.category = category;
+            this.lblCategory.Text = category.Type.ToString();
             GenerateDynamicUserControl();
         }
 
@@ -37,7 +38,8 @@ namespace GUI
             fpnlContainer.Controls.Clear();
 
             // Get the worker list from database
-            List<Worker> listWorker = dbConn.FetchWorkerList();
+            List<Worker> listWorker = dbConn.FetchWorkerList(category);
+            listWorker = listWorker.Where(x => x.IsActive == true).ToList();   
 
             // Generate user control
             for (int i = 0; i < listWorker.Count; i++) 

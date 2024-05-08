@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,41 +17,119 @@ namespace GUI
     public partial class fWorkerInfo : KryptonForm
     {
         // Current worker
-        Person currentDisplayingWorker = null;
-        Person currentUsingHirer = null;
-        DbConnection connection = new DbConnection();
+        Worker currentWorker = null;
+        Person currentHirer = null;
+        DAO.DbConnection connection = new DAO.DbConnection();
+        PersonDAO personDAO = new PersonDAO();
+        EvaluateDAO evaluateDAO = new EvaluateDAO();
+        bool isForHirer;
 
         public fWorkerInfo()
         {
             InitializeComponent();
         }
 
-        public fWorkerInfo(Person worker, Person hirer)
+        /// <summary>
+        /// Form works as a worker's information preview
+        /// </summary>
+        /// <param name="worker"></param>
+        /// <param name="hirer"></param>
+        public fWorkerInfo(Worker worker, Person hirer)
         {
             InitializeComponent();
-            this.currentDisplayingWorker = worker;
-            this.currentUsingHirer = hirer;
+            this.currentWorker = worker;
+            this.currentHirer = hirer;
+            isForHirer = true;
+
             DataSetter();
+        }
+
+        /// <summary>
+        /// Form works as a hirer's information preview
+        /// </summary>
+        /// <param name="hirer"></param>
+        public fWorkerInfo(Person hirer)
+        {
+            InitializeComponent();
+            this.currentHirer = hirer;
+            isForHirer = false;
         }
 
         private void DataSetter()
         {
             // Error detect
-            if (currentDisplayingWorker == null) { return; }
+            if (currentWorker == null && currentHirer == null) { return; }
 
-            // Worker basic information
-            lblName.Text = currentDisplayingWorker.Name;
-            lblAge.Text = currentDisplayingWorker.Age.ToString();
-            lblPhone.Text = currentDisplayingWorker.Telephone;
-            lblEmail.Text = currentDisplayingWorker.Email;
-            lblLocation.Text = currentDisplayingWorker.Location;
+            // Get the avatar first
+            if (currentWorker != null && personDAO.LoadAvatar(currentWorker) != null)
+            {
+                picUserAvatar.Image = personDAO.LoadAvatar(currentWorker);
+            }
+            else if (currentHirer != null && personDAO.LoadAvatar(currentHirer) != null)
+            {
+                picUserAvatar.Image = personDAO.LoadAvatar(currentHirer);
+            }
+
+            // Check to see who's infor will be displayed
+            Person person;
+            if (isForHirer)
+            {
+                person = currentWorker;
+            }
+            else
+            {
+                person = currentHirer;
+            }
+
+            // Basic information
+            lblName.Text = person.Name;
+            lblAge.Text = "Age: " + person.Age.ToString();
+            lblPhone.Text = "Phone: " + person.Telephone;
+            lblEmail.Text = "Email: " + person.Email;
+            lblLocation.Text = "Location: " + person.Location;
             
             // Skill
+            if (!isForHirer)
+            {
+                pnlSkillContainer.Visible = false;
+                btnHire.Visible = false;
+            }
+            else
+            {
+                pnlSkillContainer.Visible = true;
+                lblSkillname.Text = currentWorker.SkillName;
+                lblSkillDescription.Text = currentWorker.SkillDescription;
+            }
+
+            // Review
+            // Get review of user
+            List<Evaluate> evaluatesOfUser;
+            if (isForHirer)
+            {
+                evaluatesOfUser = connection.FetchEvaluateOfAWorker(currentWorker.PersonID);
+            }
+            else
+            {
+                evaluatesOfUser = connection.FetchEvaluateOfAHirer(currentHirer.PersonID);
+            }
+
+            if (evaluatesOfUser.Count > 0)
+            {
+                lblNoReviewNotification.Visible = false;
+                foreach (Evaluate eval in evaluatesOfUser)
+                {
+                    ucReview fReview = new ucReview(eval);
+                    fpnlReviewContainer.Controls.Add(fReview);
+                }
+            }
+
+            // Average user point 
+            lblOverrallRating.Text = string.Format("Rate: {0}/10.0 ({1})", evaluateDAO.AveragePoint(evaluatesOfUser).ToString(), evaluatesOfUser.Count.ToString());
         }
 
         private void btnHire_Click(object sender, EventArgs e)
         {
-            fJobDisplay fHireMessage = new fJobDisplay(currentDisplayingWorker, currentUsingHirer);
+            fJobDisplay fHireMessage = new fJobDisplay(currentWorker, currentHirer);
             fHireMessage.ShowDialog();
         }
 

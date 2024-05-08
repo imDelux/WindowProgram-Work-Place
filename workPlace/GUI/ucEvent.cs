@@ -20,34 +20,59 @@ namespace GUI
             InitializeComponent();
         }
 
-        public ucEvent(Job jobEvent)
+        public ucEvent(Job jobEvent, bool isHirer)
         {
             InitializeComponent();
             this.currentJobHold = jobEvent;
 
-            if (jobEvent.Date.Day == DateTime.Now.Day || jobEvent.Date.Day == DateTime.Now.Day + 1)  
+            if (isHirer)
             {
-                Incoming();
+                // keep color
+                this.Click -= ucEvent_Click;
             }
-
-            if (jobEvent.IsEvaluated)
+            else  // not hirer --> for worker
             {
-                Evaluated();
+                if (jobEvent.Date.Day == DateTime.Now.Day || jobEvent.Date.Day == DateTime.Now.Day + 1)
+                {
+                    Incoming();
+                }
+                if (jobEvent.IsComplete)
+                {
+                    Done();
+                }
+                if (jobEvent.IsEvaluated && !jobEvent.IsCanceled)
+                {
+                    Evaluated();
+                }
+                if (jobEvent.IsComplete && jobEvent.IsCanceled)
+                {
+                    Cancel();
+                }
             }
         }
 
         private void ucEvent_Click(object sender, EventArgs e)
         {
-            fJobDetail fJobDetail = new fJobDetail(currentJobHold);
+            fJobDetail fJobDetail = new fJobDetail(currentJobHold, false, true);
             fJobDetail.ShowDialog();
         }
 
-        public void Evaluated()
+        private void Evaluated()
         {
             this.BackColor = Color.Yellow;
         }
 
-        public void Incoming()
+        private void Incoming()
+        {
+            this.BackColor = Color.Orange;
+        }
+
+        private void Done()
+        {
+            this.BackColor = Color.LightGreen;
+        }
+
+        private void Cancel()
         {
             this.BackColor = Color.Red;
         }

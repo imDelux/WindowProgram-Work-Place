@@ -19,6 +19,7 @@ namespace GUI
         // Indicate who is sign up
         Person currentPerson;
         PersonDAO personDAO = new PersonDAO();
+        WorkerDAO workerDAO = new WorkerDAO();
 
         public fSignUpInfo()
         {
@@ -40,7 +41,16 @@ namespace GUI
             currentPerson.Location = txtLocation.Text;
 
             // Try to add person to the database
-            string result = personDAO.Add(currentPerson, (rbtnHirer.Checked == true ? "Hirer" : "Worker"));
+            string result = string.Empty;
+            if (rbtnHirer.Checked == true)
+            {
+                result = personDAO.Add(currentPerson, (rbtnHirer.Checked == true ? "Hirer" : "Worker"));
+            }
+            else if (rbtnWorker.Checked == true)
+            {
+                result = workerDAO.Add(currentPerson.ToWorker());
+            }
+                
 
             // Check result 
             if (result == "Successful")

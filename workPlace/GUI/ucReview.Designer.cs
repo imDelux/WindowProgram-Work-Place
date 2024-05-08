@@ -33,7 +33,8 @@
             this.lblReviewRating = new System.Windows.Forms.Label();
             this.btnReviewContainer = new Krypton.Toolkit.KryptonButton();
             this.btnReviewContentContainer = new Krypton.Toolkit.KryptonButton();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.btnJobDetail = new Krypton.Toolkit.KryptonButton();
+            this.lblComment = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,68 +126,80 @@
             this.btnReviewContentContainer.TabIndex = 6;
             this.btnReviewContentContainer.Values.Text = "";
             // 
-            // kryptonButton1
+            // btnJobDetail
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(319, 56);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobDetail.Location = new System.Drawing.Point(319, 56);
+            this.btnJobDetail.Name = "btnJobDetail";
+            this.btnJobDetail.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.OverrideDefault.Border.Rounding = 4F;
-            this.kryptonButton1.OverrideDefault.Border.Width = 0;
-            this.kryptonButton1.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.Size = new System.Drawing.Size(65, 20);
-            this.kryptonButton1.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobDetail.OverrideDefault.Border.Rounding = 4F;
+            this.btnJobDetail.OverrideDefault.Border.Width = 0;
+            this.btnJobDetail.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnJobDetail.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnJobDetail.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobDetail.Size = new System.Drawing.Size(65, 20);
+            this.btnJobDetail.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StateNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateNormal.Border.Rounding = 4F;
-            this.kryptonButton1.StateNormal.Border.Width = 0;
-            this.kryptonButton1.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobDetail.StateNormal.Border.Rounding = 4F;
+            this.btnJobDetail.StateNormal.Border.Width = 0;
+            this.btnJobDetail.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnJobDetail.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnJobDetail.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobDetail.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StatePressed.Border.Rounding = 4F;
-            this.kryptonButton1.StatePressed.Border.Width = 0;
-            this.kryptonButton1.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
-            this.kryptonButton1.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.kryptonButton1.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnJobDetail.StatePressed.Border.Rounding = 4F;
+            this.btnJobDetail.StatePressed.Border.Width = 0;
+            this.btnJobDetail.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnJobDetail.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnJobDetail.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobDetail.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(186)))), ((int)(((byte)(220)))));
+            this.btnJobDetail.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnJobDetail.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnJobDetail.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateTracking.Border.Rounding = 4F;
-            this.kryptonButton1.StateTracking.Border.Width = 1;
-            this.kryptonButton1.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.TabIndex = 7;
-            this.kryptonButton1.Values.Text = "Detail";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.btnJobDetail.StateTracking.Border.Rounding = 4F;
+            this.btnJobDetail.StateTracking.Border.Width = 1;
+            this.btnJobDetail.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnJobDetail.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnJobDetail.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJobDetail.TabIndex = 7;
+            this.btnJobDetail.Values.Text = "Detail";
+            this.btnJobDetail.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // usReview
+            // lblComment
+            // 
+            this.lblComment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.lblComment.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblComment.Location = new System.Drawing.Point(48, 104);
+            this.lblComment.Name = "lblComment";
+            this.lblComment.Size = new System.Drawing.Size(320, 72);
+            this.lblComment.TabIndex = 8;
+            this.lblComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ucReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.kryptonButton1);
+            this.Controls.Add(this.lblComment);
+            this.Controls.Add(this.btnJobDetail);
             this.Controls.Add(this.btnReviewContentContainer);
             this.Controls.Add(this.lblReviewRating);
             this.Controls.Add(this.lblReviewerName);
             this.Controls.Add(this.picAvatar);
             this.Controls.Add(this.btnReviewContainer);
-            this.Name = "usReview";
+            this.Name = "ucReview";
             this.Size = new System.Drawing.Size(414, 209);
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
@@ -200,6 +213,7 @@
         private System.Windows.Forms.Label lblReviewRating;
         private Krypton.Toolkit.KryptonButton btnReviewContainer;
         private Krypton.Toolkit.KryptonButton btnReviewContentContainer;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonButton btnJobDetail;
+        private System.Windows.Forms.Label lblComment;
     }
 }

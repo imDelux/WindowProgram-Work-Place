@@ -41,11 +41,15 @@
             this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
             this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucReview1 = new GUI.ucReview();
-            this.ucReview2 = new GUI.ucReview();
+            this.pnlSkillContainer = new System.Windows.Forms.Panel();
+            this.lblSkillHeader = new System.Windows.Forms.Label();
+            this.btnSkillDescriptionContainer = new Krypton.Toolkit.KryptonButton();
+            this.lblSkillname = new System.Windows.Forms.Label();
+            this.lblSkillDescription = new System.Windows.Forms.Label();
+            this.lblNoReviewNotification = new System.Windows.Forms.Label();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
-            this.fpnlReviewContainer.SuspendLayout();
+            this.pnlSkillContainer.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnHire
@@ -258,7 +262,7 @@
             this.btnEvaluateContainer.Enabled = false;
             this.btnEvaluateContainer.Location = new System.Drawing.Point(429, 12);
             this.btnEvaluateContainer.Name = "btnEvaluateContainer";
-            this.btnEvaluateContainer.Size = new System.Drawing.Size(464, 702);
+            this.btnEvaluateContainer.Size = new System.Drawing.Size(520, 702);
             this.btnEvaluateContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
             this.btnEvaluateContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.btnEvaluateContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -289,26 +293,100 @@
             // 
             this.fpnlReviewContainer.AutoScroll = true;
             this.fpnlReviewContainer.BackColor = System.Drawing.Color.White;
-            this.fpnlReviewContainer.Controls.Add(this.ucReview1);
-            this.fpnlReviewContainer.Controls.Add(this.ucReview2);
-            this.fpnlReviewContainer.Location = new System.Drawing.Point(457, 48);
+            this.fpnlReviewContainer.Location = new System.Drawing.Point(477, 48);
             this.fpnlReviewContainer.Name = "fpnlReviewContainer";
-            this.fpnlReviewContainer.Size = new System.Drawing.Size(414, 636);
+            this.fpnlReviewContainer.Size = new System.Drawing.Size(429, 636);
             this.fpnlReviewContainer.TabIndex = 15;
             // 
-            // ucReview1
+            // pnlSkillContainer
             // 
-            this.ucReview1.Location = new System.Drawing.Point(3, 3);
-            this.ucReview1.Name = "ucReview1";
-            this.ucReview1.Size = new System.Drawing.Size(414, 209);
-            this.ucReview1.TabIndex = 0;
+            this.pnlSkillContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlSkillContainer.Controls.Add(this.lblSkillDescription);
+            this.pnlSkillContainer.Controls.Add(this.lblSkillname);
+            this.pnlSkillContainer.Controls.Add(this.btnSkillDescriptionContainer);
+            this.pnlSkillContainer.Controls.Add(this.lblSkillHeader);
+            this.pnlSkillContainer.Location = new System.Drawing.Point(48, 426);
+            this.pnlSkillContainer.Name = "pnlSkillContainer";
+            this.pnlSkillContainer.Size = new System.Drawing.Size(326, 258);
+            this.pnlSkillContainer.TabIndex = 16;
             // 
-            // ucReview2
+            // lblSkillHeader
             // 
-            this.ucReview2.Location = new System.Drawing.Point(3, 218);
-            this.ucReview2.Name = "ucReview2";
-            this.ucReview2.Size = new System.Drawing.Size(414, 209);
-            this.ucReview2.TabIndex = 1;
+            this.lblSkillHeader.AutoSize = true;
+            this.lblSkillHeader.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblSkillHeader.Location = new System.Drawing.Point(9, 9);
+            this.lblSkillHeader.Name = "lblSkillHeader";
+            this.lblSkillHeader.Size = new System.Drawing.Size(73, 38);
+            this.lblSkillHeader.TabIndex = 0;
+            this.lblSkillHeader.Text = "Skill";
+            // 
+            // btnSkillDescriptionContainer
+            // 
+            this.btnSkillDescriptionContainer.Enabled = false;
+            this.btnSkillDescriptionContainer.Location = new System.Drawing.Point(18, 78);
+            this.btnSkillDescriptionContainer.Name = "btnSkillDescriptionContainer";
+            this.btnSkillDescriptionContainer.Size = new System.Drawing.Size(292, 165);
+            this.btnSkillDescriptionContainer.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSkillDescriptionContainer.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSkillDescriptionContainer.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnSkillDescriptionContainer.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnSkillDescriptionContainer.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSkillDescriptionContainer.StateCommon.Border.Rounding = 5F;
+            this.btnSkillDescriptionContainer.StateCommon.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnSkillDescriptionContainer.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
+            this.btnSkillDescriptionContainer.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.DimGray;
+            this.btnSkillDescriptionContainer.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.btnSkillDescriptionContainer.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSkillDescriptionContainer.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSkillDescriptionContainer.StateDisabled.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnSkillDescriptionContainer.StateDisabled.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnSkillDescriptionContainer.StateDisabled.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnSkillDescriptionContainer.StateDisabled.Border.Rounding = 5F;
+            this.btnSkillDescriptionContainer.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
+            this.btnSkillDescriptionContainer.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.DimGray;
+            this.btnSkillDescriptionContainer.StateDisabled.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSkillDescriptionContainer.TabIndex = 1;
+            this.btnSkillDescriptionContainer.Values.Text = "";
+            // 
+            // lblSkillname
+            // 
+            this.lblSkillname.AutoSize = true;
+            this.lblSkillname.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSkillname.Location = new System.Drawing.Point(30, 50);
+            this.lblSkillname.Name = "lblSkillname";
+            this.lblSkillname.Size = new System.Drawing.Size(92, 25);
+            this.lblSkillname.TabIndex = 2;
+            this.lblSkillname.Text = "Skill name";
+            // 
+            // lblSkillDescription
+            // 
+            this.lblSkillDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblSkillDescription.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSkillDescription.Location = new System.Drawing.Point(33, 91);
+            this.lblSkillDescription.Name = "lblSkillDescription";
+            this.lblSkillDescription.Size = new System.Drawing.Size(262, 136);
+            this.lblSkillDescription.TabIndex = 3;
+            this.lblSkillDescription.Text = "Skill description";
+            this.lblSkillDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNoReviewNotification
+            // 
+            this.lblNoReviewNotification.BackColor = System.Drawing.Color.White;
+            this.lblNoReviewNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoReviewNotification.ForeColor = System.Drawing.Color.Gray;
+            this.lblNoReviewNotification.Location = new System.Drawing.Point(455, 320);
+            this.lblNoReviewNotification.Name = "lblNoReviewNotification";
+            this.lblNoReviewNotification.Size = new System.Drawing.Size(473, 72);
+            this.lblNoReviewNotification.TabIndex = 0;
+            this.lblNoReviewNotification.Text = "This user has no reviews yet";
+            this.lblNoReviewNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fWorkerInfo
             // 
@@ -316,8 +394,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
-            this.ClientSize = new System.Drawing.Size(922, 781);
+            this.ClientSize = new System.Drawing.Size(985, 781);
             this.CloseBox = false;
+            this.Controls.Add(this.lblNoReviewNotification);
+            this.Controls.Add(this.pnlSkillContainer);
             this.Controls.Add(this.fpnlReviewContainer);
             this.Controls.Add(this.btnEvaluateContainer);
             this.Controls.Add(this.pnlBasicInformationContainer);
@@ -353,7 +433,8 @@
             this.pnlBasicInformationContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
-            this.fpnlReviewContainer.ResumeLayout(false);
+            this.pnlSkillContainer.ResumeLayout(false);
+            this.pnlSkillContainer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +455,11 @@
         private Krypton.Toolkit.KryptonPictureBox picUserAvatar;
         private Krypton.Toolkit.KryptonButton btnEvaluateContainer;
         private System.Windows.Forms.FlowLayoutPanel fpnlReviewContainer;
-        private ucReview ucReview1;
-        private ucReview ucReview2;
+        private System.Windows.Forms.Panel pnlSkillContainer;
+        private System.Windows.Forms.Label lblSkillname;
+        private Krypton.Toolkit.KryptonButton btnSkillDescriptionContainer;
+        private System.Windows.Forms.Label lblSkillHeader;
+        private System.Windows.Forms.Label lblSkillDescription;
+        private System.Windows.Forms.Label lblNoReviewNotification;
     }
 }
