@@ -37,13 +37,13 @@
             this.lblJobDate = new System.Windows.Forms.Label();
             this.lblJobWage = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.btnDelete = new Krypton.Toolkit.KryptonButton();
             this.btnRate = new Krypton.Toolkit.KryptonButton();
             this.cbCancel = new System.Windows.Forms.CheckBox();
             this.lblHirerNameHeader = new System.Windows.Forms.Label();
             this.lblRemainUserName = new System.Windows.Forms.Label();
             this.cbDone = new System.Windows.Forms.CheckBox();
             this.lblJobStatusHead = new System.Windows.Forms.Label();
-            this.btnDelete = new Krypton.Toolkit.KryptonButton();
             this.pnlContainer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,6 +156,37 @@
             this.pnlContainer.Size = new System.Drawing.Size(506, 265);
             this.pnlContainer.TabIndex = 20;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(404, 232);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDelete.OverrideDefault.Border.Color1 = System.Drawing.Color.Gray;
+            this.btnDelete.OverrideDefault.Border.Color2 = System.Drawing.Color.Gray;
+            this.btnDelete.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDelete.OverrideDefault.Border.Width = 2;
+            this.btnDelete.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.Size = new System.Drawing.Size(90, 25);
+            this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.Gray;
+            this.btnDelete.StateCommon.Border.Color2 = System.Drawing.Color.Gray;
+            this.btnDelete.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnDelete.StateCommon.Border.Width = 2;
+            this.btnDelete.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.TabIndex = 22;
+            this.btnDelete.Values.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // btnRate
             // 
             this.btnRate.Location = new System.Drawing.Point(404, 231);
@@ -214,6 +245,7 @@
             // lblRemainUserName
             // 
             this.lblRemainUserName.AutoSize = true;
+            this.lblRemainUserName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRemainUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemainUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.lblRemainUserName.Location = new System.Drawing.Point(171, 9);
@@ -221,6 +253,7 @@
             this.lblRemainUserName.Size = new System.Drawing.Size(305, 23);
             this.lblRemainUserName.TabIndex = 19;
             this.lblRemainUserName.Text = "Destination name goes here ...";
+            this.lblRemainUserName.Click += new System.EventHandler(this.lblRemainUserName_Click);
             // 
             // cbDone
             // 
@@ -245,37 +278,6 @@
             this.lblJobStatusHead.Size = new System.Drawing.Size(66, 23);
             this.lblJobStatusHead.TabIndex = 5;
             this.lblJobStatusHead.Text = "Status";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(404, 232);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDelete.OverrideDefault.Border.Color1 = System.Drawing.Color.Gray;
-            this.btnDelete.OverrideDefault.Border.Color2 = System.Drawing.Color.Gray;
-            this.btnDelete.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDelete.OverrideDefault.Border.Width = 2;
-            this.btnDelete.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.Size = new System.Drawing.Size(90, 25);
-            this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.Gray;
-            this.btnDelete.StateCommon.Border.Color2 = System.Drawing.Color.Gray;
-            this.btnDelete.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnDelete.StateCommon.Border.Width = 2;
-            this.btnDelete.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.TabIndex = 22;
-            this.btnDelete.Values.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // fJobDetail
             // 

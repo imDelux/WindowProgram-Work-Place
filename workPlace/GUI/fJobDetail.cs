@@ -177,5 +177,12 @@ namespace GUI
             MessageBox.Show("Deleted", "Notification");
             this.Close();
         }
+
+        // Display hirer profile
+        private void lblRemainUserName_Click(object sender, EventArgs e)
+        {
+            fWorkerInfo fHirerInfor = new fWorkerInfo(dbConn.FetchPerson(currentDisplayingJob.HirerID, "Hirer"));
+            fHirerInfor.ShowDialog();
+        }
     }
 }
