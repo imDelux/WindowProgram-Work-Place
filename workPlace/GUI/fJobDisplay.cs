@@ -19,7 +19,6 @@ namespace GUI
         Worker worker = null;
         Person hirer = null;
         JobDAO jobDAO = new JobDAO();
-        
 
         public fJobDisplay()
         {
@@ -205,6 +204,18 @@ namespace GUI
             // Use accept function in jobDAO to update in database
             jobDAO.Update_Reject(job);
             this.Close();
+        }
+
+        /// <summary>
+        /// Click to see the hirer information
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtPersonName_Click(object sender, EventArgs e)
+        {
+            if (hirer == null) { return; }
+            fWorkerInfo fHirerInfor = new fWorkerInfo(hirer);
+            fHirerInfor.ShowDialog();
         }
     }
 }

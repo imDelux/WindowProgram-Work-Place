@@ -39,13 +39,13 @@
             this.txtWage = new Krypton.Toolkit.KryptonTextBox();
             this.lblWage = new System.Windows.Forms.Label();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.btnReject = new Krypton.Toolkit.KryptonButton();
             this.pnlShiftContainer = new System.Windows.Forms.Panel();
             this.rbtnMorning = new Krypton.Toolkit.KryptonRadioButton();
             this.rbtnAfternoon = new Krypton.Toolkit.KryptonRadioButton();
             this.btnDate = new Krypton.Toolkit.KryptonButton();
             this.lblPerson = new System.Windows.Forms.Label();
             this.txtPersonName = new Krypton.Toolkit.KryptonTextBox();
-            this.btnReject = new Krypton.Toolkit.KryptonButton();
             this.pnlContainer.SuspendLayout();
             this.pnlShiftContainer.SuspendLayout();
             this.SuspendLayout();
@@ -338,6 +338,77 @@
             this.pnlContainer.Size = new System.Drawing.Size(459, 470);
             this.pnlContainer.TabIndex = 46;
             // 
+            // btnReject
+            // 
+            this.btnReject.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
+            this.btnReject.Location = new System.Drawing.Point(17, 412);
+            this.btnReject.Name = "btnReject";
+            this.btnReject.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.Size = new System.Drawing.Size(107, 39);
+            this.btnReject.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.None;
+            this.btnReject.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateCommon.Border.Color2 = System.Drawing.Color.White;
+            this.btnReject.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.StateCommon.Border.Rounding = 10F;
+            this.btnReject.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnReject.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnReject.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.btnReject.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateDisabled.Back.Color2 = System.Drawing.Color.White;
+            this.btnReject.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnReject.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.StateNormal.Border.Rounding = 10F;
+            this.btnReject.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnReject.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReject.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StatePressed.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.btnReject.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.StatePressed.Border.Rounding = 15F;
+            this.btnReject.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnReject.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReject.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnReject.StateTracking.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
+            this.btnReject.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnReject.StateTracking.Border.Rounding = 15F;
+            this.btnReject.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnReject.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnReject.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReject.TabIndex = 49;
+            this.btnReject.Values.Text = "Reject";
+            this.btnReject.Click += new System.EventHandler(this.btnReject_Click);
+            // 
             // pnlShiftContainer
             // 
             this.pnlShiftContainer.Controls.Add(this.rbtnMorning);
@@ -446,16 +517,19 @@
             // lblPerson
             // 
             this.lblPerson.AutoSize = true;
-            this.lblPerson.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPerson.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPerson.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
             this.lblPerson.Location = new System.Drawing.Point(49, 76);
             this.lblPerson.Name = "lblPerson";
-            this.lblPerson.Size = new System.Drawing.Size(54, 28);
+            this.lblPerson.Size = new System.Drawing.Size(56, 28);
             this.lblPerson.TabIndex = 46;
             this.lblPerson.Text = "Who";
+            this.lblPerson.Click += new System.EventHandler(this.txtPersonName_Click);
             // 
             // txtPersonName
             // 
+            this.txtPersonName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtPersonName.Location = new System.Drawing.Point(132, 74);
             this.txtPersonName.Name = "txtPersonName";
             this.txtPersonName.Size = new System.Drawing.Size(308, 43);
@@ -481,77 +555,7 @@
             this.txtPersonName.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPersonName.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.txtPersonName.TabIndex = 47;
-            // 
-            // btnReject
-            // 
-            this.btnReject.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorMini;
-            this.btnReject.Location = new System.Drawing.Point(17, 412);
-            this.btnReject.Name = "btnReject";
-            this.btnReject.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.OverrideDefault.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.OverrideFocus.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.Size = new System.Drawing.Size(107, 39);
-            this.btnReject.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateCommon.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.None;
-            this.btnReject.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateCommon.Border.Color2 = System.Drawing.Color.White;
-            this.btnReject.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.StateCommon.Border.Rounding = 10F;
-            this.btnReject.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.btnReject.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReject.StateCommon.Content.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
-            this.btnReject.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateDisabled.Back.Color2 = System.Drawing.Color.White;
-            this.btnReject.StateDisabled.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateDisabled.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnReject.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.StateNormal.Border.Rounding = 10F;
-            this.btnReject.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReject.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReject.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StatePressed.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
-            this.btnReject.StatePressed.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.StatePressed.Border.Rounding = 15F;
-            this.btnReject.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnReject.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReject.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnReject.StateTracking.Back.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.HighQuality;
-            this.btnReject.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnReject.StateTracking.Border.Rounding = 15F;
-            this.btnReject.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnReject.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnReject.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReject.TabIndex = 49;
-            this.btnReject.Values.Text = "Reject";
-            this.btnReject.Click += new System.EventHandler(this.btnReject_Click);
+            this.txtPersonName.Click += new System.EventHandler(this.txtPersonName_Click);
             // 
             // fJobDisplay
             // 
