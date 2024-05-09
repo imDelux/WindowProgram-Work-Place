@@ -16,8 +16,7 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new fLogin());
-            Application.Run(new fEvaluatedJob());
+            Application.Run(new fLogin());
         }
     }
 }
