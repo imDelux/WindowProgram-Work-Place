@@ -133,8 +133,10 @@ namespace GUI
 
             // Set cancel status and notify
             currentDisplayingJob.IsCanceled = true;
+            currentDisplayingJob.IsComplete = true;
             jobDAO.Update_Cancel(currentDisplayingJob);
-            MessageBox.Show("Job canceled", "Notification");
+            jobDAO.Update_Complete(currentDisplayingJob);
+            MessageBox.Show("Job canceled", "Notification");     
 
             // Ask to review
             if (MessageBox.Show("Do you want to leave a review ?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -146,8 +148,6 @@ namespace GUI
             fReview fReview = new fReview(currentDisplayingJob, dbConn.FetchPerson(currentDisplayingJob.HirerID, "Hirer"), false);
             fReview.ShowDialog();
             currentDisplayingJob.IsEvaluated = true;
-            currentDisplayingJob.IsComplete = true;
-            jobDAO.Update_Complete(currentDisplayingJob);
             jobDAO.Update_Evaluate(currentDisplayingJob);
             this.Close();
         }
