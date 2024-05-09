@@ -52,9 +52,10 @@
             this.lblJobNameHead.AutoSize = true;
             this.lblJobNameHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobNameHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobNameHead.Location = new System.Drawing.Point(19, 43);
+            this.lblJobNameHead.Location = new System.Drawing.Point(15, 34);
+            this.lblJobNameHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobNameHead.Name = "lblJobNameHead";
-            this.lblJobNameHead.Size = new System.Drawing.Size(109, 23);
+            this.lblJobNameHead.Size = new System.Drawing.Size(89, 19);
             this.lblJobNameHead.TabIndex = 1;
             this.lblJobNameHead.Text = "Job name";
             // 
@@ -63,9 +64,10 @@
             this.lblJobDescriptHead.AutoSize = true;
             this.lblJobDescriptHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDescriptHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobDescriptHead.Location = new System.Drawing.Point(19, 79);
+            this.lblJobDescriptHead.Location = new System.Drawing.Point(15, 63);
+            this.lblJobDescriptHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobDescriptHead.Name = "lblJobDescriptHead";
-            this.lblJobDescriptHead.Size = new System.Drawing.Size(118, 46);
+            this.lblJobDescriptHead.Size = new System.Drawing.Size(94, 38);
             this.lblJobDescriptHead.TabIndex = 2;
             this.lblJobDescriptHead.Text = "Job\r\ndescription";
             // 
@@ -74,9 +76,10 @@
             this.lblJobDateHead.AutoSize = true;
             this.lblJobDateHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDateHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobDateHead.Location = new System.Drawing.Point(19, 157);
+            this.lblJobDateHead.Location = new System.Drawing.Point(15, 126);
+            this.lblJobDateHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobDateHead.Name = "lblJobDateHead";
-            this.lblJobDateHead.Size = new System.Drawing.Size(56, 23);
+            this.lblJobDateHead.Size = new System.Drawing.Size(45, 19);
             this.lblJobDateHead.TabIndex = 3;
             this.lblJobDateHead.Text = "Date";
             // 
@@ -85,9 +88,10 @@
             this.lblJobWageHead.AutoSize = true;
             this.lblJobWageHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobWageHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobWageHead.Location = new System.Drawing.Point(19, 195);
+            this.lblJobWageHead.Location = new System.Drawing.Point(15, 156);
+            this.lblJobWageHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobWageHead.Name = "lblJobWageHead";
-            this.lblJobWageHead.Size = new System.Drawing.Size(67, 23);
+            this.lblJobWageHead.Size = new System.Drawing.Size(55, 19);
             this.lblJobWageHead.TabIndex = 4;
             this.lblJobWageHead.Text = "Wage";
             // 
@@ -96,9 +100,10 @@
             this.lblJobName.AutoSize = true;
             this.lblJobName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobName.Location = new System.Drawing.Point(171, 43);
+            this.lblJobName.Location = new System.Drawing.Point(137, 34);
+            this.lblJobName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobName.Name = "lblJobName";
-            this.lblJobName.Size = new System.Drawing.Size(235, 23);
+            this.lblJobName.Size = new System.Drawing.Size(185, 21);
             this.lblJobName.TabIndex = 7;
             this.lblJobName.Text = "Job name goes here ...";
             // 
@@ -106,9 +111,10 @@
             // 
             this.lblJobDescript.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDescript.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobDescript.Location = new System.Drawing.Point(171, 79);
+            this.lblJobDescript.Location = new System.Drawing.Point(137, 63);
+            this.lblJobDescript.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobDescript.Name = "lblJobDescript";
-            this.lblJobDescript.Size = new System.Drawing.Size(323, 76);
+            this.lblJobDescript.Size = new System.Drawing.Size(258, 61);
             this.lblJobDescript.TabIndex = 8;
             this.lblJobDescript.Text = "Job description goes here ...\r\n";
             // 
@@ -117,9 +123,10 @@
             this.lblJobDate.AutoSize = true;
             this.lblJobDate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobDate.Location = new System.Drawing.Point(171, 157);
+            this.lblJobDate.Location = new System.Drawing.Point(137, 126);
+            this.lblJobDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobDate.Name = "lblJobDate";
-            this.lblJobDate.Size = new System.Drawing.Size(225, 23);
+            this.lblJobDate.Size = new System.Drawing.Size(178, 21);
             this.lblJobDate.TabIndex = 9;
             this.lblJobDate.Text = "Job date goes here ...";
             // 
@@ -128,9 +135,10 @@
             this.lblJobWage.AutoSize = true;
             this.lblJobWage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobWage.Location = new System.Drawing.Point(171, 195);
+            this.lblJobWage.Location = new System.Drawing.Point(137, 156);
+            this.lblJobWage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobWage.Name = "lblJobWage";
-            this.lblJobWage.Size = new System.Drawing.Size(235, 23);
+            this.lblJobWage.Size = new System.Drawing.Size(185, 21);
             this.lblJobWage.TabIndex = 10;
             this.lblJobWage.Text = "Job wage goes here ,,,";
             // 
@@ -151,14 +159,16 @@
             this.pnlContainer.Controls.Add(this.lblJobDate);
             this.pnlContainer.Controls.Add(this.lblJobName);
             this.pnlContainer.Controls.Add(this.lblJobDescript);
-            this.pnlContainer.Location = new System.Drawing.Point(12, 26);
+            this.pnlContainer.Location = new System.Drawing.Point(10, 21);
+            this.pnlContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(506, 265);
+            this.pnlContainer.Size = new System.Drawing.Size(405, 212);
             this.pnlContainer.TabIndex = 20;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(404, 232);
+            this.btnDelete.Location = new System.Drawing.Point(323, 186);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDelete.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -171,7 +181,7 @@
             this.btnDelete.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDelete.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnDelete.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnDelete.Size = new System.Drawing.Size(90, 25);
+            this.btnDelete.Size = new System.Drawing.Size(72, 20);
             this.btnDelete.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDelete.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDelete.StateCommon.Border.Color1 = System.Drawing.Color.Gray;
@@ -189,7 +199,8 @@
             // 
             // btnRate
             // 
-            this.btnRate.Location = new System.Drawing.Point(404, 231);
+            this.btnRate.Location = new System.Drawing.Point(323, 185);
+            this.btnRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRate.Name = "btnRate";
             this.btnRate.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRate.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -202,7 +213,7 @@
             this.btnRate.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRate.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRate.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnRate.Size = new System.Drawing.Size(90, 25);
+            this.btnRate.Size = new System.Drawing.Size(72, 20);
             this.btnRate.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRate.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRate.StateCommon.Border.Color1 = System.Drawing.Color.Gray;
@@ -223,9 +234,10 @@
             this.cbCancel.AutoSize = true;
             this.cbCancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.cbCancel.Location = new System.Drawing.Point(282, 230);
+            this.cbCancel.Location = new System.Drawing.Point(226, 184);
+            this.cbCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbCancel.Name = "cbCancel";
-            this.cbCancel.Size = new System.Drawing.Size(105, 27);
+            this.cbCancel.Size = new System.Drawing.Size(86, 25);
             this.cbCancel.TabIndex = 20;
             this.cbCancel.Text = "Cancel";
             this.cbCancel.UseVisualStyleBackColor = true;
@@ -236,9 +248,10 @@
             this.lblHirerNameHeader.AutoSize = true;
             this.lblHirerNameHeader.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHirerNameHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblHirerNameHeader.Location = new System.Drawing.Point(19, 9);
+            this.lblHirerNameHeader.Location = new System.Drawing.Point(15, 7);
+            this.lblHirerNameHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHirerNameHeader.Name = "lblHirerNameHeader";
-            this.lblHirerNameHeader.Size = new System.Drawing.Size(58, 23);
+            this.lblHirerNameHeader.Size = new System.Drawing.Size(48, 19);
             this.lblHirerNameHeader.TabIndex = 18;
             this.lblHirerNameHeader.Text = "From";
             // 
@@ -248,9 +261,10 @@
             this.lblRemainUserName.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRemainUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemainUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblRemainUserName.Location = new System.Drawing.Point(171, 9);
+            this.lblRemainUserName.Location = new System.Drawing.Point(137, 7);
+            this.lblRemainUserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRemainUserName.Name = "lblRemainUserName";
-            this.lblRemainUserName.Size = new System.Drawing.Size(305, 23);
+            this.lblRemainUserName.Size = new System.Drawing.Size(245, 21);
             this.lblRemainUserName.TabIndex = 19;
             this.lblRemainUserName.Text = "Destination name goes here ...";
             this.lblRemainUserName.Click += new System.EventHandler(this.lblRemainUserName_Click);
@@ -260,9 +274,10 @@
             this.cbDone.AutoSize = true;
             this.cbDone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.cbDone.Location = new System.Drawing.Point(175, 230);
+            this.cbDone.Location = new System.Drawing.Point(140, 184);
+            this.cbDone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbDone.Name = "cbDone";
-            this.cbDone.Size = new System.Drawing.Size(85, 27);
+            this.cbDone.Size = new System.Drawing.Size(71, 25);
             this.cbDone.TabIndex = 15;
             this.cbDone.Text = "Done";
             this.cbDone.UseVisualStyleBackColor = true;
@@ -273,21 +288,23 @@
             this.lblJobStatusHead.AutoSize = true;
             this.lblJobStatusHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobStatusHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.lblJobStatusHead.Location = new System.Drawing.Point(19, 231);
+            this.lblJobStatusHead.Location = new System.Drawing.Point(15, 185);
+            this.lblJobStatusHead.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJobStatusHead.Name = "lblJobStatusHead";
-            this.lblJobStatusHead.Size = new System.Drawing.Size(66, 23);
+            this.lblJobStatusHead.Size = new System.Drawing.Size(52, 19);
             this.lblJobStatusHead.TabIndex = 5;
             this.lblJobStatusHead.Text = "Status";
             // 
             // fJobDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(225)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(530, 314);
+            this.ClientSize = new System.Drawing.Size(424, 251);
             this.Controls.Add(this.pnlContainer);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fJobDetail";

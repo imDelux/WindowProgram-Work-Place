@@ -50,5 +50,20 @@ namespace GUI
             evaluateDAO.Add(newEvaluate);
             this.Close();
         }
+
+        private void picPhoto1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picPhoto2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picPhoto3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

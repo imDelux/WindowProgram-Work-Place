@@ -163,6 +163,16 @@ namespace GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_photo__1_ {
+            get {
+                object obj = ResourceManager.GetObject("add-photo (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_down_thin {
             get {
                 object obj = ResourceManager.GetObject("arrow-down-thin", resourceCulture);
@@ -506,6 +516,16 @@ namespace GUI.Properties {
         internal static System.Drawing.Bitmap old_man {
             get {
                 object obj = ResourceManager.GetObject("old-man", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo {
+            get {
+                object obj = ResourceManager.GetObject("photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

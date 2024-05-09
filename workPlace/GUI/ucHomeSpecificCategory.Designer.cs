@@ -46,9 +46,10 @@
             this.pnlTop.Controls.Add(this.txtSearch);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.pnlTop.Size = new System.Drawing.Size(1002, 78);
+            this.pnlTop.Size = new System.Drawing.Size(802, 62);
             this.pnlTop.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.StateCommon.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.pnlTop.TabIndex = 4;
@@ -61,9 +62,10 @@
             this.cbbArrangeType.Items.AddRange(new object[] {
             "Rate",
             "Job receive"});
-            this.cbbArrangeType.Location = new System.Drawing.Point(758, 27);
+            this.cbbArrangeType.Location = new System.Drawing.Point(606, 22);
+            this.cbbArrangeType.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbbArrangeType.Name = "cbbArrangeType";
-            this.cbbArrangeType.Size = new System.Drawing.Size(218, 38);
+            this.cbbArrangeType.Size = new System.Drawing.Size(174, 33);
             this.cbbArrangeType.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Gray;
             this.cbbArrangeType.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.Gray;
             this.cbbArrangeType.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -85,9 +87,10 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(514, 27);
+            this.btnSearch.Location = new System.Drawing.Point(411, 22);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(45, 45);
+            this.btnSearch.Size = new System.Drawing.Size(36, 36);
             this.btnSearch.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.btnSearch.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.btnSearch.StateCommon.Border.Color1 = System.Drawing.Color.Gray;
@@ -105,10 +108,11 @@
             // txtSearch
             // 
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.Location = new System.Drawing.Point(44, 22);
+            this.txtSearch.Location = new System.Drawing.Point(35, 18);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PaletteMode = Krypton.Toolkit.PaletteMode.ProfessionalSystem;
-            this.txtSearch.Size = new System.Drawing.Size(464, 45);
+            this.txtSearch.Size = new System.Drawing.Size(371, 39);
             this.txtSearch.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -119,13 +123,15 @@
             this.txtSearch.TabIndex = 0;
             this.txtSearch.Text = "Search ...";
             this.txtSearch.ToolTipValues.Image = global::GUI.Properties.Resources._211818_search_icon;
+            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             // 
             // fpnlContainer
             // 
             this.fpnlContainer.AutoScroll = true;
-            this.fpnlContainer.Location = new System.Drawing.Point(46, 166);
+            this.fpnlContainer.Location = new System.Drawing.Point(37, 133);
+            this.fpnlContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fpnlContainer.Name = "fpnlContainer";
-            this.fpnlContainer.Size = new System.Drawing.Size(930, 563);
+            this.fpnlContainer.Size = new System.Drawing.Size(744, 450);
             this.fpnlContainer.TabIndex = 5;
             this.fpnlContainer.Tag = "Arrange type";
             // 
@@ -133,23 +139,25 @@
             // 
             this.lblCategory.Font = new System.Drawing.Font("Cooper Black", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
-            this.lblCategory.Location = new System.Drawing.Point(35, 92);
+            this.lblCategory.Location = new System.Drawing.Point(28, 74);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(941, 54);
+            this.lblCategory.Size = new System.Drawing.Size(753, 43);
             this.lblCategory.TabIndex = 6;
             this.lblCategory.Text = "Category";
             this.lblCategory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ucHomeSpecificCategory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.pnlTop);
             this.Controls.Add(this.fpnlContainer);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ucHomeSpecificCategory";
-            this.Size = new System.Drawing.Size(1002, 749);
+            this.Size = new System.Drawing.Size(802, 599);
             ((System.ComponentModel.ISupportInitialize)(this.pnlTop)).EndInit();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();

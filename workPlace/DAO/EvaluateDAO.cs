@@ -25,7 +25,14 @@ namespace DAO
             {
                 sum += eval.Point;
             }
-            return ((int)(sum * 10 / evaluates.Count))/10.0f;
+            if (evaluates.Count > 0)
+            {
+                return ((int)(sum * 10 / evaluates.Count)) / 10.0f;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }

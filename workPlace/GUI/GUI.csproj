@@ -92,6 +92,12 @@
     <Compile Include="fChooseJobDate.Designer.cs">
       <DependentUpon>fChooseJobDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="fEvaluatedJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEvaluatedJob.Designer.cs">
+      <DependentUpon>fEvaluatedJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="fJobDisplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fChooseJobDate.resx">
       <DependentUpon>fChooseJobDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEvaluatedJob.resx">
+      <DependentUpon>fEvaluatedJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fJobDisplay.resx">
       <DependentUpon>fJobDisplay.cs</DependentUpon>
@@ -623,6 +632,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\jobRejected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-photo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -80,5 +80,13 @@ namespace GUI
                 GenerateDynamicUserControl(SummarizeData.TopMostReceiveJobWorker(currentDisplayingWorkerList));
             }
         }
+
+        private void txtSearch_Enter(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == "Search ...")
+            {
+                txtSearch.Text = "";
+            }
+        }
     }
 }
