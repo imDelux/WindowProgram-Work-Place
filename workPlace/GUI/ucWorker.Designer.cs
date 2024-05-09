@@ -121,13 +121,12 @@
             // 
             // lblSkill
             // 
-            this.lblSkill.AutoSize = true;
             this.lblSkill.BackColor = System.Drawing.Color.White;
             this.lblSkill.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSkill.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSkill.Location = new System.Drawing.Point(29, 16);
+            this.lblSkill.Location = new System.Drawing.Point(17, 16);
             this.lblSkill.Name = "lblSkill";
-            this.lblSkill.Size = new System.Drawing.Size(353, 31);
+            this.lblSkill.Size = new System.Drawing.Size(413, 31);
             this.lblSkill.TabIndex = 9;
             this.lblSkill.Text = "Tho sua dien tu lanh, may giat";
             // 

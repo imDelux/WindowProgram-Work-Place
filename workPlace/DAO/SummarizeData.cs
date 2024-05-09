@@ -19,7 +19,7 @@ namespace DAO
             {
                 sum += evaluate.Point;
             }
-            return sum/evaluateList.Count;
+            return evaluateList.Count != 0 ? sum/evaluateList.Count : 0;
         }
 
         public static List<Worker> TopMostReceiveJobWorker(List<Worker> trackList)
