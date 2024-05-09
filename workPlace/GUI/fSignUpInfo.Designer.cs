@@ -99,7 +99,7 @@
             this.txtPersonID.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtPersonID.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPersonID.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtPersonID.TabIndex = 8;
+            this.txtPersonID.TabIndex = 4;
             // 
             // lblPersonID
             // 
@@ -130,7 +130,7 @@
             this.txtLocation.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtLocation.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtLocation.TabIndex = 10;
+            this.txtLocation.TabIndex = 5;
             // 
             // lblLocation
             // 
@@ -222,7 +222,7 @@
             this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnConfirm.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.TabIndex = 15;
+            this.btnConfirm.TabIndex = 7;
             this.btnConfirm.Values.Text = "Confirm";
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -287,7 +287,7 @@
             this.btnCancle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnCancle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnCancle.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.TabIndex = 16;
+            this.btnCancle.TabIndex = 8;
             this.btnCancle.Values.Text = "Cancle";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
@@ -331,7 +331,7 @@
             this.pnlRoleContainer.Location = new System.Drawing.Point(219, 475);
             this.pnlRoleContainer.Name = "pnlRoleContainer";
             this.pnlRoleContainer.Size = new System.Drawing.Size(218, 36);
-            this.pnlRoleContainer.TabIndex = 23;
+            this.pnlRoleContainer.TabIndex = 6;
             // 
             // txtAge
             // 
@@ -351,7 +351,7 @@
             this.txtAge.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtAge.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAge.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtAge.TabIndex = 25;
+            this.txtAge.TabIndex = 3;
             // 
             // lblAgeHeader
             // 

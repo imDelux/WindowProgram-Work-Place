@@ -246,7 +246,7 @@
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtWage.StateNormal.Border.Rounding = 3F;
             this.txtWage.StateNormal.Border.Width = 1;
-            this.txtWage.TabIndex = 56;
+            this.txtWage.TabIndex = 63;
             this.txtWage.Text = "Add the wage you want";
             // 
             // lblWage
@@ -357,7 +357,7 @@
             this.btnNext.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNext.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNext.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.TabIndex = 60;
+            this.btnNext.TabIndex = 64;
             this.btnNext.Values.Text = "";
             // 
             // picExit

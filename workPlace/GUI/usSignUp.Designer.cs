@@ -118,7 +118,7 @@
             this.btnNext.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnNext.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnNext.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.TabIndex = 39;
+            this.btnNext.TabIndex = 41;
             this.btnNext.Values.Text = "";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
@@ -179,7 +179,7 @@
             this.txtRewritepass.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRewritepass.StateCommon.Content.Padding = new System.Windows.Forms.Padding(20, 4, 10, 4);
             this.txtRewritepass.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
-            this.txtRewritepass.TabIndex = 36;
+            this.txtRewritepass.TabIndex = 40;
             this.txtRewritepass.Text = "Rewrite password";
             // 
             // txtPassword
@@ -199,7 +199,7 @@
             this.txtPassword.StateCommon.Content.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.StateCommon.Content.Padding = new System.Windows.Forms.Padding(20, 4, 10, 4);
             this.txtPassword.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
-            this.txtPassword.TabIndex = 35;
+            this.txtPassword.TabIndex = 39;
             this.txtPassword.Text = "Password";
             // 
             // usSignUp
