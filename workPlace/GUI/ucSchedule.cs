@@ -50,7 +50,11 @@ namespace GUI
             DisplayDays(currentTimeInCalendar);
 
             // Display guide image
-            DisplayGuideImage();
+            if (!isHirer)
+            {
+                DisplayGuideImage();
+            }
+            pnlSymbolGuide.Visible = !isHirer;
         }
 
         // Display all days of a specific month
