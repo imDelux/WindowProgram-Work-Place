@@ -28,34 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.cWage = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.btnLastweek = new Krypton.Toolkit.KryptonButton();
-            this.btnLastmonth = new Krypton.Toolkit.KryptonButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnThisYear = new Krypton.Toolkit.KryptonButton();
+            this.btnThisMonth = new Krypton.Toolkit.KryptonButton();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.cJob = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblProfit = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTotalProfitHeader = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTotaljob = new System.Windows.Forms.Label();
-            this.lblContext = new System.Windows.Forms.Label();
+            this.lblTotalJob = new System.Windows.Forms.Label();
+            this.lblTotalJobHeader = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblMonth = new System.Windows.Forms.Label();
+            this.lblYear = new System.Windows.Forms.Label();
+            this.picPreviousMonth = new System.Windows.Forms.PictureBox();
+            this.picNextMonth = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cWage)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cJob)).BeginInit();
@@ -66,6 +68,8 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPreviousMonth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNextMonth)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -79,163 +83,155 @@
             // 
             // cWage
             // 
-            chartArea1.Name = "ChartArea1";
-            this.cWage.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.cWage.Legends.Add(legend1);
-            this.cWage.Location = new System.Drawing.Point(27, 27);
+            chartArea3.Name = "ChartArea1";
+            this.cWage.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.cWage.Legends.Add(legend3);
+            this.cWage.Location = new System.Drawing.Point(13, 14);
             this.cWage.Name = "cWage";
-            this.cWage.Size = new System.Drawing.Size(515, 403);
+            this.cWage.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.cWage.Size = new System.Drawing.Size(543, 436);
             this.cWage.TabIndex = 0;
-            this.cWage.Text = "chart1";
-            title1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title1.ForeColor = System.Drawing.Color.Thistle;
-            title1.Name = "Title1";
-            title1.Text = "Tracking Wage";
-            this.cWage.Titles.Add(title1);
+            this.cWage.Text = "Tracking Wage";
+            title3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title3.ForeColor = System.Drawing.Color.Thistle;
+            title3.Name = "Title1";
+            title3.Text = "Tracking Wage";
+            this.cWage.Titles.Add(title3);
             // 
-            // btnLastweek
+            // btnThisYear
             // 
-            this.btnLastweek.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
-            this.btnLastweek.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btnLastweek.Location = new System.Drawing.Point(3, 3);
-            this.btnLastweek.Name = "btnLastweek";
-            this.btnLastweek.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisYear.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
+            this.btnThisYear.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
+            this.btnThisYear.Location = new System.Drawing.Point(832, 54);
+            this.btnThisYear.Name = "btnThisYear";
+            this.btnThisYear.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.OverrideDefault.Border.Width = 0;
-            this.btnLastweek.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastweek.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastweek.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastweek.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisYear.OverrideDefault.Border.Width = 0;
+            this.btnThisYear.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisYear.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisYear.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisYear.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.OverrideFocus.Border.Width = 0;
-            this.btnLastweek.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastweek.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastweek.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastweek.Size = new System.Drawing.Size(169, 40);
-            this.btnLastweek.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisYear.OverrideFocus.Border.Width = 0;
+            this.btnThisYear.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisYear.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisYear.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisYear.Size = new System.Drawing.Size(144, 40);
+            this.btnThisYear.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.StateCommon.Border.Rounding = 5F;
-            this.btnLastweek.StateCommon.Border.Width = 2;
-            this.btnLastweek.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.btnLastweek.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnLastweek.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastweek.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastweek.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisYear.StateCommon.Border.Rounding = 5F;
+            this.btnThisYear.StateCommon.Border.Width = 2;
+            this.btnThisYear.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnThisYear.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnThisYear.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisYear.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisYear.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.StateNormal.Border.Width = 1;
-            this.btnLastweek.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastweek.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastweek.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastweek.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastweek.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnLastweek.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnLastweek.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisYear.StateNormal.Border.Width = 1;
+            this.btnThisYear.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisYear.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisYear.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisYear.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisYear.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnThisYear.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnThisYear.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.StatePressed.Border.Width = 0;
-            this.btnLastweek.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastweek.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastweek.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastweek.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnLastweek.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btnLastweek.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastweek.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastweek.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
-            this.btnLastweek.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            this.btnThisYear.StatePressed.Border.Width = 0;
+            this.btnThisYear.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisYear.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisYear.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisYear.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btnThisYear.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnThisYear.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisYear.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisYear.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
+            this.btnThisYear.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastweek.StateTracking.Border.Width = 1;
-            this.btnLastweek.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastweek.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastweek.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastweek.TabIndex = 9;
-            this.btnLastweek.Values.Text = "Last week";
-            this.btnLastweek.Click += new System.EventHandler(this.btnLastweek_Click);
+            this.btnThisYear.StateTracking.Border.Width = 1;
+            this.btnThisYear.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisYear.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisYear.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisYear.TabIndex = 9;
+            this.btnThisYear.Values.Text = "Year";
+            this.btnThisYear.Click += new System.EventHandler(this.btnThisYear_Click);
             // 
-            // btnLastmonth
+            // btnThisMonth
             // 
-            this.btnLastmonth.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
-            this.btnLastmonth.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btnLastmonth.Location = new System.Drawing.Point(178, 3);
-            this.btnLastmonth.Name = "btnLastmonth";
-            this.btnLastmonth.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisMonth.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
+            this.btnThisMonth.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
+            this.btnThisMonth.Location = new System.Drawing.Point(677, 54);
+            this.btnThisMonth.Name = "btnThisMonth";
+            this.btnThisMonth.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.OverrideDefault.Border.Width = 0;
-            this.btnLastmonth.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastmonth.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastmonth.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastmonth.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisMonth.OverrideDefault.Border.Width = 0;
+            this.btnThisMonth.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisMonth.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisMonth.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisMonth.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.OverrideFocus.Border.Width = 0;
-            this.btnLastmonth.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastmonth.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastmonth.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastmonth.Size = new System.Drawing.Size(169, 40);
-            this.btnLastmonth.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisMonth.OverrideFocus.Border.Width = 0;
+            this.btnThisMonth.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisMonth.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisMonth.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisMonth.Size = new System.Drawing.Size(149, 40);
+            this.btnThisMonth.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.StateCommon.Border.Rounding = 5F;
-            this.btnLastmonth.StateCommon.Border.Width = 2;
-            this.btnLastmonth.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.btnLastmonth.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnLastmonth.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastmonth.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastmonth.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisMonth.StateCommon.Border.Rounding = 5F;
+            this.btnThisMonth.StateCommon.Border.Width = 2;
+            this.btnThisMonth.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnThisMonth.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnThisMonth.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisMonth.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisMonth.StateNormal.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.StateNormal.Border.Width = 1;
-            this.btnLastmonth.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastmonth.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastmonth.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastmonth.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnLastmonth.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnLastmonth.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnLastmonth.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnThisMonth.StateNormal.Border.Width = 1;
+            this.btnThisMonth.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisMonth.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisMonth.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisMonth.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnThisMonth.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnThisMonth.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnThisMonth.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.StatePressed.Border.Width = 0;
-            this.btnLastmonth.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnLastmonth.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnLastmonth.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastmonth.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnLastmonth.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btnLastmonth.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastmonth.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnLastmonth.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
-            this.btnLastmonth.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            this.btnThisMonth.StatePressed.Border.Width = 0;
+            this.btnThisMonth.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnThisMonth.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnThisMonth.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisMonth.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btnThisMonth.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnThisMonth.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisMonth.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnThisMonth.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
+            this.btnThisMonth.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnLastmonth.StateTracking.Border.Width = 1;
-            this.btnLastmonth.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastmonth.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnLastmonth.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLastmonth.TabIndex = 10;
-            this.btnLastmonth.Values.Text = "Last month";
-            this.btnLastmonth.Click += new System.EventHandler(this.btnLastmonth_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnLastweek);
-            this.flowLayoutPanel1.Controls.Add(this.btnLastmonth);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(594, 25);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(368, 56);
-            this.flowLayoutPanel1.TabIndex = 11;
+            this.btnThisMonth.StateTracking.Border.Width = 1;
+            this.btnThisMonth.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisMonth.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnThisMonth.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThisMonth.TabIndex = 10;
+            this.btnThisMonth.Values.Text = "Month";
+            this.btnThisMonth.Click += new System.EventHandler(this.btnThisMonth_Click);
             // 
             // kryptonPanel2
             // 
@@ -248,27 +244,27 @@
             // 
             // cJob
             // 
-            chartArea2.Name = "ChartArea1";
-            this.cJob.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.cJob.Legends.Add(legend2);
-            this.cJob.Location = new System.Drawing.Point(26, 27);
+            chartArea4.Name = "ChartArea1";
+            this.cJob.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.cJob.Legends.Add(legend4);
+            this.cJob.Location = new System.Drawing.Point(14, 14);
             this.cJob.Name = "cJob";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.LabelForeColor = System.Drawing.Color.White;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.cJob.Series.Add(series1);
-            this.cJob.Size = new System.Drawing.Size(315, 403);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.LabelForeColor = System.Drawing.Color.White;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.cJob.Series.Add(series2);
+            this.cJob.Size = new System.Drawing.Size(327, 436);
             this.cJob.TabIndex = 1;
             this.cJob.Text = "chart2";
-            title2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            title2.ForeColor = System.Drawing.Color.Thistle;
-            title2.Name = "Title1";
-            title2.Text = "Percent done job";
-            this.cJob.Titles.Add(title2);
+            title4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title4.ForeColor = System.Drawing.Color.Thistle;
+            title4.Name = "Title1";
+            title4.Text = "Percent done job";
+            this.cJob.Titles.Add(title4);
             // 
             // kryptonPanel3
             // 
@@ -283,7 +279,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.lblProfit);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lblTotalProfitHeader);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(17, 17);
             this.panel2.Name = "panel2";
@@ -292,79 +288,81 @@
             // 
             // lblProfit
             // 
-            this.lblProfit.AutoSize = true;
             this.lblProfit.BackColor = System.Drawing.Color.White;
             this.lblProfit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblProfit.Location = new System.Drawing.Point(147, 39);
+            this.lblProfit.Location = new System.Drawing.Point(89, 39);
             this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(102, 30);
+            this.lblProfit.Size = new System.Drawing.Size(219, 30);
             this.lblProfit.TabIndex = 44;
-            this.lblProfit.Text = "Total job ";
+            this.lblProfit.Text = "Total profit";
+            this.lblProfit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblTotalProfitHeader
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(110, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 24);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Total profit";
+            this.lblTotalProfitHeader.AutoSize = true;
+            this.lblTotalProfitHeader.BackColor = System.Drawing.Color.White;
+            this.lblTotalProfitHeader.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProfitHeader.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblTotalProfitHeader.Location = new System.Drawing.Point(85, 10);
+            this.lblTotalProfitHeader.Name = "lblTotalProfitHeader";
+            this.lblTotalProfitHeader.Size = new System.Drawing.Size(92, 24);
+            this.lblTotalProfitHeader.TabIndex = 43;
+            this.lblTotalProfitHeader.Text = "Total profit";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::GUI.Properties.Resources.investment;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 10);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 83);
+            this.pictureBox3.Size = new System.Drawing.Size(67, 60);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.lblTotaljob);
-            this.panel1.Controls.Add(this.lblContext);
+            this.panel1.Controls.Add(this.lblTotalJob);
+            this.panel1.Controls.Add(this.lblTotalJobHeader);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Location = new System.Drawing.Point(590, 17);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(328, 89);
             this.panel1.TabIndex = 0;
             // 
-            // lblTotaljob
+            // lblTotalJob
             // 
-            this.lblTotaljob.AutoSize = true;
-            this.lblTotaljob.BackColor = System.Drawing.Color.White;
-            this.lblTotaljob.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotaljob.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTotaljob.Location = new System.Drawing.Point(147, 40);
-            this.lblTotaljob.Name = "lblTotaljob";
-            this.lblTotaljob.Size = new System.Drawing.Size(102, 30);
-            this.lblTotaljob.TabIndex = 43;
-            this.lblTotaljob.Text = "Total job ";
+            this.lblTotalJob.BackColor = System.Drawing.Color.White;
+            this.lblTotalJob.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalJob.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTotalJob.Location = new System.Drawing.Point(90, 39);
+            this.lblTotalJob.Name = "lblTotalJob";
+            this.lblTotalJob.Size = new System.Drawing.Size(219, 30);
+            this.lblTotalJob.TabIndex = 43;
+            this.lblTotalJob.Text = "Total job ";
+            this.lblTotalJob.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblContext
+            // lblTotalJobHeader
             // 
-            this.lblContext.AutoSize = true;
-            this.lblContext.BackColor = System.Drawing.Color.White;
-            this.lblContext.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContext.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblContext.Location = new System.Drawing.Point(99, 6);
-            this.lblContext.Name = "lblContext";
-            this.lblContext.Size = new System.Drawing.Size(79, 24);
-            this.lblContext.TabIndex = 42;
-            this.lblContext.Text = "Total job ";
+            this.lblTotalJobHeader.AutoSize = true;
+            this.lblTotalJobHeader.BackColor = System.Drawing.Color.White;
+            this.lblTotalJobHeader.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalJobHeader.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblTotalJobHeader.Location = new System.Drawing.Point(86, 10);
+            this.lblTotalJobHeader.Name = "lblTotalJobHeader";
+            this.lblTotalJobHeader.Size = new System.Drawing.Size(79, 24);
+            this.lblTotalJobHeader.TabIndex = 42;
+            this.lblTotalJobHeader.Text = "Total job ";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::GUI.Properties.Resources.corporate_alt;
-            this.pictureBox2.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 10);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(68, 60);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -377,13 +375,66 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // lblMonth
+            // 
+            this.lblMonth.AutoSize = true;
+            this.lblMonth.Font = new System.Drawing.Font("Segoe UI Black", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth.ForeColor = System.Drawing.Color.DimGray;
+            this.lblMonth.Location = new System.Drawing.Point(173, 40);
+            this.lblMonth.Name = "lblMonth";
+            this.lblMonth.Size = new System.Drawing.Size(188, 54);
+            this.lblMonth.TabIndex = 13;
+            this.lblMonth.Text = "Time: 01";
+            // 
+            // lblYear
+            // 
+            this.lblYear.AutoSize = true;
+            this.lblYear.Font = new System.Drawing.Font("Segoe UI Black", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYear.ForeColor = System.Drawing.Color.DimGray;
+            this.lblYear.Location = new System.Drawing.Point(352, 40);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(143, 54);
+            this.lblYear.TabIndex = 14;
+            this.lblYear.Text = "- 2024";
+            // 
+            // picPreviousMonth
+            // 
+            this.picPreviousMonth.BackColor = System.Drawing.Color.Transparent;
+            this.picPreviousMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPreviousMonth.Image = global::GUI.Properties.Resources.up1;
+            this.picPreviousMonth.Location = new System.Drawing.Point(495, 43);
+            this.picPreviousMonth.Name = "picPreviousMonth";
+            this.picPreviousMonth.Size = new System.Drawing.Size(50, 50);
+            this.picPreviousMonth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPreviousMonth.TabIndex = 16;
+            this.picPreviousMonth.TabStop = false;
+            this.picPreviousMonth.Click += new System.EventHandler(this.picPreviousMonth_Click);
+            // 
+            // picNextMonth
+            // 
+            this.picNextMonth.BackColor = System.Drawing.Color.Transparent;
+            this.picNextMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNextMonth.Image = global::GUI.Properties.Resources.down1;
+            this.picNextMonth.Location = new System.Drawing.Point(551, 43);
+            this.picNextMonth.Name = "picNextMonth";
+            this.picNextMonth.Size = new System.Drawing.Size(50, 50);
+            this.picNextMonth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNextMonth.TabIndex = 15;
+            this.picNextMonth.TabStop = false;
+            this.picNextMonth.Click += new System.EventHandler(this.picNextMonth_Click);
+            // 
             // ucStatic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.picPreviousMonth);
+            this.Controls.Add(this.picNextMonth);
+            this.Controls.Add(this.lblYear);
+            this.Controls.Add(this.lblMonth);
+            this.Controls.Add(this.btnThisYear);
+            this.Controls.Add(this.btnThisMonth);
             this.Controls.Add(this.kryptonPanel3);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kryptonPanel1);
             this.Controls.Add(this.kryptonPanel2);
@@ -392,7 +443,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cWage)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cJob)).EndInit();
@@ -405,7 +455,10 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPreviousMonth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNextMonth)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -413,9 +466,8 @@
 
         private Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Krypton.Toolkit.KryptonButton btnLastweek;
-        private Krypton.Toolkit.KryptonButton btnLastmonth;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Krypton.Toolkit.KryptonButton btnThisYear;
+        private Krypton.Toolkit.KryptonButton btnThisMonth;
         private Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart cWage;
         private System.Windows.Forms.DataVisualization.Charting.Chart cJob;
@@ -423,10 +475,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblContext;
+        private System.Windows.Forms.Label lblTotalJobHeader;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblProfit;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblTotaljob;
+        private System.Windows.Forms.Label lblTotalProfitHeader;
+        private System.Windows.Forms.Label lblTotalJob;
+        private System.Windows.Forms.Label lblMonth;
+        private System.Windows.Forms.Label lblYear;
+        private System.Windows.Forms.PictureBox picPreviousMonth;
+        private System.Windows.Forms.PictureBox picNextMonth;
     }
 }

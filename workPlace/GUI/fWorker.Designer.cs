@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.kryptonCustomPaletteBase1 = new Krypton.Toolkit.KryptonCustomPaletteBase(this.components);
             this.pnlDashboard = new System.Windows.Forms.Panel();
-            this.btnChart = new Krypton.Toolkit.KryptonButton();
+            this.btnStatic = new Krypton.Toolkit.KryptonButton();
             this.picLogOut = new Krypton.Toolkit.KryptonPictureBox();
             this.picExit = new Krypton.Toolkit.KryptonPictureBox();
             this.btnProfile = new Krypton.Toolkit.KryptonButton();
@@ -60,10 +60,10 @@
             // pnlDashboard
             // 
             this.pnlDashboard.BackColor = System.Drawing.Color.White;
-            this.pnlDashboard.Controls.Add(this.btnChart);
             this.pnlDashboard.Controls.Add(this.picLogOut);
             this.pnlDashboard.Controls.Add(this.picExit);
             this.pnlDashboard.Controls.Add(this.btnProfile);
+            this.pnlDashboard.Controls.Add(this.btnStatic);
             this.pnlDashboard.Controls.Add(this.btnFindJob);
             this.pnlDashboard.Controls.Add(this.btnNotification);
             this.pnlDashboard.Controls.Add(this.btnSchedule);
@@ -74,66 +74,66 @@
             this.pnlDashboard.Size = new System.Drawing.Size(264, 766);
             this.pnlDashboard.TabIndex = 0;
             // 
-            // btnChart
+            // btnStatic
             // 
-            this.btnChart.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
-            this.btnChart.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
-            this.btnChart.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnChart.Location = new System.Drawing.Point(0, 440);
-            this.btnChart.Name = "btnChart";
-            this.btnChart.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnStatic.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
+            this.btnStatic.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
+            this.btnStatic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStatic.Location = new System.Drawing.Point(0, 384);
+            this.btnStatic.Name = "btnStatic";
+            this.btnStatic.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.OverrideDefault.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnChart.OverrideDefault.Border.Width = 0;
-            this.btnChart.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnChart.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnChart.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChart.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnStatic.OverrideDefault.Border.Width = 0;
+            this.btnStatic.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnStatic.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnStatic.OverrideDefault.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatic.OverrideFocus.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.OverrideFocus.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.OverrideFocus.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnChart.OverrideFocus.Border.Width = 0;
-            this.btnChart.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnChart.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnChart.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChart.Size = new System.Drawing.Size(264, 56);
-            this.btnChart.StateNormal.Back.Color1 = System.Drawing.Color.White;
-            this.btnChart.StateNormal.Back.Color2 = System.Drawing.Color.White;
-            this.btnChart.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnChart.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnChart.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
-            this.btnChart.StateNormal.Border.Width = 1;
-            this.btnChart.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnChart.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnChart.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChart.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.btnChart.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btnChart.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
-            this.btnChart.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnStatic.OverrideFocus.Border.Width = 0;
+            this.btnStatic.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnStatic.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnStatic.OverrideFocus.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatic.Size = new System.Drawing.Size(264, 56);
+            this.btnStatic.StateNormal.Back.Color1 = System.Drawing.Color.White;
+            this.btnStatic.StateNormal.Back.Color2 = System.Drawing.Color.White;
+            this.btnStatic.StateNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnStatic.StateNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnStatic.StateNormal.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Bottom;
+            this.btnStatic.StateNormal.Border.Width = 1;
+            this.btnStatic.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnStatic.StateNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnStatic.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatic.StatePressed.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.StatePressed.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
+            this.btnStatic.StatePressed.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btnStatic.StatePressed.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btnStatic.StatePressed.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnChart.StatePressed.Border.Width = 0;
-            this.btnChart.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnChart.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnChart.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChart.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
-            this.btnChart.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btnChart.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnChart.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
-            this.btnChart.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
-            this.btnChart.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            this.btnStatic.StatePressed.Border.Width = 0;
+            this.btnStatic.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnStatic.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnStatic.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatic.StateTracking.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btnStatic.StateTracking.Back.Color2 = System.Drawing.Color.Transparent;
+            this.btnStatic.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnStatic.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(185)))), ((int)(((byte)(185)))));
+            this.btnStatic.StateTracking.Border.Draw = Krypton.Toolkit.InheritBool.True;
+            this.btnStatic.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)(((Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnChart.StateTracking.Border.Width = 1;
-            this.btnChart.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnChart.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
-            this.btnChart.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChart.TabIndex = 13;
-            this.btnChart.Values.Text = "Chart";
-            this.btnChart.Click += new System.EventHandler(this.btnChart_Click);
+            this.btnStatic.StateTracking.Border.Width = 1;
+            this.btnStatic.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnStatic.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnStatic.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStatic.TabIndex = 13;
+            this.btnStatic.Values.Text = "Statics";
+            this.btnStatic.Click += new System.EventHandler(this.btnChart_Click);
             // 
             // picLogOut
             // 
@@ -168,7 +168,7 @@
             this.btnProfile.AccessibleRole = System.Windows.Forms.AccessibleRole.RadioButton;
             this.btnProfile.ButtonStyle = Krypton.Toolkit.ButtonStyle.Alternate;
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnProfile.Location = new System.Drawing.Point(0, 384);
+            this.btnProfile.Location = new System.Drawing.Point(0, 440);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.OverrideDefault.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnProfile.OverrideDefault.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
@@ -504,6 +504,6 @@
         private Krypton.Toolkit.KryptonPictureBox picLogOut;
         private System.Windows.Forms.Panel pnlContainer;
         private Krypton.Toolkit.KryptonButton btnFindJob;
-        private Krypton.Toolkit.KryptonButton btnChart;
+        private Krypton.Toolkit.KryptonButton btnStatic;
     }
 }

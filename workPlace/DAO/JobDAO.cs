@@ -88,5 +88,107 @@ namespace DAO
             string strCmd = string.Format("UPDATE Job SET IsWorkerRated = 'True' WHERE JobID = '{0}'", nJob.JobID);
             dbConn.Execute(strCmd);
         }
+
+        public List<int> WageOfMonth(DateTime monthDate, Worker worker)
+        {
+            List<int> result = new List<int>();
+
+            // Filter done job of month
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x => 
+            (x.IsComplete 
+            && x.IsAccepted 
+            && !x.IsCanceled 
+            && x.Date.Month == monthDate.Month 
+            && x.Date.Year == monthDate.Year)).OrderBy(x => x.Date.Day).ToList();
+
+            // Resize result
+            result.Capacity = DateTime.DaysInMonth(monthDate.Year, monthDate.Month);
+            for (int i = 0; i < result.Capacity; i++) { result.Add(0); }
+
+            // Fill data into result
+            foreach (Job job in jobListOfWorker)
+            {
+                result[job.Date.Day - 1] += (int)job.Wage;
+            }
+
+            return result;
+        }
+
+        public List<int> WageOfYear(DateTime yearDate, Worker worker)
+        {
+            List<int> result = new List<int>();
+
+            // Filter done job of year
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x =>
+            (x.IsComplete
+            && x.IsAccepted
+            && !x.IsCanceled
+            && x.Date.Year == yearDate.Year)).OrderBy(x => x.Date.Day).ToList();
+
+            // Resize result
+            for (int i = 0; i < 12; i++) { result.Add(0); }
+
+            // Fill data into result
+            foreach (Job job in jobListOfWorker)
+            {
+                result[job.Date.Month - 1] += (int)job.Wage;
+            }
+
+            return result;
+        }
+
+        public int NumbJobDoneOfYear(DateTime yearDate, Worker worker)
+        {
+            // Filter done job of year
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x =>
+            (x.IsComplete
+            && x.IsAccepted
+            && !x.IsCanceled
+            && x.Date.Year == yearDate.Year)).OrderBy(x => x.Date.Day).ToList();
+
+            return jobListOfWorker.Count;
+        }
+
+        public int NumbJobCancelOfYear(DateTime yearDate, Worker worker)
+        {
+            // Filter done job of year
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x =>
+            (x.IsComplete
+            && x.IsAccepted
+            && x.IsCanceled
+            && x.Date.Year == yearDate.Year)).OrderBy(x => x.Date.Day).ToList();
+
+            return jobListOfWorker.Count;
+        }
+
+        public int NumbJobDoneOfMonth(DateTime monthDate, Worker worker)
+        {
+            // Filter done job of year
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x =>
+            (x.IsComplete
+            && x.IsAccepted
+            && !x.IsCanceled
+            && x.Date.Month == monthDate.Month)).OrderBy(x => x.Date.Day).ToList();
+
+            return jobListOfWorker.Count;
+        }
+
+        public int NumbJobCancelOfMonth(DateTime monthDate, Worker worker)
+        {
+            // Filter done job of year
+            List<Job> jobListOfWorker = dbConn.FetchJobList(worker, true);
+            jobListOfWorker = jobListOfWorker.Where(x =>
+            (x.IsComplete
+            && x.IsAccepted
+            && x.IsCanceled
+            && x.Date.Month == monthDate.Month)).OrderBy(x => x.Date.Day).ToList();
+
+            return jobListOfWorker.Count;
+        }
     }
 }
