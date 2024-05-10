@@ -30,37 +30,40 @@
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            this.cWage = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnLastweek = new Krypton.Toolkit.KryptonButton();
             this.btnLastmonth = new Krypton.Toolkit.KryptonButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
-            this.cWage = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.cJob = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblContext = new System.Windows.Forms.Label();
+            this.lblProfit = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTotaljob = new System.Windows.Forms.Label();
+            this.lblContext = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTotaljob = new System.Windows.Forms.Label();
-            this.lblProfit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cWage)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cJob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cWage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cJob)).BeginInit();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +76,23 @@
             this.kryptonPanel1.Size = new System.Drawing.Size(570, 463);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.kryptonPanel1.TabIndex = 0;
+            // 
+            // cWage
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.cWage.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.cWage.Legends.Add(legend1);
+            this.cWage.Location = new System.Drawing.Point(27, 27);
+            this.cWage.Name = "cWage";
+            this.cWage.Size = new System.Drawing.Size(515, 403);
+            this.cWage.TabIndex = 0;
+            this.cWage.Text = "chart1";
+            title1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.Thistle;
+            title1.Name = "Title1";
+            title1.Text = "Tracking Wage";
+            this.cWage.Titles.Add(title1);
             // 
             // btnLastweek
             // 
@@ -226,6 +246,30 @@
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.kryptonPanel2.TabIndex = 11;
             // 
+            // cJob
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.cJob.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.cJob.Legends.Add(legend2);
+            this.cJob.Location = new System.Drawing.Point(26, 27);
+            this.cJob.Name = "cJob";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.LabelForeColor = System.Drawing.Color.White;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.cJob.Series.Add(series1);
+            this.cJob.Size = new System.Drawing.Size(315, 403);
+            this.cJob.TabIndex = 1;
+            this.cJob.Text = "chart2";
+            title2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.ForeColor = System.Drawing.Color.Thistle;
+            title2.Name = "Title1";
+            title2.Text = "Percent done job";
+            this.cJob.Titles.Add(title2);
+            // 
             // kryptonPanel3
             // 
             this.kryptonPanel3.Controls.Add(this.panel2);
@@ -236,29 +280,49 @@
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(204)))), ((int)(((byte)(224)))));
             this.kryptonPanel3.TabIndex = 12;
             // 
-            // cWage
+            // panel2
             // 
-            chartArea1.Name = "ChartArea1";
-            this.cWage.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.cWage.Legends.Add(legend1);
-            this.cWage.Location = new System.Drawing.Point(27, 27);
-            this.cWage.Name = "cWage";
-            this.cWage.Size = new System.Drawing.Size(515, 403);
-            this.cWage.TabIndex = 0;
-            this.cWage.Text = "chart1";
+            this.panel2.Controls.Add(this.lblProfit);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Location = new System.Drawing.Point(17, 17);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(328, 89);
+            this.panel2.TabIndex = 1;
             // 
-            // cJob
+            // lblProfit
             // 
-            chartArea2.Name = "ChartArea1";
-            this.cJob.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.cJob.Legends.Add(legend2);
-            this.cJob.Location = new System.Drawing.Point(26, 27);
-            this.cJob.Name = "cJob";
-            this.cJob.Size = new System.Drawing.Size(315, 403);
-            this.cJob.TabIndex = 1;
-            this.cJob.Text = "chart2";
+            this.lblProfit.AutoSize = true;
+            this.lblProfit.BackColor = System.Drawing.Color.White;
+            this.lblProfit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblProfit.Location = new System.Drawing.Point(147, 39);
+            this.lblProfit.Name = "lblProfit";
+            this.lblProfit.Size = new System.Drawing.Size(102, 30);
+            this.lblProfit.TabIndex = 44;
+            this.lblProfit.Text = "Total job ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.Location = new System.Drawing.Point(110, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 24);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Total profit";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::GUI.Properties.Resources.investment;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 6);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 83);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
             // 
             // panel1
             // 
@@ -270,15 +334,17 @@
             this.panel1.Size = new System.Drawing.Size(328, 89);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // lblTotaljob
             // 
-            this.panel2.Controls.Add(this.lblProfit);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(17, 17);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(328, 89);
-            this.panel2.TabIndex = 1;
+            this.lblTotaljob.AutoSize = true;
+            this.lblTotaljob.BackColor = System.Drawing.Color.White;
+            this.lblTotaljob.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotaljob.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTotaljob.Location = new System.Drawing.Point(147, 40);
+            this.lblTotaljob.Name = "lblTotaljob";
+            this.lblTotaljob.Size = new System.Drawing.Size(102, 30);
+            this.lblTotaljob.TabIndex = 43;
+            this.lblTotaljob.Text = "Total job ";
             // 
             // lblContext
             // 
@@ -291,16 +357,6 @@
             this.lblContext.Size = new System.Drawing.Size(79, 24);
             this.lblContext.TabIndex = 42;
             this.lblContext.Text = "Total job ";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::GUI.Properties.Resources.investment;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 83);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -321,42 +377,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(110, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 24);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Total profit";
-            // 
-            // lblTotaljob
-            // 
-            this.lblTotaljob.AutoSize = true;
-            this.lblTotaljob.BackColor = System.Drawing.Color.White;
-            this.lblTotaljob.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotaljob.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTotaljob.Location = new System.Drawing.Point(147, 40);
-            this.lblTotaljob.Name = "lblTotaljob";
-            this.lblTotaljob.Size = new System.Drawing.Size(102, 30);
-            this.lblTotaljob.TabIndex = 43;
-            this.lblTotaljob.Text = "Total job ";
-            // 
-            // lblProfit
-            // 
-            this.lblProfit.AutoSize = true;
-            this.lblProfit.BackColor = System.Drawing.Color.White;
-            this.lblProfit.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblProfit.Location = new System.Drawing.Point(147, 39);
-            this.lblProfit.Name = "lblProfit";
-            this.lblProfit.Size = new System.Drawing.Size(102, 30);
-            this.lblProfit.TabIndex = 44;
-            this.lblProfit.Text = "Total job ";
-            // 
             // ucStatic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -371,18 +391,18 @@
             this.Size = new System.Drawing.Size(995, 766);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cWage)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cJob)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cWage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cJob)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
