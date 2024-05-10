@@ -24,7 +24,8 @@ namespace GUI
         DateTime currentTime = DateTime.Now;
 
         // Series chart
-        Series series = new Series();
+        Series seriesWage = new Series();
+        //Series seriesDonut = new Series();
 
         public ucStatic()
         {
@@ -45,9 +46,9 @@ namespace GUI
 
         public void AddChart()
         {
-            cWage.Series.Add(series);
-            series.ChartType = SeriesChartType.Column;
-            series.Name = "Wages"; // Name your series
+            cWage.Series.Add(seriesWage);
+            seriesWage.ChartType = SeriesChartType.Column;
+            seriesWage.Name = "Wages"; // Name your series
             cWage.ChartAreas[0].AxisY.Title = "Wage";
         }
 
@@ -58,11 +59,11 @@ namespace GUI
         /// <param name="isForMonth">Month or Year</param>
         public void DisplayLineChart(List<int> wagesList, bool isForMonth)
         {
-            series.Points.Clear();
+            seriesWage.Points.Clear();
             // Loop through the list of wages and add data points to the series
             for (int i = 0; i < wagesList.Count; i++)
             {
-                series.Points.AddXY("", wagesList[i]);
+                seriesWage.Points.AddXY("", wagesList[i]);
             }
             cWage.ChartAreas[0].AxisX.Title = isForMonth ? "Day" : "Month";
         }
@@ -74,7 +75,7 @@ namespace GUI
             double cancelPercent = 100 - donePercent;
 
             // Create the chart
-            cJob.Series.Clear();
+            cJob.Series["Series1"].Points.Clear();
             cJob.Series["Series1"].Points.AddXY("Done Job", donePercent);
             cJob.Series["Series1"].Points[0].LegendText = "Done Job";
             cJob.Series["Series1"].Points.AddXY("Canceled Job", cancelPercent);
@@ -94,16 +95,37 @@ namespace GUI
 
         private void SetData()
         {
+            List<int> wage = new List<int>();
+            int jobDone, jobCancel;
+
             if (isMonth)
             {
-                DisplayLineChart(jobDAO.WageOfMonth(currentTime, currentUsingWorker), true);
-                DisplayDonutPieChart(jobDAO.NumbJobDoneOfMonth(currentTime, currentUsingWorker), jobDAO.NumbJobCancelOfMonth(currentTime, currentUsingWorker));
+                wage = jobDAO.WageOfMonth(currentTime, currentUsingWorker);
+                jobDone = jobDAO.NumbJobDoneOfMonth(currentTime, currentUsingWorker);
+                jobCancel = jobDAO.NumbJobCancelOfMonth(currentTime, currentUsingWorker);
             }
             else
             {
-                DisplayLineChart(jobDAO.WageOfYear(currentTime, currentUsingWorker), true);
-                DisplayDonutPieChart(jobDAO.NumbJobDoneOfYear(currentTime, currentUsingWorker), jobDAO.NumbJobCancelOfYear(currentTime, currentUsingWorker));
+                wage = jobDAO.WageOfYear(currentTime, currentUsingWorker);
+                jobDone = jobDAO.NumbJobDoneOfYear(currentTime, currentUsingWorker);
+                jobCancel = jobDAO.NumbJobCancelOfYear(currentTime, currentUsingWorker);
             }
+
+            // Chart
+            DisplayLineChart(wage, isMonth);
+            DisplayDonutPieChart(jobDone, jobCancel);
+
+            // Total calculate
+            lblTotalJob.Text = (jobDone + jobCancel).ToString();
+
+            int totalProfit = 0;
+            foreach (int i in wage)
+            {
+                totalProfit += i;
+            }
+            lblProfit.Text = totalProfit.ToString() + "$";
+
+            // Time
             SetTime();
         }
 
@@ -121,12 +143,28 @@ namespace GUI
 
         private void picPreviousMonth_Click(object sender, EventArgs e)
         {
-
+            if (isMonth)
+            {
+                currentTime = currentTime.AddMonths(-1);
+            }
+            else
+            {
+                currentTime = currentTime.AddYears(-1);
+            }
+            SetData();
         }
 
         private void picNextMonth_Click(object sender, EventArgs e)
         {
-
+            if (isMonth)
+            {
+                currentTime = currentTime.AddMonths(1);
+            }
+            else
+            {
+                currentTime = currentTime.AddYears(1);
+            }
+            SetData();
         }
     }
 }
