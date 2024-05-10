@@ -72,7 +72,7 @@ namespace GUI
 
         private void lblJobName_Click(object sender, EventArgs e)
         {
-            fJobDetail fJob = new fJobDetail(currentHoldingJob, false, false);
+            fJobDetail fJob = new fJobDetail(currentHoldingJob, false);
             fJob.ShowDialog();
         }
     }

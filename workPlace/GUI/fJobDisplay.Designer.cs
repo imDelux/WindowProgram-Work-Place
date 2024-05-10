@@ -111,7 +111,7 @@
             this.btnCancle.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnCancle.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnCancle.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.TabIndex = 35;
+            this.btnCancle.TabIndex = 8;
             this.btnCancle.Values.Text = "Cancle";
             this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
@@ -176,7 +176,7 @@
             this.btnConfirm.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnConfirm.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnConfirm.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.TabIndex = 34;
+            this.btnConfirm.TabIndex = 6;
             this.btnConfirm.Values.Text = "Confirm";
             // 
             // txtJobname
@@ -205,7 +205,7 @@
             this.txtJobname.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtJobname.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobname.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtJobname.TabIndex = 25;
+            this.txtJobname.TabIndex = 1;
             // 
             // lblJobname
             // 
@@ -256,7 +256,7 @@
             this.txtJobDes.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtJobDes.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobDes.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtJobDes.TabIndex = 41;
+            this.txtJobDes.TabIndex = 2;
             // 
             // lblJobDes
             // 
@@ -306,7 +306,7 @@
             this.txtWage.StateNormal.Content.Color1 = System.Drawing.Color.White;
             this.txtWage.StateNormal.Content.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWage.StateNormal.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.txtWage.TabIndex = 44;
+            this.txtWage.TabIndex = 5;
             // 
             // lblWage
             // 
@@ -405,7 +405,7 @@
             this.btnReject.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnReject.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
             this.btnReject.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReject.TabIndex = 49;
+            this.btnReject.TabIndex = 7;
             this.btnReject.Values.Text = "Reject";
             this.btnReject.Click += new System.EventHandler(this.btnReject_Click);
             // 
@@ -416,7 +416,7 @@
             this.pnlShiftContainer.Location = new System.Drawing.Point(158, 291);
             this.pnlShiftContainer.Name = "pnlShiftContainer";
             this.pnlShiftContainer.Size = new System.Drawing.Size(218, 36);
-            this.pnlShiftContainer.TabIndex = 48;
+            this.pnlShiftContainer.TabIndex = 4;
             // 
             // rbtnMorning
             // 
@@ -510,7 +510,7 @@
             this.btnDate.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.Gray;
             this.btnDate.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.Gray;
             this.btnDate.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDate.TabIndex = 46;
+            this.btnDate.TabIndex = 3;
             this.btnDate.Values.Text = "                        ---";
             this.btnDate.Click += new System.EventHandler(this.btnDate_Click);
             // 

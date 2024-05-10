@@ -54,7 +54,7 @@ namespace GUI
 
         public void ucEvent_Click(object sender, EventArgs e)
         {
-            fJobDetail fJobDetail = new fJobDetail(currentJobHold, false, true);
+            fJobDetail fJobDetail = new fJobDetail(currentJobHold, true);
             fJobDetail.ShowDialog();
         }
 

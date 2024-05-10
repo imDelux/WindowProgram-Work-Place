@@ -49,8 +49,8 @@ namespace GUI
 
         private void btnJobDetail_Click(object sender, EventArgs e)
         {
-            fJobDetail fJobDetail = new fJobDetail(dbConnection.FetchJob_ID(currentDisplayingEvaluate.JobID), true, currentDisplayingEvaluate.IsWorker);
-            fJobDetail.ShowDialog();
+            fEvaluatedJob fEvaluatedJob = new fEvaluatedJob(currentDisplayingEvaluate);
+            fEvaluatedJob.ShowDialog();
         }
     }
 }

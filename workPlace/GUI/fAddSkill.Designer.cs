@@ -91,7 +91,7 @@
             this.txtSkillDescription.StateCommon.Border.Width = 2;
             this.txtSkillDescription.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSkillDescription.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
-            this.txtSkillDescription.TabIndex = 12;
+            this.txtSkillDescription.TabIndex = 4;
             // 
             // label6
             // 
@@ -159,7 +159,7 @@
             this.btnAdd.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btnAdd.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btnAdd.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.TabIndex = 13;
+            this.btnAdd.TabIndex = 5;
             this.btnAdd.Values.Text = "Confirm";
             this.btnAdd.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
@@ -272,7 +272,7 @@
             this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
             this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(116)))), ((int)(((byte)(170)))));
             this.cbbSkillCategory.StateTracking.Item.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbSkillCategory.TabIndex = 16;
+            this.cbbSkillCategory.TabIndex = 1;
             this.cbbSkillCategory.Text = "Choose your skill ...";
             // 
             // txtExpectedWage
@@ -290,7 +290,7 @@
             this.txtExpectedWage.StateCommon.Border.Width = 2;
             this.txtExpectedWage.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExpectedWage.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
-            this.txtExpectedWage.TabIndex = 15;
+            this.txtExpectedWage.TabIndex = 3;
             // 
             // txtSkillName
             // 
@@ -307,7 +307,7 @@
             this.txtSkillName.StateCommon.Border.Width = 2;
             this.txtSkillName.StateCommon.Content.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSkillName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(3, -1, 3, -1);
-            this.txtSkillName.TabIndex = 18;
+            this.txtSkillName.TabIndex = 2;
             // 
             // fAddSkill
             // 

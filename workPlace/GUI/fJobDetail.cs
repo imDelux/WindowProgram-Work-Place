@@ -18,7 +18,6 @@ namespace GUI
         // Store current display job
         Job currentDisplayingJob = null;
         JobDAO jobDAO = new JobDAO();
-        bool isEvaluate = false;
         bool isWorker = false;
 
         // Get the hirer name by access to database
@@ -33,12 +32,10 @@ namespace GUI
         /// Dislay a job in summary
         /// </summary>
         /// <param name="job"></param>
-        /// <param name="isEvaluate">To know if the context is for review</param>
-        public fJobDetail(Job job, bool isEvaluate, bool isWorker)
+        public fJobDetail(Job job, bool isWorker)
         {
             InitializeComponent();
             this.currentDisplayingJob = job;
-            this.isEvaluate = isEvaluate;
             this.isWorker = isWorker;
             DataSetter();
         }
@@ -60,21 +57,6 @@ namespace GUI
             cbDone.Enabled = enable;
             cbCancel.Enabled = enable;
             btnDelete.Visible = currentDisplayingJob.IsRejected;         
-
-            // If the job is being watched in evaluation context --> hide some redundant information
-            if (isEvaluate)
-            {
-                lblRemainUserName.Visible = false;
-                lblHirerNameHeader.Visible = false;
-                lblJobStatusHead.Visible = false;
-                cbDone.Visible = false;
-                cbCancel.Visible = false;
-                btnDelete.Visible = false;
-                btnRate.Visible = false;
-
-                // Then move the panel up a little bit 
-                pnlContainer.Location = new System.Drawing.Point(12, 12);
-            }
 
             // If the job is being watched by worker --> cannot check the cancel checkbox & done checkbox
             cbCancel.Enabled = !isWorker && enable;
