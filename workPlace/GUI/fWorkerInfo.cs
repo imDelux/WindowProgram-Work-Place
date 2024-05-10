@@ -123,6 +123,7 @@ namespace GUI
                 pnlSkillContainer.Visible = true;
                 lblSkillname.Text = currentWorker.SkillName;
                 lblSkillDescription.Text = currentWorker.SkillDescription;
+                lblExpectedWage.Text = "Only " + currentWorker.ExpectedWage + "$";
             }
 
             // Review

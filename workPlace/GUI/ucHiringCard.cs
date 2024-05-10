@@ -1,4 +1,5 @@
-﻿using EntityModel;
+﻿using DAO;
+using EntityModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,7 @@ namespace GUI
         Worker currentHoldingWorker = null;
         Job currentHoldingJob = null;
         DAO.PersonDAO personDAO = new DAO.PersonDAO();
+        DbConnection dbConnection = new DbConnection();
 
         public ucHiringCard()
         {
@@ -70,10 +72,18 @@ namespace GUI
             }
         }
 
+        // Show job detail
         private void lblJobName_Click(object sender, EventArgs e)
         {
             fJobDetail fJob = new fJobDetail(currentHoldingJob, false);
             fJob.ShowDialog();
+        }
+
+        // Show worker detail
+        private void picAvatar_Click(object sender, EventArgs e)
+        {
+            fWorkerInfo fWorkerInfo = new fWorkerInfo(currentHoldingWorker, dbConnection.FetchPerson(currentHoldingJob.HirerID, "Hirer"));
+            fWorkerInfo.ShowDialog();
         }
     }
 }

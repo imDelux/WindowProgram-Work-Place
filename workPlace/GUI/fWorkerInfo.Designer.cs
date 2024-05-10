@@ -42,11 +42,12 @@
             this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
             this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlSkillContainer = new System.Windows.Forms.Panel();
-            this.lblSkillHeader = new System.Windows.Forms.Label();
-            this.btnSkillDescriptionContainer = new Krypton.Toolkit.KryptonButton();
-            this.lblSkillname = new System.Windows.Forms.Label();
             this.lblSkillDescription = new System.Windows.Forms.Label();
+            this.lblSkillname = new System.Windows.Forms.Label();
+            this.btnSkillDescriptionContainer = new Krypton.Toolkit.KryptonButton();
+            this.lblSkillHeader = new System.Windows.Forms.Label();
             this.lblNoReviewNotification = new System.Windows.Forms.Label();
+            this.lblExpectedWage = new System.Windows.Forms.Label();
             this.pnlBasicInformationContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.pnlSkillContainer.SuspendLayout();
@@ -172,7 +173,7 @@
             // 
             // pnlBasicInformationContainer
             // 
-            this.pnlBasicInformationContainer.BackColor = System.Drawing.Color.White;
+            this.pnlBasicInformationContainer.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlBasicInformationContainer.Controls.Add(this.lblLocation);
             this.pnlBasicInformationContainer.Controls.Add(this.lblEmail);
             this.pnlBasicInformationContainer.Controls.Add(this.lblPhone);
@@ -301,30 +302,43 @@
             // pnlSkillContainer
             // 
             this.pnlSkillContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlSkillContainer.Controls.Add(this.lblExpectedWage);
             this.pnlSkillContainer.Controls.Add(this.lblSkillDescription);
             this.pnlSkillContainer.Controls.Add(this.lblSkillname);
             this.pnlSkillContainer.Controls.Add(this.btnSkillDescriptionContainer);
             this.pnlSkillContainer.Controls.Add(this.lblSkillHeader);
-            this.pnlSkillContainer.Location = new System.Drawing.Point(48, 426);
+            this.pnlSkillContainer.Location = new System.Drawing.Point(48, 368);
             this.pnlSkillContainer.Name = "pnlSkillContainer";
-            this.pnlSkillContainer.Size = new System.Drawing.Size(326, 258);
+            this.pnlSkillContainer.Size = new System.Drawing.Size(326, 316);
             this.pnlSkillContainer.TabIndex = 16;
             // 
-            // lblSkillHeader
+            // lblSkillDescription
             // 
-            this.lblSkillHeader.AutoSize = true;
-            this.lblSkillHeader.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkillHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.lblSkillHeader.Location = new System.Drawing.Point(9, 9);
-            this.lblSkillHeader.Name = "lblSkillHeader";
-            this.lblSkillHeader.Size = new System.Drawing.Size(73, 38);
-            this.lblSkillHeader.TabIndex = 0;
-            this.lblSkillHeader.Text = "Skill";
+            this.lblSkillDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblSkillDescription.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSkillDescription.Location = new System.Drawing.Point(33, 148);
+            this.lblSkillDescription.Name = "lblSkillDescription";
+            this.lblSkillDescription.Size = new System.Drawing.Size(262, 136);
+            this.lblSkillDescription.TabIndex = 3;
+            this.lblSkillDescription.Text = "Skill description";
+            this.lblSkillDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSkillname
+            // 
+            this.lblSkillname.AutoSize = true;
+            this.lblSkillname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSkillname.Location = new System.Drawing.Point(25, 96);
+            this.lblSkillname.Name = "lblSkillname";
+            this.lblSkillname.Size = new System.Drawing.Size(101, 28);
+            this.lblSkillname.TabIndex = 2;
+            this.lblSkillname.Text = "Skill name";
             // 
             // btnSkillDescriptionContainer
             // 
             this.btnSkillDescriptionContainer.Enabled = false;
-            this.btnSkillDescriptionContainer.Location = new System.Drawing.Point(18, 78);
+            this.btnSkillDescriptionContainer.Location = new System.Drawing.Point(18, 135);
             this.btnSkillDescriptionContainer.Name = "btnSkillDescriptionContainer";
             this.btnSkillDescriptionContainer.Size = new System.Drawing.Size(292, 165);
             this.btnSkillDescriptionContainer.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -353,28 +367,16 @@
             this.btnSkillDescriptionContainer.TabIndex = 1;
             this.btnSkillDescriptionContainer.Values.Text = "";
             // 
-            // lblSkillname
+            // lblSkillHeader
             // 
-            this.lblSkillname.AutoSize = true;
-            this.lblSkillname.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkillname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSkillname.Location = new System.Drawing.Point(30, 50);
-            this.lblSkillname.Name = "lblSkillname";
-            this.lblSkillname.Size = new System.Drawing.Size(92, 25);
-            this.lblSkillname.TabIndex = 2;
-            this.lblSkillname.Text = "Skill name";
-            // 
-            // lblSkillDescription
-            // 
-            this.lblSkillDescription.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.lblSkillDescription.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSkillDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblSkillDescription.Location = new System.Drawing.Point(33, 91);
-            this.lblSkillDescription.Name = "lblSkillDescription";
-            this.lblSkillDescription.Size = new System.Drawing.Size(262, 136);
-            this.lblSkillDescription.TabIndex = 3;
-            this.lblSkillDescription.Text = "Skill description";
-            this.lblSkillDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSkillHeader.AutoSize = true;
+            this.lblSkillHeader.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.lblSkillHeader.Location = new System.Drawing.Point(8, 58);
+            this.lblSkillHeader.Name = "lblSkillHeader";
+            this.lblSkillHeader.Size = new System.Drawing.Size(73, 38);
+            this.lblSkillHeader.TabIndex = 0;
+            this.lblSkillHeader.Text = "Skill";
             // 
             // lblNoReviewNotification
             // 
@@ -387,6 +389,18 @@
             this.lblNoReviewNotification.TabIndex = 0;
             this.lblNoReviewNotification.Text = "This user has no reviews yet";
             this.lblNoReviewNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblExpectedWage
+            // 
+            this.lblExpectedWage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblExpectedWage.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpectedWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblExpectedWage.Location = new System.Drawing.Point(64, 8);
+            this.lblExpectedWage.Name = "lblExpectedWage";
+            this.lblExpectedWage.Size = new System.Drawing.Size(199, 45);
+            this.lblExpectedWage.TabIndex = 17;
+            this.lblExpectedWage.Text = "Only 00$";
+            this.lblExpectedWage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fWorkerInfo
             // 
@@ -461,5 +475,6 @@
         private System.Windows.Forms.Label lblSkillHeader;
         private System.Windows.Forms.Label lblSkillDescription;
         private System.Windows.Forms.Label lblNoReviewNotification;
+        private System.Windows.Forms.Label lblExpectedWage;
     }
 }

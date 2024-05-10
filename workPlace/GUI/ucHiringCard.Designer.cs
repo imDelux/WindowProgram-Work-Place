@@ -55,7 +55,7 @@
             this.lblWorkerName.TabIndex = 42;
             this.lblWorkerName.Text = "Gabiel Erickson";
             this.lblWorkerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblWorkerName.Click += new System.EventHandler(this.lblJobName_Click);
+            this.lblWorkerName.Click += new System.EventHandler(this.picAvatar_Click);
             // 
             // lblWorkerAge
             // 
@@ -149,6 +149,7 @@
             // picAvatar
             // 
             this.picAvatar.BackColor = System.Drawing.Color.White;
+            this.picAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAvatar.Image = global::GUI.Properties.Resources.man_icon;
             this.picAvatar.Location = new System.Drawing.Point(43, 46);
             this.picAvatar.Name = "picAvatar";
@@ -156,7 +157,7 @@
             this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAvatar.TabIndex = 41;
             this.picAvatar.TabStop = false;
-            this.picAvatar.Click += new System.EventHandler(this.lblJobName_Click);
+            this.picAvatar.Click += new System.EventHandler(this.picAvatar_Click);
             // 
             // picLine
             // 
