@@ -46,9 +46,9 @@
             // fpnlCategoryContainer
             // 
             this.fpnlCategoryContainer.AutoScroll = true;
-            this.fpnlCategoryContainer.Location = new System.Drawing.Point(51, 100);
+            this.fpnlCategoryContainer.Location = new System.Drawing.Point(35, 100);
             this.fpnlCategoryContainer.Name = "fpnlCategoryContainer";
-            this.fpnlCategoryContainer.Size = new System.Drawing.Size(929, 649);
+            this.fpnlCategoryContainer.Size = new System.Drawing.Size(941, 649);
             this.fpnlCategoryContainer.TabIndex = 1;
             // 
             // ucHomeCategoryChoose
