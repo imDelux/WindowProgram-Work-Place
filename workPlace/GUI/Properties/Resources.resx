@@ -223,6 +223,12 @@
   <data name="employee (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\employee (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="empty_heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\empty_heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="house-chimney" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\house-chimney.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

@@ -665,9 +665,11 @@ namespace DAO
             List<Worker> result = new List<Worker>();
             conn.Open();
 
+            // Sql initailize
             string strCmd = string.Format("SELECT * FROM Apply WHERE PostID = '{0}'", postID);
             SqlCommand sqlCmd = new SqlCommand(strCmd, conn);
 
+            // Read data
             SqlDataReader reader = sqlCmd.ExecuteReader();
             while(reader.Read())
             {
@@ -682,6 +684,80 @@ namespace DAO
             {
                 result[i] = FetchWorker_ID(result[i].PersonID);
             }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Check if hirer has worker in favourite list
+        /// </summary>
+        /// <param name="hirerID"></param>
+        /// <param name="workerID"></param>
+        /// <returns></returns>
+        public bool IsFavorite(string hirerID, string workerID)
+        {
+            bool result = false;
+            conn.Open();
+
+            // Sql initailize
+            string strCMD = string.Format("SELECT * FROM FavoriteWorker WHERE HirerID = '{0}' AND WorkerID = '{1}'", hirerID, workerID);
+            SqlCommand sqlCommand = new SqlCommand(@strCMD, conn);
+
+            // Check exist
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            while(sqlDataReader.Read())
+            {
+                result = true;
+            }
+
+            conn.Close();
+            return result;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="hirerID"></param>
+        /// <returns></returns>
+        public List<Worker> FetchFavouriteWorkerList(string hirerID)
+        {
+            List<Worker> result = new List<Worker>();
+
+            // Store information of each worker
+            string personID, fname, tel, email, location, skillName, skillDescription, skillType;
+            bool isActive;
+            int age, expectedWage;
+
+            // Connect to database
+            conn.Open();
+
+            // Initialize SQL command
+            string strCmd = string.Format("SELECT *" +
+                " FROM Worker, FavoriteWorker" +
+                " WHERE WorkerID = PersonID AND HirerID = '{0}'", hirerID);
+            SqlCommand cmd = new SqlCommand(strCmd, conn);
+
+            // Read data
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                personID = reader["PersonID"].ToString();
+                fname = reader["Name"].ToString();
+                age = int.Parse(reader["Age"].ToString());
+                tel = reader["Telephone"].ToString();
+                email = reader["Email"].ToString();
+                location = reader["Location"].ToString();
+                isActive = reader["IsActive"].ToString() == "True";
+                skillName = reader["SkillName"].ToString();
+                skillDescription = reader["SkillDescription"].ToString();
+                skillType = reader["SkillType"].ToString();
+                expectedWage = int.Parse(reader["ExpectedWage"].ToString());
+
+                result.Add(new Worker(personID, fname, age, tel, email, location, string.Empty, isActive, skillName, skillDescription, skillType, expectedWage));
+            }
+
+            // Close connection
+            conn.Close();
 
             return result;
         }

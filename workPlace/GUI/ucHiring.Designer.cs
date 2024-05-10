@@ -35,21 +35,31 @@
             this.pnlPadding = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.fpnlOnGoing = new System.Windows.Forms.FlowLayoutPanel();
-            this.fpnlComplete = new System.Windows.Forms.FlowLayoutPanel();
-            this.fpnlCancel = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblNoJobNotificationComplete = new System.Windows.Forms.Label();
             this.lblNoJobNotificationOnGoing = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.fpnlComplete = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblNoJobNotificationComplete = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.fpnlCancel = new System.Windows.Forms.FlowLayoutPanel();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.fpnlRejected = new System.Windows.Forms.FlowLayoutPanel();
+            this.fpnlFavourite = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblNoRejectedJobNotification = new System.Windows.Forms.Label();
+            this.lblNoFavouriteNotification = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.fpnlOnGoing.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.fpnlComplete.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.fpnlCancel.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.fpnlRejected.SuspendLayout();
+            this.fpnlFavourite.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblThumbnail
@@ -90,7 +100,7 @@
             this.lblNoJobNotificationCancel.ForeColor = System.Drawing.Color.DarkGray;
             this.lblNoJobNotificationCancel.Location = new System.Drawing.Point(3, 0);
             this.lblNoJobNotificationCancel.Name = "lblNoJobNotificationCancel";
-            this.lblNoJobNotificationCancel.Size = new System.Drawing.Size(988, 527);
+            this.lblNoJobNotificationCancel.Size = new System.Drawing.Size(974, 527);
             this.lblNoJobNotificationCancel.TabIndex = 14;
             this.lblNoJobNotificationCancel.Text = "No job notification at the moment.\r\n";
             this.lblNoJobNotificationCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,10 +108,10 @@
             // pnlPadding
             // 
             this.pnlPadding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(165)))), ((int)(((byte)(199)))));
-            this.pnlPadding.Location = new System.Drawing.Point(305, 175);
+            this.pnlPadding.Location = new System.Drawing.Point(499, 175);
             this.pnlPadding.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
             this.pnlPadding.Name = "pnlPadding";
-            this.pnlPadding.Size = new System.Drawing.Size(705, 25);
+            this.pnlPadding.Size = new System.Drawing.Size(511, 25);
             this.pnlPadding.TabIndex = 15;
             // 
             // tabControl1
@@ -109,6 +119,8 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 172);
             this.tabControl1.Name = "tabControl1";
@@ -123,10 +135,31 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 30);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1000, 533);
+            this.tabPage1.Size = new System.Drawing.Size(1009, 533);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "On Going";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // fpnlOnGoing
+            // 
+            this.fpnlOnGoing.AutoScroll = true;
+            this.fpnlOnGoing.Controls.Add(this.lblNoJobNotificationOnGoing);
+            this.fpnlOnGoing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlOnGoing.Location = new System.Drawing.Point(3, 3);
+            this.fpnlOnGoing.Name = "fpnlOnGoing";
+            this.fpnlOnGoing.Size = new System.Drawing.Size(1003, 527);
+            this.fpnlOnGoing.TabIndex = 0;
+            // 
+            // lblNoJobNotificationOnGoing
+            // 
+            this.lblNoJobNotificationOnGoing.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoJobNotificationOnGoing.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNoJobNotificationOnGoing.Location = new System.Drawing.Point(3, 0);
+            this.lblNoJobNotificationOnGoing.Name = "lblNoJobNotificationOnGoing";
+            this.lblNoJobNotificationOnGoing.Size = new System.Drawing.Size(969, 527);
+            this.lblNoJobNotificationOnGoing.TabIndex = 15;
+            this.lblNoJobNotificationOnGoing.Text = "No job notification at the moment.\r\n";
+            this.lblNoJobNotificationOnGoing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage2
             // 
@@ -135,10 +168,31 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1000, 533);
+            this.tabPage2.Size = new System.Drawing.Size(1009, 533);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Complete";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // fpnlComplete
+            // 
+            this.fpnlComplete.AutoScroll = true;
+            this.fpnlComplete.Controls.Add(this.lblNoJobNotificationComplete);
+            this.fpnlComplete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlComplete.Location = new System.Drawing.Point(3, 3);
+            this.fpnlComplete.Name = "fpnlComplete";
+            this.fpnlComplete.Size = new System.Drawing.Size(1003, 527);
+            this.fpnlComplete.TabIndex = 1;
+            // 
+            // lblNoJobNotificationComplete
+            // 
+            this.lblNoJobNotificationComplete.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoJobNotificationComplete.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNoJobNotificationComplete.Location = new System.Drawing.Point(3, 0);
+            this.lblNoJobNotificationComplete.Name = "lblNoJobNotificationComplete";
+            this.lblNoJobNotificationComplete.Size = new System.Drawing.Size(974, 527);
+            this.lblNoJobNotificationComplete.TabIndex = 15;
+            this.lblNoJobNotificationComplete.Text = "No job notification at the moment.\r\n";
+            this.lblNoJobNotificationComplete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage3
             // 
@@ -151,26 +205,6 @@
             this.tabPage3.Text = "Cancel";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // fpnlOnGoing
-            // 
-            this.fpnlOnGoing.AutoScroll = true;
-            this.fpnlOnGoing.Controls.Add(this.lblNoJobNotificationOnGoing);
-            this.fpnlOnGoing.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnlOnGoing.Location = new System.Drawing.Point(3, 3);
-            this.fpnlOnGoing.Name = "fpnlOnGoing";
-            this.fpnlOnGoing.Size = new System.Drawing.Size(994, 527);
-            this.fpnlOnGoing.TabIndex = 0;
-            // 
-            // fpnlComplete
-            // 
-            this.fpnlComplete.AutoScroll = true;
-            this.fpnlComplete.Controls.Add(this.lblNoJobNotificationComplete);
-            this.fpnlComplete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fpnlComplete.Location = new System.Drawing.Point(3, 3);
-            this.fpnlComplete.Name = "fpnlComplete";
-            this.fpnlComplete.Size = new System.Drawing.Size(994, 527);
-            this.fpnlComplete.TabIndex = 1;
-            // 
             // fpnlCancel
             // 
             this.fpnlCancel.AutoScroll = true;
@@ -181,27 +215,67 @@
             this.fpnlCancel.Size = new System.Drawing.Size(1003, 527);
             this.fpnlCancel.TabIndex = 1;
             // 
-            // lblNoJobNotificationComplete
+            // tabPage4
             // 
-            this.lblNoJobNotificationComplete.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoJobNotificationComplete.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNoJobNotificationComplete.Location = new System.Drawing.Point(3, 0);
-            this.lblNoJobNotificationComplete.Name = "lblNoJobNotificationComplete";
-            this.lblNoJobNotificationComplete.Size = new System.Drawing.Size(988, 527);
-            this.lblNoJobNotificationComplete.TabIndex = 15;
-            this.lblNoJobNotificationComplete.Text = "No job notification at the moment.\r\n";
-            this.lblNoJobNotificationComplete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabPage4.Controls.Add(this.fpnlRejected);
+            this.tabPage4.Location = new System.Drawing.Point(4, 30);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1009, 533);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Rejected";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // lblNoJobNotificationOnGoing
+            // tabPage5
             // 
-            this.lblNoJobNotificationOnGoing.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoJobNotificationOnGoing.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblNoJobNotificationOnGoing.Location = new System.Drawing.Point(3, 0);
-            this.lblNoJobNotificationOnGoing.Name = "lblNoJobNotificationOnGoing";
-            this.lblNoJobNotificationOnGoing.Size = new System.Drawing.Size(988, 527);
-            this.lblNoJobNotificationOnGoing.TabIndex = 15;
-            this.lblNoJobNotificationOnGoing.Text = "No job notification at the moment.\r\n";
-            this.lblNoJobNotificationOnGoing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tabPage5.Controls.Add(this.fpnlFavourite);
+            this.tabPage5.Location = new System.Drawing.Point(4, 30);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1009, 533);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Favourite";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // fpnlRejected
+            // 
+            this.fpnlRejected.Controls.Add(this.lblNoRejectedJobNotification);
+            this.fpnlRejected.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlRejected.Location = new System.Drawing.Point(3, 3);
+            this.fpnlRejected.Name = "fpnlRejected";
+            this.fpnlRejected.Size = new System.Drawing.Size(1003, 527);
+            this.fpnlRejected.TabIndex = 1;
+            // 
+            // fpnlFavourite
+            // 
+            this.fpnlFavourite.Controls.Add(this.lblNoFavouriteNotification);
+            this.fpnlFavourite.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fpnlFavourite.Location = new System.Drawing.Point(3, 3);
+            this.fpnlFavourite.Name = "fpnlFavourite";
+            this.fpnlFavourite.Size = new System.Drawing.Size(1003, 527);
+            this.fpnlFavourite.TabIndex = 1;
+            // 
+            // lblNoRejectedJobNotification
+            // 
+            this.lblNoRejectedJobNotification.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoRejectedJobNotification.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNoRejectedJobNotification.Location = new System.Drawing.Point(3, 0);
+            this.lblNoRejectedJobNotification.Name = "lblNoRejectedJobNotification";
+            this.lblNoRejectedJobNotification.Size = new System.Drawing.Size(974, 527);
+            this.lblNoRejectedJobNotification.TabIndex = 15;
+            this.lblNoRejectedJobNotification.Text = "No job notification at the moment.\r\n";
+            this.lblNoRejectedJobNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNoFavouriteNotification
+            // 
+            this.lblNoFavouriteNotification.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoFavouriteNotification.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblNoFavouriteNotification.Location = new System.Drawing.Point(3, 0);
+            this.lblNoFavouriteNotification.Name = "lblNoFavouriteNotification";
+            this.lblNoFavouriteNotification.Size = new System.Drawing.Size(974, 527);
+            this.lblNoFavouriteNotification.TabIndex = 15;
+            this.lblNoFavouriteNotification.Text = "No favourite worker.\r\n";
+            this.lblNoFavouriteNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ucHiring
             // 
@@ -218,11 +292,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.fpnlOnGoing.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.fpnlComplete.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.fpnlCancel.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.fpnlRejected.ResumeLayout(false);
+            this.fpnlFavourite.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,5 +321,11 @@
         private System.Windows.Forms.FlowLayoutPanel fpnlCancel;
         private System.Windows.Forms.Label lblNoJobNotificationOnGoing;
         private System.Windows.Forms.Label lblNoJobNotificationComplete;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.FlowLayoutPanel fpnlRejected;
+        private System.Windows.Forms.FlowLayoutPanel fpnlFavourite;
+        private System.Windows.Forms.Label lblNoRejectedJobNotification;
+        private System.Windows.Forms.Label lblNoFavouriteNotification;
     }
 }

@@ -20,9 +20,13 @@ namespace GUI
         Worker currentWorker = null;
         Person currentHirer = null;
         bool isForHirer;
+        bool isFavourite;
+
+        // Data access
         DAO.DbConnection connection = new DAO.DbConnection();
         PersonDAO personDAO = new PersonDAO();
         EvaluateDAO evaluateDAO = new EvaluateDAO();
+        HirerDAO hirerDAO = new HirerDAO();
 
         // Post context
         Post currentAppliedPost;
@@ -45,6 +49,7 @@ namespace GUI
             this.currentWorker = worker;
             this.currentHirer = hirer;
             isForHirer = true;
+            isFavourite = connection.IsFavorite(hirer.PersonID, worker.PersonID);
 
             DataSetter();
         }
@@ -74,6 +79,10 @@ namespace GUI
             this.currentWorker = worker;
             this.currentAppliedPost = post;
             isForHirer = true;
+
+            // Check favourite
+            currentHirer = connection.FetchPerson(post.HirerID, "Hirer");
+            isFavourite = connection.IsFavorite(currentHirer.PersonID, worker.PersonID);
 
             DataSetter();
             PostContext();
@@ -117,6 +126,7 @@ namespace GUI
             {
                 pnlSkillContainer.Visible = false;
                 btnHire.Visible = false;
+                picFavourite.Visible = false;
             }
             else
             {
@@ -124,6 +134,7 @@ namespace GUI
                 lblSkillname.Text = currentWorker.SkillName;
                 lblSkillDescription.Text = currentWorker.SkillDescription;
                 lblExpectedWage.Text = "Only " + currentWorker.ExpectedWage + "$";
+                SetHeart();
             }
 
             // Review
@@ -200,5 +211,77 @@ namespace GUI
         {
             this.Close();
         }
+
+        #region Favourite part
+
+        private void SetHeart()
+        {
+            if (isFavourite)
+            {
+                picFavourite.Image = Properties.Resources.heart;
+            }
+            else
+            {
+                picFavourite.Image = Properties.Resources.empty_heart;
+            }
+        }
+
+        private void picFavourite_MouseEnter(object sender, EventArgs e)
+        {
+            if (isFavourite)
+            {
+                picFavourite.Size = new Size(picFavourite.Size.Width + 2, picFavourite.Size.Height + 2);
+            }
+            else
+            {
+                picFavourite.Image = Properties.Resources.heart;
+            }
+        }
+
+        private void picFavourite_MouseLeave(object sender, EventArgs e)
+        {
+            if (isFavourite)
+            {
+                picFavourite.Size = new Size(picFavourite.Size.Width - 2, picFavourite.Size.Height - 2);
+            }
+            else
+            {
+                picFavourite.Image = Properties.Resources.empty_heart;
+            }
+        }
+
+        private void picFavourite_Click(object sender, EventArgs e)
+        {
+            if (isFavourite)
+            {
+                if (MessageBox.Show("Delete worker from favourite list?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    return;
+                }
+
+                if (hirerDAO.DeleteFavoriteWorker(currentHirer, currentWorker) == "Successful")
+                {
+                    MessageBox.Show("Deleted from favourite list", "Notification", MessageBoxButtons.OK);
+                    isFavourite = false;
+                    SetHeart();
+                }
+            }
+            else
+            {
+                if (MessageBox.Show("Add worker to favourite list?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    return;
+                }
+
+                if (hirerDAO.AddFavoriteWorker(currentHirer, currentWorker) == "Successful")
+                {
+                    MessageBox.Show("Added to favourite list", "Notification", MessageBoxButtons.OK);
+                    isFavourite = true;
+                    SetHeart();
+                }
+            }
+        }
+
+        #endregion
     }
 }

@@ -61,7 +61,7 @@ namespace GUI
                 picJobStatus.Image = Properties.Resources.jobOnWaiting;
             }
             // 2nd case: reject
-            else if (currentHoldingJob.IsRejected)
+            else if (currentHoldingJob.IsRejected || currentHoldingJob.IsCanceled)
             {
                 picJobStatus.Image = Properties.Resources.jobRejected;
             }

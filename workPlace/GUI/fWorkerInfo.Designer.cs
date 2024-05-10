@@ -38,19 +38,21 @@
             this.lblAge = new System.Windows.Forms.Label();
             this.lblOverrallRating = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.btnEvaluateContainer = new Krypton.Toolkit.KryptonButton();
             this.fpnlReviewContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.pnlSkillContainer = new System.Windows.Forms.Panel();
+            this.lblExpectedWage = new System.Windows.Forms.Label();
             this.lblSkillDescription = new System.Windows.Forms.Label();
             this.lblSkillname = new System.Windows.Forms.Label();
             this.btnSkillDescriptionContainer = new Krypton.Toolkit.KryptonButton();
             this.lblSkillHeader = new System.Windows.Forms.Label();
             this.lblNoReviewNotification = new System.Windows.Forms.Label();
-            this.lblExpectedWage = new System.Windows.Forms.Label();
+            this.picFavourite = new System.Windows.Forms.PictureBox();
+            this.picUserAvatar = new Krypton.Toolkit.KryptonPictureBox();
             this.pnlBasicInformationContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.pnlSkillContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFavourite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnHire
@@ -174,6 +176,7 @@
             // pnlBasicInformationContainer
             // 
             this.pnlBasicInformationContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlBasicInformationContainer.Controls.Add(this.picFavourite);
             this.pnlBasicInformationContainer.Controls.Add(this.lblLocation);
             this.pnlBasicInformationContainer.Controls.Add(this.lblEmail);
             this.pnlBasicInformationContainer.Controls.Add(this.lblPhone);
@@ -248,16 +251,6 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Current User Name";
             // 
-            // picUserAvatar
-            // 
-            this.picUserAvatar.Image = global::GUI.Properties.Resources.old_man;
-            this.picUserAvatar.Location = new System.Drawing.Point(16, 15);
-            this.picUserAvatar.Name = "picUserAvatar";
-            this.picUserAvatar.Size = new System.Drawing.Size(110, 110);
-            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUserAvatar.TabIndex = 0;
-            this.picUserAvatar.TabStop = false;
-            // 
             // btnEvaluateContainer
             // 
             this.btnEvaluateContainer.Enabled = false;
@@ -311,6 +304,18 @@
             this.pnlSkillContainer.Name = "pnlSkillContainer";
             this.pnlSkillContainer.Size = new System.Drawing.Size(326, 316);
             this.pnlSkillContainer.TabIndex = 16;
+            // 
+            // lblExpectedWage
+            // 
+            this.lblExpectedWage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblExpectedWage.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpectedWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.lblExpectedWage.Location = new System.Drawing.Point(64, 8);
+            this.lblExpectedWage.Name = "lblExpectedWage";
+            this.lblExpectedWage.Size = new System.Drawing.Size(199, 45);
+            this.lblExpectedWage.TabIndex = 17;
+            this.lblExpectedWage.Text = "Only 00$";
+            this.lblExpectedWage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSkillDescription
             // 
@@ -390,17 +395,28 @@
             this.lblNoReviewNotification.Text = "This user has no reviews yet";
             this.lblNoReviewNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblExpectedWage
+            // picFavourite
             // 
-            this.lblExpectedWage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblExpectedWage.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpectedWage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblExpectedWage.Location = new System.Drawing.Point(64, 8);
-            this.lblExpectedWage.Name = "lblExpectedWage";
-            this.lblExpectedWage.Size = new System.Drawing.Size(199, 45);
-            this.lblExpectedWage.TabIndex = 17;
-            this.lblExpectedWage.Text = "Only 00$";
-            this.lblExpectedWage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.picFavourite.Image = global::GUI.Properties.Resources.heart;
+            this.picFavourite.Location = new System.Drawing.Point(269, 142);
+            this.picFavourite.Name = "picFavourite";
+            this.picFavourite.Size = new System.Drawing.Size(36, 35);
+            this.picFavourite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFavourite.TabIndex = 7;
+            this.picFavourite.TabStop = false;
+            this.picFavourite.Click += new System.EventHandler(this.picFavourite_Click);
+            this.picFavourite.MouseEnter += new System.EventHandler(this.picFavourite_MouseEnter);
+            this.picFavourite.MouseLeave += new System.EventHandler(this.picFavourite_MouseLeave);
+            // 
+            // picUserAvatar
+            // 
+            this.picUserAvatar.Image = global::GUI.Properties.Resources.old_man;
+            this.picUserAvatar.Location = new System.Drawing.Point(16, 15);
+            this.picUserAvatar.Name = "picUserAvatar";
+            this.picUserAvatar.Size = new System.Drawing.Size(110, 110);
+            this.picUserAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserAvatar.TabIndex = 0;
+            this.picUserAvatar.TabStop = false;
             // 
             // fWorkerInfo
             // 
@@ -446,9 +462,10 @@
             this.StateCommon.Header.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.pnlBasicInformationContainer.ResumeLayout(false);
             this.pnlBasicInformationContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
             this.pnlSkillContainer.ResumeLayout(false);
             this.pnlSkillContainer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFavourite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -476,5 +493,6 @@
         private System.Windows.Forms.Label lblSkillDescription;
         private System.Windows.Forms.Label lblNoReviewNotification;
         private System.Windows.Forms.Label lblExpectedWage;
+        private System.Windows.Forms.PictureBox picFavourite;
     }
 }
