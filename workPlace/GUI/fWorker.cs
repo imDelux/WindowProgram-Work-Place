@@ -110,6 +110,13 @@ namespace GUI
             ChangeMainContent(profileContent);
         }
 
+
         #endregion
+
+        private void btnChart_Click(object sender, EventArgs e)
+        {
+            ucStatic ucStatic = new ucStatic();
+            ChangeMainContent(ucStatic);
+        }
     }
 }
