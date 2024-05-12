@@ -10,10 +10,18 @@ namespace DAO
 {
     public class SummarizeData
     {
+        /// <summary>
+        /// Calculate average review point of A WORKER
+        /// </summary>
+        /// <param name="worker"></param>
+        /// <returns></returns>
         public static float CalculateAveragePoint(Worker worker)
         {
+            // Fetch data
             DbConnection dbConnection = new DbConnection();
             List<Evaluate> evaluateList = dbConnection.FetchEvaluateOfAWorker(worker.PersonID);
+
+            // Calculate and return
             float sum = 0;
             foreach (Evaluate evaluate in evaluateList)
             {
@@ -22,6 +30,11 @@ namespace DAO
             return evaluateList.Count != 0 ? ((int)(sum * 10 / evaluateList.Count)) / 10.0f : 0;
         }
 
+        /// <summary>
+        /// Rearrange a list of worker by total received jobs in descending order
+        /// </summary>
+        /// <param name="trackList"></param>
+        /// <returns></returns>
         public static List<Worker> TopMostReceiveJobWorker(List<Worker> trackList)
         {
             DbConnection dbConnection = new DbConnection();
@@ -42,6 +55,11 @@ namespace DAO
             return trackList;
         }
 
+        /// <summary>
+        /// Rearrange a list of worker by average review point in descending order
+        /// </summary>
+        /// <param name="trackList"></param>
+        /// <returns></returns>
         public static List<Worker> TopMostRatedWorkers(List<Worker> trackList)
         {
             // Sort
@@ -61,6 +79,12 @@ namespace DAO
             return trackList;
         }
 
+        /// <summary>
+        /// Filter out list of worker that related to an inputed key
+        /// </summary>
+        /// <param name="trackList"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static List<Worker> RelatedWorker(List<Worker> trackList, string key)
         {
             List<Worker> result = new List<Worker>();

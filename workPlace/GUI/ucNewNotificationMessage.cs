@@ -52,6 +52,7 @@ namespace GUI
             }
         }
 
+        // Display the job information when click on the notification
         private void ucNewNotificationMessage_Click(object sender, EventArgs e)
         {
             fJobDisplay fJobDisplay = new fJobDisplay(currentUsingWorker, dbConnection.FetchPerson(jobInNotification.HirerID, "hirer"),jobInNotification, true);

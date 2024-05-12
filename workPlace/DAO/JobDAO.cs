@@ -89,6 +89,12 @@ namespace DAO
             dbConn.Execute(strCmd);
         }
 
+        /// <summary>
+        /// Get wage of each day in a specific month
+        /// </summary>
+        /// <param name="monthDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>List day's wage</returns>
         public List<int> WageOfMonth(DateTime monthDate, Worker worker)
         {
             List<int> result = new List<int>();
@@ -115,6 +121,12 @@ namespace DAO
             return result;
         }
 
+        /// <summary>
+        /// Get wage of each month of a specific year
+        /// </summary>
+        /// <param name="yearDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>List month's wage</returns>
         public List<int> WageOfYear(DateTime yearDate, Worker worker)
         {
             List<int> result = new List<int>();
@@ -139,6 +151,12 @@ namespace DAO
             return result;
         }
 
+        /// <summary>
+        /// Get number of job the worker have done in a specific year
+        /// </summary>
+        /// <param name="yearDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>Total done job in year</returns>
         public int NumbJobDoneOfYear(DateTime yearDate, Worker worker)
         {
             // Filter done job of year
@@ -152,6 +170,12 @@ namespace DAO
             return jobListOfWorker.Count;
         }
 
+        /// <summary>
+        /// Get number of job the worker have been canceled in a specific year
+        /// </summary>
+        /// <param name="yearDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>Total canceled job in year</returns>
         public int NumbJobCancelOfYear(DateTime yearDate, Worker worker)
         {
             // Filter done job of year
@@ -165,6 +189,12 @@ namespace DAO
             return jobListOfWorker.Count;
         }
 
+        /// <summary>
+        /// Get number of job the worker have been done in a specific month
+        /// </summary>
+        /// <param name="monthDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>Total done job in month</returns>
         public int NumbJobDoneOfMonth(DateTime monthDate, Worker worker)
         {
             // Filter done job of year
@@ -178,6 +208,12 @@ namespace DAO
             return jobListOfWorker.Count;
         }
 
+        /// <summary>
+        /// Get number of job the worker have been canceled in a specific month
+        /// </summary>
+        /// <param name="monthDate"></param>
+        /// <param name="worker"></param>
+        /// <returns>Total canceled job</returns>
         public int NumbJobCancelOfMonth(DateTime monthDate, Worker worker)
         {
             // Filter done job of year

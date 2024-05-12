@@ -40,6 +40,9 @@ namespace GUI
             catList = dbConnection.FetchSkillCategory();
         }
 
+        /// <summary>
+        /// Set data onto form
+        /// </summary>
         private void DataSetter()
         {
             if (currentUsingWorker != null)
@@ -71,6 +74,11 @@ namespace GUI
             this.Close();
         }
 
+        /// <summary>
+        /// Adjust worker's skill if user click on confirm button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             // Get data

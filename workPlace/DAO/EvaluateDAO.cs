@@ -20,6 +20,11 @@ namespace DAO
             return conn.Execute(strCmd);
         }
 
+        /// <summary>
+        /// Get average point (of all review) of a person 
+        /// </summary>
+        /// <param name="evaluates"></param>
+        /// <returns></returns>
         public float AveragePoint(List<Evaluate> evaluates)
         {
             float sum = 0;
@@ -37,6 +42,11 @@ namespace DAO
             }
         }
 
+        /// <summary>
+        /// Get list images of a review based on job ID
+        /// </summary>
+        /// <param name="reviewJobID"></param>
+        /// <returns></returns>
         public List<Image> GetReviewImages(string reviewJobID)
         {
             List<Image> result = new List<Image>();

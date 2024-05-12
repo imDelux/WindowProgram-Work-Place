@@ -46,6 +46,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// Go to main form of a specific skill category
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ucCategoryCard_Click(object sender, EventArgs e)
         {
             KryptonButton btn = sender as KryptonButton;

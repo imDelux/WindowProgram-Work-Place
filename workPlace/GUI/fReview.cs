@@ -64,10 +64,14 @@ namespace GUI
             this.Close();
         }
 
+        // Adjust form for worker
         private void AdjustFormForWorker()
         {
+            // No upload image function
             lblAddPhoto.Visible = false;
             tlpnlPhoto.Visible = false;
+
+            // Resize form
             btnConfirm.Location = new Point(btnConfirm.Location.X, btnConfirm.Location.Y - 150);
             this.Size = new Size(this.Size.Width, this.Size.Height - 150);
         }
@@ -77,20 +81,26 @@ namespace GUI
             UploadImage(sender as PictureBox);
         }
 
+        // Upload review images (function for hirer only)
         private bool UploadImage(PictureBox pictureBox)
         {
             OpenFileDialog avatarChoosingWindow = new OpenFileDialog();
+            // Filter type of file
             avatarChoosingWindow.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp;";
+
             if (avatarChoosingWindow.ShowDialog() == DialogResult.OK)
             {
-                //avatarFilePath = avatarChoosingWindow.FileName;
-                //pictureBox.Image = new Bitmap(avatarChoosingWindow.FileName);
                 pictureBox.ImageLocation = avatarChoosingWindow.FileName;
             }
+            
+            // Return
             if (pictureBox.ImageLocation !=  null) return true;
             else return false;
         }
 
+        /// <summary>
+        /// Save review's images 
+        /// </summary>
         private void SaveImage()
         {
             int count = 1;

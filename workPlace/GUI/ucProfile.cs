@@ -49,11 +49,14 @@ namespace GUI
             InitializeComponent();
 
             displayingWorker = worker;
-            displayingPerson = worker;  // in order to use datasetter with var person
+            displayingPerson = worker;  // in order to use datasetter with variable person
 
             DataSetter();
         }
 
+        /// <summary>
+        /// Set data onto form
+        /// </summary>
         private void DataSetter()
         {
             // Error detect
@@ -113,6 +116,7 @@ namespace GUI
             fAddSkill.ShowDialog();
         }
 
+        // If the user is worker --> can adjust the active mode
         private void cbActive_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure to switch active mode?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -143,6 +147,7 @@ namespace GUI
             fUploadAvatar.ShowDialog();
         }
 
+        // Chage password form
         private void lblChangePassword_Click(object sender, EventArgs e)
         {
             bool isWorker = displayingWorker != null;
@@ -150,6 +155,7 @@ namespace GUI
             fChangePassword.ShowDialog();
         }
 
+        // Change basic information form
         private void lblAdjustInformation_Click(object sender, EventArgs e)
         {
             bool isWorker = displayingWorker != null;

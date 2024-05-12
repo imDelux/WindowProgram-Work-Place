@@ -33,6 +33,7 @@ namespace GUI
             SetData();
         }
 
+        // Get list of post that posted by the hirer
         private void GetData()
         {
             if (currentUsingHirer == null) { return; }
@@ -49,6 +50,7 @@ namespace GUI
             }
         }
 
+        // Add new post
         private void picAddPost_Click(object sender, EventArgs e)
         {
             fPostJob form = new fPostJob(currentUsingHirer);

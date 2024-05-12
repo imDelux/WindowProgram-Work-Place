@@ -34,6 +34,9 @@ namespace GUI
             DataSetter();
         }
 
+        /// <summary>
+        /// Set data onto form
+        /// </summary>
         private void DataSetter()
         {
             // Post information
@@ -68,12 +71,14 @@ namespace GUI
             }
         }
 
+        // Delete the post
         private void btnDeletePost_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
             }
+            // Call delete function
             postDAO.Delete(currentDisplayingPost);
             this.Close();
         }

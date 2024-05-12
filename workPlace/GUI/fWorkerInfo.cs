@@ -28,7 +28,7 @@ namespace GUI
         EvaluateDAO evaluateDAO = new EvaluateDAO();
         HirerDAO hirerDAO = new HirerDAO();
 
-        // Post context
+        // Used in post context / hirers use to see worker's information 
         Post currentAppliedPost;
         JobDAO jobDAO = new JobDAO();
         PostDAO postDAO = new PostDAO();
@@ -88,6 +88,7 @@ namespace GUI
             PostContext();
         }
 
+        // Set data onto form
         private void DataSetter()
         {
             // Error detect
@@ -163,6 +164,9 @@ namespace GUI
             lblOverrallRating.Text = string.Format("Rate: {0}/10.0 ({1})", evaluateDAO.AveragePoint(evaluatesOfUser).ToString(), evaluatesOfUser.Count.ToString());
         }
 
+        /// <summary>
+        /// Adjust form when used in post contex
+        /// </summary>
         private void PostContext()
         {
             btnHire.Text = "Accept";
@@ -170,12 +174,14 @@ namespace GUI
             btnHire.Click += btnAccept_Click;
         }
 
+        // Hirer confirms to hire the worker
         private void btnHire_Click(object sender, EventArgs e)
         {
             fJobDisplay fHireMessage = new fJobDisplay(currentWorker, currentHirer);
             fHireMessage.ShowDialog();
         }
 
+        // Hirer accepts the worker's apply
         private void btnAccept_Click(object sender, EventArgs e)
         {
             // Generate job equivalent to post
@@ -250,6 +256,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// Change the favourite status
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void picFavourite_Click(object sender, EventArgs e)
         {
             if (isFavourite)

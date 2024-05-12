@@ -32,11 +32,11 @@
             this.lblContext = new System.Windows.Forms.Label();
             this.lblThumbnail = new System.Windows.Forms.Label();
             this.txtEmail = new Krypton.Toolkit.KryptonTextBox();
-            this.btnForgotpass = new Krypton.Toolkit.KryptonButton();
             this.txtPassword = new Krypton.Toolkit.KryptonTextBox();
             this.btnNext = new Krypton.Toolkit.KryptonButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnForgotpass = new Krypton.Toolkit.KryptonButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,26 +103,6 @@
             this.txtEmail.StateNormal.Content.Color1 = System.Drawing.SystemColors.ControlText;
             this.txtEmail.TabIndex = 24;
             this.txtEmail.Text = "Enter your email";
-            // 
-            // btnForgotpass
-            // 
-            this.btnForgotpass.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
-            this.btnForgotpass.Location = new System.Drawing.Point(328, 278);
-            this.btnForgotpass.Name = "btnForgotpass";
-            this.btnForgotpass.Size = new System.Drawing.Size(172, 25);
-            this.btnForgotpass.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
-            this.btnForgotpass.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgotpass.StatePressed.Back.Color1 = System.Drawing.Color.White;
-            this.btnForgotpass.StatePressed.Back.Color2 = System.Drawing.Color.White;
-            this.btnForgotpass.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
-            this.btnForgotpass.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgotpass.StateTracking.Back.Color1 = System.Drawing.Color.White;
-            this.btnForgotpass.StateTracking.Back.Color2 = System.Drawing.Color.White;
-            this.btnForgotpass.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
-            this.btnForgotpass.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForgotpass.TabIndex = 27;
-            this.btnForgotpass.Values.Text = "Forgot password ?";
-            this.btnForgotpass.Click += new System.EventHandler(this.btnForgotpass_Click);
             // 
             // txtPassword
             // 
@@ -226,6 +206,25 @@
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
+            // btnForgotpass
+            // 
+            this.btnForgotpass.ButtonStyle = Krypton.Toolkit.ButtonStyle.NavigatorOverflow;
+            this.btnForgotpass.Location = new System.Drawing.Point(328, 278);
+            this.btnForgotpass.Name = "btnForgotpass";
+            this.btnForgotpass.Size = new System.Drawing.Size(172, 25);
+            this.btnForgotpass.StateNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(150)))), ((int)(((byte)(199)))));
+            this.btnForgotpass.StateNormal.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgotpass.StatePressed.Back.Color1 = System.Drawing.Color.White;
+            this.btnForgotpass.StatePressed.Back.Color2 = System.Drawing.Color.White;
+            this.btnForgotpass.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
+            this.btnForgotpass.StatePressed.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgotpass.StateTracking.Back.Color1 = System.Drawing.Color.White;
+            this.btnForgotpass.StateTracking.Back.Color2 = System.Drawing.Color.White;
+            this.btnForgotpass.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(123)))), ((int)(((byte)(192)))));
+            this.btnForgotpass.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgotpass.TabIndex = 27;
+            this.btnForgotpass.Values.Text = "Forgot password ?";
+            // 
             // usLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,10 +254,10 @@
         private System.Windows.Forms.Label lblContext;
         private System.Windows.Forms.Label lblThumbnail;
         private Krypton.Toolkit.KryptonTextBox txtEmail;
-        private Krypton.Toolkit.KryptonButton btnForgotpass;
         private Krypton.Toolkit.KryptonTextBox txtPassword;
         private Krypton.Toolkit.KryptonButton btnNext;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Krypton.Toolkit.KryptonButton btnForgotpass;
     }
 }

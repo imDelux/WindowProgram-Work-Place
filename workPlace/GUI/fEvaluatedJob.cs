@@ -35,6 +35,9 @@ namespace GUI
             DataSetter();
         }
 
+        /// <summary>
+        /// Set data of the evaluated job onto form
+        /// </summary>
         private void DataSetter()
         {
             // Get job from database
@@ -54,6 +57,9 @@ namespace GUI
             ImageSetter();
         }
 
+        /// <summary>
+        /// Set images of the review onto form
+        /// </summary>
         private void ImageSetter()
         {
             List<Image> reviewImages = evaluateDAO.GetReviewImages(currentDisplayingEvaluate.JobID);
@@ -68,6 +74,11 @@ namespace GUI
             }
         }
 
+        /// <summary>
+        /// When an image is clicked --> display image in bigger size 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DisplayImage(object sender, EventArgs e)
         {
             PictureBox pictureBox = sender as PictureBox;

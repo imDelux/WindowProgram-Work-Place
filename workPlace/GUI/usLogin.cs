@@ -36,10 +36,5 @@ namespace GUI
                 this.TopLevelControl.Show();
             }
         }
-
-        private void btnForgotpass_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

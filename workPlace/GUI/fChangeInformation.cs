@@ -33,6 +33,11 @@ namespace GUI
             this.currentChangingPerson = person;
         }
 
+        /// <summary>
+        /// Adjust basic information of a person when click on confirm button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             currentChangingPerson.Name = txtName.Text;

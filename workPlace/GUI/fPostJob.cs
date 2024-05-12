@@ -30,6 +30,10 @@ namespace GUI
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Dislay form for the hirer to post a new job request
+        /// </summary>
+        /// <param name="hirer"></param>
         public fPostJob(Person hirer)
         {
             InitializeComponent();
@@ -37,6 +41,11 @@ namespace GUI
             HirerSetting();
         }
 
+        /// <summary>
+        /// Display the inputed post information for the worker
+        /// </summary>
+        /// <param name="worker"></param>
+        /// <param name="post"></param>
         public fPostJob(Worker worker, Post post)
         {
             InitializeComponent();
@@ -50,6 +59,9 @@ namespace GUI
             PostDataSetter();
         }
 
+        /// <summary>
+        /// Set data onto form
+        /// </summary>
         private void PostDataSetter()
         {
             // Fill data
@@ -75,18 +87,26 @@ namespace GUI
             btnNext.Click += btnApply_Click;
         }
 
+        /// <summary>
+        /// Setting for hirer
+        /// </summary>
         private void HirerSetting()
         {
+            // Get the category list
             GetCategorySkill();
+            // Set up the category list
             SkillFieldSet();
+            // Set confirm button event
             btnNext.Click += btnNext_Click;
         }
 
+        // Get category fields from database
         private void GetCategorySkill()
         {
             skillList = dbConnection.FetchSkillCategory();
         }
 
+        // Bind the category field into combo box
         private void SkillFieldSet()
         {
             cbbSkillField.DataSource = skillList;
@@ -98,6 +118,7 @@ namespace GUI
             this.Close();
         }
 
+        // Event button for hirer --> post the job request
         private void btnNext_Click(object sender, EventArgs e)
         {
             Post nPost = new Post();
@@ -115,6 +136,7 @@ namespace GUI
             this.Close();
         }
 
+        // Event button for workre --> apply job
         private void btnApply_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to apply this job ?", "Notification", MessageBoxButtons.YesNo) == DialogResult.No)

@@ -33,6 +33,7 @@ namespace GUI
             }
             else  // not hirer --> for worker
             {
+                // Check for conditions 
                 if (jobEvent.Date.Day == DateTime.Now.Day || jobEvent.Date.Day == DateTime.Now.Day + 1)
                 {
                     Incoming();
@@ -57,6 +58,8 @@ namespace GUI
             fJobDetail fJobDetail = new fJobDetail(currentJobHold, true);
             fJobDetail.ShowDialog();
         }
+
+        // Change the event backcolor
 
         public void Evaluated()
         {

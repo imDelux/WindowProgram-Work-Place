@@ -14,10 +14,12 @@ namespace GUI
 {
     public partial class fChooseJobDate : KryptonForm
     {
+        // Job date that chosen by hirer will be stored here
         static public DateTime jobDate = DateTime.Now;
         public fChooseJobDate(Worker worker, DateTime dateJob)
         {
             InitializeComponent();
+            // Initialize the schedule of a worker in hirer mode 
             ucSchedule ucScheduleOfWorker = new ucSchedule(worker, true);
             ucScheduleOfWorker.Dock = DockStyle.Fill;
             this.Controls.Add(ucScheduleOfWorker);

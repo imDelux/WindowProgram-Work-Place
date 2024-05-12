@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class ucFindJob : UserControl
     {
-        // Store
+        // Store data
         Worker currentUsingWorker = null;
         DbConnection dbConnection = new DbConnection();
         CategorySkill currentPost = null;
@@ -31,9 +31,12 @@ namespace GUI
             InitializeComponent();
             this.currentUsingWorker = worker;
 
+            // Get and the skill category 
             GetCategorySkill();
             SetCategorySkill();
+            // Set the 1st post preview
             cbbSkillField.SelectedIndex = 0;
+            // Set posts
             GetPostOfCat(currentPost);
             SetPost();
         }
@@ -51,11 +54,18 @@ namespace GUI
             currentPost = (CategorySkill)cbbSkillField.SelectedItem;
         }
 
+        /// <summary>
+        /// Get posts equivalent to the category
+        /// </summary>
+        /// <param name="category"></param>
         private void GetPostOfCat(CategorySkill category)
         {
             postOfCategory = dbConnection.FetchPostOfACategory(category);
         }
 
+        /// <summary>
+        /// Set posts onto form
+        /// </summary>
         private void SetPost()
         {
             fpnlPostContainer.Controls.Clear();
@@ -69,6 +79,7 @@ namespace GUI
             lblNoPostNotification.Visible = (postOfCategory.Count == 0);
         }
 
+        // Refresh the page based on worker's choice
         private void cbbSkillField_SelectedIndexChanged(object sender, EventArgs e)
         {
             currentPost = ((CategorySkill)cbbSkillField.SelectedItem);

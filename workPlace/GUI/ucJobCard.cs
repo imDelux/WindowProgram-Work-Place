@@ -38,11 +38,13 @@ namespace GUI
             SetData();
         }
 
+        // Get list of worker that applied the job
         private void GetApplyList()
         {
             appliedWorkers = dbConnection.FetchApplyWorker(currentPost.ID);
         }
 
+        // Set data of post
         private void SetData()
         {
             if (currentPost == null) return;

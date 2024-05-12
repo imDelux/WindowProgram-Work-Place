@@ -26,6 +26,12 @@ namespace DAO
             return dbConn.Execute(strCmd);
         }
 
+        /// <summary>
+        /// Add an apply information when a worker apply to a job
+        /// </summary>
+        /// <param name="post"></param>
+        /// <param name="worker"></param>
+        /// <returns></returns>
         public string Apply(Post post, Worker worker)
         {
             string strCmd = string.Format("INSERT INTO Apply(PostID, WorkerID) VALUES ('{0}','{1}')", post.ID, worker.PersonID);

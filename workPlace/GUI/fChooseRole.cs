@@ -47,6 +47,11 @@ namespace GUI
             role = true;
         }
 
+        /// <summary>
+        /// Login into main form as the confirm button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             // Worker case

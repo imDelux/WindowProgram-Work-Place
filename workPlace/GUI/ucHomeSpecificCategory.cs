@@ -35,13 +35,19 @@ namespace GUI
             GenerateDynamicUserControl(currentDisplayingWorkerList);
         }
 
+        /// <summary>
+        /// Get list of worker based on skill category
+        /// </summary>
         private void GetWorkerList()
         {
             // Get the worker list from database
             currentDisplayingWorkerList = dbConn.FetchWorkerList(category);
             currentDisplayingWorkerList = currentDisplayingWorkerList.Where(x => x.IsActive == true).ToList();
         }
-
+        /// <summary>
+        /// Generate the inputed list of worker onto form
+        /// </summary>
+        /// <param name="workerList"></param>
         private void GenerateDynamicUserControl(List<Worker> workerList)
         {
             fpnlContainer.Controls.Clear();   

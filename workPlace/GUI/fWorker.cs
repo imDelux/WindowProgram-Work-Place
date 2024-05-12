@@ -46,6 +46,8 @@ namespace GUI
         #endregion
 
         #region Exit and LogOut Event
+        // Resize the logout/exit image when mouse is on/off the reion
+        
         private void picExit_MouseLeave(object sender, EventArgs e)
         {
             KryptonPictureBox clickedPic = sender as KryptonPictureBox;

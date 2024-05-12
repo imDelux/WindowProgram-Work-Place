@@ -40,8 +40,12 @@ namespace GUI
             DataSetter();
         }
 
+        /// <summary>
+        /// Set data of an inputed job onto form
+        /// </summary>
         private void DataSetter()
         {
+            // Display some basic information
             lblRemainUserName.Text = dbConn.FetchPerson(currentDisplayingJob.HirerID, "Hirer").Name;
             lblJobName.Text = currentDisplayingJob.JobName;
             lblJobDescript.Text = currentDisplayingJob.JobDescription;
@@ -56,6 +60,8 @@ namespace GUI
             bool enable = !(currentDisplayingJob.IsComplete || currentDisplayingJob.IsCanceled || currentDisplayingJob.IsRejected || !currentDisplayingJob.IsAccepted);
             cbDone.Enabled = enable;
             cbCancel.Enabled = enable;
+
+            // The delete button is visible only if the job is rejected
             btnDelete.Visible = currentDisplayingJob.IsRejected;         
 
             // If the job is being watched by worker --> cannot check the cancel checkbox & done checkbox

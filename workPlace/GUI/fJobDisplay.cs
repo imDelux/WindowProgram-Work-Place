@@ -26,7 +26,7 @@ namespace GUI
         }
 
         /// <summary>
-        /// Displaying a new form to input a new job. Ussually used by hirer
+        /// Displaying a new form to input a new job. Usually used by hirer
         /// </summary>
         /// <param name="worker">Who is offered</param>
         /// <param name="hirer">Who offers</param>
@@ -110,6 +110,7 @@ namespace GUI
         }
 
         // If the using person is worker then confirm button's event will be this
+        // In order to accept the job
         private void btnAccept_Click(object sender, EventArgs e)
         {
             // Check valid
@@ -128,6 +129,7 @@ namespace GUI
         }
 
         // If the using person is hirer then confirm button's event will be this
+        // In order to form a new offer to worker
         private void btnHire_Click(object sender, EventArgs e)
         {
             Job newOffer = new Job();

@@ -28,6 +28,11 @@ namespace GUI
             currentHirer = hirer;
         }
 
+        /// <summary>
+        /// Ask the user to make sure that they want to quit 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void fWorker_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("Do you want to quit ?", "Closing", MessageBoxButtons.YesNo) == DialogResult.No)
@@ -36,6 +41,7 @@ namespace GUI
             }
         }
 
+        // Load the main home when form is loaded
         private void fHirer_Load(object sender, EventArgs e)
         {
             // Load home
@@ -45,6 +51,7 @@ namespace GUI
 
         #region Dashboard button event
 
+        // Re-add new tab by user's choice
         private void AddUC(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -77,7 +84,9 @@ namespace GUI
         }
         #endregion
 
-        #region Exit and LogOut Event
+        #region Exit and LogOut Event 
+        // Resize the image when the mouse is on - off the image's region
+        
         private void picExit_MouseLeave(object sender, EventArgs e)
         {
             KryptonPictureBox clickedPic = sender as KryptonPictureBox;

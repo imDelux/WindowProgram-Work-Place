@@ -32,6 +32,7 @@ namespace GUI
             DataSetter();
         }
 
+        // Set data onto form
         private void DataSetter()
         {
             if (currentDisplayingEvaluate == null) return;
@@ -47,6 +48,7 @@ namespace GUI
             lblComment.Text = currentDisplayingEvaluate.Comment;
         }
 
+        // Display the job detail when click on the detail button
         private void btnJobDetail_Click(object sender, EventArgs e)
         {
             fEvaluatedJob fEvaluatedJob = new fEvaluatedJob(currentDisplayingEvaluate);

@@ -46,7 +46,7 @@ namespace GUI
         // Highlight day
         public void Highlight()
         {
-
+            this.BackColor = Color.MediumPurple ;
         }
 
         // Add an event onto a day in schedule

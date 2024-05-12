@@ -32,6 +32,11 @@ namespace GUI
             this.table = table;
         }
 
+        /// <summary>
+        /// Adjust user password when the confirm button is clicked on
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             // Check valid

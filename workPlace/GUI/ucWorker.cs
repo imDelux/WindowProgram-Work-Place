@@ -62,11 +62,14 @@ namespace GUI
             lblLocation.Text = "Location: " + currentDisplayWorker.Location;
         }
 
+        // Adjust the button events when the using context is POST (worker apply for job)
         private void PostContext()
         {
             picAvatar.Click -= picAvatar_Click;
             picAvatar.Click += picAvatar_Click_PostContext;
         }
+
+        // Display the worker information
 
         private void picAvatar_Click(object sender, EventArgs e)
         {

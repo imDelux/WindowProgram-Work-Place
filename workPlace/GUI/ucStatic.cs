@@ -44,6 +44,9 @@ namespace GUI
             SetData();
         }
 
+        /// <summary>
+        /// Add series to line chart
+        /// </summary>
         public void AddChart()
         {
             cWage.Series.Add(seriesWage);
@@ -53,7 +56,7 @@ namespace GUI
         }
 
         /// <summary>
-        /// 
+        /// Display the wage chart based on inputed data
         /// </summary>
         /// <param name="wagesList"></param>
         /// <param name="isForMonth">Month or Year</param>
@@ -68,6 +71,11 @@ namespace GUI
             cWage.ChartAreas[0].AxisX.Title = isForMonth ? "Day" : "Month";
         }
 
+        /// <summary>
+        /// Display the donut pie chart based on inputed data
+        /// </summary>
+        /// <param name="doneJob"></param>
+        /// <param name="cancelJob"></param>
         private void DisplayDonutPieChart(int doneJob, int cancelJob)
         {
             // Calculate the percentage of done jobs
@@ -111,7 +119,7 @@ namespace GUI
                 jobCancel = jobDAO.NumbJobCancelOfYear(currentTime, currentUsingWorker);
             }
 
-            // Chart
+            // Chart display
             DisplayLineChart(wage, isMonth);
             DisplayDonutPieChart(jobDone, jobCancel);
 
@@ -129,6 +137,8 @@ namespace GUI
             SetTime();
         }
 
+        // Swith display mode (month or year)
+
         private void btnThisMonth_Click(object sender, EventArgs e)
         {
             isMonth = true;
@@ -140,6 +150,8 @@ namespace GUI
             isMonth = false;
             SetData();
         }
+
+        // Adjust time when click on button
 
         private void picPreviousMonth_Click(object sender, EventArgs e)
         {
